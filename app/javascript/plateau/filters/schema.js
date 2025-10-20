@@ -1,25 +1,24 @@
 /**
- * JSON Schema ローダとフィルター用メタデータ抽出
+ * スキーマ処理機能
  */
 
 /**
- * スキーマJSONを取得
+ * スキーマJSONを取得する
  * @param {string} schemaPath - スキーマファイルへの相対パス
  * @returns {Promise<Object>} スキーマオブジェクト
  */
 export async function loadSchema(schemaPath) {
   const res = await fetch(schemaPath);
   if (!res.ok) {
-    throw new Error(`Failed to load schema: ${schemaPath}`);
+    throw new Error(`スキーマの読み込みに失敗: ${schemaPath}`);
   }
   return await res.json();
 }
 
 /**
- * スキーマからプロパティ定義を抽出
- * 現状、`definitions.FacilityProperties.properties` を対象とする
- * @param {Object} schema
- * @returns {Array<{key: string, type: string, enum?: string[]}>}
+ * スキーマからプロパティ定義を抽出する
+ * @param {Object} schema - スキーマオブジェクト
+ * @returns {Array<{key: string, type: string, enum?: string[]}>} プロパティフィールドの配列
  */
 export function extractPropertyFields(schema) {
   const defs = schema && schema.definitions;
@@ -28,36 +27,33 @@ export function extractPropertyFields(schema) {
   if (!props) return [];
 
   return Object.entries(props).map(([key, def]) => {
-    const field = { key, type: def.type || 'string' };
+    const field = { key, type: def.type || "string" };
     if (def.enum) field.enum = def.enum;
     return field;
   });
 }
 
 /**
- * 入力されたUI値からフィーチャーフィルタ関数を組み立て
- * - string: 部分一致（前後空白除去、空なら無視）
- * - number: min/maxの範囲（未入力は無視）
- * - enum: 複数選択のいずれか一致（未選択は無視）
- * @param {Record<string, any>} criteria
- * @returns {(feature: any) => boolean}
+ * UI入力値からフィーチャーフィルタ関数を生成する
+ * @param {Record<string, any>} criteria - フィルタ条件
+ * @returns {(feature: any) => boolean} フィルタ関数
  */
 export function buildPredicateFromCriteria(criteria) {
   return function predicate(feature) {
     const p = feature && feature.properties ? feature.properties : {};
 
-    // string contains
-    if (typeof criteria.name === 'string' && criteria.name.trim() !== '') {
+    // 文字列: 部分一致（前後空白除去、空なら無視）
+    if (typeof criteria.name === "string" && criteria.name.trim() !== "") {
       const q = criteria.name.trim();
-      if (!String(p.name || '').includes(q)) return false;
+      if (!String(p.name || "").includes(q)) return false;
     }
 
-    // enum includes
+    // Enum: 複数選択のいずれか一致（未選択は無視）
     if (Array.isArray(criteria.category) && criteria.category.length > 0) {
       if (!criteria.category.includes(p.category)) return false;
     }
 
-    // number range
+    // 数値: min/maxの範囲（未入力は無視）
     if (criteria.height_meters) {
       const value = Number(p.height_meters);
       if (Number.isFinite(criteria.height_meters.min)) {
@@ -71,5 +67,3 @@ export function buildPredicateFromCriteria(criteria) {
     return true;
   };
 }
-
-

@@ -8,3 +8,167 @@
  *
  * Consider organizing styles into separate files for maintainability.
  */
+
+/* ページ全体のレイアウト */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
+}
+
+/* ボタンコンテナ */
+#button-container {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 1000;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+#button-container button {
+  margin: 5px;
+  padding: 8px 16px;
+  background-color: #0078d4;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.2s;
+}
+
+#button-container button:hover {
+  background-color: #005a9e;
+}
+
+/* Point選択コンテナ */
+#point-selection-container {
+  position: absolute;
+  top: 70px;
+  left: 10px;
+  z-index: 1000;
+  background: rgba(255, 255, 255, 0.95);
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+}
+
+#point-selection-container h3 {
+  margin: 0 0 10px 0;
+  font-size: 16px;
+  color: #333;
+}
+
+#point-selection-container button {
+  margin: 5px;
+  padding: 8px 16px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.2s;
+}
+
+#point-selection-container button:hover {
+  background-color: #218838;
+}
+
+/* フィルタコンテナ */
+#filter-container {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 1000;
+  background: rgba(255, 255, 255, 0.95);
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  max-width: 350px;
+  max-height: 80vh;
+  overflow-y: auto;
+}
+
+#filter-container h3 {
+  margin: 0 0 15px 0;
+  font-size: 16px;
+  color: #333;
+  border-bottom: 2px solid #0078d4;
+  padding-bottom: 8px;
+}
+
+#dynamic-filter-form label {
+  display: block;
+  font-weight: 600;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  color: #555;
+}
+
+#dynamic-filter-form input[type="text"],
+#dynamic-filter-form input[type="number"] {
+  width: calc(100% - 12px);
+  padding: 6px;
+  margin-bottom: 8px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  font-size: 14px;
+}
+
+#dynamic-filter-form input[type="checkbox"] {
+  margin-right: 5px;
+}
+
+#filter-buttons {
+  margin-top: 15px;
+  display: flex;
+  gap: 10px;
+}
+
+#filter-buttons button {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  transition: background-color 0.2s;
+}
+
+#apply-filter-btn {
+  background-color: #0078d4;
+  color: white;
+}
+
+#apply-filter-btn:hover {
+  background-color: #005a9e;
+}
+
+#clear-filter-btn {
+  background-color: #6c757d;
+  color: white;
+}
+
+#clear-filter-btn:hover {
+  background-color: #5a6268;
+}
+
+/* Cesiumコンテナ */
+#cesiumContainer {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
