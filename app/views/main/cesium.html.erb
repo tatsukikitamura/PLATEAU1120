@@ -1,0 +1,39 @@
+
+<div id="button-container">
+  <button id="point-button">Point</button>
+  <button id="line-button">Line</button>
+  <button id="osm-buildings-button">OSM Buildings</button>
+  <button id="multi-line-button">Multi Line</button>
+  <button id="all-data-button" style="background-color: #28a745;">全てのデータ</button>
+  <button id="home-button" style="background-color: #6c757d;">🏠 ホーム</button>
+</div>
+
+<div id="point-selection-container" style="display: none; margin-top: 10px;">
+  <h3>Pointデータを選択してください：</h3>
+  <button id="landmark-button">ランドマーク</button>
+  <button id="park-button">公園</button>
+  <button id="shelter-button">避難所</button>
+  <button id="station-button">駅</button>
+  <button id="all-points-button">すべてのPoint</button>
+</div>
+
+<div id="filter-container">
+  <h3>データフィルター</h3>
+  <div id="dynamic-filter-form">
+    <!-- スキーマから動的に生成されるフィルタフィールドがここに表示されます -->
+  </div>
+  <div id="filter-buttons">
+    <button id="apply-filter-btn">フィルタ適用</button>
+    <button id="clear-filter-btn">クリア</button>
+  </div>
+</div>
+
+<div id="cesiumContainer"></div>
+
+<script type="module">
+  // ホームボタンのイベントリスナーを追加
+  document.getElementById('home-button').addEventListener('click', () => {
+    window.location.href = '/';
+  });
+</script>
+

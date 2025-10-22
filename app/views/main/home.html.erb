@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PLATEAU-1120 - ホーム</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    .container {
+      text-align: center;
+      max-width: 800px;
+      width: 100%;
+    }
+
+    h1 {
+      color: white;
+      font-size: 3rem;
+      margin-bottom: 1rem;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    }
+
+    .subtitle {
+      color: rgba(255, 255, 255, 0.9);
+      font-size: 1.2rem;
+      margin-bottom: 3rem;
+    }
+
+    .card-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+
+    .card {
+      background: white;
+      border-radius: 12px;
+      padding: 2.5rem;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      cursor: pointer;
+      text-decoration: none;
+      color: inherit;
+      display: block;
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+    }
+
+    .card-icon {
+      font-size: 4rem;
+      margin-bottom: 1rem;
+    }
+
+    .card-title {
+      font-size: 1.8rem;
+      font-weight: bold;
+      color: #333;
+      margin-bottom: 0.5rem;
+    }
+
+    .card-description {
+      color: #666;
+      font-size: 1rem;
+      line-height: 1.6;
+    }
+
+    .card-3d {
+      border-top: 4px solid #667eea;
+    }
+
+    .card-2d {
+      border-top: 4px solid #28a745;
+    }
+
+    .features {
+      margin-top: 1rem;
+      padding-top: 1rem;
+      border-top: 1px solid #eee;
+    }
+
+    .feature-item {
+      color: #888;
+      font-size: 0.9rem;
+      margin: 0.3rem 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>🗺️ PLATEAU-1120</h1>
+    <p class="subtitle">地理空間データビューアー - マップモードを選択してください</p>
+
+    <div class="card-container">
+      <a href="/cesium" class="card card-3d">
+        <div class="card-icon">🌐</div>
+        <h2 class="card-title">3D ビュー</h2>
+        <p class="card-description">
+          Cesium.jsを使用した高度な3D地理空間ビューアー
+        </p>
+        <div class="features">
+          <div class="feature-item">✓ 3Dタイルセット対応</div>
+          <div class="feature-item">✓ 建物モデルの表示</div>
+          <div class="feature-item">✓ 地形に沿った表示</div>
+        </div>
+      </a>
+
+      <a href="/map2d" class="card card-2d">
+        <div class="card-icon">🗺️</div>
+        <h2 class="card-title">2D マップ</h2>
+        <p class="card-description">
+          Leafletを使用した軽量で高速な2D地図ビューアー
+        </p>
+        <div class="features">
+          <div class="feature-item">✓ 高速な動作</div>
+          <div class="feature-item">✓ シンプルなUI</div>
+          <div class="feature-item">✓ モバイル対応</div>
+        </div>
+      </a>
+    </div>
+  </div>
+</body>
+</html>
+

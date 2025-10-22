@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PLATEAU-1120 - 2D Map</title>
+  
+  <!-- Leaflet CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+    crossorigin=""/>
+  
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      overflow: hidden;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    }
+
+    /* ボタンコンテナ */
+    #button-container {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      z-index: 1000;
+      background: rgba(255, 255, 255, 0.9);
+      padding: 10px;
+      border-radius: 5px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    #button-container button {
+      margin: 5px;
+      padding: 8px 16px;
+      background-color: #0078d4;
+      color: white;
+      border: none;
+      border-radius: 3px;
+      cursor: pointer;
+      font-size: 14px;
+      transition: background-color 0.2s;
+    }
+
+    #button-container button:hover {
+      background-color: #005a9e;
+    }
+
+    #button-container button.secondary {
+      background-color: #6c757d;
+    }
+
+    #button-container button.secondary:hover {
+      background-color: #5a6268;
+    }
+
+    /* Point選択コンテナ */
+    #point-selection-container {
+      position: absolute;
+      top: 70px;
+      left: 10px;
+      z-index: 1000;
+      background: rgba(255, 255, 255, 0.95);
+      padding: 15px;
+      border-radius: 5px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+      max-width: 300px;
+    }
+
+    #point-selection-container h3 {
+      margin: 0 0 10px 0;
+      font-size: 16px;
+      color: #333;
+    }
+
+    #point-selection-container button {
+      margin: 5px;
+      padding: 8px 16px;
+      background-color: #28a745;
+      color: white;
+      border: none;
+      border-radius: 3px;
+      cursor: pointer;
+      font-size: 14px;
+      transition: background-color 0.2s;
+    }
+
+    #point-selection-container button:hover {
+      background-color: #218838;
+    }
+
+    /* フィルタコンテナ */
+    #filter-container {
+      position: absolute;
+      top: 280px;
+      left: 10px;
+      z-index: 1000;
+      background: rgba(255, 255, 255, 0.95);
+      padding: 15px;
+      border-radius: 5px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+      max-width: 350px;
+      max-height: calc(100vh - 290px);
+      overflow-y: auto;
+    }
+
+    #filter-container h3 {
+      margin: 0 0 15px 0;
+      font-size: 16px;
+      color: #333;
+      border-bottom: 2px solid #0078d4;
+      padding-bottom: 8px;
+    }
+
+    #dynamic-filter-form label {
+      display: block;
+      font-weight: 600;
+      margin-top: 10px;
+      margin-bottom: 5px;
+      color: #555;
+    }
+
+    #dynamic-filter-form input[type="text"],
+    #dynamic-filter-form input[type="number"] {
+      width: calc(100% - 12px);
+      padding: 6px;
+      margin-bottom: 8px;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+      font-size: 14px;
+    }
+
+    #dynamic-filter-form input[type="checkbox"] {
+      margin-right: 5px;
+    }
+
+    #filter-buttons {
+      margin-top: 15px;
+      display: flex;
+      gap: 10px;
+    }
+
+    #filter-buttons button {
+      flex: 1;
+      padding: 10px;
+      border: none;
+      border-radius: 3px;
+      cursor: pointer;
+      font-size: 14px;
+      font-weight: 600;
+      transition: background-color 0.2s;
+    }
+
+    #apply-filter-btn {
+      background-color: #0078d4;
+      color: white;
+    }
+
+    #apply-filter-btn:hover {
+      background-color: #005a9e;
+    }
+
+    #clear-filter-btn {
+      background-color: #6c757d;
+      color: white;
+    }
+
+    #clear-filter-btn:hover {
+      background-color: #5a6268;
+    }
+
+    /* マップコンテナ */
+    #map {
+      width: 100%;
+      height: 100vh;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 1;
+    }
+  </style>
+</head>
+<body>
+  <div id="button-container">
+    <button id="point-button">Point</button>
+    <button id="line-button">Line</button>
+    <button id="multi-line-button">Multi Line</button>
+    <button id="all-data-button" style="background-color: #28a745;">全てのデータ</button>
+    <button id="home-button" class="secondary">🏠 ホーム</button>
+  </div>
+
+  <div id="point-selection-container" style="display: none;">
+    <h3>Pointデータを選択してください：</h3>
+    <button id="landmark-button">ランドマーク</button>
+    <button id="park-button">公園</button>
+    <button id="shelter-button">避難所</button>
+    <button id="station-button">駅</button>
+    <button id="all-points-button">すべてのPoint</button>
+  </div>
+
+  <div id="filter-container">
+    <h3>データフィルター</h3>
+    <div id="dynamic-filter-form">
+      <!-- スキーマから動的に生成されるフィルタフィールドがここに表示されます -->
+    </div>
+    <div id="filter-buttons">
+      <button id="apply-filter-btn">フィルタ適用</button>
+      <button id="clear-filter-btn">クリア</button>
+    </div>
+  </div>
+
+  <div id="map"></div>
+
+  <!-- Leaflet JS -->
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+    crossorigin=""></script>
+
+  <%= javascript_importmap_tags "leaflet_application" %>
+</body>
+</html>
+
