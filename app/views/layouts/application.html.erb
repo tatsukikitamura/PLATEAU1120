@@ -60,7 +60,7 @@
     <meta name="cesium-ion-token" content="<%= ENV['CESIUM_ION_ACCESS_TOKEN'] || '' %>">
   </head>
 
-  <body class="d-flex flex-column" style="min-height: 100vh;">
+  <body class="d-flex flex-column" style="min-height: 100vh;" data-turbo="false">
     <!-- ナビゲーションバー -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow-sm">
       <div class="container">
@@ -185,7 +185,9 @@
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
     <!-- Cesium JS (3D地図ページでのみ読み込み) -->
     <% if request.path.include?('cesium') %>
-      <script src="https://cesium.com/downloads/cesiumjs/releases/1.134/Build/Cesium/Cesium.js"></script>
+      <script src="https://cesium.com/downloads/cesiumjs/releases/1.134/Build/Cesium/Cesium.js" 
+              onload="console.log('Cesium library loaded successfully')" 
+              onerror="console.error('Failed to load Cesium library')"></script>
     <% end %>
     
     <!-- アプリケーション固有のJavaScript -->

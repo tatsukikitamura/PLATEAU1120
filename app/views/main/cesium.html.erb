@@ -1,39 +1,48 @@
 
-<div id="button-container">
-  <button id="point-button">Point</button>
-  <button id="line-button">3D Tiles</button>
-  <button id="osm-buildings-button">OSM Buildings</button>
-  <button id="multi-line-button">Multi Line</button>
-  <button id="all-data-button" style="background-color: #28a745;">全てのデータ</button>
-  <button id="home-button" style="background-color: #6c757d;">🏠 ホーム</button>
+<% content_for :head do %>
+  <meta name="turbo-visit-control" content="reload">
+<% end %>
+
+<!-- 共通のデータコントロール -->
+<%= render 'shared/data_controls' %>
+
+<!-- Cesium専用のPoint選択コンテナ -->
+<div id="point-selection-container" style="position: absolute; top: 70px; left: 10px; z-index: 1000; background: rgba(255, 255, 255, 0.95); padding: 15px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); max-width: 300px; display: none;">
+  <h3 style="margin: 0 0 10px 0; font-size: 16px; color: #333;">Pointデータを選択してください：</h3>
+  <button id="landmark-button" style="margin: 5px; padding: 8px 16px; background-color: #28a745; color: white; border: none; border-radius: 4px; cursor: pointer; font-size: 14px;">ランドマーク</button>
+  <button id="park-button" style="margin: 5px; padding: 8px 16px; background-color: #28a745; color: white; border: none; border-radius: 4px; cursor: pointer; font-size: 14px;">公園</button>
+  <button id="shelter-button" style="margin: 5px; padding: 8px 16px; background-color: #28a745; color: white; border: none; border-radius: 4px; cursor: pointer; font-size: 14px;">避難所</button>
+  <button id="station-button" style="margin: 5px; padding: 8px 16px; background-color: #28a745; color: white; border: none; border-radius: 4px; cursor: pointer; font-size: 14px;">駅</button>
+  <button id="all-points-button" style="margin: 5px; padding: 8px 16px; background-color: #28a745; color: white; border: none; border-radius: 4px; cursor: pointer; font-size: 14px;">すべてのPoint</button>
 </div>
 
-<div id="point-selection-container" style="display: none; margin-top: 10px;">
-  <h3>Pointデータを選択してください：</h3>
-  <button id="landmark-button">ランドマーク</button>
-  <button id="park-button">公園</button>
-  <button id="shelter-button">避難所</button>
-  <button id="station-button">駅</button>
-  <button id="all-points-button">すべてのPoint</button>
-</div>
-
-<div id="filter-container">
-  <h3>データフィルター</h3>
-  <div id="dynamic-filter-form">
-    <!-- スキーマから動的に生成されるフィルタフィールドがここに表示されます -->
-  </div>
-  <div id="filter-buttons">
-    <button id="apply-filter-btn">フィルタ適用</button>
-    <button id="clear-filter-btn">クリア</button>
-  </div>
+<!-- Cesium専用のOSM Buildingsボタン -->
+<div id="osm-buildings-container" style="position: absolute; top: 70px; left: 320px; z-index: 1000; background: rgba(255, 255, 255, 0.95); padding: 15px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); max-width: 200px;">
+  <button id="osm-buildings-button" style="margin: 5px; padding: 8px 16px; background-color: #17a2b8; color: white; border: none; border-radius: 4px; cursor: pointer; font-size: 14px;">OSM Buildings</button>
 </div>
 
 <div id="cesiumContainer"></div>
 
-<script type="module">
-  // ホームボタンのイベントリスナーを追加
-  document.getElementById('home-button').addEventListener('click', () => {
-    window.location.href = '/';
-  });
-</script>
+<%= content_for :javascript do %>
+  <script>
+    // Turboを無効化
+    if (window.Turbo) {
+      Turbo.session.drive = false;
+    }
+    
+    // ホームボタンのイベントリスナーを追加
+    document.addEventListener('DOMContentLoaded', function() {
+      const homeButton = document.getElementById('home-button');
+      if (homeButton) {
+        homeButton.addEventListener('click', () => {
+          window.location.href = '/';
+        });
+      }
+    });
+  </script>
+  
+  <script type="module">
+    import "cesium_application";
+  </script>
+<% end %>
 
