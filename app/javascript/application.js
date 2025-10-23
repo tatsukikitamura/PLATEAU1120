@@ -37,6 +37,17 @@ document.addEventListener("DOMContentLoaded", async function () {
   // Cesiumビューアーの初期化
   const viewer = new Cesium.Viewer("cesiumContainer", {
     terrain: Cesium.Terrain.fromWorldTerrain(),
+    // 下部のウィジェットを無効化
+    timeline: false,           // タイムラインを非表示
+    animation: false,          // アニメーションコントロールを非表示
+    baseLayerPicker: false,    // ベースレイヤーピッカーを非表示
+    fullscreenButton: false,   // フルスクリーンボタンを非表示
+    vrButton: false,          // VRボタンを非表示
+    geocoder: false,          // ジオコーダーを非表示
+    homeButton: false,        // ホームボタンを非表示
+    sceneModePicker: false,   // シーンモードピッカーを非表示
+    navigationHelpButton: false, // ナビゲーションヘルプボタンを非表示
+    navigationInstructionsInitiallyVisible: false, // ナビゲーション指示を非表示
   });
 
   // カメラの初期位置設定（千葉県付近）

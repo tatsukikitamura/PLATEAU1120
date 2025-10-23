@@ -55,6 +55,25 @@ export function initializeUIController(viewer) {
     lastLoadedUrls: [],
   };
 
+  // フィルターコンテナの取得と初期状態設定
+  const filterContainer = document.getElementById("filter-container");
+  if (filterContainer) {
+    filterContainer.style.display = "none"; // 初期状態で非表示
+  }
+
+  // フィルターコンテナの表示/非表示を制御する関数
+  const showFilterContainer = () => {
+    if (filterContainer) {
+      filterContainer.style.display = "block";
+    }
+  };
+
+  const hideFilterContainer = () => {
+    if (filterContainer) {
+      filterContainer.style.display = "none";
+    }
+  };
+
   // 複数スキーマの読み込みとフィールド統合
   async function loadAndMergeSchemas(urls) {
     const schemaUrls = filterUrlsWithSchema(urls);
@@ -93,6 +112,7 @@ export function initializeUIController(viewer) {
   lineButton.addEventListener("click", () => {
     console.log("Lineボタンがクリックされました");
     load3DTiles(viewer, TILESET_URLS);
+    hideFilterContainer();
   });
 
   // Multi Lineボタン: MultiLineStringデータのみロード
@@ -104,6 +124,7 @@ export function initializeUIController(viewer) {
     );
     loadGeoJSON(viewer, multiLineUrls);
     filterState.lastLoadedUrls = multiLineUrls;
+    hideFilterContainer();
   });
 
   // OSM Buildingsボタン: 一度だけロード
@@ -116,6 +137,7 @@ export function initializeUIController(viewer) {
       }
       await loadOsmBuildings(viewer);
       osmLoaded = true;
+      hideFilterContainer();
     });
   }
 
@@ -126,6 +148,8 @@ export function initializeUIController(viewer) {
     clearGeoJSONDataSources(viewer);
     await loadGeoJSON(viewer, urls);
     filterState.lastLoadedUrls = urls;
+    
+    showFilterContainer();
     
     // スキーマを読み込んでフィルターUIを更新
     const schemaFieldsMap = await loadAndMergeSchemas(urls);
@@ -140,6 +164,8 @@ export function initializeUIController(viewer) {
     await loadGeoJSON(viewer, urls);
     filterState.lastLoadedUrls = urls;
     
+    showFilterContainer();
+    
     // スキーマを読み込んでフィルターUIを更新
     const schemaFieldsMap = await loadAndMergeSchemas(urls);
     renderFilterFields(filterFormContainer, schemaFieldsMap, filterState.criteria);
@@ -152,6 +178,8 @@ export function initializeUIController(viewer) {
     clearGeoJSONDataSources(viewer);
     await loadGeoJSON(viewer, urls);
     filterState.lastLoadedUrls = urls;
+    
+    showFilterContainer();
     
     // スキーマを読み込んでフィルターUIを更新
     const schemaFieldsMap = await loadAndMergeSchemas(urls);
@@ -166,6 +194,8 @@ export function initializeUIController(viewer) {
     await loadGeoJSON(viewer, urls);
     filterState.lastLoadedUrls = urls;
     
+    showFilterContainer();
+    
     // スキーマを読み込んでフィルターUIを更新
     const schemaFieldsMap = await loadAndMergeSchemas(urls);
     renderFilterFields(filterFormContainer, schemaFieldsMap, filterState.criteria);
@@ -177,6 +207,8 @@ export function initializeUIController(viewer) {
     clearGeoJSONDataSources(viewer);
     await loadGeoJSON(viewer, GEOJSON_URLS);
     filterState.lastLoadedUrls = GEOJSON_URLS;
+    
+    showFilterContainer();
     
     // スキーマを読み込んでフィルターUIを更新
     const schemaFieldsMap = await loadAndMergeSchemas(GEOJSON_URLS);
@@ -190,6 +222,8 @@ export function initializeUIController(viewer) {
       clearGeoJSONDataSources(viewer);
       await loadGeoJSON(viewer, GEOJSON_URLS);
       filterState.lastLoadedUrls = GEOJSON_URLS;
+      
+      showFilterContainer();
       
       // スキーマを読み込んでフィルターUIを更新
       const schemaFieldsMap = await loadAndMergeSchemas(GEOJSON_URLS);

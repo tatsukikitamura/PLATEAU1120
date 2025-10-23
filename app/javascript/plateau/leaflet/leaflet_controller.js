@@ -54,6 +54,25 @@ export function initializeLeafletController() {
     lastLoadedUrls: [],
   };
 
+  // フィルターコンテナの取得と初期状態設定
+  const filterContainer = document.getElementById("filter-container");
+  if (filterContainer) {
+    filterContainer.style.display = "none"; // 初期状態で非表示
+  }
+
+  // フィルターコンテナの表示/非表示を制御する関数
+  const showFilterContainer = () => {
+    if (filterContainer) {
+      filterContainer.style.display = "block";
+    }
+  };
+
+  const hideFilterContainer = () => {
+    if (filterContainer) {
+      filterContainer.style.display = "none";
+    }
+  };
+
   // 複数スキーマの読み込みとフィールド統合
   async function loadAndMergeSchemas(urls) {
     const schemaUrls = filterUrlsWithSchema(urls);
@@ -101,6 +120,8 @@ export function initializeLeafletController() {
     await loadGeoJSON(map, urls);
     filterState.lastLoadedUrls = urls;
     
+    showFilterContainer();
+    
     const schemaFieldsMap = await loadAndMergeSchemas(urls);
     renderFilterFields(filterFormContainer, schemaFieldsMap, filterState.criteria);
   });
@@ -112,6 +133,8 @@ export function initializeLeafletController() {
     clearGeoJSONLayers(map);
     await loadGeoJSON(map, urls);
     filterState.lastLoadedUrls = urls;
+    
+    showFilterContainer();
     
     const schemaFieldsMap = await loadAndMergeSchemas(urls);
     renderFilterFields(filterFormContainer, schemaFieldsMap, filterState.criteria);
@@ -125,6 +148,8 @@ export function initializeLeafletController() {
     await loadGeoJSON(map, urls);
     filterState.lastLoadedUrls = urls;
     
+    showFilterContainer();
+    
     const schemaFieldsMap = await loadAndMergeSchemas(urls);
     renderFilterFields(filterFormContainer, schemaFieldsMap, filterState.criteria);
   });
@@ -137,6 +162,8 @@ export function initializeLeafletController() {
     await loadGeoJSON(map, urls);
     filterState.lastLoadedUrls = urls;
     
+    showFilterContainer();
+    
     const schemaFieldsMap = await loadAndMergeSchemas(urls);
     renderFilterFields(filterFormContainer, schemaFieldsMap, filterState.criteria);
   });
@@ -147,6 +174,8 @@ export function initializeLeafletController() {
     clearGeoJSONLayers(map);
     await loadGeoJSON(map, GEOJSON_URLS);
     filterState.lastLoadedUrls = GEOJSON_URLS;
+    
+    showFilterContainer();
     
     const schemaFieldsMap = await loadAndMergeSchemas(GEOJSON_URLS);
     renderFilterFields(filterFormContainer, schemaFieldsMap, filterState.criteria);
@@ -159,6 +188,7 @@ export function initializeLeafletController() {
     clearGeoJSONLayers(map);
     await loadGeoJSON(map, urls);
     filterState.lastLoadedUrls = urls;
+    hideFilterContainer();
   });
 
   // Multi Lineボタン
@@ -172,6 +202,7 @@ export function initializeLeafletController() {
     clearGeoJSONLayers(map);
     await loadGeoJSON(map, urls);
     filterState.lastLoadedUrls = urls;
+    hideFilterContainer();
   });
 
   // 全てのデータボタン
@@ -180,6 +211,8 @@ export function initializeLeafletController() {
     clearGeoJSONLayers(map);
     await loadGeoJSON(map, GEOJSON_URLS);
     filterState.lastLoadedUrls = GEOJSON_URLS;
+    
+    showFilterContainer();
     
     // スキーマを読み込んでフィルターUIを更新
     const schemaFieldsMap = await loadAndMergeSchemas(GEOJSON_URLS);

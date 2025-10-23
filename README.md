@@ -115,12 +115,10 @@ public/data/
 │   └── tran/
 │       └── tran_mvt_lod1/
 └── tileset/
-    ├── bldg/
-    │   ├── bldg_3dtiles_lod1/
-    │   ├── bldg_3dtiles_lod2/
-    │   └── bldg_3dtiles_lod2_no_texture/
-    └── brid/
-        └── brid_3dtiles_lod2/
+    ├── building_lod1/
+    ├── building_lod2/
+    ├── building_lod2_no_texture/
+    └── bridge_lod2/
 ```
 
 ### 6. アプリケーションの起動
