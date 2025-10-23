@@ -14,4 +14,12 @@ class MainController < ApplicationController
   def map2d
     # Leaflet 2Dマップビュー
   end
+
+  def tourist_route
+    # 観光ルート最適化AIページ
+  end
+
+  def info
+    # プロジェクト概要ページ
+  end
 end

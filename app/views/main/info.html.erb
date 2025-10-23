@@ -1,0 +1,406 @@
+<% content_for :title, "プロジェクト概要 - PLATEAU-1120" %>
+
+<div class="container my-5">
+  <!-- プロジェクト概要ヘッダー -->
+  <div class="row mb-5">
+    <div class="col-12">
+      <div class="text-center">
+        <h1 class="display-4 fw-bold text-primary mb-3">
+          <i class="fas fa-info-circle me-3"></i>
+          プロジェクト概要
+        </h1>
+        <p class="lead text-muted">
+          PLATEAU-1120は千葉市の地理空間データを活用した次世代デジタルツイン・観光ルート最適化システムです
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- プロジェクト概要セクション -->
+  <div class="row mb-5">
+    <div class="col-lg-8 mx-auto">
+      <div class="card shadow-sm">
+        <div class="card-header bg-primary text-white">
+          <h3 class="mb-0">
+            <i class="fas fa-project-diagram me-2"></i>
+            プロジェクトの目的
+          </h3>
+        </div>
+        <div class="card-body">
+          <p class="card-text">
+            PLATEAU-1120は、国土交通省が提供するPLATEAU（3D都市モデル）データと千葉市の地理空間データを活用し、
+            3D/2D地図ビューアーとAI最適化技術を組み合わせた次世代デジタルツインシステムです。
+          </p>
+          <p class="card-text">
+            このシステムにより、都市計画、災害対策、観光振興、市民サービスの向上など、
+            様々な分野でのデータ活用を促進し、持続可能なスマートシティの実現を目指しています。
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 主要機能セクション -->
+  <div class="row mb-5">
+    <div class="col-12">
+      <h2 class="text-center mb-4">
+        <i class="fas fa-star me-2"></i>
+        主要機能
+      </h2>
+    </div>
+  </div>
+
+  <div class="row g-4 mb-5">
+    <div class="col-lg-4 col-md-6">
+      <div class="card h-100 feature-card">
+        <div class="card-body text-center p-4">
+          <div class="feature-icon mb-3 text-primary">
+            <i class="fas fa-cube fa-3x"></i>
+          </div>
+          <h4 class="card-title">3D地理空間ビューアー</h4>
+          <p class="card-text">
+            CesiumJSを使用した高度な3D地理空間ビューアー。
+            PLATEAU 3D Tilesデータの読み込みと表示、建物モデルの表示（LOD1/LOD2対応）、
+            地形に沿った表示が可能です。
+          </p>
+          <ul class="list-unstyled">
+            <li><i class="fas fa-check text-success me-2"></i>3D Tilesデータ対応</li>
+            <li><i class="fas fa-check text-success me-2"></i>建物モデル表示</li>
+            <li><i class="fas fa-check text-success me-2"></i>地形に沿った表示</li>
+            <li><i class="fas fa-check text-success me-2"></i>災害リスク可視化</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-4 col-md-6">
+      <div class="card h-100 feature-card">
+        <div class="card-body text-center p-4">
+          <div class="feature-icon mb-3 text-success">
+            <i class="fas fa-map fa-3x"></i>
+          </div>
+          <h4 class="card-title">2D地図ビューアー</h4>
+          <p class="card-text">
+            Leafletを使用した軽量で高速な2D地図ビューアー。
+            モバイルデバイスでも快適に動作し、フィルタリング機能も充実しています。
+          </p>
+          <ul class="list-unstyled">
+            <li><i class="fas fa-check text-success me-2"></i>高速な動作</li>
+            <li><i class="fas fa-check text-success me-2"></i>シンプルなUI</li>
+            <li><i class="fas fa-check text-success me-2"></i>モバイル対応</li>
+            <li><i class="fas fa-check text-success me-2"></i>フィルタリング機能</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-4 col-md-6">
+      <div class="card h-100 feature-card">
+        <div class="card-body text-center p-4">
+          <div class="feature-icon mb-3 text-warning">
+            <i class="fas fa-route fa-3x"></i>
+          </div>
+          <h4 class="card-title">観光ルート最適化AI</h4>
+          <p class="card-text">
+            千葉市の公園・ランドマークデータを活用したAI最適化システム。
+            ユーザーの興味に基づいて最適な観光ルートを提案します。
+          </p>
+          <ul class="list-unstyled">
+            <li><i class="fas fa-check text-success me-2"></i>AI最適化アルゴリズム</li>
+            <li><i class="fas fa-check text-success me-2"></i>時間効率最大化</li>
+            <li><i class="fas fa-check text-success me-2"></i>アクセシビリティ考慮</li>
+            <li><i class="fas fa-check text-success me-2"></i>リアルタイム可視化</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- データ統計セクション -->
+  <div class="row mb-5">
+    <div class="col-12">
+      <div class="card data-stats-card">
+        <div class="card-header bg-info text-white">
+          <h3 class="mb-0">
+            <i class="fas fa-database me-2"></i>
+            千葉市データ統計
+          </h3>
+        </div>
+        <div class="card-body">
+          <div class="row text-center">
+            <div class="col-md-3 col-6 mb-3">
+              <div class="stat-item">
+                <div class="stat-number text-primary">20,000+</div>
+                <div class="stat-label">公園データ</div>
+              </div>
+            </div>
+            <div class="col-md-3 col-6 mb-3">
+              <div class="stat-item">
+                <div class="stat-number text-success">7,000+</div>
+                <div class="stat-label">ランドマーク</div>
+              </div>
+            </div>
+            <div class="col-md-3 col-6 mb-3">
+              <div class="stat-item">
+                <div class="stat-number text-info">900+</div>
+                <div class="stat-label">駅データ</div>
+              </div>
+            </div>
+            <div class="col-md-3 col-6 mb-3">
+              <div class="stat-item">
+                <div class="stat-number text-warning">3,779</div>
+                <div class="stat-label">建物モデル</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 技術仕様セクション -->
+  <div class="row mb-5">
+    <div class="col-lg-6 mb-4">
+      <div class="card tech-spec-card">
+        <div class="card-header">
+          <h4 class="mb-0">
+            <i class="fas fa-cogs me-2"></i>
+            技術スタック
+          </h4>
+        </div>
+        <div class="card-body">
+          <div class="tech-list">
+            <div class="tech-item">
+              <strong>Backend:</strong> Ruby on Rails 8.0.3
+            </div>
+            <div class="tech-item">
+              <strong>3D Engine:</strong> CesiumJS 1.134
+            </div>
+            <div class="tech-item">
+              <strong>2D Map:</strong> Leaflet 1.9.4
+            </div>
+            <div class="tech-item">
+              <strong>Frontend:</strong> Hotwire (Turbo + Stimulus)
+            </div>
+            <div class="tech-item">
+              <strong>Database:</strong> SQLite3
+            </div>
+            <div class="tech-item">
+              <strong>Deployment:</strong> Kamal + Docker
+            </div>
+            <div class="tech-item">
+              <strong>Data Format:</strong> 3D Tiles + GeoJSON
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-6 mb-4">
+      <div class="card features-card">
+        <div class="card-header">
+          <h4 class="mb-0">
+            <i class="fas fa-tools me-2"></i>
+            開発ツール
+          </h4>
+        </div>
+        <div class="card-body">
+          <div class="features-list">
+            <div class="feature-item">
+              <i class="fas fa-check text-success me-2"></i>
+              Brakeman（セキュリティ分析）
+            </div>
+            <div class="feature-item">
+              <i class="fas fa-check text-success me-2"></i>
+              RuboCop（コード品質）
+            </div>
+            <div class="feature-item">
+              <i class="fas fa-check text-success me-2"></i>
+              Thruster（HTTP アセット最適化）
+            </div>
+            <div class="feature-item">
+              <i class="fas fa-check text-success me-2"></i>
+              Importmap（アセット管理）
+            </div>
+            <div class="feature-item">
+              <i class="fas fa-check text-success me-2"></i>
+              Puma（Webサーバー）
+            </div>
+            <div class="feature-item">
+              <i class="fas fa-check text-success me-2"></i>
+              Bootstrap 5（UI フレームワーク）
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- データソースセクション -->
+  <div class="row mb-5">
+    <div class="col-12">
+      <div class="card">
+        <div class="card-header bg-secondary text-white">
+          <h3 class="mb-0">
+            <i class="fas fa-download me-2"></i>
+            データソース
+          </h3>
+        </div>
+        <div class="card-body">
+          <div class="row">
+            <div class="col-md-6">
+              <h5>PLATEAU データ</h5>
+              <ul>
+                <li>3D Tiles（建物モデル LOD1/LOD2）</li>
+                <li>MVT（Mapbox Vector Tiles）</li>
+                <li>メタデータ（luse, tran）</li>
+              </ul>
+            </div>
+            <div class="col-md-6">
+              <h5>GeoJSON データ</h5>
+              <ul>
+                <li>Point（ランドマーク、公園、避難所、駅）</li>
+                <li>MultiLineString（境界線、鉄道、緊急輸送道路）</li>
+                <li>スキーマファイル（フィルタリング用）</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 活用事例セクション -->
+  <div class="row mb-5">
+    <div class="col-12">
+      <h2 class="text-center mb-4">
+        <i class="fas fa-lightbulb me-2"></i>
+        活用事例
+      </h2>
+    </div>
+  </div>
+
+  <div class="row g-4">
+    <div class="col-lg-4 col-md-6">
+      <div class="card h-100 use-case-card">
+        <div class="card-body text-center p-4">
+          <div class="use-case-icon mb-3 text-primary">
+            <i class="fas fa-city fa-2x"></i>
+          </div>
+          <h5 class="card-title">都市計画</h5>
+          <p class="card-text">
+            3D都市モデルを活用した都市計画の検討・可視化
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-4 col-md-6">
+      <div class="card h-100 use-case-card">
+        <div class="card-body text-center p-4">
+          <div class="use-case-icon mb-3 text-danger">
+            <i class="fas fa-exclamation-triangle fa-2x"></i>
+          </div>
+          <h5 class="card-title">災害対策</h5>
+          <p class="card-text">
+            災害リスクの可視化と避難経路の最適化
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-4 col-md-6">
+      <div class="card h-100 use-case-card">
+        <div class="card-body text-center p-4">
+          <div class="use-case-icon mb-3 text-success">
+            <i class="fas fa-map-marked-alt fa-2x"></i>
+          </div>
+          <h5 class="card-title">観光振興</h5>
+          <p class="card-text">
+            AI最適化による観光ルート提案と地域活性化
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- カスタムCSS -->
+<style>
+.feature-card {
+  border: none;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  border-radius: 12px;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.data-stats-card {
+  border: none;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+}
+
+.stat-item {
+  padding: 1rem;
+}
+
+.stat-number {
+  font-size: 2rem;
+  font-weight: bold;
+  display: block;
+}
+
+.stat-label {
+  font-size: 0.9rem;
+  color: #6c757d;
+  margin-top: 0.25rem;
+}
+
+.tech-spec-card, .features-card {
+  border: none;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  height: 100%;
+}
+
+.tech-list, .features-list {
+  margin: 0;
+}
+
+.tech-item, .feature-item {
+  margin: 0.75rem 0;
+  font-size: 0.95rem;
+}
+
+.use-case-card {
+  border: none;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  border-radius: 12px;
+}
+
+.use-case-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.card-header {
+  border-radius: 12px 12px 0 0 !important;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+@media (max-width: 768px) {
+  .stat-number {
+    font-size: 1.5rem;
+  }
+  
+  .feature-icon {
+    font-size: 2rem;
+  }
+}
+</style>
