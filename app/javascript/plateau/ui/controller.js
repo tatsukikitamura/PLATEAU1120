@@ -7,7 +7,6 @@ import { clearGeoJSONDataSources } from "plateau/utils/data_manager";
 import {
   loadSchema,
   extractPropertyFields,
-  buildPredicateFromCriteria,
   buildMultiSchemaPredicates,
 } from "plateau/filters/schema";
 import {
@@ -22,6 +21,13 @@ import {
   filterUrlsWithSchema,
   groupUrlsByDataType 
 } from "plateau/filters/data_type_mapping";
+import {
+  loadGoogleMapsPlaces,
+  loadGoogleMapsDirections,
+  loadGoogleMapsGeocode,
+  clearGoogleMapsData,
+  toggleGoogleMapsData
+} from "plateau/cesium/google_maps_loader";
 
 /**
  * UIコントローラーを初期化する
@@ -47,6 +53,14 @@ export function initializeUIController(viewer) {
   const filterFormContainer = document.getElementById("dynamic-filter-form");
   const applyFilterBtn = document.getElementById("apply-filter-btn");
   const clearFilterBtn = document.getElementById("clear-filter-btn");
+  
+  // Google Maps関連のDOM要素
+  const googleMapsToggleBtn = document.getElementById("google-maps-toggle-btn");
+  const googleMapsContainer = document.getElementById("google-maps-container");
+  const placesSearchBtn = document.getElementById("places-search-btn");
+  const directionsBtn = document.getElementById("directions-btn");
+  const geocodeBtn = document.getElementById("geocode-btn");
+  const clearGoogleMapsBtn = document.getElementById("clear-google-maps-btn");
 
   // フィルターUIの状態を保持（複数スキーマ対応）
   const filterState = {
@@ -61,6 +75,11 @@ export function initializeUIController(viewer) {
   if (filterContainer) {
     filterContainer.style.display = "none"; // 初期状態で非表示
   }
+  
+  // Google Mapsコンテナの取得と初期状態設定
+  if (googleMapsContainer) {
+    googleMapsContainer.style.display = "none"; // 初期状態で非表示
+  }
 
   // フィルターコンテナの表示/非表示を制御する関数
   const showFilterContainer = () => {
@@ -74,6 +93,19 @@ export function initializeUIController(viewer) {
       filterContainer.style.display = "none";
     }
   };
+  
+  // Google Mapsコンテナの表示/非表示を制御する関数
+  const showGoogleMapsContainer = () => {
+    if (googleMapsContainer) {
+      googleMapsContainer.style.display = "block";
+    }
+  };
+
+  const hideGoogleMapsContainer = () => {
+    if (googleMapsContainer) {
+      googleMapsContainer.style.display = "none";
+    }
+  };
 
   // フィルターボタンのクリックイベント
   if (filterToggleBtn) {
@@ -81,8 +113,22 @@ export function initializeUIController(viewer) {
       console.log("フィルターボタンがクリックされました");
       if (filterContainer && filterContainer.style.display === "none") {
         showFilterContainer();
+        hideGoogleMapsContainer(); // Google Mapsコンテナを非表示
       } else {
         hideFilterContainer();
+      }
+    });
+  }
+  
+  // Google Mapsボタンのクリックイベント
+  if (googleMapsToggleBtn) {
+    googleMapsToggleBtn.addEventListener("click", () => {
+      console.log("Google Mapsボタンがクリックされました");
+      if (googleMapsContainer && googleMapsContainer.style.display === "none") {
+        showGoogleMapsContainer();
+        hideFilterContainer(); // フィルターコンテナを非表示
+      } else {
+        hideGoogleMapsContainer();
       }
     });
   }
@@ -252,4 +298,102 @@ export function initializeUIController(viewer) {
       loadGeoJSON(viewer, filterState.lastLoadedUrls);
     }
   });
+  
+  // Google Maps Places検索ボタン
+  if (placesSearchBtn) {
+    placesSearchBtn.addEventListener("click", async () => {
+      const queryInput = document.getElementById("places-query-input");
+      const locationInput = document.getElementById("places-location-input");
+      const radiusInput = document.getElementById("places-radius-input");
+      const typeInput = document.getElementById("places-type-input");
+      
+      if (!queryInput || !queryInput.value.trim()) {
+        alert("検索クエリを入力してください");
+        return;
+      }
+      
+      const searchParams = {
+        query: queryInput.value.trim(),
+        radius: radiusInput ? parseInt(radiusInput.value) || 5000 : 5000,
+        type: typeInput ? typeInput.value : null
+      };
+      
+      // 位置情報の処理
+      if (locationInput && locationInput.value.trim()) {
+        searchParams.location = locationInput.value.trim();
+      }
+      
+      try {
+        await loadGoogleMapsPlaces(viewer, searchParams, {
+          stroke: Cesium.Color.HOTPINK,
+          fill: Cesium.Color.PINK,
+          markerSymbol: '🍽️'
+        });
+      } catch (error) {
+        console.error("Places検索エラー:", error);
+        alert("Places検索に失敗しました: " + error.message);
+      }
+    });
+  }
+  
+  // Google Maps Directionsボタン
+  if (directionsBtn) {
+    directionsBtn.addEventListener("click", async () => {
+      const originInput = document.getElementById("directions-origin-input");
+      const destinationInput = document.getElementById("directions-destination-input");
+      const modeInput = document.getElementById("directions-mode-input");
+      
+      if (!originInput || !originInput.value.trim() || !destinationInput || !destinationInput.value.trim()) {
+        alert("出発地と目的地を入力してください");
+        return;
+      }
+      
+      const routeParams = {
+        origin: originInput.value.trim(),
+        destination: destinationInput.value.trim(),
+        mode: modeInput ? modeInput.value : 'driving'
+      };
+      
+      try {
+        await loadGoogleMapsDirections(viewer, routeParams, {
+          stroke: Cesium.Color.YELLOW,
+          strokeWidth: 4
+        });
+      } catch (error) {
+        console.error("Directions検索エラー:", error);
+        alert("ルート検索に失敗しました: " + error.message);
+      }
+    });
+  }
+  
+  // Google Maps Geocodingボタン
+  if (geocodeBtn) {
+    geocodeBtn.addEventListener("click", async () => {
+      const addressInput = document.getElementById("geocode-address-input");
+      
+      if (!addressInput || !addressInput.value.trim()) {
+        alert("住所を入力してください");
+        return;
+      }
+      
+      try {
+        await loadGoogleMapsGeocode(viewer, addressInput.value.trim(), {
+          stroke: Cesium.Color.BLUE,
+          fill: Cesium.Color.LIGHTBLUE,
+          markerSymbol: '📍'
+        });
+      } catch (error) {
+        console.error("Geocoding検索エラー:", error);
+        alert("住所検索に失敗しました: " + error.message);
+      }
+    });
+  }
+  
+  // Google Mapsデータクリアボタン
+  if (clearGoogleMapsBtn) {
+    clearGoogleMapsBtn.addEventListener("click", () => {
+      clearGoogleMapsData(viewer);
+      console.log("Google Mapsデータをクリアしました");
+    });
+  }
 }

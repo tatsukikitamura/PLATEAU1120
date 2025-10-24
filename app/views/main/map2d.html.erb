@@ -6,29 +6,10 @@
 <!-- 共通のデータコントロール -->
 <%= render 'shared/data_controls' %>
 
-<!-- ホームボタン -->
-<div id="home-button-container" style="position: absolute; top: 10px; left: 10px; z-index: 1000;">
-  <button id="home-button" style="padding: 10px 15px; background-color: #007bff; color: white; border: none; border-radius: 5px; cursor: pointer; font-size: 14px; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);">
-    <i class="fas fa-home me-1"></i>
-    ホーム
-  </button>
-</div>
 
 <div id="map" style="height: 100vh;"></div>
 
 <%= content_for :javascript do %>
-  <script>
-    // ホームボタンのイベントリスナーを追加
-    document.addEventListener('DOMContentLoaded', function() {
-      const homeButton = document.getElementById('home-button');
-      if (homeButton) {
-        homeButton.addEventListener('click', () => {
-          window.location.href = '/';
-        });
-      }
-    });
-  </script>
-  
   <script type="module">
     import "leaflet_application";
   </script>

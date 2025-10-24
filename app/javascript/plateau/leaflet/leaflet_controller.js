@@ -42,6 +42,7 @@ export function initializeLeafletController() {
   const shelterButton = document.getElementById("shelter-button");
   const stationButton = document.getElementById("station-button");
   const allPointsButton = document.getElementById("all-points-button");
+  const filterToggleBtn = document.getElementById("filter-toggle-btn");
   const filterFormContainer = document.getElementById("dynamic-filter-form");
   const applyFilterBtn = document.getElementById("apply-filter-btn");
   const clearFilterBtn = document.getElementById("clear-filter-btn");
@@ -72,6 +73,18 @@ export function initializeLeafletController() {
       filterContainer.style.display = "none";
     }
   };
+
+  // フィルターボタンのクリックイベント
+  if (filterToggleBtn) {
+    filterToggleBtn.addEventListener("click", () => {
+      console.log("フィルターボタンがクリックされました");
+      if (filterContainer && filterContainer.style.display === "none") {
+        showFilterContainer();
+      } else {
+        hideFilterContainer();
+      }
+    });
+  }
 
   // 複数スキーマの読み込みとフィールド統合
   async function loadAndMergeSchemas(urls) {
@@ -120,7 +133,7 @@ export function initializeLeafletController() {
     await loadGeoJSON(map, urls);
     filterState.lastLoadedUrls = urls;
     
-    showFilterContainer();
+    hideFilterContainer();
     
     const schemaFieldsMap = await loadAndMergeSchemas(urls);
     renderFilterFields(filterFormContainer, schemaFieldsMap, filterState.criteria);
@@ -134,7 +147,7 @@ export function initializeLeafletController() {
     await loadGeoJSON(map, urls);
     filterState.lastLoadedUrls = urls;
     
-    showFilterContainer();
+    hideFilterContainer();
     
     const schemaFieldsMap = await loadAndMergeSchemas(urls);
     renderFilterFields(filterFormContainer, schemaFieldsMap, filterState.criteria);
@@ -162,7 +175,7 @@ export function initializeLeafletController() {
     await loadGeoJSON(map, urls);
     filterState.lastLoadedUrls = urls;
     
-    showFilterContainer();
+    hideFilterContainer();
     
     const schemaFieldsMap = await loadAndMergeSchemas(urls);
     renderFilterFields(filterFormContainer, schemaFieldsMap, filterState.criteria);
@@ -175,7 +188,7 @@ export function initializeLeafletController() {
     await loadGeoJSON(map, GEOJSON_URLS);
     filterState.lastLoadedUrls = GEOJSON_URLS;
     
-    showFilterContainer();
+    hideFilterContainer();
     
     const schemaFieldsMap = await loadAndMergeSchemas(GEOJSON_URLS);
     renderFilterFields(filterFormContainer, schemaFieldsMap, filterState.criteria);
@@ -212,7 +225,7 @@ export function initializeLeafletController() {
     await loadGeoJSON(map, GEOJSON_URLS);
     filterState.lastLoadedUrls = GEOJSON_URLS;
     
-    showFilterContainer();
+    hideFilterContainer();
     
     // スキーマを読み込んでフィルターUIを更新
     const schemaFieldsMap = await loadAndMergeSchemas(GEOJSON_URLS);

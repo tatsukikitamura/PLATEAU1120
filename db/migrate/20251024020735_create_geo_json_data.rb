@@ -11,9 +11,9 @@ class CreateGeoJsonData < ActiveRecord::Migration[8.0]
 
       t.timestamps
     end
-    
+
     add_index :geo_json_data, :data_type
     add_index :geo_json_data, :visible
-    add_index :geo_json_data, [:data_type, :visible]
+    add_index :geo_json_data, [ :data_type, :visible ]
   end
 end
