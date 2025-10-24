@@ -38,12 +38,14 @@ export function initializeUIController(viewer) {
   const pointButton = document.getElementById("point-button");
   const lineButton = document.getElementById("line-button");
   const multiLineButton = document.getElementById("multi-line-button");
+  const googleapiButton = document.getElementById("googleapi-button");
   const allDataButton = document.getElementById("all-data-button");
   const osmBuildingsButton = document.getElementById("osm-buildings-button");
   const homeButton = document.getElementById("home-button");
   const pointSelectionContainer = document.getElementById(
     "point-selection-container"
   );
+  const googleapiContainer = document.getElementById("googleapi-container");
   const landmarkButton = document.getElementById("landmark-button");
   const parkButton = document.getElementById("park-button");
   const shelterButton = document.getElementById("shelter-button");
@@ -54,13 +56,13 @@ export function initializeUIController(viewer) {
   const applyFilterBtn = document.getElementById("apply-filter-btn");
   const clearFilterBtn = document.getElementById("clear-filter-btn");
   
-  // Google Maps関連のDOM要素
-  const googleMapsToggleBtn = document.getElementById("google-maps-toggle-btn");
-  const googleMapsContainer = document.getElementById("google-maps-container");
+  // ナビ関連のDOM要素
+  const navToggleBtn = document.getElementById("nav-toggle-btn");
+  const navContainer = document.getElementById("nav-container");
   const placesSearchBtn = document.getElementById("places-search-btn");
   const directionsBtn = document.getElementById("directions-btn");
   const geocodeBtn = document.getElementById("geocode-btn");
-  const clearGoogleMapsBtn = document.getElementById("clear-google-maps-btn");
+  const clearNavBtn = document.getElementById("clear-nav-btn");
 
   // フィルターUIの状態を保持（複数スキーマ対応）
   const filterState = {
@@ -76,9 +78,14 @@ export function initializeUIController(viewer) {
     filterContainer.style.display = "none"; // 初期状態で非表示
   }
   
-  // Google Mapsコンテナの取得と初期状態設定
-  if (googleMapsContainer) {
-    googleMapsContainer.style.display = "none"; // 初期状態で非表示
+  // ナビコンテナの取得と初期状態設定
+  if (navContainer) {
+    navContainer.style.display = "none"; // 初期状態で非表示
+  }
+  
+  // GoogleAPIコンテナの取得と初期状態設定
+  if (googleapiContainer) {
+    googleapiContainer.style.display = "none"; // 初期状態で非表示
   }
 
   // フィルターコンテナの表示/非表示を制御する関数
@@ -94,16 +101,29 @@ export function initializeUIController(viewer) {
     }
   };
   
-  // Google Mapsコンテナの表示/非表示を制御する関数
-  const showGoogleMapsContainer = () => {
-    if (googleMapsContainer) {
-      googleMapsContainer.style.display = "block";
+  // ナビコンテナの表示/非表示を制御する関数
+  const showNavContainer = () => {
+    if (navContainer) {
+      navContainer.style.display = "block";
     }
   };
 
-  const hideGoogleMapsContainer = () => {
-    if (googleMapsContainer) {
-      googleMapsContainer.style.display = "none";
+  const hideNavContainer = () => {
+    if (navContainer) {
+      navContainer.style.display = "none";
+    }
+  };
+  
+  // GoogleAPIコンテナの表示/非表示を制御する関数
+  const showGoogleapiContainer = () => {
+    if (googleapiContainer) {
+      googleapiContainer.style.display = "block";
+    }
+  };
+
+  const hideGoogleapiContainer = () => {
+    if (googleapiContainer) {
+      googleapiContainer.style.display = "none";
     }
   };
 
@@ -113,22 +133,24 @@ export function initializeUIController(viewer) {
       console.log("フィルターボタンがクリックされました");
       if (filterContainer && filterContainer.style.display === "none") {
         showFilterContainer();
-        hideGoogleMapsContainer(); // Google Mapsコンテナを非表示
+        hideNavContainer(); // ナビコンテナを非表示
+        hideGoogleapiContainer(); // GoogleAPIコンテナを非表示
       } else {
         hideFilterContainer();
       }
     });
   }
   
-  // Google Mapsボタンのクリックイベント
-  if (googleMapsToggleBtn) {
-    googleMapsToggleBtn.addEventListener("click", () => {
-      console.log("Google Mapsボタンがクリックされました");
-      if (googleMapsContainer && googleMapsContainer.style.display === "none") {
-        showGoogleMapsContainer();
+  // ナビボタンのクリックイベント
+  if (navToggleBtn) {
+    navToggleBtn.addEventListener("click", () => {
+      console.log("ナビボタンがクリックされました");
+      if (navContainer && navContainer.style.display === "none") {
+        showNavContainer();
         hideFilterContainer(); // フィルターコンテナを非表示
+        hideGoogleapiContainer(); // GoogleAPIコンテナを非表示
       } else {
-        hideGoogleMapsContainer();
+        hideNavContainer();
       }
     });
   }
@@ -176,16 +198,33 @@ export function initializeUIController(viewer) {
     console.log("Pointボタンがクリックされました");
     if (pointSelectionContainer.style.display === "none") {
       pointSelectionContainer.style.display = "block";
+      hideGoogleapiContainer(); // GoogleAPIコンテナを非表示
     } else {
       pointSelectionContainer.style.display = "none";
     }
   });
+  
+  // GoogleAPIボタン: GoogleAPI検索メニューの表示/非表示
+  if (googleapiButton) {
+    googleapiButton.addEventListener("click", () => {
+      console.log("GoogleAPIボタンがクリックされました");
+      if (googleapiContainer.style.display === "none") {
+        googleapiContainer.style.display = "block";
+        hideFilterContainer(); // フィルターコンテナを非表示
+        hideNavContainer(); // ナビコンテナを非表示
+        pointSelectionContainer.style.display = "none"; // Point選択コンテナを非表示
+      } else {
+        googleapiContainer.style.display = "none";
+      }
+    });
+  }
 
   // Lineボタン: 3D Tilesの読み込み
   lineButton.addEventListener("click", () => {
     console.log("Lineボタンがクリックされました");
     load3DTiles(viewer, TILESET_URLS);
     hideFilterContainer();
+    hideGoogleapiContainer();
   });
 
   // Multi Lineボタン: MultiLineStringデータのみロード
@@ -198,6 +237,7 @@ export function initializeUIController(viewer) {
     loadGeoJSON(viewer, multiLineUrls);
     filterState.lastLoadedUrls = multiLineUrls;
     hideFilterContainer();
+    hideGoogleapiContainer();
   });
 
   // OSM Buildingsボタン: 一度だけロード
@@ -211,6 +251,7 @@ export function initializeUIController(viewer) {
       await loadOsmBuildings(viewer);
       osmLoaded = true;
       hideFilterContainer();
+      hideGoogleapiContainer();
     });
   }
 
@@ -241,9 +282,10 @@ export function initializeUIController(viewer) {
 
   // 全てのデータボタン
   if (allDataButton) {
-    allDataButton.addEventListener("click", () => 
-      loadDataAndUpdateFilter(viewer, GEOJSON_URLS, "全てのデータ")
-    );
+    allDataButton.addEventListener("click", () => {
+      loadDataAndUpdateFilter(viewer, GEOJSON_URLS, "全てのデータ");
+      hideGoogleapiContainer();
+    });
   }
 
   // ホームボタン
@@ -389,11 +431,11 @@ export function initializeUIController(viewer) {
     });
   }
   
-  // Google Mapsデータクリアボタン
-  if (clearGoogleMapsBtn) {
-    clearGoogleMapsBtn.addEventListener("click", () => {
+  // ナビデータクリアボタン
+  if (clearNavBtn) {
+    clearNavBtn.addEventListener("click", () => {
       clearGoogleMapsData(viewer);
-      console.log("Google Mapsデータをクリアしました");
+      console.log("ナビデータをクリアしました");
     });
   }
 }

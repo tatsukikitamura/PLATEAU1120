@@ -4,6 +4,7 @@
   <button id="point-button" style="margin: 5px; padding: 8px 16px; background-color: #007bff; color: white; border: none; border-radius: 4px; cursor: pointer; font-size: 14px;">Point</button>
   <button id="line-button" style="margin: 5px; padding: 8px 16px; background-color: #007bff; color: white; border: none; border-radius: 4px; cursor: pointer; font-size: 14px;">Line</button>
   <button id="multi-line-button" style="margin: 5px; padding: 8px 16px; background-color: #007bff; color: white; border: none; border-radius: 4px; cursor: pointer; font-size: 14px;">Multi Line</button>
+  <button id="googleapi-button" style="margin: 5px; padding: 8px 16px; background-color: #ff6b35; color: white; border: none; border-radius: 4px; cursor: pointer; font-size: 14px;">GoogleAPI</button>
   <button id="all-data-button" style="margin: 5px; padding: 8px 16px; background-color: #28a745; color: white; border: none; border-radius: 4px; cursor: pointer; font-size: 14px;">全てのデータ</button>
   <% if request.path.include?('cesium') %>
     <button id="osm-buildings-button" style="margin: 5px; padding: 8px 16px; background-color: #17a2b8; color: white; border: none; border-radius: 4px; cursor: pointer; font-size: 14px;">OSM Buildings</button>
@@ -20,14 +21,14 @@
   <button id="all-points-button" style="margin: 3px; padding: 6px 12px; background-color: #6741D9; color: white; border: none; border-radius: 4px; cursor: pointer; font-size: 12px;">すべてのPoint</button>
 </div>
 
-<!-- ホームボタンとフィルターボタン -->
+<!-- ホームボタン、フィルターボタン、ナビボタン -->
 <div style="position: absolute; top: 10px; right: 10px; z-index: 1000; display: flex; gap: 10px;">
   <button id="home-button" style="padding: 10px 15px; background-color: #007bff; color: white; border: none; border-radius: 5px; cursor: pointer; font-size: 14px; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);">
     <i class="fas fa-home me-1"></i>
     ホーム
   </button>
   <button id="filter-toggle-btn" style="padding: 10px 16px; background-color: #28a745; color: white; border: none; border-radius: 4px; cursor: pointer; font-size: 14px; font-weight: 600; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);">フィルター</button>
-  <button id="google-maps-toggle-btn" style="padding: 10px 16px; background-color: #ff6b35; color: white; border: none; border-radius: 4px; cursor: pointer; font-size: 14px; font-weight: 600; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);">Google Maps</button>
+  <button id="nav-toggle-btn" style="padding: 10px 16px; background-color: #6f42c1; color: white; border: none; border-radius: 4px; cursor: pointer; font-size: 14px; font-weight: 600; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);">ナビ</button>
 </div>
 
 <script>
@@ -54,40 +55,40 @@
   </div>
 </div>
 
-<!-- Google Mapsコンテナ -->
-<div id="google-maps-container" style="position: absolute; top: 50px; right: 10px; z-index: 1000; background: rgba(255, 255, 255, 0.95); padding: 15px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); max-width: 350px; max-height: calc(100vh - 70px); overflow-y: auto; display: none;">
-  <h3 style="margin: 0 0 15px 0; font-size: 16px; color: #333; border-bottom: 2px solid #ff6b35; padding-bottom: 8px;">Google Maps API</h3>
-  
-  <!-- Places検索フォーム -->
-  <div style="margin-bottom: 20px; padding: 10px; background: #f8f9fa; border-radius: 5px;">
-    <h4 style="margin: 0 0 10px 0; font-size: 14px; color: #333;">🍽️ レストラン・POI検索</h4>
-    <div style="margin-bottom: 8px;">
-      <label style="display: block; font-size: 12px; color: #666; margin-bottom: 3px;">検索クエリ:</label>
-      <input type="text" id="places-query-input" placeholder="例: レストラン, カフェ" style="width: 100%; padding: 6px; border: 1px solid #ddd; border-radius: 3px; font-size: 12px;">
-    </div>
-    <div style="margin-bottom: 8px;">
-      <label style="display: block; font-size: 12px; color: #666; margin-bottom: 3px;">位置（住所）:</label>
-      <input type="text" id="places-location-input" placeholder="例: 東京駅" style="width: 100%; padding: 6px; border: 1px solid #ddd; border-radius: 3px; font-size: 12px;">
-    </div>
-    <div style="margin-bottom: 8px;">
-      <label style="display: block; font-size: 12px; color: #666; margin-bottom: 3px;">検索半径（m）:</label>
-      <input type="number" id="places-radius-input" value="5000" min="1" max="50000" style="width: 100%; padding: 6px; border: 1px solid #ddd; border-radius: 3px; font-size: 12px;">
-    </div>
-    <div style="margin-bottom: 8px;">
-      <label style="display: block; font-size: 12px; color: #666; margin-bottom: 3px;">タイプ:</label>
-      <select id="places-type-input" style="width: 100%; padding: 6px; border: 1px solid #ddd; border-radius: 3px; font-size: 12px;">
-        <option value="">すべて</option>
-        <option value="restaurant">レストラン</option>
-        <option value="cafe">カフェ</option>
-        <option value="hotel">ホテル</option>
-        <option value="gas_station">ガソリンスタンド</option>
-        <option value="hospital">病院</option>
-        <option value="bank">銀行</option>
-      </select>
-    </div>
-    <button id="places-search-btn" style="width: 100%; padding: 8px; background-color: #ff6b35; color: white; border: none; border-radius: 4px; cursor: pointer; font-size: 12px; font-weight: 600;">検索</button>
+<!-- GoogleAPIコンテナ -->
+<div id="googleapi-container" style="position: absolute; top: 80px; left: 10px; z-index: 1000; background: rgba(255, 255, 255, 0.95); padding: 15px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); max-width: 350px; display: none;">
+  <h4 style="margin: 0 0 10px 0; font-size: 14px; color: #333;">🍽️ レストラン・POI検索</h4>
+  <div style="margin-bottom: 8px;">
+    <label style="display: block; font-size: 12px; color: #666; margin-bottom: 3px;">検索クエリ:</label>
+    <input type="text" id="places-query-input" placeholder="例: レストラン, カフェ" style="width: 100%; padding: 6px; border: 1px solid #ddd; border-radius: 3px; font-size: 12px;">
   </div>
+  <div style="margin-bottom: 8px;">
+    <label style="display: block; font-size: 12px; color: #666; margin-bottom: 3px;">位置（住所）:</label>
+    <input type="text" id="places-location-input" placeholder="例: 東京駅" style="width: 100%; padding: 6px; border: 1px solid #ddd; border-radius: 3px; font-size: 12px;">
+  </div>
+  <div style="margin-bottom: 8px;">
+    <label style="display: block; font-size: 12px; color: #666; margin-bottom: 3px;">検索半径（m）:</label>
+    <input type="number" id="places-radius-input" value="5000" min="1" max="50000" style="width: 100%; padding: 6px; border: 1px solid #ddd; border-radius: 3px; font-size: 12px;">
+  </div>
+  <div style="margin-bottom: 8px;">
+    <label style="display: block; font-size: 12px; color: #666; margin-bottom: 3px;">タイプ:</label>
+    <select id="places-type-input" style="width: 100%; padding: 6px; border: 1px solid #ddd; border-radius: 3px; font-size: 12px;">
+      <option value="">すべて</option>
+      <option value="restaurant">レストラン</option>
+      <option value="cafe">カフェ</option>
+      <option value="hotel">ホテル</option>
+      <option value="gas_station">ガソリンスタンド</option>
+      <option value="hospital">病院</option>
+      <option value="bank">銀行</option>
+    </select>
+  </div>
+  <button id="places-search-btn" style="width: 100%; padding: 8px; background-color: #ff6b35; color: white; border: none; border-radius: 4px; cursor: pointer; font-size: 12px; font-weight: 600;">検索</button>
+</div>
 
+<!-- ナビコンテナ -->
+<div id="nav-container" style="position: absolute; top: 50px; right: 10px; z-index: 1000; background: rgba(255, 255, 255, 0.95); padding: 15px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); max-width: 350px; max-height: calc(100vh - 70px); overflow-y: auto; display: none;">
+  <h3 style="margin: 0 0 15px 0; font-size: 16px; color: #333; border-bottom: 2px solid #6f42c1; padding-bottom: 8px;">ナビゲーション</h3>
+  
   <!-- Directions検索フォーム -->
   <div style="margin-bottom: 20px; padding: 10px; background: #f8f9fa; border-radius: 5px;">
     <h4 style="margin: 0 0 10px 0; font-size: 14px; color: #333;">🗺️ ルート検索</h4>
@@ -108,7 +109,7 @@
         <option value="transit">公共交通機関</option>
       </select>
     </div>
-    <button id="directions-btn" style="width: 100%; padding: 8px; background-color: #ff6b35; color: white; border: none; border-radius: 4px; cursor: pointer; font-size: 12px; font-weight: 600;">ルート検索</button>
+    <button id="directions-btn" style="width: 100%; padding: 8px; background-color: #6f42c1; color: white; border: none; border-radius: 4px; cursor: pointer; font-size: 12px; font-weight: 600;">ルート検索</button>
   </div>
 
   <!-- Geocoding検索フォーム -->
@@ -118,12 +119,12 @@
       <label style="display: block; font-size: 12px; color: #666; margin-bottom: 3px;">住所:</label>
       <input type="text" id="geocode-address-input" placeholder="例: 東京都渋谷区道玄坂1-2-3" style="width: 100%; padding: 6px; border: 1px solid #ddd; border-radius: 3px; font-size: 12px;">
     </div>
-    <button id="geocode-btn" style="width: 100%; padding: 8px; background-color: #ff6b35; color: white; border: none; border-radius: 4px; cursor: pointer; font-size: 12px; font-weight: 600;">座標検索</button>
+    <button id="geocode-btn" style="width: 100%; padding: 8px; background-color: #6f42c1; color: white; border: none; border-radius: 4px; cursor: pointer; font-size: 12px; font-weight: 600;">座標検索</button>
   </div>
 
   <!-- クリアボタン -->
   <div style="text-align: center;">
-    <button id="clear-google-maps-btn" style="padding: 8px 16px; background-color: #dc3545; color: white; border: none; border-radius: 4px; cursor: pointer; font-size: 12px; font-weight: 600;">Google Mapsデータをクリア</button>
+    <button id="clear-nav-btn" style="padding: 8px 16px; background-color: #dc3545; color: white; border: none; border-radius: 4px; cursor: pointer; font-size: 12px; font-weight: 600;">ナビデータをクリア</button>
   </div>
 </div>
 

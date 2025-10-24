@@ -111,11 +111,29 @@ class Api::GoogleMapsGeoJsonService
 
   # Directions APIレスポンスをGeoJSONに変換
   def directions_to_geojson(directions_response)
+    if Rails.env.development?
+      Rails.logger.info "=== Directions to GeoJSON Debug ==="
+      Rails.logger.info "directions_response: #{directions_response.inspect}"
+      Rails.logger.info "routes present?: #{directions_response['routes'].present?}"
+      Rails.logger.info "routes count: #{directions_response['routes']&.count || 0}"
+    end
+    
     return create_empty_geojson unless directions_response["routes"]
 
     features = directions_response["routes"].map.with_index do |route, index|
+      if Rails.env.development?
+        Rails.logger.info "Processing route #{index}: #{route['summary']}"
+        Rails.logger.info "Route legs count: #{route['legs']&.count || 0}"
+      end
+      
       # ルートの座標配列を取得
       coordinates = extract_route_coordinates(route)
+      
+      if Rails.env.development?
+        Rails.logger.info "Extracted coordinates count: #{coordinates.count}"
+        Rails.logger.info "Coordinates empty?: #{coordinates.empty?}"
+      end
+      
       next nil if coordinates.empty?
 
       {
@@ -138,6 +156,11 @@ class Api::GoogleMapsGeoJsonService
         }
       }
     end.compact
+
+    if Rails.env.development?
+      Rails.logger.info "Final features count: #{features.count}"
+      Rails.logger.info "=== End Directions Debug ==="
+    end
 
     {
       "type" => "FeatureCollection",
@@ -220,8 +243,18 @@ class Api::GoogleMapsGeoJsonService
 
     route["legs"].each do |leg|
       leg["steps"].each do |step|
+        if Rails.env.development?
+          Rails.logger.info "Processing step: #{step['html_instructions']}"
+          Rails.logger.info "Step polyline points: #{step['polyline']['points']}"
+        end
+        
         # 各ステップの座標を取得
         step_coords = decode_polyline(step["polyline"]["points"])
+        
+        if Rails.env.development?
+          Rails.logger.info "Decoded step coordinates count: #{step_coords.count}"
+        end
+        
         coordinates.concat(step_coords)
       end
     end
@@ -229,22 +262,38 @@ class Api::GoogleMapsGeoJsonService
     coordinates
   end
 
-  # Google Polylineをデコード（簡易実装）
+  # Google Polylineをデコード（実装版）
   def decode_polyline(encoded)
+    if Rails.env.development?
+      Rails.logger.info "=== Decode Polyline Debug ==="
+      Rails.logger.info "Encoded polyline: #{encoded}"
+      Rails.logger.info "Encoded blank?: #{encoded.blank?}"
+    end
+    
     return [] if encoded.blank?
 
-    # 簡易的なデコード実装
-    # 実際のプロダクションでは、より堅牢なライブラリを使用することを推奨
-    coordinates = []
-
-    # 基本的なデコードロジック（実際の実装ではより複雑）
-    # ここでは簡易版として、実際のプロダクションでは適切なライブラリを使用
     begin
-      # 実際の実装では、Google Polyline Algorithmを使用
-      # ここでは簡易版として空配列を返す
+      # polylinesライブラリを使用してデコード
+      points = Polylines::Decoder.decode_polyline(encoded)
+      
+      if Rails.env.development?
+        Rails.logger.info "Decoded points count: #{points.count}"
+        Rails.logger.info "First few points: #{points.first(3)}"
+      end
+      
+      # [lat, lng]の配列を[lng, lat]のGeoJSON形式に変換
+      coordinates = points.map { |lat, lng| [lng, lat] }
+      
+      if Rails.env.development?
+        Rails.logger.info "Converted coordinates count: #{coordinates.count}"
+        Rails.logger.info "First few coordinates: #{coordinates.first(3)}"
+        Rails.logger.info "=== End Decode Polyline Debug ==="
+      end
+      
       coordinates
     rescue => e
       Rails.logger.error "Polyline decode error: #{e.message}"
+      Rails.logger.error "Error backtrace: #{e.backtrace.join("\n")}" if Rails.env.development?
       []
     end
   end

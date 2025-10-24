@@ -1,5 +1,5 @@
 class Api::FilterConditionsController < ApplicationController
-  before_action :set_filter_condition, only: [ :update, :destroy ]
+  before_action :set_filter_condition, only: [ :update, :destroy, :toggle ]
 
   # GET /api/filter_conditions
   def index
@@ -38,6 +38,11 @@ class Api::FilterConditionsController < ApplicationController
 
   # PATCH/PUT /api/filter_conditions/:id
   def update
+    if @filter_condition.nil?
+      render json: { error: "フィルタ条件が見つかりません" }, status: :not_found
+      return
+    end
+
     if @filter_condition.update(filter_condition_params)
       render json: {
         data: @filter_condition.as_json,
@@ -53,6 +58,11 @@ class Api::FilterConditionsController < ApplicationController
 
   # DELETE /api/filter_conditions/:id
   def destroy
+    if @filter_condition.nil?
+      render json: { error: "フィルタ条件が見つかりません" }, status: :not_found
+      return
+    end
+
     if @filter_condition.destroy
       render json: {
         message: "フィルタ条件が削除されました"

@@ -12,7 +12,7 @@ class Api::GeoJsonDataController < ApplicationController
 
     # 検索
     if params[:search].present?
-      @geo_json_data = @geo_json_data.where("name ILIKE ?", "%#{params[:search]}%")
+      @geo_json_data = @geo_json_data.where("UPPER(name) LIKE UPPER(?)", "%#{params[:search]}%")
     end
 
     render json: {

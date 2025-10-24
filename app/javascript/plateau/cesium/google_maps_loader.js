@@ -73,6 +73,12 @@ export async function loadGoogleMapsPlaces(viewer, searchParams, options = {}) {
  */
 export async function loadGoogleMapsDirections(viewer, routeParams, options = {}) {
   try {
+    console.log('=== Google Maps Directions Debug ===');
+    console.log('routeParams:', routeParams);
+    
+    // 前のDirectionsデータソースをクリア
+    clearGoogleMapsDirections(viewer);
+    
     const response = await fetch('/api/google_maps/directions', {
       method: 'POST',
       headers: {
@@ -82,11 +88,17 @@ export async function loadGoogleMapsDirections(viewer, routeParams, options = {}
       body: JSON.stringify(routeParams)
     });
 
+    console.log('Response status:', response.status);
+    console.log('Response ok:', response.ok);
+
     if (!response.ok) {
       throw new Error(`HTTP error! status: ${response.status}`);
     }
 
     const data = await response.json();
+    console.log('Response data:', data);
+    console.log('GeoJSON features count:', data.geojson?.features?.length || 0);
+    console.log('GeoJSON features:', data.geojson?.features);
     
     if (!data.success) {
       throw new Error(data.error || 'Directions APIの呼び出しに失敗しました');
@@ -111,6 +123,7 @@ export async function loadGoogleMapsDirections(viewer, routeParams, options = {}
     }
 
     console.log(`Google Maps Directions読み込み成功: ${data.metadata.route_count}件のルート`);
+    console.log('=== End Debug ===');
     return dataSource;
 
   } catch (error) {
@@ -193,6 +206,33 @@ export function clearGoogleMapsData(viewer, prefix = 'GoogleMaps') {
   });
   
   console.log(`${dataSourcesToRemove.length}件のGoogle Mapsデータソースをクリアしました`);
+}
+
+/**
+ * Google Maps Directionsデータソースのみをクリア
+ * @param {Cesium.Viewer} viewer - Cesiumのビューアーインスタンス
+ */
+export function clearGoogleMapsDirections(viewer) {
+  // viewerとdataSourcesの存在チェック
+  if (!viewer || !viewer.dataSources) {
+    console.warn('viewer または viewer.dataSources が存在しません');
+    return;
+  }
+
+  const dataSourcesToRemove = [];
+  
+  const dataSources = viewer.dataSources.values || viewer.dataSources._dataSources || [];
+  dataSources.forEach(dataSource => {
+    if (dataSource._name && dataSource._name.startsWith('GoogleMaps_Directions_')) {
+      dataSourcesToRemove.push(dataSource);
+    }
+  });
+  
+  dataSourcesToRemove.forEach(dataSource => {
+    viewer.dataSources.remove(dataSource);
+  });
+  
+  console.log(`${dataSourcesToRemove.length}件のGoogle Maps Directionsデータソースをクリアしました`);
 }
 
 /**

@@ -43,6 +43,9 @@ gem "thruster", require: false
 # Load environment variables from .env file
 gem "dotenv-rails", groups: [ :development, :test ]
 
+# Google Polyline encoding/decoding
+gem "polylines"
+
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
   gem "debug", platforms: %i[ mri windows ], require: "debug/prelude"
@@ -63,4 +66,10 @@ group :test do
   # Use system testing [https://guides.rubyonrails.org/testing.html#system-testing]
   gem "capybara"
   gem "selenium-webdriver"
+  
+  # HTTP mocking for testing
+  gem "webmock"
+  
+  # Factory for test data
+  gem "factory_bot_rails"
 end
