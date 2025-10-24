@@ -61,67 +61,69 @@
   </head>
 
   <body class="d-flex flex-column" style="min-height: 100vh;" data-turbo="false">
-    <!-- ナビゲーションバー -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow-sm">
-      <div class="container">
-        <!-- ブランドロゴ -->
-        <a class="navbar-brand fw-bold" href="/">
-          <i class="fas fa-map-marked-alt me-2"></i>
-          PLATEAU-1120
-        </a>
-        
-        <!-- モバイルメニューボタン -->
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="ナビゲーションメニュー">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        
-        <!-- ナビゲーションメニュー -->
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav me-auto">
-            <li class="nav-item">
-              <a class="nav-link <%= 'active' if current_page?(root_path) %>" href="/">
-                <i class="fas fa-home me-1"></i>
-                ホーム
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link <%= 'active' if current_page?('/cesium') %>" href="/cesium">
-                <i class="fas fa-cube me-1"></i>
-                3D地図
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link <%= 'active' if current_page?('/map2d') %>" href="/map2d">
-                <i class="fas fa-map me-1"></i>
-                2D地図
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link <%= 'active' if current_page?('/tourist_route') %>" href="/tourist_route">
-                <i class="fas fa-route me-1"></i>
-                観光ルート最適化AI
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link <%= 'active' if current_page?('/info') %>" href="/info">
-                <i class="fas fa-info-circle me-1"></i>
-                プロジェクト概要
-              </a>
-            </li>
-          </ul>
+    <!-- ナビゲーションバー（2D地図とCesiumページでは非表示） -->
+    <% unless request.path.include?('map2d') || request.path.include?('cesium') %>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow-sm">
+        <div class="container">
+          <!-- ブランドロゴ -->
+          <a class="navbar-brand fw-bold" href="/">
+            <i class="fas fa-map-marked-alt me-2"></i>
+            PLATEAU-1120
+          </a>
           
-          <!-- ユーザーメニュー（将来の拡張用） -->
-          <ul class="navbar-nav">
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                <i class="fas fa-cog me-1"></i>
-                設定
-              </a>
-            </li>
-          </ul>
+          <!-- モバイルメニューボタン -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="ナビゲーションメニュー">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          
+          <!-- ナビゲーションメニュー -->
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav me-auto">
+              <li class="nav-item">
+                <a class="nav-link <%= 'active' if current_page?(root_path) %>" href="/">
+                  <i class="fas fa-home me-1"></i>
+                  ホーム
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link <%= 'active' if current_page?('/cesium') %>" href="/cesium">
+                  <i class="fas fa-cube me-1"></i>
+                  3D地図
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link <%= 'active' if current_page?('/map2d') %>" href="/map2d">
+                  <i class="fas fa-map me-1"></i>
+                  2D地図
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link <%= 'active' if current_page?('/tourist_route') %>" href="/tourist_route">
+                  <i class="fas fa-route me-1"></i>
+                  観光ルート最適化AI
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link <%= 'active' if current_page?('/info') %>" href="/info">
+                  <i class="fas fa-info-circle me-1"></i>
+                  プロジェクト概要
+                </a>
+              </li>
+            </ul>
+            
+            <!-- ユーザーメニュー（将来の拡張用） -->
+            <ul class="navbar-nav">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <i class="fas fa-cog me-1"></i>
+                  設定
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
-      </div>
-    </nav>
+      </nav>
+    <% end %>
 
     <!-- メインコンテンツ -->
     <main class="flex-grow-1">
@@ -189,7 +191,6 @@
               onload="console.log('Cesium library loaded successfully')" 
               onerror="console.error('Failed to load Cesium library')"></script>
     <% end %>
-    
     <!-- アプリケーション固有のJavaScript -->
     <%= javascript_importmap_tags %>
     

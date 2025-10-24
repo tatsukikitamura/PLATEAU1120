@@ -8,18 +8,24 @@
  */
 export function clearGeoJSONDataSources(viewer) {
   const dataSources = viewer.dataSources;
-  console.log("=== clearGeoJSONDataSources() 実行開始 ===");
-  console.log("現在のデータソース数:", dataSources.length);
+  
+  // 開発環境でのみ詳細ログを出力
+  const isDevelopment = typeof process !== 'undefined' && process.env?.NODE_ENV === 'development';
+  
+  if (isDevelopment) {
+    console.log("=== clearGeoJSONDataSources() 実行開始 ===");
+    console.log("現在のデータソース数:", dataSources.length);
 
-  // 各データソースの詳細をログ出力
-  for (let i = 0; i < dataSources.length; i++) {
-    const dataSource = dataSources.get(i);
-    console.log(`データソース ${i}:`, {
-      name: dataSource._name,
-      entities: dataSource.entities ? dataSource.entities.values.length : "N/A",
-      isGeoJSON: dataSource._name && dataSource._name.includes("GeoJSON"),
-      isGeoJsonDataSource: dataSource instanceof Cesium.GeoJsonDataSource,
-    });
+    // 各データソースの詳細をログ出力
+    for (let i = 0; i < dataSources.length; i++) {
+      const dataSource = dataSources.get(i);
+      console.log(`データソース ${i}:`, {
+        name: dataSource._name,
+        entities: dataSource.entities ? dataSource.entities.values.length : "N/A",
+        isGeoJSON: dataSource._name && dataSource._name.includes("GeoJSON"),
+        isGeoJsonDataSource: dataSource instanceof Cesium.GeoJsonDataSource,
+      });
+    }
   }
 
   // 削除処理（GeoJSONデータソースのみを識別して削除）
@@ -31,13 +37,17 @@ export function clearGeoJSONDataSources(viewer) {
       dataSource instanceof Cesium.GeoJsonDataSource;
 
     if (isGeoJSON) {
-      console.log(`削除対象: ${dataSource._name || "名前なしGeoJSON"}`);
+      if (isDevelopment) {
+        console.log(`削除対象: ${dataSource._name || "名前なしGeoJSON"}`);
+      }
       viewer.dataSources.remove(dataSource);
       removedCount++;
     }
   }
 
-  console.log(`削除されたデータソース数: ${removedCount}`);
-  console.log("削除後のデータソース数:", dataSources.length);
-  console.log("=== clearGeoJSONDataSources() 実行完了 ===");
+  if (isDevelopment) {
+    console.log(`削除されたデータソース数: ${removedCount}`);
+    console.log("削除後のデータソース数:", dataSources.length);
+    console.log("=== clearGeoJSONDataSources() 実行完了 ===");
+  }
 }

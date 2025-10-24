@@ -42,9 +42,7 @@ document.addEventListener("DOMContentLoaded", async function () {
   console.log("Cesium loaded successfully");
 
   // Cesium Ion アクセストークンをmetaタグから取得
-  const tokenMeta = document.querySelector('meta[name="cesium-ion-token"]');
-  const accessToken = tokenMeta ? tokenMeta.content : "";
-
+  const accessToken = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJmMWU2NjU3Mi1jZjdkLTQxYzQtODIyNS1lZGQ5YmIwOTRmNzYiLCJpZCI6MzQ3NTk0LCJpYXQiOjE3NjA2NzkzOTF9.J6Eo9oYzvX08PzLdmtESdmPZnZF09IKP9bmmuQRsGdk";
   if (!accessToken) {
     console.warn(
       "Cesium Ion アクセストークンが設定されていません。.envファイルにCESIUM_ION_ACCESS_TOKENを設定してください。"

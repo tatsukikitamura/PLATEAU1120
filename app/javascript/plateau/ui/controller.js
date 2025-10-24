@@ -14,7 +14,7 @@ import {
   renderFilterFields,
   collectCriteriaFromForm,
 } from "plateau/filters/filter_form";
-import { applyFilterToUrls, applyMultiDataTypeFilter } from "plateau/filters/filter_logic";
+import { applyMultiDataTypeFilter } from "plateau/filters/filter_logic";
 import { loadOsmBuildings } from "plateau/cesium/osm_buildings";
 import { 
   DATA_TYPE_MAPPING, 
@@ -43,6 +43,7 @@ export function initializeUIController(viewer) {
   const shelterButton = document.getElementById("shelter-button");
   const stationButton = document.getElementById("station-button");
   const allPointsButton = document.getElementById("all-points-button");
+  const filterToggleBtn = document.getElementById("filter-toggle-btn");
   const filterFormContainer = document.getElementById("dynamic-filter-form");
   const applyFilterBtn = document.getElementById("apply-filter-btn");
   const clearFilterBtn = document.getElementById("clear-filter-btn");
@@ -74,6 +75,18 @@ export function initializeUIController(viewer) {
     }
   };
 
+  // フィルターボタンのクリックイベント
+  if (filterToggleBtn) {
+    filterToggleBtn.addEventListener("click", () => {
+      console.log("フィルターボタンがクリックされました");
+      if (filterContainer && filterContainer.style.display === "none") {
+        showFilterContainer();
+      } else {
+        hideFilterContainer();
+      }
+    });
+  }
+
   // 複数スキーマの読み込みとフィールド統合
   async function loadAndMergeSchemas(urls) {
     const schemaUrls = filterUrlsWithSchema(urls);
@@ -96,6 +109,20 @@ export function initializeUIController(viewer) {
     
     filterState.schemaFieldsMap = schemaFieldsMap;
     return schemaFieldsMap;
+  }
+
+  // 共通のデータロード処理を関数化
+  async function loadDataAndUpdateFilter(viewer, urls, buttonName) {
+    console.log(`${buttonName}ボタンがクリックされました`);
+    clearGeoJSONDataSources(viewer);
+    await loadGeoJSON(viewer, urls);
+    filterState.lastLoadedUrls = urls;
+    
+    hideFilterContainer();
+    
+    // スキーマを読み込んでフィルターUIを更新
+    const schemaFieldsMap = await loadAndMergeSchemas(urls);
+    renderFilterFields(filterFormContainer, schemaFieldsMap, filterState.criteria);
   }
 
   // Pointボタン: Point選択メニューの表示/非表示
@@ -142,93 +169,35 @@ export function initializeUIController(viewer) {
   }
 
   // ランドマークボタン
-  landmarkButton.addEventListener("click", async () => {
-    console.log("ランドマークボタンがクリックされました");
-    const urls = ["/data/geoJSON/Point/landmark.geojson"];
-    clearGeoJSONDataSources(viewer);
-    await loadGeoJSON(viewer, urls);
-    filterState.lastLoadedUrls = urls;
-    
-    showFilterContainer();
-    
-    // スキーマを読み込んでフィルターUIを更新
-    const schemaFieldsMap = await loadAndMergeSchemas(urls);
-    renderFilterFields(filterFormContainer, schemaFieldsMap, filterState.criteria);
-  });
+  landmarkButton.addEventListener("click", () => 
+    loadDataAndUpdateFilter(viewer, ["/data/geoJSON/Point/landmark.geojson"], "ランドマーク")
+  );
 
   // 公園ボタン
-  parkButton.addEventListener("click", async () => {
-    console.log("公園ボタンがクリックされました");
-    const urls = ["/data/geoJSON/Point/park.geojson"];
-    clearGeoJSONDataSources(viewer);
-    await loadGeoJSON(viewer, urls);
-    filterState.lastLoadedUrls = urls;
-    
-    showFilterContainer();
-    
-    // スキーマを読み込んでフィルターUIを更新
-    const schemaFieldsMap = await loadAndMergeSchemas(urls);
-    renderFilterFields(filterFormContainer, schemaFieldsMap, filterState.criteria);
-  });
+  parkButton.addEventListener("click", () => 
+    loadDataAndUpdateFilter(viewer, ["/data/geoJSON/Point/park.geojson"], "公園")
+  );
 
   // 避難所ボタン
-  shelterButton.addEventListener("click", async () => {
-    console.log("避難所ボタンがクリックされました");
-    const urls = ["/data/geoJSON/Point/shelter.geojson"];
-    clearGeoJSONDataSources(viewer);
-    await loadGeoJSON(viewer, urls);
-    filterState.lastLoadedUrls = urls;
-    
-    showFilterContainer();
-    
-    // スキーマを読み込んでフィルターUIを更新
-    const schemaFieldsMap = await loadAndMergeSchemas(urls);
-    renderFilterFields(filterFormContainer, schemaFieldsMap, filterState.criteria);
-  });
+  shelterButton.addEventListener("click", () => 
+    loadDataAndUpdateFilter(viewer, ["/data/geoJSON/Point/shelter.geojson"], "避難所")
+  );
 
   // 駅ボタン
-  stationButton.addEventListener("click", async () => {
-    console.log("駅ボタンがクリックされました");
-    const urls = ["/data/geoJSON/Point/station.geojson"];
-    clearGeoJSONDataSources(viewer);
-    await loadGeoJSON(viewer, urls);
-    filterState.lastLoadedUrls = urls;
-    
-    showFilterContainer();
-    
-    // スキーマを読み込んでフィルターUIを更新
-    const schemaFieldsMap = await loadAndMergeSchemas(urls);
-    renderFilterFields(filterFormContainer, schemaFieldsMap, filterState.criteria);
-  });
+  stationButton.addEventListener("click", () => 
+    loadDataAndUpdateFilter(viewer, ["/data/geoJSON/Point/station.geojson"], "駅")
+  );
 
   // すべてのPointボタン
-  allPointsButton.addEventListener("click", async () => {
-    console.log("すべてのPointボタンがクリックされました");
-    clearGeoJSONDataSources(viewer);
-    await loadGeoJSON(viewer, GEOJSON_URLS);
-    filterState.lastLoadedUrls = GEOJSON_URLS;
-    
-    showFilterContainer();
-    
-    // スキーマを読み込んでフィルターUIを更新
-    const schemaFieldsMap = await loadAndMergeSchemas(GEOJSON_URLS);
-    renderFilterFields(filterFormContainer, schemaFieldsMap, filterState.criteria);
-  });
+  allPointsButton.addEventListener("click", () => 
+    loadDataAndUpdateFilter(viewer, GEOJSON_URLS, "すべてのPoint")
+  );
 
   // 全てのデータボタン
   if (allDataButton) {
-    allDataButton.addEventListener("click", async () => {
-      console.log("全てのデータボタンがクリックされました");
-      clearGeoJSONDataSources(viewer);
-      await loadGeoJSON(viewer, GEOJSON_URLS);
-      filterState.lastLoadedUrls = GEOJSON_URLS;
-      
-      showFilterContainer();
-      
-      // スキーマを読み込んでフィルターUIを更新
-      const schemaFieldsMap = await loadAndMergeSchemas(GEOJSON_URLS);
-      renderFilterFields(filterFormContainer, schemaFieldsMap, filterState.criteria);
-    });
+    allDataButton.addEventListener("click", () => 
+      loadDataAndUpdateFilter(viewer, GEOJSON_URLS, "全てのデータ")
+    );
   }
 
   // ホームボタン

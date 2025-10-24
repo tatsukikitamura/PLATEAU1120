@@ -2,66 +2,9 @@
  * フィルタリングロジック
  */
 
-/**
- * GeoJSONコレクションをフィルタする
- * @param {Array|Object} collection - フィルタ対象のコレクション
- * @param {Function} predicate - フィルタ関数
- * @returns {Array|Object} フィルタ後のコレクション
- */
-export function filterGeoJSON(collection, predicate) {
-  if (Array.isArray(collection)) {
-    return collection.filter(predicate);
-  }
-  if (
-    collection &&
-    typeof collection === "object" &&
-    Array.isArray(collection.features)
-  ) {
-    return { ...collection, features: collection.features.filter(predicate) };
-  }
-  return collection;
-}
-
-/**
- * URL群を読み込んでフィルタを適用する（単一predicate版）
- * @param {Cesium.Viewer} viewer - Cesiumビューアー
- * @param {string[]} urls - GeoJSON URLの配列
- * @param {Function} predicate - フィルタ関数
- */
-export async function applyFilterToUrls(viewer, urls, predicate) {
-  for (const url of urls) {
-    try {
-      const ds = await Cesium.GeoJsonDataSource.load(url);
-      const entities = ds.entities.values;
-
-      for (const entity of entities) {
-        // エンティティのプロパティを取得
-        const rawProps = {};
-        if (entity.properties && entity.properties._propertyNames) {
-          for (const key of entity.properties._propertyNames) {
-            rawProps[key] = entity.properties.getValue(Cesium.JulianDate.now())[
-              key
-            ];
-          }
-        }
-
-        // フィルタ判定
-        const fakeFeature = { properties: rawProps };
-        const keep = predicate(fakeFeature);
-
-        // フィルタに合致しない場合は非表示
-        if (!keep) {
-          entity.show = false;
-        }
-      }
-
-      viewer.dataSources.add(ds);
-      console.log(`フィルタ適用完了: ${url}`);
-    } catch (e) {
-      console.error(`フィルタ適用時のエラー: ${url}`, e);
-    }
-  }
-}
+// 未使用の関数を削除:
+// - filterGeoJSON: 定義されているが使用されていない
+// - applyFilterToUrls: applyMultiDataTypeFilterで代替可能
 
 /**
  * 複数データ型に対応したフィルタ適用（拡張版）
@@ -86,14 +29,10 @@ export async function applyMultiDataTypeFilter(viewer, urls, predicatesMap, data
       }
 
       // MultiLineStringとPointの場合、地形に沿わせる(clampToGround)
-      let ds;
-      if (url.includes("MultiLineString") || url.includes("Point")) {
-        ds = await Cesium.GeoJsonDataSource.load(url, {
-          clampToGround: true,
-        });
-      } else {
-        ds = await Cesium.GeoJsonDataSource.load(url);
-      }
+      const shouldClampToGround = url.includes("MultiLineString") || url.includes("Point");
+      const ds = await Cesium.GeoJsonDataSource.load(url, 
+        shouldClampToGround ? { clampToGround: true } : {}
+      );
       
       const entities = ds.entities.values;
 

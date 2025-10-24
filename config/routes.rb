@@ -5,4 +5,26 @@ Rails.application.routes.draw do
   get "index", to: "main#index"
   get "tourist_route", to: "main#tourist_route"
   get "info", to: "main#info"
+  post "reload_data", to: "main#reload_data"
+  
+  # API routes
+  namespace :api do
+    resources :geo_json_data, only: [:index, :show] do
+      member do
+        post :apply_filter
+      end
+      collection do
+        get :statistics
+      end
+    end
+    
+    resources :filter_conditions, only: [:index, :create, :update, :destroy] do
+      member do
+        post :toggle
+      end
+      collection do
+        post :reset_defaults
+      end
+    end
+  end
 end
