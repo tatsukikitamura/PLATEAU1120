@@ -16,12 +16,17 @@ PLATEAU データと地理空間情報を 3D/2D で可視化する Rails アプ�
   - 高速な動作
   - シンプルなUI
   - モバイル対応
+- 🤖 **AIチャットボット**: DeepSeek API による地理空間データ分析
+  - 自然言語での質問応答
+  - 関連データの自動選択と表示
+  - Google Maps API 連携
 - 📍 **GeoJSON データ表示**: ポイント・ライン・ポリゴンデータの表示
   - ランドマーク、公園、避難所、駅などのポイントデータ
   - 境界線、鉄道、緊急輸送道路などのラインストリングデータ
 - 🔍 **高度なフィルタリング機能**: スキーマベースの動的フィルタリング
 - 🏗️ **OSM Buildings**: OpenStreetMap 建物データの自動読み込み
 - 🎨 **カスタムスタイリング**: データタイプ別の視覚的表現
+- 🗺️ **Google Maps 連携**: Places API、Directions API、Geocoding API との統合
 
 ## 技術スタック
 
@@ -69,17 +74,35 @@ bundle install
 cp .env.example .env
 ```
 
-`.env` ファイルを編集して Cesium Ion アクセストークンを設定：
+`.env` ファイルを編集して必要なトークンを設定：
 
 ```env
-CESIUM_ION_ACCESS_TOKEN=your_actual_token_here
+# Cesium Ion トークン
+CESIUM_ION_ACCESS_TOKEN=your_cesium_token_here
+
+# DeepSeek API トークン（AIチャットボット機能用）
+DEEPSEEK_API_KEY=your_deepseek_token_here
+
+# Google Maps API キー（任意、Google Maps連携機能用）
+GOOGLE_MAPS_API_KEY=your_google_maps_key_here
 ```
 
-**Cesium Ion トークンの取得方法：**
+**各トークンの取得方法：**
 
+**Cesium Ion トークン：**
 1. [Cesium Ion](https://ion.cesium.com/) にアカウント登録
 2. [Access Tokens](https://ion.cesium.com/tokens) ページでトークンを生成
 3. 生成されたトークンを `.env` に設定
+
+**DeepSeek API トークン：**
+1. [DeepSeek API](https://platform.deepseek.com/) にアカウント登録
+2. API Keys ページでトークンを生成
+3. 生成されたトークンを `.env` に設定
+
+**Google Maps API キー（任意）：**
+1. [Google Cloud Console](https://console.cloud.google.com/) でプロジェクト作成
+2. Maps JavaScript API、Places API、Directions API、Geocoding API を有効化
+3. API キーを生成して `.env` に設定
 
 ### 4. データベースのセットアップ
 
@@ -141,6 +164,10 @@ bin/rails server
 
 - **🌐 3D ビュー**: CesiumJS による高度な 3D 地理空間ビューアー
 - **🗺️ 2D マップ**: Leaflet による軽量で高速な 2D 地図ビューアー
+- **🤖 AI チャットボット**: DeepSeek API による自然言語インターフェース
+- **🗺️🤖 チャットボット&マップ**: AIチャットボットと3Dマップの統合ページ
+- **📊 観光ルート最適化AI**: 観光地のルート提案機能
+- **ℹ️ プロジェクト概要**: プロジェクトの詳細情報と統計データ
 
 ### 3D ビューでの操作
 
@@ -197,6 +224,38 @@ Point ボタンをクリックすると、以下の選択肢が表示されま�
 - **マウスホイール**: ズームイン/アウト
 - **ダブルクリック**: ズームイン
 
+### AI チャットボットの使い方
+
+#### 基本的な使い方
+
+1. 「AI チャットボット」ページを開く
+2. 質問を入力して送信
+3. AIが関連データを自動選択して回答を生成
+
+#### サンプル質問
+
+- 「千葉市の公園を教えて」
+- 「駅が近い避難所はどこ？」
+- 「ランドマークの場所をマップで見たい」
+
+#### チャットボット&マップ統合機能
+
+「チャットボット&マップ」ページでは：
+
+1. AIが質問内容を分析
+2. 関連する地理空間データを自動選択
+3. 「マップに表示」ボタンで3Dマップにデータを表示
+4. Google Mapsデータが必要な場合は自動で連携
+
+### データの統計情報
+
+「プロジェクト概要」ページでは：
+
+- 総データセット数
+- データタイプ別の統計
+- 表示データと非表示データの内訳
+- 最終更新日時
+
 ## 開発
 
 ### ディレクトリ構成
@@ -207,14 +266,25 @@ Point ボタンをクリックすると、以下の選択肢が表示されま�
 │   ├── assets/
 │   │   └── stylesheets/      # CSS
 │   ├── controllers/           # Railsコントローラ
+│   │   ├── api/              # APIコントローラ
+│   │   │   ├── chatbot_controller.rb # AIチャットボットAPI
+│   │   │   ├── filter_conditions_controller.rb
+│   │   │   ├── geo_json_data_controller.rb
+│   │   │   └── google_maps_controller.rb
 │   │   ├── application_controller.rb
 │   │   └── main_controller.rb # メインコントローラ
 │   ├── javascript/            # フロントエンドJavaScript
 │   │   ├── application.js     # メインエントリポイント
+│   │   ├── cesium_application.js # Cesium用エントリポイント
+│   │   ├── chatbot.js         # AIチャットボットUI
+│   │   ├── chatbot_map_application.js # チャットボット&マップ統合
 │   │   ├── leaflet_application.js # Leaflet用エントリポイント
+│   │   ├── markdown_renderer.js # マークダウン表示
 │   │   └── plateau/           # PLATEAU関連モジュール
 │   │       ├── cesium/        # CesiumJS関連
 │   │       │   ├── geojson_loader.js
+│   │       │   ├── google_maps_loader.js # Google Maps連携
+│   │       │   ├── infobox_customizer.js
 │   │       │   ├── osm_buildings.js
 │   │       │   └── tiles_loader.js
 │   │       ├── leaflet/       # Leaflet関連
@@ -229,14 +299,27 @@ Point ボタンをクリックすると、以下の選択肢が表示されま�
 │   │       │   └── controller.js
 │   │       └── utils/          # ユーティリティ
 │   │           └── data_manager.js
+│   ├── models/                # データモデル
+│   │   ├── filter_condition.rb # フィルタ条件
+│   │   └── geo_json_data.rb   # GeoJSONデータ
+│   ├── services/              # ビジネスロジック
+│   │   └── api/               # APIサービス
+│   │       ├── deepseek_chat_service.rb # DeepSeek API通信
+│   │       ├── google_maps_determiner.rb # Google Maps判定
+│   │       ├── google_maps_geo_json_service.rb
+│   │       ├── google_maps_query_generator.rb
+│   │       └── map_display_determiner.rb
 │   └── views/
 │       ├── layouts/
 │       │   └── application.html.erb
 │       └── main/              # メインビュー
-│           ├── home.html.erb  # ホームページ（3D/2D選択）
+│           ├── home.html.erb  # ホームページ
 │           ├── cesium.html.erb # 3Dビュー
 │           ├── map2d.html.erb # 2Dマップ
-│           └── index.html.erb  # レガシーページ
+│           ├── chatbot.html.erb # AIチャットボット
+│           ├── chatbot_map.html.erb # チャットボット&マップ統合
+│           ├── tourist_route.html.erb # 観光ルート最適化
+│           └── info.html.erb  # プロジェクト概要
 ├── config/
 │   ├── importmap.rb           # Importmap設定
 │   └── routes.rb              # ルーティング
@@ -305,6 +388,12 @@ Point ボタンをクリックすると、以下の選択肢が表示されま�
 - `bin/rails assets:clobber` でアセットをクリーンビルド
 - JavaScript モジュールの読み込みエラーを確認
 
+### AI チャットボットが動作しない
+
+- `.env` ファイルに `DEEPSEEK_API_KEY` が正しく設定されているか確認
+- ブラウザのコンソールでAPIエラーを確認
+- ネットワーク接続を確認（DeepSeek API へのアクセスが必要）
+
 ## デプロイ
 
 ### Docker を使用する場合
@@ -335,11 +424,33 @@ kamal deploy
 
 プルリクエストを歓迎します！バグ報告や機能要望は Issue で受け付けています。
 
+## 技術的な詳細
+
+### API エンドポイント
+
+- `POST /api/chatbot/select_data` - ユーザーの質問から関連データを選択
+- `POST /api/chatbot/generate_response` - 選択されたデータを使ってAI回答を生成
+- `GET /api/geo_json_data` - GeoJSON データの一覧取得
+- `GET /api/geo_json_data/:id` - 特定の GeoJSON データの詳細取得
+- `POST /api/google_maps/places` - Google Maps Places API 連携
+- `POST /api/google_maps/directions` - Google Maps Directions API 連携
+- `POST /api/google_maps/geocode` - Google Maps Geocoding API 連携
+
+### 主な技術的特徴
+
+1. **2段階AI処理**: データ選択と回答生成を分離
+2. **スキーマベースフィルタリング**: GeoJSON スキーマから動的にフィルタフォームを生成
+3. **データ自動選択**: キーワードマッチングとAI判定による関連データの自動選択
+4. **Google Maps連携**: PLATEAUデータで対応できないデータをGoogle Mapsで補完
+5. **3D/2D統合**: 同じデータを3Dと2Dで表示可能
+
 ## 参考資料
 
 - [PLATEAU 公式サイト](https://www.mlit.go.jp/plateau/)
 - [CesiumJS ドキュメント](https://cesium.com/docs/)
 - [Leaflet ドキュメント](https://leafletjs.com/)
+- [DeepSeek API ドキュメント](https://platform.deepseek.com/docs)
+- [Google Maps Platform](https://developers.google.com/maps)
 - [Rails Guides](https://guides.rubyonrails.org/)
 - [Hotwire](https://hotwired.dev/)
 - [地理院タイル](https://maps.gsi.go.jp/development/ichiran.html)
