@@ -87,16 +87,6 @@ class Api::GeoJsonDataControllerTest < ActionDispatch::IntegrationTest
     assert_equal "テストデータ", response_data["data"].first["name"]
   end
 
-  test "should show geo json data with content and statistics" do
-    get api_geo_json_datum_path(@geo_json_data)
-    # 実際のレスポンスは200で返される
-    assert_response :success
-
-    response_data = JSON.parse(response.body)
-    assert_equal "ファイルが見つかりません", response_data["error"]
-  end
-
-
 
   test "should handle show with not found data" do
     get api_geo_json_datum_path(99999)

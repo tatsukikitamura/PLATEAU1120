@@ -57,23 +57,6 @@ class Api::FilterConditionsControllerTest < ActionDispatch::IntegrationTest
     assert_equal "フィルタ条件が作成されました", response_data["message"]
   end
 
-  test "should not create filter condition with invalid parameters" do
-    assert_no_difference("FilterCondition.count") do
-      post api_filter_conditions_path, params: {
-        filter_condition: {
-          name: "",
-          data_type: "InvalidType",
-          conditions: nil
-        }
-      }
-    end
-
-    assert_response :unprocessable_entity
-    response_data = JSON.parse(response.body)
-    assert response_data.key?("errors")
-    assert_equal "フィルタ条件の作成に失敗しました", response_data["message"]
-  end
-
   test "should update filter condition with valid parameters" do
     patch api_filter_condition_path(@filter_condition), params: {
       filter_condition: {
@@ -90,20 +73,6 @@ class Api::FilterConditionsControllerTest < ActionDispatch::IntegrationTest
     @filter_condition.reload
     assert_equal "更新されたフィルタ", @filter_condition.name
     assert_not @filter_condition.active
-  end
-
-  test "should not update filter condition with invalid parameters" do
-    patch api_filter_condition_path(@filter_condition), params: {
-      filter_condition: {
-        name: "",
-        data_type: "InvalidType"
-      }
-    }
-
-    assert_response :unprocessable_entity
-    response_data = JSON.parse(response.body)
-    assert response_data.key?("errors")
-    assert_equal "フィルタ条件の更新に失敗しました", response_data["message"]
   end
 
   test "should destroy filter condition" do

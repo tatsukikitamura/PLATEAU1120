@@ -1,4 +1,6 @@
 class Api::GeoJsonDataController < ApplicationController
+  include ApiResponseHelper
+
   before_action :set_geo_json_data, only: [ :show, :apply_filter ]
 
   # GET /api/geo_json_data
@@ -26,62 +28,60 @@ class Api::GeoJsonDataController < ApplicationController
 
   # GET /api/geo_json_data/:id
   def show
-    if @geo_json_data
-      # ファイルの内容を読み込む
-      file_path = Rails.root.join("public", @geo_json_data.file_path)
-      if File.exist?(file_path)
-        geojson_content = File.read(file_path)
-        geojson_data = JSON.parse(geojson_content)
+    return render_not_found("データが見つかりません") unless @geo_json_data
 
-        # 統計情報を取得
-        processor = GeoJsonProcessor.new
-        stats = processor.get_statistics(geojson_data)
-
-        render json: {
-          geo_json_data: @geo_json_data.as_json,
-          geojson_content: geojson_data,
-          statistics: stats
-        }
-      else
-        render json: { error: "ファイルが見つかりません" }, status: :not_found
-      end
-    else
-      render json: { error: "データが見つかりません" }, status: :not_found
+    # ファイルの内容を読み込む
+    file_path = Rails.root.join("public", @geo_json_data.file_path)
+    unless File.exist?(file_path)
+      render_error("ファイルが見つかりません", status: :not_found)
+      return
     end
+
+    geojson_content = File.read(file_path)
+    geojson_data = JSON.parse(geojson_content)
+
+    # 統計情報を取得
+    processor = GeoJsonProcessor.new
+    stats = processor.get_statistics(geojson_data)
+
+    render_success({
+      geo_json_data: @geo_json_data.as_json,
+      geojson_content: geojson_data,
+      statistics: stats
+    })
   end
 
   # POST /api/geo_json_data/:id/apply_filter
   def apply_filter
-    if @geo_json_data
-      # フィルタ条件を取得
-      filter_condition_ids = params[:filter_condition_ids] || []
-      filter_conditions = FilterCondition.where(id: filter_condition_ids, active: true)
+    return render_not_found("データが見つかりません") unless @geo_json_data
 
-      # ファイルの内容を読み込む
-      file_path = Rails.root.join("public", @geo_json_data.file_path)
-      if File.exist?(file_path)
-        geojson_content = File.read(file_path)
-        geojson_data = JSON.parse(geojson_content)
+    # フィルタ条件を取得
+    filter_condition_ids = params[:filter_condition_ids] || []
+    filter_conditions = FilterCondition.where(id: filter_condition_ids, active: true)
 
-        # フィルタを適用
-        processor = GeoJsonProcessor.new
-        filtered_data = processor.apply_filters(geojson_data, filter_conditions)
-
-        render json: {
-          original_data: geojson_data,
-          filtered_data: filtered_data,
-          applied_filters: filter_conditions.map(&:as_json),
-          statistics: {
-            original_count: geojson_data["features"]&.count || 0,
-            filtered_count: filtered_data["features"]&.count || 0
-          }
-        }
-      else
-        render json: { error: "ファイルが見つかりません" }, status: :not_found
-      end
-    else
-      render json: { error: "データが見つかりません" }, status: :not_found
+    # ファイルの内容を読み込む
+    file_path = Rails.root.join("public", @geo_json_data.file_path)
+    unless File.exist?(file_path)
+      render_error("ファイルが見つかりません", status: :not_found)
+      return
     end
+
+    geojson_content = File.read(file_path)
+    geojson_data = JSON.parse(geojson_content)
+
+    # フィルタを適用
+    processor = GeoJsonProcessor.new
+    filtered_data = processor.apply_filters(geojson_data, filter_conditions)
+
+    render_success({
+      original_data: geojson_data,
+      filtered_data: filtered_data,
+      applied_filters: filter_conditions.map(&:as_json),
+      statistics: {
+        original_count: geojson_data["features"]&.count || 0,
+        filtered_count: filtered_data["features"]&.count || 0
+      }
+    })
   end
 
   # GET /api/geo_json_data/statistics

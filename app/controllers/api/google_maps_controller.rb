@@ -1,19 +1,25 @@
 class Api::GoogleMapsController < ApplicationController
-  before_action :validate_api_key
+  include ApiResponseHelper
+  include ApiKeyValidator
+
+  before_action :validate_api_key_method
 
   # POST /api/google_maps/search_places
   def search_places
+    if params[:query].blank?
+      render json: {
+        success: false,
+        error: "検索クエリが必要です"
+      }, status: :bad_request
+      return
+    end
+
     query = params[:query]
     location = params[:location]
     radius = params[:radius]&.to_i || 5000
     type = params[:type]
 
-    if query.blank?
-      render json: { error: "検索クエリが必要です" }, status: :bad_request
-      return
-    end
-
-    service = Api::GoogleMapsGeoJsonService.new
+    service = GoogleMaps::GeoJsonService.new
 
     # 位置情報の処理
     location_param = nil
@@ -53,9 +59,12 @@ class Api::GoogleMapsController < ApplicationController
           type: type,
           feature_count: geojson_data["features"].count
         }
-      }
+      }, status: :ok
     else
-      render json: { error: "Places APIの呼び出しに失敗しました" }, status: :service_unavailable
+      render json: {
+        success: false,
+        error: "Places APIの呼び出しに失敗しました"
+      }, status: :service_unavailable
     end
   end
 
@@ -67,11 +76,14 @@ class Api::GoogleMapsController < ApplicationController
     alternatives = params[:alternatives] == "true"
 
     if origin.blank? || destination.blank?
-      render json: { error: "出発地と目的地が必要です" }, status: :bad_request
+      render json: {
+        success: false,
+        error: "出発地と目的地が必要です"
+      }, status: :bad_request
       return
     end
 
-    service = Api::GoogleMapsGeoJsonService.new
+    service = GoogleMaps::GeoJsonService.new
     geojson_data = service.get_directions(origin, destination, mode: mode, alternatives: alternatives)
 
     if geojson_data
@@ -85,22 +97,28 @@ class Api::GoogleMapsController < ApplicationController
           alternatives: alternatives,
           route_count: geojson_data["features"].count
         }
-      }
+      }, status: :ok
     else
-      render json: { error: "Directions APIの呼び出しに失敗しました" }, status: :service_unavailable
+      render json: {
+        success: false,
+        error: "Directions APIの呼び出しに失敗しました"
+      }, status: :service_unavailable
     end
   end
 
   # POST /api/google_maps/geocode
   def geocode
-    address = params[:address]
-
-    if address.blank?
-      render json: { error: "住所が必要です" }, status: :bad_request
+    if params[:address].blank?
+      render json: {
+        success: false,
+        error: "住所が必要です"
+      }, status: :bad_request
       return
     end
 
-    service = Api::GoogleMapsGeoJsonService.new
+    address = params[:address]
+
+    service = GoogleMaps::GeoJsonService.new
     geojson_data = service.geocode(address)
 
     if geojson_data
@@ -111,15 +129,22 @@ class Api::GoogleMapsController < ApplicationController
           address: address,
           result_count: geojson_data["features"].count
         }
-      }
+      }, status: :ok
     else
-      render json: { error: "Geocoding APIの呼び出しに失敗しました" }, status: :service_unavailable
+      render json: {
+        success: false,
+        error: "Geocoding APIの呼び出しに失敗しました"
+      }, status: :service_unavailable
     end
   end
 
   private
 
-  def validate_api_key
+  def required_api_keys
+    ["GOOGLE_MAPS_API_KEY"]
+  end
+
+  def validate_api_key_method
     if Rails.env.development?
       Rails.logger.info "=== Google Maps API Key Validation ==="
       Rails.logger.info "ENV['GOOGLE_MAPS_API_KEY'] present?: #{ENV['GOOGLE_MAPS_API_KEY'].present?}"
@@ -128,11 +153,6 @@ class Api::GoogleMapsController < ApplicationController
       Rails.logger.info "====================================="
     end
 
-    unless ENV["GOOGLE_MAPS_API_KEY"].present?
-      Rails.logger.error "Google Maps API key is not set!"
-      render json: { error: "Google Maps API keyが設定されていません" }, status: :service_unavailable
-    else
-      Rails.logger.info "Google Maps API key is properly set" if Rails.env.development?
-    end
+    validate_api_keys
   end
 end

@@ -1,17 +1,23 @@
 class Api::ChatbotController < ApplicationController
-  before_action :validate_api_key
+  include ApiResponseHelper
+  include ApiKeyValidator
+
+  before_action :validate_api_key_method
 
   # POST /api/chatbot/select_data
   # 1段階目: データ選択のみ
   def select_data
-    user_query = params[:user_query]
-
-    if user_query.blank?
-      render json: { error: "ユーザークエリが必要です" }, status: :bad_request
+    if params[:user_query].blank?
+      render json: {
+        success: false,
+        error: "ユーザークエリが必要です"
+      }, status: :bad_request
       return
     end
 
-    service = Api::DeepseekChatService.new
+    user_query = params[:user_query]
+
+    service = Deepseek::DataSelectorService.new
     selected_data = service.select_relevant_data(user_query)
 
     # 選択されたデータの情報を構築
@@ -30,19 +36,19 @@ class Api::ChatbotController < ApplicationController
       should_display_on_map = true
 
       # Google Mapsクエリを生成
-      query_generator = Api::GoogleMapsQueryGenerator.new
+      query_generator = GoogleMaps::QueryGeneratorService.new
       google_maps_query = query_generator.generate_query(user_query)
     else
       # 通常のAI判定
-      map_determiner = Api::MapDisplayDeterminer.new
+      map_determiner = Common::MapDisplayDeterminer.new
       should_display_on_map = map_determiner.should_display_on_map?(user_query)
 
-      google_maps_determiner = Api::GoogleMapsDeterminer.new
+      google_maps_determiner = Deepseek::DeterminerService.new
       should_use_google_maps = google_maps_determiner.should_use_google_maps?(user_query)
 
       google_maps_query = nil
       if should_use_google_maps
-        query_generator = Api::GoogleMapsQueryGenerator.new
+        query_generator = GoogleMaps::QueryGeneratorService.new
         google_maps_query = query_generator.generate_query(user_query)
       end
     end
@@ -52,17 +58,8 @@ class Api::ChatbotController < ApplicationController
       selected_data: selected_data_info,
       should_display_on_map: should_display_on_map,
       should_use_google_maps: should_use_google_maps,
-      google_maps_query: google_maps_query,
-      timestamp: Time.current.iso8601
-    }
-  rescue => e
-    Rails.logger.error "Data selection error: #{e.message}"
-    Rails.logger.error e.backtrace.join("\n")
-
-    render json: {
-      error: "データ選択でエラーが発生しました",
-      success: false
-    }, status: :internal_server_error
+      google_maps_query: google_maps_query
+    }, status: :ok
   end
 
   # POST /api/chatbot/generate_response
@@ -71,12 +68,15 @@ class Api::ChatbotController < ApplicationController
     messages = params[:messages] || []
     selected_data_info = params[:selected_data] || []
 
-    if messages.empty?
-      render json: { error: "メッセージが必要です" }, status: :bad_request
+    if messages.blank?
+      render json: {
+        success: false,
+        error: "メッセージが必要です"
+      }, status: :bad_request
       return
     end
 
-    service = Api::DeepseekChatService.new
+    service = Deepseek::ChatService.new
 
     # 選択されたデータ情報から実際のレコードを取得
     selected_data = []
@@ -99,38 +99,28 @@ class Api::ChatbotController < ApplicationController
     if response
       render json: {
         success: true,
-        response: response,
-        timestamp: Time.current.iso8601
-      }
+        response: response
+      }, status: :ok
     else
       render json: {
-        error: "チャットボットからの応答を取得できませんでした",
-        success: false
+        success: false,
+        error: "チャットボットからの応答を取得できませんでした"
       }, status: :service_unavailable
     end
   rescue ArgumentError => e
     render json: {
-      error: "APIキーが設定されていません: #{e.message}",
-      success: false
+      success: false,
+      error: "APIキーが設定されていません: #{e.message}"
     }, status: :unauthorized
-  rescue => e
-    Rails.logger.error "Chatbot error: #{e.message}"
-    Rails.logger.error e.backtrace.join("\n")
-
-    render json: {
-      error: "チャットボットでエラーが発生しました",
-      success: false
-    }, status: :internal_server_error
   end
 
   private
 
-  def validate_api_key
-    unless ENV["DEEPSEEK_API_KEY"].present?
-      render json: {
-        error: "DEEPSEEK_API_KEYが設定されていません",
-        success: false
-      }, status: :unauthorized
-    end
+  def required_api_keys
+    ["DEEPSEEK_API_KEY"]
+  end
+
+  def validate_api_key_method
+    validate_api_keys
   end
 end
