@@ -9,7 +9,6 @@
 
 # Ignore all environment files.
 /.env*
-/public/data
 # Ignore all logfiles and tempfiles.
 /log/*
 /tmp/*

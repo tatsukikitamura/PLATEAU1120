@@ -1,0 +1,93 @@
+{
+  "$ref": "#/definitions/BridgeLOD2Schema",
+  "definitions": {
+    "BridgeLOD2Schema": {
+      "title": "橋梁データ LOD2 スキーマ",
+      "description": "Level of Detail 2 の橋梁データ用3D Tilesスキーマ",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "meshcode": {
+          "type": "string",
+          "description": "メッシュコード（地域を特定するためのコード）"
+        },
+        "feature_type": {
+          "type": "string",
+          "description": "フィーチャータイプ（データの種類）"
+        },
+        "city_code": {
+          "type": "string",
+          "description": "市区町村コード（行政区域を特定するコード）"
+        },
+        "city_name": {
+          "type": "string",
+          "description": "市区町村名"
+        },
+        "gml_id": {
+          "type": "string",
+          "description": "GML ID（地理情報の一意識別子）"
+        },
+        "attributes": {
+          "type": "object",
+          "description": "その他の属性情報（JSONオブジェクト形式）"
+        },
+        "creation_date": {
+          "type": "string",
+          "format": "date",
+          "description": "データ作成日"
+        },
+        "bridge_class": {
+          "type": "string",
+          "description": "橋梁クラス（橋梁の分類）"
+        },
+        "bridge_function": {
+          "type": "string",
+          "description": "橋梁機能（道路橋、歩道橋など）"
+        },
+        "year_of_construction": {
+          "type": "integer",
+          "description": "建設年",
+          "minimum": 1800,
+          "maximum": 2100
+        },
+        "survey_year": {
+          "type": "integer",
+          "description": "調査年",
+          "minimum": 1900,
+          "maximum": 2100
+        },
+        "risk_type": {
+          "type": "string",
+          "description": "リスクタイプ（災害リスクの分類）"
+        },
+        "status": {
+          "type": "string",
+          "description": "ステータス（現存、撤去済みなど）"
+        },
+        "reference_date": {
+          "type": "string",
+          "format": "date",
+          "description": "参照日"
+        },
+        "geometry_source_lod1": {
+          "type": "string",
+          "description": "LOD1幾何学記述の情報源"
+        },
+        "lod_type": {
+          "type": "string",
+          "description": "LODタイプ（詳細度レベル）"
+        }
+      },
+      "required": [
+        "meshcode",
+        "feature_type",
+        "city_code",
+        "city_name",
+        "gml_id",
+        "bridge_class",
+        "bridge_function",
+        "year_of_construction"
+      ]
+    }
+  }
+}

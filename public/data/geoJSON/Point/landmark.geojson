@@ -1,0 +1,7536 @@
+{
+	"features": [
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.2689618702941,
+					35.576476640084934
+				]
+			},
+			"properties": {
+				"name": "千葉東警察署中野駐在所",
+				"category": "警察署",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.27301287994055,
+					35.517762730265815
+				]
+			},
+			"properties": {
+				"name": "千葉南警察署あすみが丘駐在所",
+				"category": "警察署",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.26930429975368,
+					35.53031504020697
+				]
+			},
+			"properties": {
+				"name": "千葉南警察署土気駅前交番",
+				"category": "警察署",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.27339141987818,
+					35.54203172978055
+				]
+			},
+			"properties": {
+				"name": "千葉市消防局緑消防署土気出張所",
+				"category": "消防署",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.27130067958274,
+					35.51793437037492
+				]
+			},
+			"properties": {
+				"name": "千葉市消防局緑消防署あすみが丘出張所",
+				"category": "消防署",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.25017053973863,
+					35.53066617960059
+				]
+			},
+			"properties": {
+				"name": "市立大木戸小学校",
+				"category": "学校",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.27253181009507,
+					35.54097164042889
+				]
+			},
+			"properties": {
+				"name": "市立土気中学校",
+				"category": "学校",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.2622258996056,
+					35.51424948012948
+				]
+			},
+			"properties": {
+				"name": "市立大椎小学校",
+				"category": "学校",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.27088846003448,
+					35.51665752012849
+				]
+			},
+			"properties": {
+				"name": "市立大椎中学校",
+				"category": "学校",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.26386486996785,
+					35.51994390998351
+				]
+			},
+			"properties": {
+				"name": "市立あすみが丘小学校",
+				"category": "学校",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.2655832099972,
+					35.52339501966446
+				]
+			},
+			"properties": {
+				"name": "市立土気南小学校",
+				"category": "学校",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.26114272016048,
+					35.525027249607945
+				]
+			},
+			"properties": {
+				"name": "市立土気南中学校",
+				"category": "学校",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.27364282985275,
+					35.53161052980215
+				]
+			},
+			"properties": {
+				"name": "市立土気小学校",
+				"category": "学校",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.27455264968512,
+					35.52361830963736
+				]
+			},
+			"properties": {
+				"name": "県立土気高等学校",
+				"category": "学校",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.2595731900508,
+					35.53294318028361
+				]
+			},
+			"properties": {
+				"name": "土気郵便局",
+				"category": "郵便局",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.26478337005653,
+					35.51935720037454
+				]
+			},
+			"properties": {
+				"name": "千葉あすみが丘郵便局",
+				"category": "郵便局",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.26929139987828,
+					35.53001827022706
+				]
+			},
+			"properties": {
+				"name": "土気駅前郵便局",
+				"category": "郵便局",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.12957370975892,
+					35.680963479880745
+				]
+			},
+			"properties": {
+				"name": "県立千葉特別支援学校",
+				"category": "学校",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.13160511998035,
+					35.66890761009819
+				]
+			},
+			"properties": {
+				"name": "国立千葉大学教育学部附属特別支援学校",
+				"category": "学校",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.1394003499463,
+					35.66717403015741
+				]
+			},
+			"properties": {
+				"name": "山王病院",
+				"category": "病院",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.12752166998916,
+					35.67784898014639
+				]
+			},
+			"properties": {
+				"name": "千葉脳神経外科病院",
+				"category": "病院",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.1290219999654,
+					35.66993543986871
+				]
+			},
+			"properties": {
+				"name": "富家千葉病院",
+				"category": "病院",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.0415810001631,
+					35.672837960403626
+				]
+			},
+			"properties": {
+				"name": "千葉西警察署幕張本郷駅前交番",
+				"category": "警察署",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.12010122978802,
+					35.689017239753866
+				]
+			},
+			"properties": {
+				"name": "千葉北警察署こてはし台交番",
+				"category": "警察署",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.0959011003556,
+					35.68826799027556
+				]
+			},
+			"properties": {
+				"name": "千葉北警察署花見川交番",
+				"category": "警察署",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.08608747965354,
+					35.690443829818946
+				]
+			},
+			"properties": {
+				"name": "千葉北警察署作新台交番",
+				"category": "警察署",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.08016490978287,
+					35.66699369000685
+				]
+			},
+			"properties": {
+				"name": "千葉北警察署畑交番",
+				"category": "警察署",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.12372022041188,
+					35.67415719030214
+				]
+			},
+			"properties": {
+				"name": "千葉北警察署",
+				"category": "警察署",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.11139025975274,
+					35.66986273957383
+				]
+			},
+			"properties": {
+				"name": "千葉市消防局花見川消防署",
+				"category": "消防署",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.08889257033593,
+					35.689018999727125
+				]
+			},
+			"properties": {
+				"name": "千葉市消防局花見川消防署作新台出張所",
+				"category": "消防署",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.12270170042325,
+					35.687929950406954
+				]
+			},
+			"properties": {
+				"name": "市立こてはし台小学校",
+				"category": "学校",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.0913372801914,
+					35.66752719032763
+				]
+			},
+			"properties": {
+				"name": "市立さつきが丘西小学校",
+				"category": "学校",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.12044879977236,
+					35.69622173024868
+				]
+			},
+			"properties": {
+				"name": "市立横戸小学校",
+				"category": "学校",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.0847557401853,
+					35.687610450062266
+				]
+			},
+			"properties": {
+				"name": "市立作新小学校",
+				"category": "学校",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.05022595996013,
+					35.66824923981062
+				]
+			},
+			"properties": {
+				"name": "市立上の台小学校",
+				"category": "学校",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.07397803995468,
+					35.68406105977016
+				]
+			},
+			"properties": {
+				"name": "市立長作小学校",
+				"category": "学校",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.10656004960663,
+					35.70861054973716
+				]
+			},
+			"properties": {
+				"name": "市立柏井小学校",
+				"category": "学校",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.1082541304238,
+					35.673388389562604
+				]
+			},
+			"properties": {
+				"name": "市立犢橋小学校",
+				"category": "学校",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.11912279977741,
+					35.691681439946535
+				]
+			},
+			"properties": {
+				"name": "市立こてはし台中学校",
+				"category": "学校",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.091503990217,
+					35.66827719973304
+				]
+			},
+			"properties": {
+				"name": "市立さつきが丘中学校",
+				"category": "学校",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.10253204012167,
+					35.689027230322495
+				]
+			},
+			"properties": {
+				"name": "市立花見川中学校",
+				"category": "学校",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.08732730031477,
+					35.68106313015937
+				]
+			},
+			"properties": {
+				"name": "市立天戸中学校",
+				"category": "学校",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.11699399028055,
+					35.67757013005752
+				]
+			},
+			"properties": {
+				"name": "市立犢橋中学校",
+				"category": "学校",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.1077284002455,
+					35.69822548002196
+				]
+			},
+			"properties": {
+				"name": "県立柏井高等学校",
+				"category": "学校",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.12089314040622,
+					35.67827732993487
+				]
+			},
+			"properties": {
+				"name": "県立犢橋高等学校",
+				"category": "学校",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.0471981998371,
+					35.6716103696229
+				]
+			},
+			"properties": {
+				"name": "市立幕張本郷中学校",
+				"category": "学校",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.0949652298615,
+					35.68365430989854
+				]
+			},
+			"properties": {
+				"name": "市立花島小学校",
+				"category": "学校",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.09793113011767,
+					35.69427307024603
+				]
+			},
+			"properties": {
+				"name": "市立花見川小学校",
+				"category": "学校",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.11291842014907,
+					35.66878662969924
+				]
+			},
+			"properties": {
+				"name": "幸有会記念病院",
+				"category": "病院",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.10329683977739,
+					35.68859790027295
+				]
+			},
+			"properties": {
+				"name": "最成病院",
+				"category": "病院",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.09289344997285,
+					35.685057739722936
+				]
+			},
+			"properties": {
+				"name": "平山病院",
+				"category": "病院",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.04704932966285,
+					35.67441188010423
+				]
+			},
+			"properties": {
+				"name": "千葉幕張本郷郵便局",
+				"category": "郵便局",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.11433430018792,
+					35.68137676962226
+				]
+			},
+			"properties": {
+				"name": "千葉鉄工団地内郵便局",
+				"category": "郵便局",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.1202506296629,
+					35.68907730007737
+				]
+			},
+			"properties": {
+				"name": "千葉こてはし台郵便局",
+				"category": "郵便局",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.0958007099349,
+					35.68901592044841
+				]
+			},
+			"properties": {
+				"name": "花見川団地内郵便局",
+				"category": "郵便局",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.10715389983272,
+					35.670654070129274
+				]
+			},
+			"properties": {
+				"name": "犢橋郵便局",
+				"category": "郵便局",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.08478917967693,
+					35.69186965995692
+				]
+			},
+			"properties": {
+				"name": "千葉作新台郵便局",
+				"category": "郵便局",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.0972269996264,
+					35.673150089904766
+				]
+			},
+			"properties": {
+				"name": "ヤマト運輸（千葉主管支店）",
+				"category": "指定公共機関",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.13781709977934,
+					35.574083959607094
+				]
+			},
+			"properties": {
+				"name": "東京国税局千葉南税務署",
+				"category": "国の機関",
+				"height_meters": 15.7
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.13406781987408,
+					35.582071919683415
+				]
+			},
+			"properties": {
+				"name": "千葉地方検察庁南町分室",
+				"category": "国の機関",
+				"height_meters": 17.9
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.1320640997784,
+					35.580655859780165
+				]
+			},
+			"properties": {
+				"name": "千葉労働局千葉南公共職業安定所",
+				"category": "国の機関",
+				"height_meters": 21.9
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.17623365006295,
+					35.560493310417996
+				]
+			},
+			"properties": {
+				"name": "千葉市緑区役所",
+				"category": "地方の機関",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.13045579000277,
+					35.58101052001956
+				]
+			},
+			"properties": {
+				"name": "千葉中央警察署蘇我駅前交番",
+				"category": "警察署",
+				"height_meters": 8.3
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.14118694042497,
+					35.578507300271724
+				]
+			},
+			"properties": {
+				"name": "千葉中央警察署白旗交番",
+				"category": "警察署",
+				"height_meters": 3.8
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.1315695697799,
+					35.551564490408964
+				]
+			},
+			"properties": {
+				"name": "千葉中央警察署浜野駅前交番",
+				"category": "警察署",
+				"height_meters": 7.5
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.18794824961208,
+					35.550110790280826
+				]
+			},
+			"properties": {
+				"name": "千葉南警察署",
+				"category": "警察署",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.1592184499716,
+					35.560849340324864
+				]
+			},
+			"properties": {
+				"name": "千葉南警察署学園前駅前交番",
+				"category": "警察署",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.17854267020812,
+					35.56257507008348
+				]
+			},
+			"properties": {
+				"name": "千葉南警察署鎌取駅前交番",
+				"category": "警察署",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.20365039005355,
+					35.54876584966428
+				]
+			},
+			"properties": {
+				"name": "千葉南警察署誉田交番",
+				"category": "警察署",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.13014336012805,
+					35.57571999997805
+				]
+			},
+			"properties": {
+				"name": "千葉市消防局中央消防署蘇我出張所",
+				"category": "消防署",
+				"height_meters": 16.1
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.14515056025027,
+					35.5590207596004
+				]
+			},
+			"properties": {
+				"name": "千葉市消防局中央消防署生浜出張所",
+				"category": "消防署",
+				"height_meters": 5.5
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.14702590032505,
+					35.58223214020114
+				]
+			},
+			"properties": {
+				"name": "千葉市消防局中央消防署宮崎出張所",
+				"category": "消防署",
+				"height_meters": 11.4
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.24099559956733,
+					35.538946549743514
+				]
+			},
+			"properties": {
+				"name": "千葉市消防局緑消防署越智出張所",
+				"category": "消防署",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.20382708974842,
+					35.54866771024666
+				]
+			},
+			"properties": {
+				"name": "千葉市消防局緑消防署誉田出張所",
+				"category": "消防署",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.17503913994437,
+					35.55997445016078
+				]
+			},
+			"properties": {
+				"name": "千葉市消防局緑消防署",
+				"category": "消防署",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.1405314299816,
+					35.55947188022316
+				]
+			},
+			"properties": {
+				"name": "市立生浜小学校",
+				"category": "学校",
+				"height_meters": 14.6
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.13127521987553,
+					35.55894645041843
+				]
+			},
+			"properties": {
+				"name": "市立生浜西小学校",
+				"category": "学校",
+				"height_meters": 15.4
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.14778148013124,
+					35.55983300029277
+				]
+			},
+			"properties": {
+				"name": "市立生浜東小学校",
+				"category": "学校",
+				"height_meters": 13.9
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.1309622800852,
+					35.578361830434176
+				]
+			},
+			"properties": {
+				"name": "市立蘇我小学校",
+				"category": "学校",
+				"height_meters": 16.7
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.14453157037576,
+					35.58041632984981
+				]
+			},
+			"properties": {
+				"name": "市立大森小学校",
+				"category": "学校",
+				"height_meters": 12.9
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.14417033968948,
+					35.55722188977842
+				]
+			},
+			"properties": {
+				"name": "市立生浜中学校",
+				"category": "学校",
+				"height_meters": 16.4
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.1383926200234,
+					35.577332979933146
+				]
+			},
+			"properties": {
+				"name": "市立蘇我中学校",
+				"category": "学校",
+				"height_meters": 16.2
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.12975357956407,
+					35.560721870418035
+				]
+			},
+			"properties": {
+				"name": "県立生浜高等学校",
+				"category": "学校",
+				"height_meters": 22.2
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.14111480040776,
+					35.570832989550865
+				]
+			},
+			"properties": {
+				"name": "県立千葉工業高等学校",
+				"category": "学校",
+				"height_meters": 17.3
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.16303165998318,
+					35.57677744981953
+				]
+			},
+			"properties": {
+				"name": "県立千葉南高等学校",
+				"category": "学校",
+				"height_meters": 10.5
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.14436483966563,
+					35.574388550091555
+				]
+			},
+			"properties": {
+				"name": "淑徳大学(千葉キャンパス)",
+				"category": "学校",
+				"height_meters": 16.1
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.155670530071,
+					35.560046279911944
+				]
+			},
+			"properties": {
+				"name": "千葉明徳短期大学",
+				"category": "学校",
+				"height_meters": 13
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.14896801955854,
+					35.57285265012973
+				]
+			},
+			"properties": {
+				"name": "市立大巌寺小学校",
+				"category": "学校",
+				"height_meters": 17.7
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.15982778022794,
+					35.582832860348276
+				]
+			},
+			"properties": {
+				"name": "淑徳大学(千葉第2キャンパス)",
+				"category": "学校",
+				"height_meters": 20.9
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.15460903957558,
+					35.560636249563345
+				]
+			},
+			"properties": {
+				"name": "私立千葉明徳高等学校",
+				"category": "学校",
+				"height_meters": 14.3
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.15673404044367,
+					35.56004916044043
+				]
+			},
+			"properties": {
+				"name": "私立千葉明徳中学校",
+				"category": "学校",
+				"height_meters": 18.2
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.23111528963898,
+					35.58080508968317
+				]
+			},
+			"properties": {
+				"name": "市立白井小学校",
+				"category": "学校",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.23697384037052,
+					35.532048850374224
+				]
+			},
+			"properties": {
+				"name": "市立越智小学校",
+				"category": "学校",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.18189275005045,
+					35.555221900070705
+				]
+			},
+			"properties": {
+				"name": "市立小谷小学校",
+				"category": "学校",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.17392050023102,
+					35.55452745977448
+				]
+			},
+			"properties": {
+				"name": "市立泉谷小学校",
+				"category": "学校",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.163420359562,
+					35.54183302007789
+				]
+			},
+			"properties": {
+				"name": "市立椎名小学校",
+				"category": "学校",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.18006417022536,
+					35.56882785032508
+				]
+			},
+			"properties": {
+				"name": "市立平山小学校",
+				"category": "学校",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.20439280018763,
+					35.5495274198546
+				]
+			},
+			"properties": {
+				"name": "市立誉田小学校",
+				"category": "学校",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.21828173021777,
+					35.5494996002264
+				]
+			},
+			"properties": {
+				"name": "市立誉田東小学校",
+				"category": "学校",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.2413287003593,
+					35.533563160311644
+				]
+			},
+			"properties": {
+				"name": "市立越智中学校",
+				"category": "学校",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.17261489955808,
+					35.554805239670145
+				]
+			},
+			"properties": {
+				"name": "市立泉谷中学校",
+				"category": "学校",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.2028204201264,
+					35.552440699878446
+				]
+			},
+			"properties": {
+				"name": "市立誉田中学校",
+				"category": "学校",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.1729788399016,
+					35.54781975028129
+				]
+			},
+			"properties": {
+				"name": "市立金沢小学校",
+				"category": "学校",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.16415855996968,
+					35.55707853964293
+				]
+			},
+			"properties": {
+				"name": "市立扇田小学校",
+				"category": "学校",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.1708080203739,
+					35.561015960418274
+				]
+			},
+			"properties": {
+				"name": "市立有吉中学校",
+				"category": "学校",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.16655939999634,
+					35.56158300994798
+				]
+			},
+			"properties": {
+				"name": "市立有吉小学校",
+				"category": "学校",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.16898320960752,
+					35.545057909794764
+				]
+			},
+			"properties": {
+				"name": "市立おゆみ野南小学校",
+				"category": "学校",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.19366821031974,
+					35.5572403798397
+				]
+			},
+			"properties": {
+				"name": "県立袖ケ浦特別支援学校",
+				"category": "学校",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.18102060012063,
+					35.56429133987348
+				]
+			},
+			"properties": {
+				"name": "県立千葉聾学校",
+				"category": "学校",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.17765647017006,
+					35.54497890974892
+				]
+			},
+			"properties": {
+				"name": "市立おゆみ野南中学校",
+				"category": "学校",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.16175355967914,
+					35.58143920975181
+				]
+			},
+			"properties": {
+				"name": "千葉県がんセンター",
+				"category": "病院",
+				"height_meters": 29.3
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.19037166981673,
+					35.55801800023056
+				]
+			},
+			"properties": {
+				"name": "千葉県こども病院",
+				"category": "病院",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.12899543039487,
+					35.556825349910014
+				]
+			},
+			"properties": {
+				"name": "浜野郵便局",
+				"category": "郵便局",
+				"height_meters": 6.9
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.14838849013677,
+					35.56044882994962
+				]
+			},
+			"properties": {
+				"name": "千葉生実郵便局",
+				"category": "郵便局",
+				"height_meters": 7.4
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.13969530959093,
+					35.57433992015126
+				]
+			},
+			"properties": {
+				"name": "千葉鵜の森郵便局",
+				"category": "郵便局",
+				"height_meters": 9.8
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.12638967983992,
+					35.58265782979504
+				]
+			},
+			"properties": {
+				"name": "千葉今井郵便局",
+				"category": "郵便局",
+				"height_meters": 8
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.12965233029092,
+					35.57102008990529
+				]
+			},
+			"properties": {
+				"name": "千葉曽我野郵便局",
+				"category": "郵便局",
+				"height_meters": 8.4
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.23176419995798,
+					35.58195321007264
+				]
+			},
+			"properties": {
+				"name": "野呂郵便局",
+				"category": "郵便局",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.24074809984495,
+					35.53863943036549
+				]
+			},
+			"properties": {
+				"name": "千葉越智郵便局",
+				"category": "郵便局",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.21076919044583,
+					35.54707933034689
+				]
+			},
+			"properties": {
+				"name": "誉田駅前郵便局",
+				"category": "郵便局",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.1991550802428,
+					35.54931776000666
+				]
+			},
+			"properties": {
+				"name": "千葉誉田郵便局",
+				"category": "郵便局",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.17577463968792,
+					35.55883417995352
+				]
+			},
+			"properties": {
+				"name": "千葉緑郵便局",
+				"category": "郵便局",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.17414348983027,
+					35.551736039686546
+				]
+			},
+			"properties": {
+				"name": "千葉泉谷郵便局",
+				"category": "郵便局",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.18634006034563,
+					35.552666820017805
+				]
+			},
+			"properties": {
+				"name": "千葉こやつ郵便局",
+				"category": "郵便局",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.1457788895841,
+					35.54766194983915
+				]
+			},
+			"properties": {
+				"name": "千葉古市場簡易郵便局",
+				"category": "郵便局",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.16887007039747,
+					35.57646283998815
+				]
+			},
+			"properties": {
+				"name": "平山簡易郵便局",
+				"category": "郵便局",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.1627585997296,
+					35.554842090290265
+				]
+			},
+			"properties": {
+				"name": "千葉おゆみ野郵便局",
+				"category": "郵便局",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.1082739002204,
+					35.60665027968673
+				]
+			},
+			"properties": {
+				"name": "東京出入国在留管理局千葉出張所",
+				"category": "国の機関",
+				"height_meters": 50.2
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.1042755000144,
+					35.60281637987208
+				]
+			},
+			"properties": {
+				"name": "関東信越厚生局千葉事務所",
+				"category": "国の機関",
+				"height_meters": 23.6
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.12297818979164,
+					35.60680634983322
+				]
+			},
+			"properties": {
+				"name": "北関東防衛局千葉防衛事務所",
+				"category": "国の機関",
+				"height_meters": 37.3
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.12297818979164,
+					35.60680634983322
+				]
+			},
+			"properties": {
+				"name": "千葉地方検察庁",
+				"category": "国の機関",
+				"height_meters": 37.3
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.12297818979164,
+					35.60680634983322
+				]
+			},
+			"properties": {
+				"name": "千葉区検察庁",
+				"category": "国の機関",
+				"height_meters": 37.3
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.12297818979164,
+					35.60680634983322
+				]
+			},
+			"properties": {
+				"name": "千葉労働局",
+				"category": "国の機関",
+				"height_meters": 37.3
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.10309035003968,
+					35.60177043955417
+				]
+			},
+			"properties": {
+				"name": "関東地方整備局千葉港湾事務所",
+				"category": "国の機関",
+				"height_meters": 12.3
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.1231329703104,
+					35.606255329819646
+				]
+			},
+			"properties": {
+				"name": "千葉地方裁判所",
+				"category": "国の機関",
+				"height_meters": 53.6
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.1231329703104,
+					35.606255329819646
+				]
+			},
+			"properties": {
+				"name": "千葉簡易裁判所",
+				"category": "国の機関",
+				"height_meters": 53.6
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.1231329703104,
+					35.606255329819646
+				]
+			},
+			"properties": {
+				"name": "千葉家庭裁判所",
+				"category": "国の機関",
+				"height_meters": 53.6
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.1026618401719,
+					35.60152441022342
+				]
+			},
+			"properties": {
+				"name": "関東管区行政評価局千葉行政監視行政相談センター",
+				"category": "国の機関",
+				"height_meters": 32
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.1026618401719,
+					35.60152441022342
+				]
+			},
+			"properties": {
+				"name": "千葉保護観察所千葉みなと庁舎",
+				"category": "国の機関",
+				"height_meters": 32
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.1026618401719,
+					35.60152441022342
+				]
+			},
+			"properties": {
+				"name": "千葉地方法務局",
+				"category": "国の機関",
+				"height_meters": 32
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.1026618401719,
+					35.60152441022342
+				]
+			},
+			"properties": {
+				"name": "関東公安調査局千葉公安調査事務所",
+				"category": "国の機関",
+				"height_meters": 32
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.12297818979164,
+					35.60680634983322
+				]
+			},
+			"properties": {
+				"name": "千葉労働局千葉労働基準監督署",
+				"category": "国の機関",
+				"height_meters": 37.3
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.10427546044423,
+					35.60281637987208
+				]
+			},
+			"properties": {
+				"name": "横浜税関千葉税関支署",
+				"category": "国の機関",
+				"height_meters": 23.6
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.10427546044423,
+					35.60281637987208
+				]
+			},
+			"properties": {
+				"name": "東京検疫所千葉検疫所支所",
+				"category": "国の機関",
+				"height_meters": 23.6
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.10427546044423,
+					35.60281637987208
+				]
+			},
+			"properties": {
+				"name": "横浜植物防疫所東京支所千葉出張所",
+				"category": "国の機関",
+				"height_meters": 23.6
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.10427546044423,
+					35.60281637987208
+				]
+			},
+			"properties": {
+				"name": "第三管区海上保安本部千葉海上保安部",
+				"category": "国の機関",
+				"height_meters": 23.6
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.1229482495621,
+					35.61916626960772
+				]
+			},
+			"properties": {
+				"name": "関東財務局千葉財務事務所",
+				"category": "国の機関",
+				"height_meters": 7.9
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.1199813996219,
+					35.60469383964903
+				]
+			},
+			"properties": {
+				"name": "関東農政局千葉県拠点",
+				"category": "国の機関",
+				"height_meters": 18.2
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.1238845400395,
+					35.61552452973331
+				]
+			},
+			"properties": {
+				"name": "東京国税局千葉東税務署",
+				"category": "国の機関",
+				"height_meters": 24.4
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.06280939993394,
+					35.66608260033178
+				]
+			},
+			"properties": {
+				"name": "東京国税局千葉西税務署",
+				"category": "国の機関",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.0845315104209,
+					35.63438830967283
+				]
+			},
+			"properties": {
+				"name": "関東森林管理局千葉森林管理事務所",
+				"category": "国の機関",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.11134839990882,
+					35.62864365987707
+				]
+			},
+			"properties": {
+				"name": "関東農政局千葉県拠点轟町庁舎",
+				"category": "国の機関",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.11547608035687,
+					35.63099956977436
+				]
+			},
+			"properties": {
+				"name": "千葉少年鑑別所",
+				"category": "国の機関",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.1143204200514,
+					35.640318030053095
+				]
+			},
+			"properties": {
+				"name": "関東地方整備局千葉国道事務所",
+				"category": "国の機関",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.1040029002137,
+					35.61066928965607
+				]
+			},
+			"properties": {
+				"name": "千葉労働局千葉公共職業安定所",
+				"category": "国の機関",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.0779040897021,
+					35.61816226018021
+				]
+			},
+			"properties": {
+				"name": "関東運輸局千葉運輸支局",
+				"category": "国の機関",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.1013738401307,
+					35.62217152959249
+				]
+			},
+			"properties": {
+				"name": "千葉保護観察所西千葉庁舎",
+				"category": "国の機関",
+				"height_meters": 8.5
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.1082739002204,
+					35.60665027968673
+				]
+			},
+			"properties": {
+				"name": "関東信越厚生局千葉年金審査分室",
+				"category": "国の機関",
+				"height_meters": 50.2
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.1060683299895,
+					35.607037290338724
+				]
+			},
+			"properties": {
+				"name": "千葉市役所",
+				"category": "地方の機関",
+				"height_meters": 54.1
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.12315397037946,
+					35.604560130245886
+				]
+			},
+			"properties": {
+				"name": "千葉県庁舎",
+				"category": "地方の機関",
+				"height_meters": 45.5
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.12283768960776,
+					35.6074161198581
+				]
+			},
+			"properties": {
+				"name": "千葉市中央区役所",
+				"category": "地方の機関",
+				"height_meters": 79.4
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.06904480977028,
+					35.66283431025528
+				]
+			},
+			"properties": {
+				"name": "千葉市花見川区役所",
+				"category": "地方の機関",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.10721725976873,
+					35.636250060092266
+				]
+			},
+			"properties": {
+				"name": "千葉市稲毛区役所",
+				"category": "地方の機関",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.06310592979492,
+					35.64045356957661
+				]
+			},
+			"properties": {
+				"name": "千葉市美浜区役所",
+				"category": "地方の機関",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.10144147994038,
+					35.609879960092144
+				]
+			},
+			"properties": {
+				"name": "千葉市保健所",
+				"category": "保健所",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.1233166703281,
+					35.60297704015835
+				]
+			},
+			"properties": {
+				"name": "千葉県警察本部",
+				"category": "警察署",
+				"height_meters": 60.7
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.10448606997625,
+					35.604233060307536
+				]
+			},
+			"properties": {
+				"name": "千葉中央警察署",
+				"category": "警察署",
+				"height_meters": 25.4
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.1181465596161,
+					35.60793816011807
+				]
+			},
+			"properties": {
+				"name": "千葉中央警察署京成千葉中央駅前交番",
+				"category": "警察署",
+				"height_meters": 69.9
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.10315385027002,
+					35.6224509003888
+				]
+			},
+			"properties": {
+				"name": "千葉中央警察署西千葉交番",
+				"category": "警察署",
+				"height_meters": 7.8
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.11582435001378,
+					35.61300326958525
+				]
+			},
+			"properties": {
+				"name": "千葉中央警察署千葉駅前交番",
+				"category": "警察署",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.1175470301714,
+					35.62034691038167
+				]
+			},
+			"properties": {
+				"name": "千葉中央警察署千葉公園前交番",
+				"category": "警察署",
+				"height_meters": 7.5
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.10724931970037,
+					35.61066239994983
+				]
+			},
+			"properties": {
+				"name": "千葉中央警察署登戸交番",
+				"category": "警察署",
+				"height_meters": 7.4
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.12086745037266,
+					35.602181730102814
+				]
+			},
+			"properties": {
+				"name": "千葉中央警察署本千葉駅前交番",
+				"category": "警察署",
+				"height_meters": 9.8
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.12423381963515,
+					35.611156050411466
+				]
+			},
+			"properties": {
+				"name": "千葉中央警察署本町交番",
+				"category": "警察署",
+				"height_meters": 7.3
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.07392905028553,
+					35.65150535978455
+				]
+			},
+			"properties": {
+				"name": "千葉西警察署新検見川駅前交番",
+				"category": "警察署",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.0572699997108,
+					35.65960943043092
+				]
+			},
+			"properties": {
+				"name": "千葉西警察署幕張駅前交番",
+				"category": "警察署",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.04600088023653,
+					35.66136697010961
+				]
+			},
+			"properties": {
+				"name": "千葉西警察署幕張交番",
+				"category": "警察署",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.0945229297895,
+					35.65817216990979
+				]
+			},
+			"properties": {
+				"name": "千葉北警察署宮野木交番",
+				"category": "警察署",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.09148867026602,
+					35.63672751016651
+				]
+			},
+			"properties": {
+				"name": "千葉西警察署稲毛駅前交番",
+				"category": "警察署",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.09723190992474,
+					35.63900225984645
+				]
+			},
+			"properties": {
+				"name": "千葉西警察署小中台交番",
+				"category": "警察署",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.10719865999022,
+					35.63740836980048
+				]
+			},
+			"properties": {
+				"name": "千葉北警察署穴川交番",
+				"category": "警察署",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.11491204985123,
+					35.62672780984059
+				]
+			},
+			"properties": {
+				"name": "千葉北警察署作草部交番",
+				"category": "警察署",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.12074754016692,
+					35.66547199034011
+				]
+			},
+			"properties": {
+				"name": "千葉北警察署長沼交番",
+				"category": "警察署",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.11127719968306,
+					35.6538972497583
+				]
+			},
+			"properties": {
+				"name": "千葉北警察署柏台交番",
+				"category": "警察署",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.07199087997515,
+					35.640785860079404
+				]
+			},
+			"properties": {
+				"name": "千葉西警察署",
+				"category": "警察署",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.07383893012263,
+					35.62933485002338
+				]
+			},
+			"properties": {
+				"name": "千葉西警察署稲毛海岸駅前交番",
+				"category": "警察署",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.06020300006844,
+					35.637233969672025
+				]
+			},
+			"properties": {
+				"name": "千葉西警察署検見川浜駅前交番",
+				"category": "警察署",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.09279549041958,
+					35.620688320010004
+				]
+			},
+			"properties": {
+				"name": "千葉西警察署幸町交番",
+				"category": "警察署",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.07509511035107,
+					35.62471760023709
+				]
+			},
+			"properties": {
+				"name": "千葉西警察署高洲駐在所",
+				"category": "警察署",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.0637307400816,
+					35.642761829794665
+				]
+			},
+			"properties": {
+				"name": "千葉西警察署真砂交番",
+				"category": "警察署",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.04127549956468,
+					35.649119520449574
+				]
+			},
+			"properties": {
+				"name": "千葉西警察署幕張メッセ交番",
+				"category": "警察署",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.10530565992838,
+					35.60251181007203
+				]
+			},
+			"properties": {
+				"name": "千葉市消防局中央消防署臨港出張所",
+				"category": "消防署",
+				"height_meters": 17.6
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.12094575973913,
+					35.6037850396479
+				]
+			},
+			"properties": {
+				"name": "千葉市消防局",
+				"category": "消防署",
+				"height_meters": 45.7
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.12094575973913,
+					35.6037850396479
+				]
+			},
+			"properties": {
+				"name": "千葉市消防局中央消防署",
+				"category": "消防署",
+				"height_meters": 45.7
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.05984419035713,
+					35.65549766978171
+				]
+			},
+			"properties": {
+				"name": "千葉市消防局花見川消防署幕張出張所",
+				"category": "消防署",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.082397490252,
+					35.66289691026424
+				]
+			},
+			"properties": {
+				"name": "千葉市消防局花見川消防署畑出張所",
+				"category": "消防署",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.0989038404399,
+					35.624514039591304
+				]
+			},
+			"properties": {
+				"name": "千葉市消防局稲毛消防署西千葉出張所",
+				"category": "消防署",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.1066180495834,
+					35.63600465039434
+				]
+			},
+			"properties": {
+				"name": "千葉市消防局稲毛消防署",
+				"category": "消防署",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.07218478999607,
+					35.623916869967616
+				]
+			},
+			"properties": {
+				"name": "千葉市消防局美浜消防署高浜出張所",
+				"category": "消防署",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.06368563008778,
+					35.640537180446586
+				]
+			},
+			"properties": {
+				"name": "千葉市消防局美浜消防署",
+				"category": "消防署",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.04773478033587,
+					35.64391080004344
+				]
+			},
+			"properties": {
+				"name": "千葉市消防局美浜消防署打瀬出張所",
+				"category": "消防署",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.12142043000892,
+					35.59699960984415
+				]
+			},
+			"properties": {
+				"name": "市立寒川小学校",
+				"category": "学校",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.11411484042765,
+					35.6077773604369
+				]
+			},
+			"properties": {
+				"name": "市立新宿小学校",
+				"category": "学校",
+				"height_meters": 14.3
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.107753729651,
+					35.61244400009059
+				]
+			},
+			"properties": {
+				"name": "市立登戸小学校",
+				"category": "学校",
+				"height_meters": 18.4
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.10907509004346,
+					35.60432367959419
+				]
+			},
+			"properties": {
+				"name": "市立新宿中学校",
+				"category": "学校",
+				"height_meters": 14.4
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.12072605985986,
+					35.62236070018622
+				]
+			},
+			"properties": {
+				"name": "市立椿森中学校",
+				"category": "学校",
+				"height_meters": 15.1
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.1200737599961,
+					35.60516018039806
+				]
+			},
+			"properties": {
+				"name": "私立明聖高等学校",
+				"category": "学校",
+				"height_meters": 29.2
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.11523248998753,
+					35.616079329597426
+				]
+			},
+			"properties": {
+				"name": "私立植草学園大学附属高等学校",
+				"category": "学校",
+				"height_meters": 20.2
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.11261488007267,
+					35.61652735025706
+				]
+			},
+			"properties": {
+				"name": "市立弁天小学校",
+				"category": "学校",
+				"height_meters": 17.1
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.10812237974415,
+					35.62123410956656
+				]
+			},
+			"properties": {
+				"name": "県立千葉商業高等学校",
+				"category": "学校",
+				"height_meters": 25.3
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.0991202496998,
+					35.6639150804167
+				]
+			},
+			"properties": {
+				"name": "市立さつきが丘東小学校",
+				"category": "学校",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.08655943037343,
+					35.65097162024415
+				]
+			},
+			"properties": {
+				"name": "市立西小中台小学校",
+				"category": "学校",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.08525388006262,
+					35.65922161038907
+				]
+			},
+			"properties": {
+				"name": "市立朝日ヶ丘小学校",
+				"category": "学校",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.07871636996458,
+					35.66539575031368
+				]
+			},
+			"properties": {
+				"name": "市立畑小学校",
+				"category": "学校",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.05372840024552,
+					35.661847479677476
+				]
+			},
+			"properties": {
+				"name": "市立幕張小学校",
+				"category": "学校",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.05811486960556,
+					35.66541592030853
+				]
+			},
+			"properties": {
+				"name": "市立幕張東小学校",
+				"category": "学校",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.047347839831,
+					35.65709064971378
+				]
+			},
+			"properties": {
+				"name": "市立幕張南小学校",
+				"category": "学校",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.08778167018795,
+					35.656527180385126
+				]
+			},
+			"properties": {
+				"name": "市立朝日ヶ丘中学校",
+				"category": "学校",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.05905935020894,
+					35.662860360017646
+				]
+			},
+			"properties": {
+				"name": "市立幕張中学校",
+				"category": "学校",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.11125223989904,
+					35.66430721000978
+				]
+			},
+			"properties": {
+				"name": "市立緑が丘中学校",
+				"category": "学校",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.07355539006926,
+					35.65461622985515
+				]
+			},
+			"properties": {
+				"name": "市立花園中学校",
+				"category": "学校",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.0459386300638,
+					35.66610801966942
+				]
+			},
+			"properties": {
+				"name": "市立西の谷小学校",
+				"category": "学校",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.06896447962708,
+					35.66420125008767
+				]
+			},
+			"properties": {
+				"name": "市立瑞穂小学校",
+				"category": "学校",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.06882669989238,
+					35.64883912982202
+				]
+			},
+			"properties": {
+				"name": "市立検見川小学校",
+				"category": "学校",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.07390207961737,
+					35.65621256965443
+				]
+			},
+			"properties": {
+				"name": "市立花園小学校",
+				"category": "学校",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.11578763968794,
+					35.646969079559426
+				]
+			},
+			"properties": {
+				"name": "市立あやめ台小学校",
+				"category": "学校",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.08756428966035,
+					35.632669430050214
+				]
+			},
+			"properties": {
+				"name": "市立稲丘小学校",
+				"category": "学校",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.08305934001658,
+					35.64080495988105
+				]
+			},
+			"properties": {
+				"name": "市立稲毛小学校",
+				"category": "学校",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.09786496969264,
+					35.647332799569085
+				]
+			},
+			"properties": {
+				"name": "市立園生小学校",
+				"category": "学校",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.10975401973224,
+					35.65899952011182
+				]
+			},
+			"properties": {
+				"name": "市立宮野木小学校",
+				"category": "学校",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.09594821044163,
+					35.63969391044566
+				]
+			},
+			"properties": {
+				"name": "市立小中台小学校",
+				"category": "学校",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.08942052004102,
+					35.646638309810214
+				]
+			},
+			"properties": {
+				"name": "市立小中台南小学校",
+				"category": "学校",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.12300392029476,
+					35.63161071036603
+				]
+			},
+			"properties": {
+				"name": "市立千草台東小学校",
+				"category": "学校",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.1200043898907,
+					35.629169270445516
+				]
+			},
+			"properties": {
+				"name": "市立都賀小学校",
+				"category": "学校",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.10729774009872,
+					35.64860187967304
+				]
+			},
+			"properties": {
+				"name": "市立柏台小学校",
+				"category": "学校",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.1010035298891,
+					35.62577177025105
+				]
+			},
+			"properties": {
+				"name": "市立弥生小学校",
+				"category": "学校",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.09757286989213,
+					35.62378822015029
+				]
+			},
+			"properties": {
+				"name": "市立緑町小学校",
+				"category": "学校",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.08217045010622,
+					35.64388828012011
+				]
+			},
+			"properties": {
+				"name": "市立稲毛中学校",
+				"category": "学校",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.11804794985312,
+					35.6367644201419
+				]
+			},
+			"properties": {
+				"name": "市立千草台中学校",
+				"category": "学校",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.12319832044625,
+					35.630749599614376
+				]
+			},
+			"properties": {
+				"name": "市立都賀中学校",
+				"category": "学校",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.0968861601682,
+					35.62265893965838
+				]
+			},
+			"properties": {
+				"name": "市立緑町中学校",
+				"category": "学校",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.10499393961868,
+					35.63804096012228
+				]
+			},
+			"properties": {
+				"name": "県立京葉工業高等学校",
+				"category": "学校",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.11119822032163,
+					35.62552733991487
+				]
+			},
+			"properties": {
+				"name": "県立千葉東高等学校",
+				"category": "学校",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.11350887003834,
+					35.66216047972239
+				]
+			},
+			"properties": {
+				"name": "県立千葉北高等学校",
+				"category": "学校",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.11025382965056,
+					35.6279439900232
+				]
+			},
+			"properties": {
+				"name": "千葉経済大学",
+				"category": "学校",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.09969837977644,
+					35.63007730962022
+				]
+			},
+			"properties": {
+				"name": "国立千葉大学教育学部附属中学校",
+				"category": "学校",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.10281399017356,
+					35.62882276975506
+				]
+			},
+			"properties": {
+				"name": "千葉大学(西千葉地区)",
+				"category": "学校",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.11627543016698,
+					35.63813731978155
+				]
+			},
+			"properties": {
+				"name": "市立千草台小学校",
+				"category": "学校",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.11004886965964,
+					35.62829782018832
+				]
+			},
+			"properties": {
+				"name": "千葉経済大学短期大学部",
+				"category": "学校",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.11090092963423,
+					35.62749824015174
+				]
+			},
+			"properties": {
+				"name": "私立千葉経済大学附属高等学校",
+				"category": "学校",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.10854242968946,
+					35.63033662013896
+				]
+			},
+			"properties": {
+				"name": "市立轟町小学校",
+				"category": "学校",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.10819812964007,
+					35.63118079036121
+				]
+			},
+			"properties": {
+				"name": "市立轟町中学校",
+				"category": "学校",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.1093649397402,
+					35.631499539771994
+				]
+			},
+			"properties": {
+				"name": "市立第二養護学校",
+				"category": "学校",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.10401339979865,
+					35.633603500101515
+				]
+			},
+			"properties": {
+				"name": "敬愛大学稲毛キャンパス",
+				"category": "学校",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.10424451027598,
+					35.633888589686705
+				]
+			},
+			"properties": {
+				"name": "私立敬愛学園高等学校",
+				"category": "学校",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.10084045042652,
+					35.64073118039971
+				]
+			},
+			"properties": {
+				"name": "県立千葉女子高等学校",
+				"category": "学校",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.10002057988595,
+					35.646198060192376
+				]
+			},
+			"properties": {
+				"name": "市立小中台中学校",
+				"category": "学校",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.09943096996335,
+					35.644813050282096
+				]
+			},
+			"properties": {
+				"name": "市立千葉高等学校",
+				"category": "学校",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.1004481796399,
+					35.629055060142946
+				]
+			},
+			"properties": {
+				"name": "国立千葉大学教育学部附属小学校",
+				"category": "学校",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.0581944002514,
+					35.631611109665016
+				]
+			},
+			"properties": {
+				"name": "市立磯辺小学校",
+				"category": "学校",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.0845036898935,
+					35.62988832968273
+				]
+			},
+			"properties": {
+				"name": "市立稲浜小学校",
+				"category": "学校",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.07514257027344,
+					35.63694381960164
+				]
+			},
+			"properties": {
+				"name": "市立稲毛第二小学校",
+				"category": "学校",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.09072352976716,
+					35.6215347799062
+				]
+			},
+			"properties": {
+				"name": "市立幸町小学校",
+				"category": "学校",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.07416031994285,
+					35.62669428041676
+				]
+			},
+			"properties": {
+				"name": "市立高洲第三小学校",
+				"category": "学校",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.0780059604068,
+					35.63079442002652
+				]
+			},
+			"properties": {
+				"name": "市立高洲第四小学校",
+				"category": "学校",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.07975329997487,
+					35.62504333018558
+				]
+			},
+			"properties": {
+				"name": "市立高洲小学校",
+				"category": "学校",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.07603264998693,
+					35.62006489018256
+				]
+			},
+			"properties": {
+				"name": "市立高浜第一小学校",
+				"category": "学校",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.0698190999716,
+					35.623217219898834
+				]
+			},
+			"properties": {
+				"name": "市立高浜海浜小学校",
+				"category": "学校",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.06927836010834,
+					35.632714319710146
+				]
+			},
+			"properties": {
+				"name": "市立真砂第五小学校",
+				"category": "学校",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.06698937955628,
+					35.6379575399086
+				]
+			},
+			"properties": {
+				"name": "市立真砂東小学校",
+				"category": "学校",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.05886110005974,
+					35.64251750018252
+				]
+			},
+			"properties": {
+				"name": "市立真砂西小学校",
+				"category": "学校",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.0378926196487,
+					35.664777050020916
+				]
+			},
+			"properties": {
+				"name": "市立幕張西小学校",
+				"category": "学校",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.05414975960377,
+					35.632665439758284
+				]
+			},
+			"properties": {
+				"name": "市立磯辺中学校",
+				"category": "学校",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.08225368955618,
+					35.63288830974773
+				]
+			},
+			"properties": {
+				"name": "市立稲浜中学校",
+				"category": "学校",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.0905036797011,
+					35.62119391976364
+				]
+			},
+			"properties": {
+				"name": "市立幸町第一中学校",
+				"category": "学校",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.09808697003768,
+					35.612582850018555
+				]
+			},
+			"properties": {
+				"name": "市立幸町第二中学校",
+				"category": "学校",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.07739252024862,
+					35.623138319677764
+				]
+			},
+			"properties": {
+				"name": "市立高洲第一中学校",
+				"category": "学校",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.07177587006038,
+					35.63258129019442
+				]
+			},
+			"properties": {
+				"name": "市立高洲第二中学校",
+				"category": "学校",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.0709397199921,
+					35.62377194961584
+				]
+			},
+			"properties": {
+				"name": "市立高浜中学校",
+				"category": "学校",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.06329470019034,
+					35.645176659675144
+				]
+			},
+			"properties": {
+				"name": "市立真砂中学校",
+				"category": "学校",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.04314244986426,
+					35.6368882100229
+				]
+			},
+			"properties": {
+				"name": "市立打瀬中学校",
+				"category": "学校",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.03761480018295,
+					35.66344369986689
+				]
+			},
+			"properties": {
+				"name": "市立幕張西中学校",
+				"category": "学校",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.05714250012636,
+					35.640110419760106
+				]
+			},
+			"properties": {
+				"name": "県立検見川高等学校",
+				"category": "学校",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.05205920996468,
+					35.6479992601578
+				]
+			},
+			"properties": {
+				"name": "県立幕張総合高等学校",
+				"category": "学校",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.041622860007,
+					35.64058785994183
+				]
+			},
+			"properties": {
+				"name": "市立海浜打瀬小学校",
+				"category": "学校",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.04631542981326,
+					35.6550905403962
+				]
+			},
+			"properties": {
+				"name": "私立昭和学院秀英中学校",
+				"category": "学校",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.04725173018323,
+					35.65501838958704
+				]
+			},
+			"properties": {
+				"name": "私立昭和学院秀英高等学校",
+				"category": "学校",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.05847395001285,
+					35.62597853967793
+				]
+			},
+			"properties": {
+				"name": "県立磯辺高等学校",
+				"category": "学校",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.0641979801527,
+					35.63024935982014
+				]
+			},
+			"properties": {
+				"name": "市立磯辺第三小学校",
+				"category": "学校",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.04750357992634,
+					35.64213817963332
+				]
+			},
+			"properties": {
+				"name": "市立打瀬小学校",
+				"category": "学校",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.05013031975852,
+					35.653616799775534
+				]
+			},
+			"properties": {
+				"name": "放送大学",
+				"category": "学校",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.098953980342,
+					35.61182645003072
+				]
+			},
+			"properties": {
+				"name": "市立幸町第三小学校",
+				"category": "学校",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.0685018602727,
+					35.620071219611134
+				]
+			},
+			"properties": {
+				"name": "市立稲毛高等学校附属中学校",
+				"category": "学校",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.0682951600936,
+					35.620269850173486
+				]
+			},
+			"properties": {
+				"name": "市立稲毛高等学校",
+				"category": "学校",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.05400362966384,
+					35.65144368967458
+				]
+			},
+			"properties": {
+				"name": "県立幕張総合高等学校看護科",
+				"category": "学校",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.04631583001162,
+					35.6545718698959
+				]
+			},
+			"properties": {
+				"name": "私立渋谷教育学園幕張中学校",
+				"category": "学校",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.04556643034653,
+					35.655052560227546
+				]
+			},
+			"properties": {
+				"name": "私立渋谷教育学園幕張高等学校",
+				"category": "学校",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.0438092396048,
+					35.65727700992613
+				]
+			},
+			"properties": {
+				"name": "神田外語大学",
+				"category": "学校",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.0535138300993,
+					35.62713342027121
+				]
+			},
+			"properties": {
+				"name": "県立千葉西高等学校",
+				"category": "学校",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.04883031017073,
+					35.64813932956645
+				]
+			},
+			"properties": {
+				"name": "私立幕張インターナショナルスクール",
+				"category": "学校",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.04470045965854,
+					35.638140329812416
+				]
+			},
+			"properties": {
+				"name": "市立美浜打瀬小学校",
+				"category": "学校",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.05144162033457,
+					35.65235305984589
+				]
+			},
+			"properties": {
+				"name": "千葉県立保健医療大学",
+				"category": "学校",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.061527599819,
+					35.64397489022906
+				]
+			},
+			"properties": {
+				"name": "市立高等特別支援学校",
+				"category": "学校",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.07099945026448,
+					35.636707449888945
+				]
+			},
+			"properties": {
+				"name": "東京歯科大学千葉キャンパス",
+				"category": "学校",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.0682951996638,
+					35.620269850173486
+				]
+			},
+			"properties": {
+				"name": "市立稲毛国際中等教育学校",
+				"category": "学校",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.061527599819,
+					35.64397489022906
+				]
+			},
+			"properties": {
+				"name": "市立真砂中学校かがやき分校",
+				"category": "学校",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.1157155599252,
+					35.6093637303519
+				]
+			},
+			"properties": {
+				"name": "井上記念病院",
+				"category": "病院",
+				"height_meters": 39.6
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.12167376992863,
+					35.623181249714946
+				]
+			},
+			"properties": {
+				"name": "千葉医療センター",
+				"category": "病院",
+				"height_meters": 35.5
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.12343799966402,
+					35.59958799988635
+				]
+			},
+			"properties": {
+				"name": "柏戸病院",
+				"category": "病院",
+				"height_meters": 36.1
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.0944557998953,
+					35.63960186033762
+				]
+			},
+			"properties": {
+				"name": "稲毛病院",
+				"category": "病院",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.0988398896493,
+					35.60648203002171
+				]
+			},
+			"properties": {
+				"name": "千葉みなと病院",
+				"category": "病院",
+				"height_meters": 23
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.0512089603253,
+					35.627778780066706
+				]
+			},
+			"properties": {
+				"name": "千葉市立海浜病院",
+				"category": "病院",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.02509428037683,
+					35.65022397965299
+				]
+			},
+			"properties": {
+				"name": "千葉県総合救急災害医療センター",
+				"category": "病院",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.11298229989325,
+					35.638021950252835
+				]
+			},
+			"properties": {
+				"name": "千葉中央外科内科",
+				"category": "病院",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.1244760097601,
+					35.60986071999628
+				]
+			},
+			"properties": {
+				"name": "若葉郵便局",
+				"category": "郵便局",
+				"height_meters": 19.7
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.12092171996142,
+					35.5955002097669
+				]
+			},
+			"properties": {
+				"name": "千葉市場前郵便局",
+				"category": "郵便局",
+				"height_meters": 10.1
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.12018443956026,
+					35.6018801802262
+				]
+			},
+			"properties": {
+				"name": "本千葉駅前郵便局",
+				"category": "郵便局",
+				"height_meters": 15.6
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.10216565002474,
+					35.60270508966818
+				]
+			},
+			"properties": {
+				"name": "千葉中央郵便局",
+				"category": "郵便局",
+				"height_meters": 26.2
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.116637640215,
+					35.60590532986714
+				]
+			},
+			"properties": {
+				"name": "千葉新宿郵便局",
+				"category": "郵便局",
+				"height_meters": 7.2
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.12315397037946,
+					35.604560130245886
+				]
+			},
+			"properties": {
+				"name": "千葉県庁内郵便局",
+				"category": "郵便局",
+				"height_meters": 45.5
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.121569470155,
+					35.606026740142
+				]
+			},
+			"properties": {
+				"name": "千葉中央四郵便局",
+				"category": "郵便局",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.11421790003612,
+					35.60999287986755
+				]
+			},
+			"properties": {
+				"name": "千葉新町郵便局",
+				"category": "郵便局",
+				"height_meters": 29.5
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.12293363018296,
+					35.61447964971609
+				]
+			},
+			"properties": {
+				"name": "千葉院内郵便局",
+				"category": "郵便局",
+				"height_meters": 7.7
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.10675414039133,
+					35.61482378968617
+				]
+			},
+			"properties": {
+				"name": "新千葉郵便局",
+				"category": "郵便局",
+				"height_meters": 9.6
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.1017877099349,
+					35.61550719979749
+				]
+			},
+			"properties": {
+				"name": "千葉登戸郵便局",
+				"category": "郵便局",
+				"height_meters": 7.8
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.1104660696535,
+					35.6183095700307
+				]
+			},
+			"properties": {
+				"name": "千葉松波郵便局",
+				"category": "郵便局",
+				"height_meters": 10.2
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.11965613012637,
+					35.61941769037418
+				]
+			},
+			"properties": {
+				"name": "千葉椿森郵便局",
+				"category": "郵便局",
+				"height_meters": 7.7
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.1088601997385,
+					35.60814034030449
+				]
+			},
+			"properties": {
+				"name": "千葉市役所前郵便局",
+				"category": "郵便局",
+				"height_meters": 46
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.1026743497415,
+					35.62248864043846
+				]
+			},
+			"properties": {
+				"name": "西千葉駅前郵便局",
+				"category": "郵便局",
+				"height_meters": 25.4
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.11715138962495,
+					35.613118700267876
+				]
+			},
+			"properties": {
+				"name": "千葉駅東口郵便局",
+				"category": "郵便局",
+				"height_meters": 76.1
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.118709289702,
+					35.61149510021875
+				]
+			},
+			"properties": {
+				"name": "千葉駅前大通り郵便局",
+				"category": "郵便局",
+				"height_meters": 38.6
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.09492068014538,
+					35.66499943977237
+				]
+			},
+			"properties": {
+				"name": "花見川郵便局",
+				"category": "郵便局",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.07379126965145,
+					35.6537191597115
+				]
+			},
+			"properties": {
+				"name": "千葉花園郵便局",
+				"category": "郵便局",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.0954181302426,
+					35.65761857963378
+				]
+			},
+			"properties": {
+				"name": "千葉宮野木郵便局",
+				"category": "郵便局",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.05450501969096,
+					35.65647488031152
+				]
+			},
+			"properties": {
+				"name": "幕張郵便局",
+				"category": "郵便局",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.06815941012871,
+					35.6502719899604
+				]
+			},
+			"properties": {
+				"name": "千葉検見川郵便局",
+				"category": "郵便局",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.08632414973977,
+					35.65376134960667
+				]
+			},
+			"properties": {
+				"name": "千葉朝日ヶ丘郵便局",
+				"category": "郵便局",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.08484065956884,
+					35.65729904961148
+				]
+			},
+			"properties": {
+				"name": "千葉にれの木台郵便局",
+				"category": "郵便局",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.06920740000157,
+					35.66212011005507
+				]
+			},
+			"properties": {
+				"name": "花見川区役所前郵便局",
+				"category": "郵便局",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.06014100979985,
+					35.6606326196997
+				]
+			},
+			"properties": {
+				"name": "幕張北口郵便局",
+				"category": "郵便局",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.09823184002744,
+					35.625048450025986
+				]
+			},
+			"properties": {
+				"name": "千葉緑町郵便局",
+				"category": "郵便局",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.1139871402944,
+					35.62569119998892
+				]
+			},
+			"properties": {
+				"name": "千葉作草部郵便局",
+				"category": "郵便局",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.1197490202012,
+					35.634559900319175
+				]
+			},
+			"properties": {
+				"name": "千葉千草台郵便局",
+				"category": "郵便局",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.0849682301997,
+					35.6375420396335
+				]
+			},
+			"properties": {
+				"name": "稲毛郵便局",
+				"category": "郵便局",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.09930843014,
+					35.63899596009554
+				]
+			},
+			"properties": {
+				"name": "千葉小仲台郵便局",
+				"category": "郵便局",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.0881130002149,
+					35.646080630316874
+				]
+			},
+			"properties": {
+				"name": "千葉小仲台八郵便局",
+				"category": "郵便局",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.1155334903783,
+					35.64910433989343
+				]
+			},
+			"properties": {
+				"name": "千葉あやめ台郵便局",
+				"category": "郵便局",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.11074889024917,
+					35.652615460435186
+				]
+			},
+			"properties": {
+				"name": "稲毛ファミールハイツ郵便局",
+				"category": "郵便局",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.09071546015048,
+					35.63605288013633
+				]
+			},
+			"properties": {
+				"name": "稲毛駅前郵便局",
+				"category": "郵便局",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.11169988014547,
+					35.63502814043636
+				]
+			},
+			"properties": {
+				"name": "千葉穴川郵便局",
+				"category": "郵便局",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.10763014031875,
+					35.63205037992117
+				]
+			},
+			"properties": {
+				"name": "とどろき郵便局",
+				"category": "郵便局",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.0978117604045,
+					35.64546318008172
+				]
+			},
+			"properties": {
+				"name": "千葉小中台北郵便局",
+				"category": "郵便局",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.06262032017173,
+					35.639894759635524
+				]
+			},
+			"properties": {
+				"name": "美浜郵便局",
+				"category": "郵便局",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.0717775401015,
+					35.61339728955335
+				]
+			},
+			"properties": {
+				"name": "千葉中央市場内郵便局",
+				"category": "郵便局",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.100290089616,
+					35.614227649786244
+				]
+			},
+			"properties": {
+				"name": "千葉ガーデンタウン郵便局",
+				"category": "郵便局",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.0659112695895,
+					35.62378788020658
+				]
+			},
+			"properties": {
+				"name": "千葉高浜郵便局",
+				"category": "郵便局",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.0714757096364,
+					35.627988060400696
+				]
+			},
+			"properties": {
+				"name": "稲毛海岸駅前郵便局",
+				"category": "郵便局",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.05916997041788,
+					35.63071566009967
+				]
+			},
+			"properties": {
+				"name": "千葉磯辺郵便局",
+				"category": "郵便局",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.07655156959936,
+					35.634573720201104
+				]
+			},
+			"properties": {
+				"name": "千葉稲毛海岸郵便局",
+				"category": "郵便局",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.0535093703612,
+					35.63623728971919
+				]
+			},
+			"properties": {
+				"name": "千葉磯辺西郵便局",
+				"category": "郵便局",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.05998690017532,
+					35.643056050196606
+				]
+			},
+			"properties": {
+				"name": "千葉真砂五郵便局",
+				"category": "郵便局",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.07082773011575,
+					35.63346729957624
+				]
+			},
+			"properties": {
+				"name": "千葉真砂一郵便局",
+				"category": "郵便局",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.03719271956845,
+					35.665519079741784
+				]
+			},
+			"properties": {
+				"name": "千葉幕張西郵便局",
+				"category": "郵便局",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.09369189956158,
+					35.621706500054984
+				]
+			},
+			"properties": {
+				"name": "千葉幸町郵便局",
+				"category": "郵便局",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.07907332977038,
+					35.623446000232775
+				]
+			},
+			"properties": {
+				"name": "千葉高洲郵便局",
+				"category": "郵便局",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.06923634018506,
+					35.641092949779875
+				]
+			},
+			"properties": {
+				"name": "千葉真砂二郵便局",
+				"category": "郵便局",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.04531521012893,
+					35.64159145028526
+				]
+			},
+			"properties": {
+				"name": "幕張ベイタウン郵便局",
+				"category": "郵便局",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.03819798984546,
+					35.64813817034036
+				]
+			},
+			"properties": {
+				"name": "ワールドビジネスガーデン内郵便局",
+				"category": "郵便局",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.04137640979354,
+					35.651707069625616
+				]
+			},
+			"properties": {
+				"name": "幕張テクノガーデン内郵便局",
+				"category": "郵便局",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.03045530007205,
+					35.65486946005757
+				]
+			},
+			"properties": {
+				"name": "イオンモール幕張新都心内郵便局",
+				"category": "郵便局",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.1075094000388,
+					35.60639531019547
+				]
+			},
+			"properties": {
+				"name": "日本赤十字社(千葉県支部)",
+				"category": "指定公共機関",
+				"height_meters": 16.5
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.10655219043133,
+					35.60553054999491
+				]
+			},
+			"properties": {
+				"name": "NHK千葉放送局",
+				"category": "指定公共機関",
+				"height_meters": 20.9
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.1131143599398,
+					35.612264609624106
+				]
+			},
+			"properties": {
+				"name": "東日本旅客鉄道株式会社(千葉支社)",
+				"category": "指定公共機関",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.04176510037917,
+					35.6518925098315
+				]
+			},
+			"properties": {
+				"name": "日本通運株式会社(千葉支店)",
+				"category": "指定公共機関",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.1021617199874,
+					35.63491474042297
+				]
+			},
+			"properties": {
+				"name": "放射線医学研究所",
+				"category": "指定公共機関",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.04256321002424,
+					35.65137353985705
+				]
+			},
+			"properties": {
+				"name": "東日本電信電話株式会社(千葉支店)",
+				"category": "指定公共機関",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.03811512001687,
+					35.65144693982444
+				]
+			},
+			"properties": {
+				"name": "イオン株式会社",
+				"category": "指定公共機関",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.1185435599374,
+					35.61076483992548
+				]
+			},
+			"properties": {
+				"name": "東京電力パワーグリッド株式会社千葉総支社",
+				"category": "指定公共機関",
+				"height_meters": 38.2
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.10103142955688,
+					35.60111066002901
+				]
+			},
+			"properties": {
+				"name": "千葉県立美術館",
+				"category": "博物館・美術館",
+				"height_meters": 10.9
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.11114900042605,
+					35.6281817401952
+				]
+			},
+			"properties": {
+				"name": "千葉経済大学地域経済博物館",
+				"category": "博物館・美術館",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.12472600959768,
+					35.60888849980449
+				]
+			},
+			"properties": {
+				"name": "千葉市美術館",
+				"category": "博物館・美術館",
+				"height_meters": 60.3
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.15169044995434,
+					35.61440119016282
+				]
+			},
+			"properties": {
+				"name": "関東地方整備局千葉国道事務所千葉出張所",
+				"category": "国の機関",
+				"height_meters": 11.8
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.1351537098759,
+					35.61673569979274
+				]
+			},
+			"properties": {
+				"name": "千葉刑務所",
+				"category": "国の機関",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.15565613012632,
+					35.63402329014275
+				]
+			},
+			"properties": {
+				"name": "千葉市若葉区役所",
+				"category": "地方の機関",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.15227865963254,
+					35.59021688969773
+				]
+			},
+			"properties": {
+				"name": "千葉中央警察署星久喜交番",
+				"category": "警察署",
+				"height_meters": 12.7
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.13236955990737,
+					35.59070635021794
+				]
+			},
+			"properties": {
+				"name": "千葉中央警察署千葉寺駅前交番",
+				"category": "警察署",
+				"height_meters": 7.2
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.14412112968648,
+					35.61061246958985
+				]
+			},
+			"properties": {
+				"name": "千葉中央警察署都交番",
+				"category": "警察署",
+				"height_meters": 10.1
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.17943692007782,
+					35.62533583018444
+				]
+			},
+			"properties": {
+				"name": "千葉東警察署",
+				"category": "警察署",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.13646948997507,
+					35.637708069771634
+				]
+			},
+			"properties": {
+				"name": "千葉東警察署みつわ台交番",
+				"category": "警察署",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.17493000001957,
+					35.608469400442516
+				]
+			},
+			"properties": {
+				"name": "千葉東警察署坂月駐在所",
+				"category": "警察署",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.15494845001103,
+					35.62158300964825
+				]
+			},
+			"properties": {
+				"name": "千葉東警察署桜木交番",
+				"category": "警察署",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.16685538037154,
+					35.64099199998088
+				]
+			},
+			"properties": {
+				"name": "千葉東警察署若松交番",
+				"category": "警察署",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.17119347969538,
+					35.62806453964686
+				]
+			},
+			"properties": {
+				"name": "千葉東警察署小倉交番",
+				"category": "警察署",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.18746665006586,
+					35.62305060969794
+				]
+			},
+			"properties": {
+				"name": "千葉東警察署千城台交番",
+				"category": "警察署",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.18296845972668,
+					35.592661100429495
+				]
+			},
+			"properties": {
+				"name": "千葉東警察署大宮交番",
+				"category": "警察署",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.22214693003684,
+					35.62240147005184
+				]
+			},
+			"properties": {
+				"name": "千葉東警察署中田駐在所",
+				"category": "警察署",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.15126127998417,
+					35.63553074005165
+				]
+			},
+			"properties": {
+				"name": "千葉東警察署都賀交番",
+				"category": "警察署",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.2287888001631,
+					35.583581650273004
+				]
+			},
+			"properties": {
+				"name": "千葉東警察署野呂駐在所",
+				"category": "警察署",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.1436310099632,
+					35.65895675015395
+				]
+			},
+			"properties": {
+				"name": "千葉北警察署山王交番",
+				"category": "警察署",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.22658791000413,
+					35.60082396965055
+				]
+			},
+			"properties": {
+				"name": "千葉市消防局若葉消防署泉出張所",
+				"category": "消防署",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.16509829035385,
+					35.61755397043942
+				]
+			},
+			"properties": {
+				"name": "千葉市消防局若葉消防署桜木出張所",
+				"category": "消防署",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.20174489031444,
+					35.616458570107
+				]
+			},
+			"properties": {
+				"name": "千葉市消防局若葉消防署",
+				"category": "消防署",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.12567584026783,
+					35.63174327043561
+				]
+			},
+			"properties": {
+				"name": "千葉市消防局若葉消防署殿台出張所",
+				"category": "消防署",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.1424217203861,
+					35.645469229821174
+				]
+			},
+			"properties": {
+				"name": "千葉市消防局若葉消防署都賀出張所",
+				"category": "消防署",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.1821911100318,
+					35.603853110232876
+				]
+			},
+			"properties": {
+				"name": "千葉市消防局若葉消防署大宮出張所",
+				"category": "消防署",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.12583714986465,
+					35.61552738957744
+				]
+			},
+			"properties": {
+				"name": "市立院内小学校",
+				"category": "学校",
+				"height_meters": 16.5
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.136531539599,
+					35.583610760428314
+				]
+			},
+			"properties": {
+				"name": "市立宮崎小学校",
+				"category": "学校",
+				"height_meters": 14.6
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.15547606966493,
+					35.586694099553085
+				]
+			},
+			"properties": {
+				"name": "市立松ヶ丘小学校",
+				"category": "学校",
+				"height_meters": 16.6
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.1583928201726,
+					35.5922218796361
+				]
+			},
+			"properties": {
+				"name": "市立仁戸名小学校",
+				"category": "学校",
+				"height_meters": 17.9
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.14672606995225,
+					35.59674966036857
+				]
+			},
+			"properties": {
+				"name": "市立星久喜小学校",
+				"category": "学校",
+				"height_meters": 14.6
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.16827876974946,
+					35.58475459015227
+				]
+			},
+			"properties": {
+				"name": "市立川戸小学校",
+				"category": "学校",
+				"height_meters": 14.5
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.1336705704406,
+					35.60986073978137
+				]
+			},
+			"properties": {
+				"name": "市立鶴沢小学校",
+				"category": "学校",
+				"height_meters": 13.2
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.14500394017978,
+					35.612194100077716
+				]
+			},
+			"properties": {
+				"name": "市立都小学校",
+				"category": "学校",
+				"height_meters": 17.8
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.12819822996437,
+					35.60938851027157
+				]
+			},
+			"properties": {
+				"name": "市立本町小学校",
+				"category": "学校",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.13114270027552,
+					35.60083296017302
+				]
+			},
+			"properties": {
+				"name": "市立葛城中学校",
+				"category": "学校",
+				"height_meters": 15.3
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.15264276005541,
+					35.58774965991893
+				]
+			},
+			"properties": {
+				"name": "市立松ヶ丘中学校",
+				"category": "学校",
+				"height_meters": 15
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.15208722004922,
+					35.600777439627166
+				]
+			},
+			"properties": {
+				"name": "市立星久喜中学校",
+				"category": "学校",
+				"height_meters": 17.1
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.16794833005144,
+					35.5839718903905
+				]
+			},
+			"properties": {
+				"name": "市立川戸中学校",
+				"category": "学校",
+				"height_meters": 15.5
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.12653154969132,
+					35.59669405978309
+				]
+			},
+			"properties": {
+				"name": "市立末広中学校",
+				"category": "学校",
+				"height_meters": 14.3
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.12850378002554,
+					35.59961073025107
+				]
+			},
+			"properties": {
+				"name": "県立千葉高等学校",
+				"category": "学校",
+				"height_meters": 12.8
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.12969827035897,
+					35.614582950342935
+				]
+			},
+			"properties": {
+				"name": "私立千葉聖心高等学校",
+				"category": "学校",
+				"height_meters": 15.5
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.13167051957885,
+					35.60398729987406
+				]
+			},
+			"properties": {
+				"name": "千葉大学(亥鼻地区)",
+				"category": "学校",
+				"height_meters": 23.8
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.15940987966223,
+					35.583956860021146
+				]
+			},
+			"properties": {
+				"name": "県立仁戸名特別支援学校",
+				"category": "学校",
+				"height_meters": 11
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.1284838798273,
+					35.59963326006692
+				]
+			},
+			"properties": {
+				"name": "県立千葉中学校",
+				"category": "学校",
+				"height_meters": 12.8
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.1427264502655,
+					35.66508302995794
+				]
+			},
+			"properties": {
+				"name": "市立山王小学校",
+				"category": "学校",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.12547626991397,
+					35.653194050065395
+				]
+			},
+			"properties": {
+				"name": "市立草野小学校",
+				"category": "学校",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.12744847956378,
+					35.652499619661796
+				]
+			},
+			"properties": {
+				"name": "市立草野中学校",
+				"category": "学校",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.13061507972225,
+					35.63402740993706
+				]
+			},
+			"properties": {
+				"name": "市立みつわ台南小学校",
+				"category": "学校",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.13780966958063,
+					35.64133300041766
+				]
+			},
+			"properties": {
+				"name": "市立みつわ台北小学校",
+				"category": "学校",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.1317540800868,
+					35.64888852958205
+				]
+			},
+			"properties": {
+				"name": "市立源小学校",
+				"category": "学校",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.2276988398297,
+					35.61974949973967
+				]
+			},
+			"properties": {
+				"name": "市立更科小学校",
+				"category": "学校",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.23772655044002,
+					35.60019391991352
+				]
+			},
+			"properties": {
+				"name": "市立更科小学校富田分校",
+				"category": "学校",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.18158745000085,
+					35.611999660356105
+				]
+			},
+			"properties": {
+				"name": "市立坂月小学校",
+				"category": "学校",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.15936021010566,
+					35.62117071995283
+				]
+			},
+			"properties": {
+				"name": "市立桜木小学校",
+				"category": "学校",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.16788469042615,
+					35.64121101997267
+				]
+			},
+			"properties": {
+				"name": "市立若松小学校",
+				"category": "学校",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.17183762001025,
+					35.650277509999114
+				]
+			},
+			"properties": {
+				"name": "市立若松台小学校",
+				"category": "学校",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.17308752027293,
+					35.63188859008642
+				]
+			},
+			"properties": {
+				"name": "市立小倉小学校",
+				"category": "学校",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.1688651196297,
+					35.60008300023031
+				]
+			},
+			"properties": {
+				"name": "市立千城小学校",
+				"category": "学校",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.19620712955543,
+					35.617368010425366
+				]
+			},
+			"properties": {
+				"name": "市立千城台旭小学校",
+				"category": "学校",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.18261532024087,
+					35.622721890403
+				]
+			},
+			"properties": {
+				"name": "市立千城台西小学校",
+				"category": "学校",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.1915004296012,
+					35.62232213995486
+				]
+			},
+			"properties": {
+				"name": "市立千城台東小学校",
+				"category": "学校",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.18950975956784,
+					35.61798779979716
+				]
+			},
+			"properties": {
+				"name": "市立千城台南小学校",
+				"category": "学校",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.18373782973708,
+					35.628690510059016
+				]
+			},
+			"properties": {
+				"name": "市立千城台北小学校",
+				"category": "学校",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.18199206038537,
+					35.59616433031965
+				]
+			},
+			"properties": {
+				"name": "市立大宮小学校",
+				"category": "学校",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.14175598015447,
+					35.64383665004141
+				]
+			},
+			"properties": {
+				"name": "市立都賀の台小学校",
+				"category": "学校",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.14514294029448,
+					35.62869411004522
+				]
+			},
+			"properties": {
+				"name": "市立北貝塚小学校",
+				"category": "学校",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.13122618973694,
+					35.635388530256535
+				]
+			},
+			"properties": {
+				"name": "市立みつわ台中学校",
+				"category": "学校",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.153365160274,
+					35.62397190038297
+				]
+			},
+			"properties": {
+				"name": "市立貝塚中学校",
+				"category": "学校",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.22647661980022,
+					35.61763839969245
+				]
+			},
+			"properties": {
+				"name": "市立更科中学校",
+				"category": "学校",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.14267087036444,
+					35.653027480334
+				]
+			},
+			"properties": {
+				"name": "市立山王中学校",
+				"category": "学校",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.16961531969127,
+					35.6357219296234
+				]
+			},
+			"properties": {
+				"name": "市立若松中学校",
+				"category": "学校",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.184643300448,
+					35.62158923025885
+				]
+			},
+			"properties": {
+				"name": "市立千城台西中学校",
+				"category": "学校",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.1910599497569,
+					35.61836651959925
+				]
+			},
+			"properties": {
+				"name": "市立千城台南中学校",
+				"category": "学校",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.18670923024683,
+					35.58630407976949
+				]
+			},
+			"properties": {
+				"name": "市立大宮中学校",
+				"category": "学校",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.22564315960415,
+					35.58751587036119
+				]
+			},
+			"properties": {
+				"name": "市立白井中学校",
+				"category": "学校",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.15872640030318,
+					35.64324972999111
+				]
+			},
+			"properties": {
+				"name": "県立若松高等学校",
+				"category": "学校",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.18789314005642,
+					35.62116631957002
+				]
+			},
+			"properties": {
+				"name": "県立千城台高等学校",
+				"category": "学校",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.17008733965906,
+					35.602944109682994
+				]
+			},
+			"properties": {
+				"name": "県立千葉大宮高等学校",
+				"category": "学校",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.21030984012714,
+					35.60216625007246
+				]
+			},
+			"properties": {
+				"name": "県立泉高等学校",
+				"category": "学校",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.18244478989516,
+					35.63450434020319
+				]
+			},
+			"properties": {
+				"name": "植草学園大学",
+				"category": "学校",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.18195005035466,
+					35.634313319704006
+				]
+			},
+			"properties": {
+				"name": "植草学園短期大学",
+				"category": "学校",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.1577262300815,
+					35.61397189968346
+				]
+			},
+			"properties": {
+				"name": "市立加曽利中学校",
+				"category": "学校",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.16686820020732,
+					35.597692339629816
+				]
+			},
+			"properties": {
+				"name": "市立養護学校",
+				"category": "学校",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.16878189996476,
+					35.614555240432026
+				]
+			},
+			"properties": {
+				"name": "県立桜が丘特別支援学校",
+				"category": "学校",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.1649510398587,
+					35.62793654993186
+				]
+			},
+			"properties": {
+				"name": "私立桜林高等学校",
+				"category": "学校",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.20317112964403,
+					35.637610719958786
+				]
+			},
+			"properties": {
+				"name": "東京情報大学",
+				"category": "学校",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.131280870316,
+					35.61243674975623
+				]
+			},
+			"properties": {
+				"name": "斎藤労災病院",
+				"category": "病院",
+				"height_meters": 14.7
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.13860215036902,
+					35.60135763994316
+				]
+			},
+			"properties": {
+				"name": "千葉市立青葉病院",
+				"category": "病院",
+				"height_meters": 34.3
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.1308993095555,
+					35.58488809001341
+				]
+			},
+			"properties": {
+				"name": "千葉メディカルセンター",
+				"category": "病院",
+				"height_meters": 37.3
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.1355917498595,
+					35.60475828956345
+				]
+			},
+			"properties": {
+				"name": "千葉大学医学部附属病院",
+				"category": "病院",
+				"height_meters": 52.4
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.16276689957283,
+					35.58383572044221
+				]
+			},
+			"properties": {
+				"name": "千葉病院",
+				"category": "病院",
+				"height_meters": 18.6
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.16087362971427,
+					35.58484849016577
+				]
+			},
+			"properties": {
+				"name": "国立病院機構千葉東病院",
+				"category": "病院",
+				"height_meters": 15.5
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.21977694035354,
+					35.594283710325044
+				]
+			},
+			"properties": {
+				"name": "泉中央病院",
+				"category": "病院",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.17159263029566,
+					35.61815615018622
+				]
+			},
+			"properties": {
+				"name": "千葉中央メディカルセンター",
+				"category": "病院",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.14364020013522,
+					35.647011520365425
+				]
+			},
+			"properties": {
+				"name": "みつわ台総合病院",
+				"category": "病院",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.13574177026658,
+					35.6435541801813
+				]
+			},
+			"properties": {
+				"name": "梶田医院",
+				"category": "病院",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.13405593982986,
+					35.58524341035513
+				]
+			},
+			"properties": {
+				"name": "千葉宮崎郵便局",
+				"category": "郵便局",
+				"height_meters": 6.1
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.15584409023268,
+					35.58886670963102
+				]
+			},
+			"properties": {
+				"name": "千葉仁戸名郵便局",
+				"category": "郵便局",
+				"height_meters": 7.3
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.15041440010452,
+					35.59779315003391
+				]
+			},
+			"properties": {
+				"name": "千葉星久喜郵便局",
+				"category": "郵便局",
+				"height_meters": 7.4
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.14554912988854,
+					35.609326609935124
+				]
+			},
+			"properties": {
+				"name": "千葉都町郵便局",
+				"category": "郵便局",
+				"height_meters": 10.3
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.13013807031575,
+					35.5955586899816
+				]
+			},
+			"properties": {
+				"name": "千葉寺町郵便局",
+				"category": "郵便局",
+				"height_meters": 10.7
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.126929899895,
+					35.605595320068005
+				]
+			},
+			"properties": {
+				"name": "千葉亥鼻郵便局",
+				"category": "郵便局",
+				"height_meters": 7.2
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.13073037011054,
+					35.6141006601174
+				]
+			},
+			"properties": {
+				"name": "千葉道場郵便局",
+				"category": "郵便局",
+				"height_meters": 13.7
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.1355917498595,
+					35.60475828956345
+				]
+			},
+			"properties": {
+				"name": "千葉大学病院内簡易郵便局",
+				"category": "郵便局",
+				"height_meters": 52.4
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.12603321016456,
+					35.65707808978209
+				]
+			},
+			"properties": {
+				"name": "千葉長沼原郵便局",
+				"category": "郵便局",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.15096005026612,
+					35.659010599759426
+				]
+			},
+			"properties": {
+				"name": "千葉小深郵便局",
+				"category": "郵便局",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.18279936020235,
+					35.59270225970158
+				]
+			},
+			"properties": {
+				"name": "千葉大宮郵便局",
+				"category": "郵便局",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.2157191300339,
+					35.59554128989868
+				]
+			},
+			"properties": {
+				"name": "千葉高根郵便局",
+				"category": "郵便局",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.16729051014897,
+					35.59990581040489
+				]
+			},
+			"properties": {
+				"name": "千葉千城郵便局",
+				"category": "郵便局",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.19388784994442,
+					35.61701736026299
+				]
+			},
+			"properties": {
+				"name": "千葉千城台東郵便局",
+				"category": "郵便局",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.18771004977907,
+					35.62280021955456
+				]
+			},
+			"properties": {
+				"name": "千葉千城台郵便局",
+				"category": "郵便局",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.1296076097035,
+					35.62337502034097
+				]
+			},
+			"properties": {
+				"name": "千葉東寺山郵便局",
+				"category": "郵便局",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.15083771009233,
+					35.63598947973077
+				]
+			},
+			"properties": {
+				"name": "都賀駅前郵便局",
+				"category": "郵便局",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.14727689031633,
+					35.63664115996164
+				]
+			},
+			"properties": {
+				"name": "千葉西都賀郵便局",
+				"category": "郵便局",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.16975772014268,
+					35.61767746983941
+				]
+			},
+			"properties": {
+				"name": "千葉加曽利郵便局",
+				"category": "郵便局",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.15388413024846,
+					35.617683179635094
+				]
+			},
+			"properties": {
+				"name": "千葉桜木郵便局",
+				"category": "郵便局",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.22018970039437,
+					35.62213533997402
+				]
+			},
+			"properties": {
+				"name": "更科郵便局",
+				"category": "郵便局",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.1713706902052,
+					35.628111039992575
+				]
+			},
+			"properties": {
+				"name": "千葉小倉台郵便局",
+				"category": "郵便局",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.13540703990304,
+					35.63861054034419
+				]
+			},
+			"properties": {
+				"name": "千葉みつわ台郵便局",
+				"category": "郵便局",
+				"height_meters": 0
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.12711490033246,
+					35.604555180377304
+				]
+			},
+			"properties": {
+				"name": "千葉市立郷土博物館",
+				"category": "博物館・美術館",
+				"height_meters": 30.6
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.13850384008026,
+					35.599860749873756
+				]
+			},
+			"properties": {
+				"name": "千葉県立中央博物館",
+				"category": "博物館・美術館",
+				"height_meters": 18.8
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.16522693027866,
+					35.62373335970682
+				]
+			},
+			"properties": {
+				"name": "千葉市立加曽利貝塚博物館",
+				"category": "博物館・美術館",
+				"height_meters": 0
+			}
+		}
+	],
+	"name": "12100_chiba-shi_city_2024_landmark",
+	"type": "FeatureCollection"
+}

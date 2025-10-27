@@ -1,0 +1,144 @@
+{
+    "$ref": "#/definitions/Welcome",
+    "definitions": {
+        "Welcome": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "features": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/Feature"
+                    }
+                },
+                "name": {
+                    "type": "string"
+                },
+                "type": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "features",
+                "name",
+                "type"
+            ],
+            "title": "Welcome"
+        },
+        "Feature": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "type": {
+                    "$ref": "#/definitions/FeatureType"
+                },
+                "geometry": {
+                    "$ref": "#/definitions/Geometry"
+                },
+                "properties": {
+                    "$ref": "#/definitions/Properties"
+                }
+            },
+            "required": [
+                "geometry",
+                "properties",
+                "type"
+            ],
+            "title": "Feature"
+        },
+        "Geometry": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "type": {
+                    "$ref": "#/definitions/GeometryType"
+                },
+                "coordinates": {
+                    "type": "array",
+                    "items": {
+                        "type": "number"
+                    }
+                }
+            },
+            "required": [
+                "coordinates",
+                "type"
+            ],
+            "title": "Geometry"
+        },
+        "Properties": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "operatorType": {
+                    "$ref": "#/definitions/Empty"
+                },
+                "lineName": {
+                    "type": "string"
+                },
+                "operatingCompany": {
+                    "$ref": "#/definitions/_Enum"
+                },
+                "railwayCategory": {
+                    "$ref": "#/definitions/Properties_Enum"
+                },
+                "stationName": {
+                    "type": "string"
+                },
+                "height": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "operatorType",
+                "lineName",
+                "operatingCompany",
+                "railwayCategory",
+                "stationName",
+                "height"
+            ],
+            "title": "Properties"
+        },
+        "GeometryType": {
+            "type": "string",
+            "enum": [
+                "Point"
+            ],
+            "title": "GeometryType"
+        },
+        "Empty": {
+            "type": "string",
+            "enum": [
+                "民営鉄道",
+                "第三セクター",
+                "JR在来線"
+            ],
+            "title": "Empty"
+        },
+        "_Enum": {
+            "type": "string",
+            "enum": [
+                "京成電鉄",
+                "千葉都市モノレール",
+                "東日本旅客鉄道"
+            ],
+            "title": "_Enum"
+        },
+        "Properties_Enum": {
+            "type": "string",
+            "enum": [
+                "普通鉄道",
+                "懸垂式モノレール",
+                "普通鉄道JR"
+            ],
+            "title": "Properties_Enum"
+        },
+        "FeatureType": {
+            "type": "string",
+            "enum": [
+                "Feature"
+            ],
+            "title": "FeatureType"
+        }
+    }
+}

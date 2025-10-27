@@ -1,0 +1,260 @@
+{
+  "$ref": "#/definitions/DirectionsResponse",
+  "definitions": {
+    "DirectionsResponse": {
+      "title": "Google Maps Directions API レスポンス",
+      "description": "Google Maps Directions APIから取得したルート情報",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "status": {
+          "type": "string",
+          "enum": ["OK", "NOT_FOUND", "ZERO_RESULTS", "MAX_WAYPOINTS_EXCEEDED", "INVALID_REQUEST", "OVER_QUERY_LIMIT", "REQUEST_DENIED", "UNKNOWN_ERROR"],
+          "description": "APIリクエストのステータス"
+        },
+        "routes": {
+          "type": "array",
+          "items": { "$ref": "#/definitions/Route" },
+          "description": "ルート配列"
+        },
+        "geocoded_waypoints": {
+          "type": "array",
+          "items": { "$ref": "#/definitions/GeocodedWaypoint" },
+          "description": "ジオコード済み地点配列"
+        }
+      },
+      "required": ["status", "routes", "geocoded_waypoints"]
+    },
+
+    "Route": {
+      "title": "ルート情報",
+      "description": "単一のルートの詳細情報",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "bounds": {
+          "$ref": "#/definitions/Bounds",
+          "description": "ルートの境界ボックス"
+        },
+        "copyrights": {
+          "type": "string",
+          "description": "著作権情報"
+        },
+        "legs": {
+          "type": "array",
+          "items": { "$ref": "#/definitions/Leg" },
+          "description": "区間配列"
+        },
+        "overview_polyline": {
+          "$ref": "#/definitions/Polyline",
+          "description": "ルート全体のポリライン"
+        },
+        "summary": {
+          "type": "string",
+          "description": "ルートの要約"
+        },
+        "warnings": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "警告メッセージ配列"
+        },
+        "waypoint_order": {
+          "type": "array",
+          "items": { "type": "integer" },
+          "description": "経由地の順序"
+        }
+      },
+      "required": ["bounds", "copyrights", "legs", "overview_polyline", "summary", "warnings", "waypoint_order"]
+    },
+
+    "Leg": {
+      "title": "区間情報",
+      "description": "ルートの区間ごとの情報",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "distance": {
+          "$ref": "#/definitions/TextValue",
+          "description": "区間の距離"
+        },
+        "duration": {
+          "$ref": "#/definitions/TextValue",
+          "description": "区間の所要時間"
+        },
+        "start_address": {
+          "type": "string",
+          "description": "開始地点の住所"
+        },
+        "end_address": {
+          "type": "string",
+          "description": "終了地点の住所"
+        },
+        "start_location": {
+          "$ref": "#/definitions/LatLng",
+          "description": "開始地点の座標"
+        },
+        "end_location": {
+          "$ref": "#/definitions/LatLng",
+          "description": "終了地点の座標"
+        },
+        "steps": {
+          "type": "array",
+          "items": { "$ref": "#/definitions/Step" },
+          "description": "ステップ配列"
+        },
+        "traffic_speed_entry": {
+          "type": "array",
+          "items": { "type": "object" },
+          "description": "交通速度情報配列"
+        },
+        "via_waypoint": {
+          "type": "array",
+          "items": { "type": "object" },
+          "description": "経由地配列"
+        }
+      },
+      "required": ["distance", "duration", "start_address", "end_address", "start_location", "end_location", "steps", "traffic_speed_entry", "via_waypoint"]
+    },
+
+    "Step": {
+      "title": "ステップ情報",
+      "description": "ルートの各ステップの詳細情報",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "distance": {
+          "$ref": "#/definitions/TextValue",
+          "description": "ステップの距離"
+        },
+        "duration": {
+          "$ref": "#/definitions/TextValue",
+          "description": "ステップの所要時間"
+        },
+        "start_location": {
+          "$ref": "#/definitions/LatLng",
+          "description": "開始地点の座標"
+        },
+        "end_location": {
+          "$ref": "#/definitions/LatLng",
+          "description": "終了地点の座標"
+        },
+        "html_instructions": {
+          "type": "string",
+          "description": "HTML形式のナビゲーション指示"
+        },
+        "polyline": {
+          "$ref": "#/definitions/Polyline",
+          "description": "ステップのポリライン"
+        },
+        "travel_mode": {
+          "type": "string",
+          "enum": ["DRIVING", "WALKING", "BICYCLING", "TRANSIT"],
+          "description": "移動モード"
+        },
+        "maneuver": {
+          "type": "string",
+          "enum": ["turn-left", "turn-right", "turn-slight-left", "turn-slight-right", "turn-sharp-left", "turn-sharp-right", "uturn-left", "uturn-right", "straight", "ramp-left", "ramp-right", "merge", "fork-left", "fork-right", "ferry", "ferry-train"],
+          "description": "操作の種類"
+        }
+      },
+      "required": ["distance", "duration", "start_location", "end_location", "html_instructions", "polyline", "travel_mode"]
+    },
+
+    "GeocodedWaypoint": {
+      "title": "ジオコード済み地点",
+      "description": "ジオコードされた地点の情報",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "geocoder_status": {
+          "type": "string",
+          "enum": ["OK", "ZERO_RESULTS"],
+          "description": "ジオコーダーのステータス"
+        },
+        "place_id": {
+          "type": "string",
+          "description": "Google Place ID"
+        },
+        "types": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "地点のタイプ配列"
+        }
+      },
+      "required": ["geocoder_status", "place_id", "types"]
+    },
+
+    "LatLng": {
+      "title": "緯度経度",
+      "description": "緯度と経度の座標",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "lat": {
+          "type": "number",
+          "minimum": -90,
+          "maximum": 90,
+          "description": "緯度"
+        },
+        "lng": {
+          "type": "number",
+          "minimum": -180,
+          "maximum": 180,
+          "description": "経度"
+        }
+      },
+      "required": ["lat", "lng"]
+    },
+
+    "Bounds": {
+      "title": "境界ボックス",
+      "description": "地理的な境界ボックス",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "northeast": {
+          "$ref": "#/definitions/LatLng",
+          "description": "北東角の座標"
+        },
+        "southwest": {
+          "$ref": "#/definitions/LatLng",
+          "description": "南西角の座標"
+        }
+      },
+      "required": ["northeast", "southwest"]
+    },
+
+    "TextValue": {
+      "title": "テキストと数値",
+      "description": "テキスト表現と数値のペア",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "text": {
+          "type": "string",
+          "description": "人間が読める形式のテキスト"
+        },
+        "value": {
+          "type": "number",
+          "description": "数値（メートルまたは秒）"
+        }
+      },
+      "required": ["text", "value"]
+    },
+
+    "Polyline": {
+      "title": "ポリライン",
+      "description": "エンコードされたポリライン情報",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "points": {
+          "type": "string",
+          "description": "エンコードされたポリライン文字列"
+        }
+      },
+      "required": ["points"]
+    }
+  }
+}
+

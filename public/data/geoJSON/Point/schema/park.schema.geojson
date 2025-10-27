@@ -1,0 +1,171 @@
+{
+    "$ref": "#/definitions/Welcome",
+    "definitions": {
+        "Welcome": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "features": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/Feature"
+                    }
+                },
+                "name": {
+                    "type": "string"
+                },
+                "type": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "features",
+                "name",
+                "type"
+            ],
+            "title": "Welcome"
+        },
+        "Feature": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "type": {
+                    "$ref": "#/definitions/FeatureType"
+                },
+                "geometry": {
+                    "$ref": "#/definitions/Geometry"
+                },
+                "properties": {
+                    "$ref": "#/definitions/Properties"
+                }
+            },
+            "required": [
+                "geometry",
+                "properties",
+                "type"
+            ],
+            "title": "Feature"
+        },
+        "Geometry": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "type": {
+                    "$ref": "#/definitions/GeometryType"
+                },
+                "coordinates": {
+                    "type": "array",
+                    "items": {
+                        "type": "number"
+                    }
+                }
+            },
+            "required": [
+                "coordinates",
+                "type"
+            ],
+            "title": "Geometry"
+        },
+        "Properties": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "areaInService": {
+                    "type": "integer"
+                },
+                "serviceStartYear": {
+                    "type": "integer"
+                },
+                "parkName": {
+                    "type": "string"
+                },
+                "parkType": {
+                    "$ref": "#/definitions/ParkType"
+                },
+                "municipalityName": {
+                    "$ref": "#/definitions/Municipality"
+                },
+                "prefectureName": {
+                    "$ref": "#/definitions/Prefecture"
+                },
+                "managingMunicipality": {
+                    "anyOf": [
+                        {
+                            "$ref": "#/definitions/Municipality"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ]
+                },
+                "managingPrefectureOrBureau": {
+                    "$ref": "#/definitions/Prefecture"
+                },
+                "cityPlanningDecision": {
+                    "type": "integer"
+                }
+            },
+            "required": [
+                "areaInService",
+                "serviceStartYear",
+                "parkName",
+                "parkType",
+                "municipalityName",
+                "prefectureName",
+                "managingMunicipality",
+                "managingPrefectureOrBureau",
+                "cityPlanningDecision"
+            ],
+            "title": "Properties"
+        },
+        "GeometryType": {
+            "type": "string",
+            "enum": [
+                "Point"
+            ],
+            "title": "GeometryType"
+        },
+        "ParkType": {
+            "type": "string",
+            "enum": [
+                "特殊公園（風致公園、動植物公園、歴史公園、墓園）",
+                "広域公園",
+                "運動公園",
+                "街区公園",
+                "近隣公園",
+                "都市緑地",
+                "広場公園",
+                "総合公園",
+                "地区公園（カントリーパーク）",
+                "緑道"
+            ],
+            "title": "ParkType"
+        },
+        "Prefecture": {
+            "type": "string",
+            "enum": [
+                "千葉県"
+            ],
+            "title": "Prefecture"
+        },
+        "Municipality": {
+            "type": "string",
+            "enum": [
+                "千葉市",
+                "佐倉市",
+                "習志野市",
+                "市原市",
+                "八千代市",
+                "四街道市"
+            ],
+            "title": "Municipality"
+        },
+        "FeatureType": {
+            "type": "string",
+            "enum": [
+                "Feature"
+            ],
+            "title": "FeatureType"
+        }
+    }
+}

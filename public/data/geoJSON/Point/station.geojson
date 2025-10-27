@@ -1,0 +1,996 @@
+{
+    "features": [
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    140.15839862435965,
+                    35.56045436072238
+                ]
+            },
+            "properties": {
+                "operatorType": "民営鉄道",
+                "lineName": "千原線",
+                "operatingCompany": "京成電鉄",
+                "railwayCategory": "普通鉄道",
+                "stationName": "学園前駅",
+                "height": "0"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    140.1663453593686,
+                    35.5500159928796
+                ]
+            },
+            "properties": {
+                "operatorType": "民営鉄道",
+                "lineName": "千原線",
+                "operatingCompany": "京成電鉄",
+                "railwayCategory": "普通鉄道",
+                "stationName": "おゆみ野駅",
+                "height": "0"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    140.097325,
+                    35.625295
+                ]
+            },
+            "properties": {
+                "operatorType": "民営鉄道",
+                "lineName": "千葉線",
+                "operatingCompany": "京成電鉄",
+                "railwayCategory": "普通鉄道",
+                "stationName": "みどり台駅",
+                "height": "0"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    140.08571,
+                    35.63725
+                ]
+            },
+            "properties": {
+                "operatorType": "民営鉄道",
+                "lineName": "千葉線",
+                "operatingCompany": "京成電鉄",
+                "railwayCategory": "普通鉄道",
+                "stationName": "京成稲毛駅",
+                "height": "0"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    140.06676,
+                    35.65251
+                ]
+            },
+            "properties": {
+                "operatorType": "民営鉄道",
+                "lineName": "千葉線",
+                "operatingCompany": "京成電鉄",
+                "railwayCategory": "普通鉄道",
+                "stationName": "検見川駅",
+                "height": "0"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    140.0560649526314,
+                    35.66048273128041
+                ]
+            },
+            "properties": {
+                "operatorType": "民営鉄道",
+                "lineName": "千葉線",
+                "operatingCompany": "京成電鉄",
+                "railwayCategory": "普通鉄道",
+                "stationName": "京成幕張駅",
+                "height": "0"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    140.041675,
+                    35.67292
+                ]
+            },
+            "properties": {
+                "operatorType": "民営鉄道",
+                "lineName": "千葉線",
+                "operatingCompany": "京成電鉄",
+                "railwayCategory": "普通鉄道",
+                "stationName": "京成幕張本郷駅",
+                "height": "0"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    140.18201,
+                    35.627555
+                ]
+            },
+            "properties": {
+                "operatorType": "第三セクター",
+                "lineName": "2号線",
+                "operatingCompany": "千葉都市モノレール",
+                "railwayCategory": "懸垂式モノレール",
+                "stationName": "千城台北駅",
+                "height": "0"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    140.13489,
+                    35.638725
+                ]
+            },
+            "properties": {
+                "operatorType": "第三セクター",
+                "lineName": "2号線",
+                "operatingCompany": "千葉都市モノレール",
+                "railwayCategory": "懸垂式モノレール",
+                "stationName": "みつわ台駅",
+                "height": "0"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    140.11284,
+                    35.63147
+                ]
+            },
+            "properties": {
+                "operatorType": "第三セクター",
+                "lineName": "2号線",
+                "operatingCompany": "千葉都市モノレール",
+                "railwayCategory": "懸垂式モノレール",
+                "stationName": "天台駅",
+                "height": "0"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    140.160985,
+                    35.6314
+                ]
+            },
+            "properties": {
+                "operatorType": "第三セクター",
+                "lineName": "2号線",
+                "operatingCompany": "千葉都市モノレール",
+                "railwayCategory": "懸垂式モノレール",
+                "stationName": "桜木駅",
+                "height": "0"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    140.111885,
+                    35.63954
+                ]
+            },
+            "properties": {
+                "operatorType": "第三セクター",
+                "lineName": "2号線",
+                "operatingCompany": "千葉都市モノレール",
+                "railwayCategory": "懸垂式モノレール",
+                "stationName": "穴川駅",
+                "height": "0"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    140.17184,
+                    35.627815
+                ]
+            },
+            "properties": {
+                "operatorType": "第三セクター",
+                "lineName": "2号線",
+                "operatingCompany": "千葉都市モノレール",
+                "railwayCategory": "懸垂式モノレール",
+                "stationName": "小倉台駅",
+                "height": "0"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    140.116245,
+                    35.64334
+                ]
+            },
+            "properties": {
+                "operatorType": "第三セクター",
+                "lineName": "2号線",
+                "operatingCompany": "千葉都市モノレール",
+                "railwayCategory": "懸垂式モノレール",
+                "stationName": "スポーツセンター駅",
+                "height": "0"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    140.1255008048815,
+                    35.642637206327024
+                ]
+            },
+            "properties": {
+                "operatorType": "第三セクター",
+                "lineName": "2号線",
+                "operatingCompany": "千葉都市モノレール",
+                "railwayCategory": "懸垂式モノレール",
+                "stationName": "動物公園駅",
+                "height": "0"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    140.188545,
+                    35.622355
+                ]
+            },
+            "properties": {
+                "operatorType": "第三セクター",
+                "lineName": "2号線",
+                "operatingCompany": "千葉都市モノレール",
+                "railwayCategory": "懸垂式モノレール",
+                "stationName": "千城台駅",
+                "height": "0"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    140.11537,
+                    35.625785
+                ]
+            },
+            "properties": {
+                "operatorType": "第三セクター",
+                "lineName": "2号線",
+                "operatingCompany": "千葉都市モノレール",
+                "railwayCategory": "懸垂式モノレール",
+                "stationName": "作草部駅",
+                "height": "0"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    140.148745,
+                    35.635495
+                ]
+            },
+            "properties": {
+                "operatorType": "第三セクター",
+                "lineName": "2号線",
+                "operatingCompany": "千葉都市モノレール",
+                "railwayCategory": "懸垂式モノレール",
+                "stationName": "都賀駅",
+                "height": "0"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    140.17874673146696,
+                    35.56265106288241
+                ]
+            },
+            "properties": {
+                "operatorType": "JR在来線",
+                "lineName": "外房線",
+                "operatingCompany": "東日本旅客鉄道",
+                "railwayCategory": "普通鉄道JR",
+                "stationName": "鎌取駅",
+                "height": "0"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    140.213785,
+                    35.547
+                ]
+            },
+            "properties": {
+                "operatorType": "JR在来線",
+                "lineName": "外房線",
+                "operatingCompany": "東日本旅客鉄道",
+                "railwayCategory": "普通鉄道JR",
+                "stationName": "誉田駅",
+                "height": "0"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    140.26976967193707,
+                    35.530919010639906
+                ]
+            },
+            "properties": {
+                "operatorType": "JR在来線",
+                "lineName": "外房線",
+                "operatingCompany": "東日本旅客鉄道",
+                "railwayCategory": "普通鉄道JR",
+                "stationName": "土気駅",
+                "height": "0"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    140.07384990117393,
+                    35.62951869200108
+                ]
+            },
+            "properties": {
+                "operatorType": "JR在来線",
+                "lineName": "京葉線",
+                "operatingCompany": "東日本旅客鉄道",
+                "railwayCategory": "普通鉄道JR",
+                "stationName": "稲毛海岸駅",
+                "height": "0"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    140.059085,
+                    35.63717
+                ]
+            },
+            "properties": {
+                "operatorType": "JR在来線",
+                "lineName": "京葉線",
+                "operatingCompany": "東日本旅客鉄道",
+                "railwayCategory": "普通鉄道JR",
+                "stationName": "検見川浜駅",
+                "height": "0"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    140.041995,
+                    35.6484
+                ]
+            },
+            "properties": {
+                "operatorType": "JR在来線",
+                "lineName": "京葉線",
+                "operatingCompany": "東日本旅客鉄道",
+                "railwayCategory": "普通鉄道JR",
+                "stationName": "海浜幕張駅",
+                "height": "0"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    140.0925648998599,
+                    35.63730994367818
+                ]
+            },
+            "properties": {
+                "operatorType": "JR在来線",
+                "lineName": "総武線",
+                "operatingCompany": "東日本旅客鉄道",
+                "railwayCategory": "普通鉄道JR",
+                "stationName": "稲毛駅",
+                "height": "0"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    140.07334496326652,
+                    35.65179967665967
+                ]
+            },
+            "properties": {
+                "operatorType": "JR在来線",
+                "lineName": "総武線",
+                "operatingCompany": "東日本旅客鉄道",
+                "railwayCategory": "普通鉄道JR",
+                "stationName": "新検見川駅",
+                "height": "0"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    140.149185,
+                    35.63602
+                ]
+            },
+            "properties": {
+                "operatorType": "JR在来線",
+                "lineName": "総武線",
+                "operatingCompany": "東日本旅客鉄道",
+                "railwayCategory": "普通鉄道JR",
+                "stationName": "都賀駅",
+                "height": "0"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    140.04207493187573,
+                    35.672904919201564
+                ]
+            },
+            "properties": {
+                "operatorType": "JR在来線",
+                "lineName": "総武線",
+                "operatingCompany": "東日本旅客鉄道",
+                "railwayCategory": "普通鉄道JR",
+                "stationName": "幕張本郷駅",
+                "height": "0"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    140.05782007715382,
+                    35.65954508187832
+                ]
+            },
+            "properties": {
+                "operatorType": "JR在来線",
+                "lineName": "総武線",
+                "operatingCompany": "東日本旅客鉄道",
+                "railwayCategory": "普通鉄道JR",
+                "stationName": "幕張駅",
+                "height": "0"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    140.02707312045885,
+                    35.658160987275096
+                ]
+            },
+            "properties": {
+                "operatorType": "JR在来線",
+                "lineName": "京葉線",
+                "operatingCompany": "東日本旅客鉄道",
+                "railwayCategory": "普通鉄道JR",
+                "stationName": "幕張豊砂駅",
+                "height": "0"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    140.1177436777006,
+                    35.60734260724843
+                ]
+            },
+            "properties": {
+                "operatorType": "民営鉄道",
+                "lineName": "千原線",
+                "operatingCompany": "京成電鉄",
+                "railwayCategory": "普通鉄道",
+                "stationName": "千葉中央駅",
+                "height": "13.9"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    140.13217,
+                    35.59036
+                ]
+            },
+            "properties": {
+                "operatorType": "民営鉄道",
+                "lineName": "千原線",
+                "operatingCompany": "京成電鉄",
+                "railwayCategory": "普通鉄道",
+                "stationName": "千葉寺駅",
+                "height": "16.6"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    140.14943022637618,
+                    35.58414110662035
+                ]
+            },
+            "properties": {
+                "operatorType": "民営鉄道",
+                "lineName": "千原線",
+                "operatingCompany": "京成電鉄",
+                "railwayCategory": "普通鉄道",
+                "stationName": "大森台駅",
+                "height": "7.9"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    140.10818136606773,
+                    35.61244541657952
+                ]
+            },
+            "properties": {
+                "operatorType": "民営鉄道",
+                "lineName": "千葉線",
+                "operatingCompany": "京成電鉄",
+                "railwayCategory": "普通鉄道",
+                "stationName": "新千葉駅",
+                "height": "6.3"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    140.114355,
+                    35.61162
+                ]
+            },
+            "properties": {
+                "operatorType": "民営鉄道",
+                "lineName": "千葉線",
+                "operatingCompany": "京成電鉄",
+                "railwayCategory": "普通鉄道",
+                "stationName": "京成千葉駅",
+                "height": "12.2"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    140.11767362771553,
+                    35.60747712493685
+                ]
+            },
+            "properties": {
+                "operatorType": "民営鉄道",
+                "lineName": "千葉線",
+                "operatingCompany": "京成電鉄",
+                "railwayCategory": "普通鉄道",
+                "stationName": "千葉中央駅",
+                "height": "13.9"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    140.1027542075428,
+                    35.61752788374559
+                ]
+            },
+            "properties": {
+                "operatorType": "民営鉄道",
+                "lineName": "千葉線",
+                "operatingCompany": "京成電鉄",
+                "railwayCategory": "普通鉄道",
+                "stationName": "西登戸駅",
+                "height": "7.4"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    140.11402826198452,
+                    35.612091311542684
+                ]
+            },
+            "properties": {
+                "operatorType": "第三セクター",
+                "lineName": "1号線",
+                "operatingCompany": "千葉都市モノレール",
+                "railwayCategory": "懸垂式モノレール",
+                "stationName": "千葉駅",
+                "height": "26.8"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    140.10242301060939,
+                    35.60750086293811
+                ]
+            },
+            "properties": {
+                "operatorType": "第三セクター",
+                "lineName": "1号線",
+                "operatingCompany": "千葉都市モノレール",
+                "railwayCategory": "懸垂式モノレール",
+                "stationName": "千葉みなと駅",
+                "height": "16.2"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    140.120075,
+                    35.608865
+                ]
+            },
+            "properties": {
+                "operatorType": "第三セクター",
+                "lineName": "1号線",
+                "operatingCompany": "千葉都市モノレール",
+                "railwayCategory": "懸垂式モノレール",
+                "stationName": "葭川公園駅",
+                "height": "18.6"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    140.11867,
+                    35.612965
+                ]
+            },
+            "properties": {
+                "operatorType": "第三セクター",
+                "lineName": "1号線",
+                "operatingCompany": "千葉都市モノレール",
+                "railwayCategory": "懸垂式モノレール",
+                "stationName": "栄町駅",
+                "height": "18.6"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    140.10767191603048,
+                    35.6070271067144
+                ]
+            },
+            "properties": {
+                "operatorType": "第三セクター",
+                "lineName": "1号線",
+                "operatingCompany": "千葉都市モノレール",
+                "railwayCategory": "懸垂式モノレール",
+                "stationName": "市役所前駅",
+                "height": "16.1"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    140.12215,
+                    35.6038
+                ]
+            },
+            "properties": {
+                "operatorType": "第三セクター",
+                "lineName": "1号線",
+                "operatingCompany": "千葉都市モノレール",
+                "railwayCategory": "懸垂式モノレール",
+                "stationName": "県庁前駅",
+                "height": "22.1"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    140.11402826198452,
+                    35.612091311542684
+                ]
+            },
+            "properties": {
+                "operatorType": "第三セクター",
+                "lineName": "2号線",
+                "operatingCompany": "千葉都市モノレール",
+                "railwayCategory": "懸垂式モノレール",
+                "stationName": "千葉駅",
+                "height": "26.8"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    140.11798,
+                    35.61971
+                ]
+            },
+            "properties": {
+                "operatorType": "第三セクター",
+                "lineName": "2号線",
+                "operatingCompany": "千葉都市モノレール",
+                "railwayCategory": "懸垂式モノレール",
+                "stationName": "千葉公園駅",
+                "height": "17.9"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    140.12109917578977,
+                    35.600900864013916
+                ]
+            },
+            "properties": {
+                "operatorType": "JR在来線",
+                "lineName": "外房線",
+                "operatingCompany": "東日本旅客鉄道",
+                "railwayCategory": "普通鉄道JR",
+                "stationName": "本千葉駅",
+                "height": "14.6"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    140.11308345472307,
+                    35.61314758897203
+                ]
+            },
+            "properties": {
+                "operatorType": "JR在来線",
+                "lineName": "外房線",
+                "operatingCompany": "東日本旅客鉄道",
+                "railwayCategory": "普通鉄道JR",
+                "stationName": "千葉駅",
+                "height": "44.9"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    140.13073652938814,
+                    35.58215575718246
+                ]
+            },
+            "properties": {
+                "operatorType": "JR在来線",
+                "lineName": "外房線",
+                "operatingCompany": "東日本旅客鉄道",
+                "railwayCategory": "普通鉄道JR",
+                "stationName": "蘇我駅",
+                "height": "7.2"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    140.10270362771553,
+                    35.60690761912693
+                ]
+            },
+            "properties": {
+                "operatorType": "JR在来線",
+                "lineName": "京葉線",
+                "operatingCompany": "東日本旅客鉄道",
+                "railwayCategory": "普通鉄道JR",
+                "stationName": "千葉みなと駅",
+                "height": "13.7"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    140.13073652938814,
+                    35.58215575718246
+                ]
+            },
+            "properties": {
+                "operatorType": "JR在来線",
+                "lineName": "京葉線",
+                "operatingCompany": "東日本旅客鉄道",
+                "railwayCategory": "普通鉄道JR",
+                "stationName": "蘇我駅",
+                "height": "7.2"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    140.10327290115072,
+                    35.62258651388347
+                ]
+            },
+            "properties": {
+                "operatorType": "JR在来線",
+                "lineName": "総武線",
+                "operatingCompany": "東日本旅客鉄道",
+                "railwayCategory": "普通鉄道JR",
+                "stationName": "西千葉駅",
+                "height": "12.5"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    140.12207464610458,
+                    35.616867029330265
+                ]
+            },
+            "properties": {
+                "operatorType": "JR在来線",
+                "lineName": "総武線",
+                "operatingCompany": "東日本旅客鉄道",
+                "railwayCategory": "普通鉄道JR",
+                "stationName": "東千葉駅",
+                "height": "12.3"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    140.1135256848334,
+                    35.61352615008226
+                ]
+            },
+            "properties": {
+                "operatorType": "JR在来線",
+                "lineName": "総武線",
+                "operatingCompany": "東日本旅客鉄道",
+                "railwayCategory": "普通鉄道JR",
+                "stationName": "千葉駅",
+                "height": "44.9"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    140.13073652938814,
+                    35.58215575718246
+                ]
+            },
+            "properties": {
+                "operatorType": "JR在来線",
+                "lineName": "内房線",
+                "operatingCompany": "東日本旅客鉄道",
+                "railwayCategory": "普通鉄道JR",
+                "stationName": "蘇我駅",
+                "height": "7.2"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    140.132185,
+                    35.5521
+                ]
+            },
+            "properties": {
+                "operatorType": "JR在来線",
+                "lineName": "内房線",
+                "operatingCompany": "東日本旅客鉄道",
+                "railwayCategory": "普通鉄道JR",
+                "stationName": "浜野駅",
+                "height": "15.6"
+            }
+        }
+    ],
+    "name": "12100_chiba-shi_city_2024_station",
+    "type": "FeatureCollection"
+}

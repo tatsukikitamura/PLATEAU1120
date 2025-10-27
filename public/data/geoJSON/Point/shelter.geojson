@@ -1,0 +1,7986 @@
+{
+	"features": [
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.130926,
+					35.585171
+				]
+			},
+			"properties": {
+				"level": 3,
+				"address": "千葉県千葉市中央区南町1丁目",
+				"capacity": "-1",
+				"name": "ＪＦＥ健保千葉グランド一帯",
+				"disasterCategory": "指定なし",
+				"facilityType": "広域避難所",
+				"facilityScale": "-1",
+				"administrativeArea": "12101",
+				"height": "37.3"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.13488819,
+					35.57073395
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市中央区蘇我2",
+				"capacity": "4400",
+				"name": "そが野ふれあい公園",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12101",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.160787246,
+					35.5785293237
+				]
+			},
+			"properties": {
+				"level": 3,
+				"address": "千葉県千葉市中央区仁戸名町705",
+				"capacity": "-1",
+				"name": "ニューサンピア千葉一帯",
+				"disasterCategory": "指定なし",
+				"facilityType": "広域避難所",
+				"facilityScale": "-1",
+				"administrativeArea": "12101",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.123346038,
+					35.607447169
+				]
+			},
+			"properties": {
+				"level": 3,
+				"address": "千葉県千葉市中央区中央4-5-1",
+				"capacity": "60",
+				"name": "ビジネス支援センター",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12101",
+				"height": "79.4"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.10483496,
+					35.60658149
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市中央区千葉港6",
+				"capacity": "-1",
+				"name": "みなと公園",
+				"disasterCategory": "指定なし",
+				"facilityType": "広域避難所",
+				"facilityScale": "-1",
+				"administrativeArea": "12101",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.125821,
+					35.615531
+				]
+			},
+			"properties": {
+				"level": 3,
+				"address": "千葉県千葉市中央区祐光1-25-3",
+				"capacity": "1900",
+				"name": "院内小学校",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12101",
+				"height": "16.5"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.12296151,
+					35.60397295
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市中央区市場町1-1",
+				"capacity": "1800",
+				"name": "羽衣公園",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12101",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.130884,
+					35.5996249991
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市中央区葛城2-9-2",
+				"capacity": "160",
+				"name": "葛城公民館",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12101",
+				"height": "7.8"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.131129,
+					35.600839
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市中央区葛城2-9-1",
+				"capacity": "4300",
+				"name": "葛城中学校",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12101",
+				"height": "15.3"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.121407,
+					35.597005
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市中央区寒川町1-205",
+				"capacity": "3400",
+				"name": "寒川小学校",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12101",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.136824,
+					35.5805979991
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市中央区宮崎2-5-22",
+				"capacity": "160",
+				"name": "宮崎公民館",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12101",
+				"height": "15.5"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.136518,
+					35.583589
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市中央区宮崎2-3-13",
+				"capacity": "3300",
+				"name": "宮崎小学校",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12101",
+				"height": "14.6"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.141765,
+					35.568896
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市中央区生実町1001",
+				"capacity": "-1",
+				"name": "県立生実学校",
+				"disasterCategory": "指定なし",
+				"facilityType": "広域避難所",
+				"facilityScale": "-1",
+				"administrativeArea": "12101",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.129739,
+					35.560702
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市中央区塩田町372",
+				"capacity": "12200",
+				"name": "県立生浜高等学校",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12101",
+				"height": "22.2"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.141098,
+					35.570813
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市中央区今井町1478",
+				"capacity": "11100",
+				"name": "県立千葉工業高等学校",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設、広域避難所",
+				"facilityScale": "-1",
+				"administrativeArea": "12101",
+				"height": "17.3"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.12849,
+					35.599616
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市中央区葛城1-5-2",
+				"capacity": "10800",
+				"name": "県立千葉高等学校",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12101",
+				"height": "12.8"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.108457,
+					35.621479
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市中央区松波2-22-48",
+				"capacity": "6900",
+				"name": "県立千葉商業高等学校",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12101",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.163011,
+					35.576758
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市中央区花輪町45-3",
+				"capacity": "12600",
+				"name": "県立千葉南高等学校",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12101",
+				"height": "10.5"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.13520167,
+					35.58353624
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市中央区宮崎2-4",
+				"capacity": "3300",
+				"name": "菰池公園",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12101",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.122797,
+					35.6074009991
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市中央区中央4-5-1",
+				"capacity": "50",
+				"name": "子ども交流館",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12101",
+				"height": "79.4"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.123331386,
+					35.6075098734
+				]
+			},
+			"properties": {
+				"level": 3,
+				"address": "千葉県千葉市中央区中央4-5-1",
+				"capacity": "150",
+				"name": "子育て支援館",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12101",
+				"height": "79.4"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.120235,
+					35.6153789991
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市中央区要町1-1",
+				"capacity": "570",
+				"name": "市民会館",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12101",
+				"height": "23.9"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.151881,
+					35.588251
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市中央区松ケ丘町257-2",
+				"capacity": "450",
+				"name": "松ケ丘公民館",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12101",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.155458,
+					35.586701
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市中央区松ヶ丘町580",
+				"capacity": "2900",
+				"name": "松ヶ丘小学校",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12101",
+				"height": "16.6"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.152625,
+					35.587756
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市中央区松ケ丘町440",
+				"capacity": "3700",
+				"name": "松ケ丘中学校",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12101",
+				"height": "15"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.113796,
+					35.606851
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市中央区新宿2-16-14",
+				"capacity": "480",
+				"name": "新宿公民館",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12101",
+				"height": "15.2"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.114101,
+					35.607781
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市中央区新宿2-15-1",
+				"capacity": "3900",
+				"name": "新宿小学校",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12101",
+				"height": "14.3"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.109212,
+					35.604364
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市中央区問屋町1-73",
+				"capacity": "6000",
+				"name": "新宿中学校",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12101",
+				"height": "14.4"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.158374,
+					35.592228
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市中央区仁戸名町380",
+				"capacity": "2800",
+				"name": "仁戸名小学校",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12101",
+				"height": "17.9"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.151159,
+					35.597703
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市中央区星久喜町615-7",
+				"capacity": "160",
+				"name": "星久喜公民館",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12101",
+				"height": "7.3"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.14671,
+					35.596756
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市中央区星久喜町1060",
+				"capacity": "4900",
+				"name": "星久喜小学校",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12101",
+				"height": "14.6"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.15207,
+					35.600783
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市中央区星久喜町823",
+				"capacity": "4500",
+				"name": "星久喜中学校",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12101",
+				"height": "17.1"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.141822,
+					35.559628
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市中央区生実町67-1",
+				"capacity": "320",
+				"name": "生浜公民館",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12101",
+				"height": "8.7"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.140514,
+					35.559453
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市中央区浜野町1335",
+				"capacity": "4300",
+				"name": "生浜小学校",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12101",
+				"height": "14.6"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.131405,
+					35.559008
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市中央区塩田町316-1",
+				"capacity": "3900",
+				"name": "生浜西小学校",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12101",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.144148,
+					35.557121
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市中央区南生実町258",
+				"capacity": "5700",
+				"name": "生浜中学校",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12101",
+				"height": "10.6"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.147763,
+					35.559814
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市中央区生実町1928",
+				"capacity": "3800",
+				"name": "生浜東小学校",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12101",
+				"height": "13.9"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.13863,
+					35.59674
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市中央区青葉町654",
+				"capacity": "-1",
+				"name": "青葉の森公園",
+				"disasterCategory": "指定なし",
+				"facilityType": "広域避難所",
+				"facilityScale": "-1",
+				"administrativeArea": "12101",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.111782,
+					35.602968
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市中央区問屋町1-20",
+				"capacity": "1600",
+				"name": "千葉ポートアリーナ",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12101",
+				"height": "26.8"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.11759255,
+					35.61974142
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市中央区弁天3-1、4-1",
+				"capacity": "-1",
+				"name": "千葉公園",
+				"disasterCategory": "指定なし",
+				"facilityType": "広域避難所",
+				"facilityScale": "-1",
+				"administrativeArea": "12101",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.113784781,
+					35.6202532022
+				]
+			},
+			"properties": {
+				"level": 3,
+				"address": "千葉県千葉市中央区弁天3-1-1",
+				"capacity": "1500",
+				"name": "千葉公園体育館",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12101",
+				"height": "16.5"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.134452,
+					35.594792
+				]
+			},
+			"properties": {
+				"level": 3,
+				"address": "千葉県千葉市中央区千葉寺町1208-2",
+				"capacity": "2160",
+				"name": "千葉市ハーモニープラザ",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12101",
+				"height": "19.7"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.123094504,
+					35.6074711407
+				]
+			},
+			"properties": {
+				"level": 3,
+				"address": "千葉県千葉市中央区中央4-5-1",
+				"capacity": "150",
+				"name": "千葉市科学館",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12101",
+				"height": "79.4"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.155576942,
+					35.5600946706
+				]
+			},
+			"properties": {
+				"level": 3,
+				"address": "千葉県千葉市中央区南生実町1412",
+				"capacity": "-1",
+				"name": "千葉明徳学園",
+				"disasterCategory": "指定なし",
+				"facilityType": "広域避難所",
+				"facilityScale": "-1",
+				"administrativeArea": "12101",
+				"height": "13"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.16688,
+					35.581937
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市中央区川戸町403-1",
+				"capacity": "160",
+				"name": "川戸公民館",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12101",
+				"height": "9.8"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.168317,
+					35.584756
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市中央区川戸町450",
+				"capacity": "2800",
+				"name": "川戸小学校",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12101",
+				"height": "14.5"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.167929,
+					35.583951
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市中央区川戸町443",
+				"capacity": "5600",
+				"name": "川戸中学校",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12101",
+				"height": "15.5"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.129542,
+					35.5827459991
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市中央区今井1-14-35",
+				"capacity": "1000",
+				"name": "蘇我コミュニティセンター",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12101",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.129242,
+					35.583653
+				]
+			},
+			"properties": {
+				"level": 3,
+				"address": "千葉県千葉市中央区今井1-14-43",
+				"capacity": "2200",
+				"name": "蘇我勤労市民プラザ体育館",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12101",
+				"height": "26.3"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.130962,
+					35.578423
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市中央区今井3-15-32",
+				"capacity": "3700",
+				"name": "蘇我小学校",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12101",
+				"height": "16.7"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.138377,
+					35.577312
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市中央区白旗1-5-3",
+				"capacity": "4300",
+				"name": "蘇我中学校",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12101",
+				"height": "16.2"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.149079,
+					35.572962
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市中央区大巌寺町375",
+				"capacity": "3000",
+				"name": "大巌寺小学校",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12101",
+				"height": "17.7"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.144515,
+					35.580396
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市中央区大森町268",
+				"capacity": "3900",
+				"name": "大森小学校",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12101",
+				"height": "12.9"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.108177,
+					35.6067089991
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市中央区千葉港2-1",
+				"capacity": "3300",
+				"name": "中央コミュニティセンター（震災時を除く）",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12101",
+				"height": "50.2"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.12383,
+					35.620141
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市中央区椿森6-1-11",
+				"capacity": "160",
+				"name": "椿森公民館",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12101",
+				"height": "8.4"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.12071,
+					35.622362
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市中央区椿森4-1-1",
+				"capacity": "4000",
+				"name": "椿森中学校",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12101",
+				"height": "15.1"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.133655,
+					35.609866
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市中央区鶴沢町21-1",
+				"capacity": "2500",
+				"name": "鶴沢小学校",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12101",
+				"height": "13.2"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.10774,
+					35.612446
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市中央区登戸2-11-1",
+				"capacity": "2200",
+				"name": "登戸小学校",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12101",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.13884,
+					35.61149
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市中央区都町2-14",
+				"capacity": "3900",
+				"name": "都公園",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12101",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.15189464,
+					35.6018060891
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市中央区星久喜町278",
+				"capacity": "9100",
+				"name": "都市緑化植物園",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12101",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.144988,
+					35.612199
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市中央区都町1129",
+				"capacity": "3100",
+				"name": "都小学校",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12101",
+				"height": "17.8"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.138543,
+					35.57899
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市中央区白旗1-3-16",
+				"capacity": "1400",
+				"name": "南部青少年センター",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12101",
+				"height": "22.5"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.126878,
+					35.595603
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市中央区末広2-11-24",
+				"capacity": "570",
+				"name": "武道館",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12101",
+				"height": "9.7"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.117405992,
+					35.613193868
+				]
+			},
+			"properties": {
+				"level": 3,
+				"address": "千葉県千葉市中央区富士見1-3-2",
+				"capacity": "460",
+				"name": "文化交流プラザ",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12101",
+				"height": "76.1"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.112803,
+					35.616272
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市中央区弁天1-21-2",
+				"capacity": "2500",
+				"name": "弁天小学校",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12101",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.128183,
+					35.609393
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市中央区本町2-6-23",
+				"capacity": "3500",
+				"name": "本町小学校",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12101",
+				"height": "13.4"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.125209,
+					35.593978
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市中央区末広3-2-2",
+				"capacity": "160",
+				"name": "末広公民館",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12101",
+				"height": "7.9"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.126518,
+					35.5967
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市中央区末広2-10-1",
+				"capacity": "4700",
+				"name": "末広中学校",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12101",
+				"height": "14.3"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.12018702,
+					35.68793964
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市花見川区こてはし台4-21",
+				"capacity": "4200",
+				"name": "こてはし台公園",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12102",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.12103,
+					35.692941
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市花見川区横戸町861-4",
+				"capacity": "200",
+				"name": "こてはし台公民館",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12102",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.123264,
+					35.687908
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市花見川区こてはし台2-28-1",
+				"capacity": "3200",
+				"name": "こてはし台小学校",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12102",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.119264,
+					35.691685
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市花見川区こてはし台5-15-1",
+				"capacity": "6100",
+				"name": "こてはし台中学校",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12102",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.096925,
+					35.6650859991
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市花見川区さつきが丘1-32-4",
+				"capacity": "200",
+				"name": "さつきが丘公民館",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12102",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.091322,
+					35.667521
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市花見川区さつきが丘2-14",
+				"capacity": "4700",
+				"name": "さつきが丘西小学校",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12102",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.091489,
+					35.668271
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市花見川区さつきが丘2-15",
+				"capacity": "7500",
+				"name": "さつきが丘中学校",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12102",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.099183,
+					35.663966
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市花見川区さつきが丘1-7",
+				"capacity": "4100",
+				"name": "さつきが丘東小学校",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12102",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.118195174,
+					35.6783646275
+				]
+			},
+			"properties": {
+				"level": 3,
+				"address": "千葉県千葉市花見川区三角町656-3",
+				"capacity": "-1",
+				"name": "ふるさと農園",
+				"disasterCategory": "指定なし",
+				"facilityType": "広域避難所",
+				"facilityScale": "-1",
+				"administrativeArea": "12102",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.0424172,
+					35.6685919
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市花見川区幕張本郷2-33",
+				"capacity": "5700",
+				"name": "一本松公園",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12102",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.13822701,
+					35.69235627
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市花見川区宇那谷町2115",
+				"capacity": "5400",
+				"name": "宇那谷み春野公園",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12102",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.12043,
+					35.696213
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市花見川区横戸町1005",
+				"capacity": "5000",
+				"name": "横戸小学校",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12102",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.069656,
+					35.6577889991
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市花見川区花園3-12-8",
+				"capacity": "360",
+				"name": "花園公民館",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12102",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.07428,
+					35.656152
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市花見川区花園4-1-2",
+				"capacity": "2100",
+				"name": "花園小学校",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12102",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.074158,
+					35.655216
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市花見川区花園4-1-1",
+				"capacity": "3900",
+				"name": "花園中学校",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12102",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.099632,
+					35.695571
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市花見川区柏井町1590-8",
+				"capacity": "240",
+				"name": "花見川公民館",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12102",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.097877,
+					35.69424
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市花見川区花見川4-1",
+				"capacity": "2200",
+				"name": "花見川第一小学校",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12102",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.102515,
+					35.689019
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市花見川区花見川6-2",
+				"capacity": "3500",
+				"name": "花見川第一中学校",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設、広域避難所",
+				"facilityScale": "-1",
+				"administrativeArea": "12102",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.088489,
+					35.685547
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市花見川区花見川1-1",
+				"capacity": "2700",
+				"name": "花見川第三小学校",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12102",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.101238,
+					35.688769
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市花見川区花見川6-1",
+				"capacity": "3300",
+				"name": "花見川第二小学校",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設、広域避難所",
+				"facilityScale": "-1",
+				"administrativeArea": "12102",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.087239,
+					35.682547
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市花見川区天戸台1428-1",
+				"capacity": "4900",
+				"name": "花見川第二中学校",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12102",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.096939,
+					35.6814889991
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市花見川区花島町308",
+				"capacity": "430",
+				"name": "花島コミュニティセンター",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12102",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.09807786,
+					35.68270524
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市花見川区花島町493-1",
+				"capacity": "22800",
+				"name": "花島公園",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12102",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.095049604,
+					35.6836772864
+				]
+			},
+			"properties": {
+				"level": 4,
+				"address": "千葉県千葉市花見川区花見川8-1",
+				"capacity": "2800",
+				"name": "花島小学校",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12102",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.067344,
+					35.6492939991
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市花見川区検見川町3-322-25",
+				"capacity": "230",
+				"name": "検見川公民館",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12102",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.06847,
+					35.648688
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市花見川区検見川町3-322-23",
+				"capacity": "3100",
+				"name": "検見川小学校",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12102",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.107626,
+					35.698296
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市花見川区柏井町1452",
+				"capacity": "11200",
+				"name": "県立柏井高等学校",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12102",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.120875,
+					35.67827
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市花見川区千種町381-1",
+				"capacity": "9000",
+				"name": "県立犢橋高等学校",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設、広域避難所",
+				"facilityScale": "-1",
+				"administrativeArea": "12102",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.084684,
+					35.687796
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市花見川区作新台7-2-1",
+				"capacity": "3500",
+				"name": "作新小学校",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12102",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.050215,
+					35.668242
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市花見川区幕張本郷4-8-1",
+				"capacity": "3900",
+				"name": "上の台小学校",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12102",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.08999592,
+					35.67021219
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市花見川区さつきが丘2、畑町",
+				"capacity": "6200",
+				"name": "神場公園",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12102",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.068763,
+					35.663964
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市花見川区瑞穂1-2",
+				"capacity": "2800",
+				"name": "瑞穂小学校",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12102",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.045744,
+					35.665993
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市花見川区幕張本郷3-22-6",
+				"capacity": "2400",
+				"name": "西の谷小学校",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12102",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.086546,
+					35.650967
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市花見川区西小中台3-1",
+				"capacity": "3200",
+				"name": "西小中台小学校",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12102",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.117559386,
+					35.6819424461
+				]
+			},
+			"properties": {
+				"level": 3,
+				"address": "千葉県千葉市花見川区千種町300",
+				"capacity": "-1",
+				"name": "千葉工業大学グラウンド一帯",
+				"disasterCategory": "指定なし",
+				"facilityType": "広域避難所",
+				"facilityScale": "-1",
+				"administrativeArea": "12102",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.109764082,
+					35.7086014131
+				]
+			},
+			"properties": {
+				"level": 3,
+				"address": "千葉県千葉市花見川区柏井町他",
+				"capacity": "-1",
+				"name": "鷹之台カンツリー倶楽部",
+				"disasterCategory": "指定なし",
+				"facilityType": "広域避難所",
+				"facilityScale": "-1",
+				"administrativeArea": "12102",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.089165,
+					35.6556219991
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市花見川区朝日ケ丘1-1-30",
+				"capacity": "210",
+				"name": "朝日ケ丘公民館",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12102",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.08524,
+					35.659216
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市花見川区朝日ケ丘2-6-1",
+				"capacity": "2900",
+				"name": "朝日ケ丘小学校",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12102",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.087951,
+					35.656326
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市花見川区朝日ケ丘2-4-1",
+				"capacity": "4900",
+				"name": "朝日ケ丘中学校",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12102",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.079015,
+					35.680366
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市花見川区長作町1722-1",
+				"capacity": "210",
+				"name": "長作公民館",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12102",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.07399,
+					35.684269
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市花見川区長作町1273",
+				"capacity": "3000",
+				"name": "長作小学校",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12102",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.087045,
+					35.681241
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市花見川区天戸町1429",
+				"capacity": "5200",
+				"name": "天戸中学校",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12102",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.075530516,
+					35.6590647732
+				]
+			},
+			"properties": {
+				"level": 3,
+				"address": "千葉県千葉市花見川区朝日ヶ丘町他",
+				"capacity": "-1",
+				"name": "東大検見川総合運動場",
+				"disasterCategory": "指定なし",
+				"facilityType": "広域避難所",
+				"facilityScale": "-1",
+				"administrativeArea": "12102",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.106542,
+					35.7086
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市花見川区柏井町1486-1",
+				"capacity": "4200",
+				"name": "柏井小学校",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12102",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.079344,
+					35.6670849991
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市花見川区畑町1336-2",
+				"capacity": "990",
+				"name": "畑コミュニティセンター",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12102",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.078935,
+					35.665604
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市花見川区畑町1385-1",
+				"capacity": "3000",
+				"name": "畑小学校",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12102",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.059054,
+					35.662901
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市花見川区幕張町4-45",
+				"capacity": "5300",
+				"name": "募張中学校",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12102",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.047591,
+					35.656517
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市花見川区幕張町3-7730-4",
+				"capacity": "1200",
+				"name": "幕張コミュニティセンター",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12102",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.055418,
+					35.6602439991
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市花見川区幕張町4-602",
+				"capacity": "470",
+				"name": "幕張公民館",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12102",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.04903741,
+					35.6577027
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市花見川区幕張町3",
+				"capacity": "6100",
+				"name": "幕張舟溜跡公園",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12102",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.05391,
+					35.661882
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市花見川区幕張町4-781",
+				"capacity": "2600",
+				"name": "幕張小学校",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12102",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.04929,
+					35.67491
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市花見川区幕張本郷7-23",
+				"capacity": "3700",
+				"name": "幕張台公園",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12102",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.058103,
+					35.66541
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市花見川区幕張町4-681",
+				"capacity": "4300",
+				"name": "幕張東小学校",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12102",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.047494,
+					35.657132
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市花見川区幕張町3-7718",
+				"capacity": "3300",
+				"name": "幕張南小学校",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12102",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.039186,
+					35.6681869991
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市花見川区幕張本郷2-19-33",
+				"capacity": "290",
+				"name": "幕張本郷公民館",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12102",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.047188,
+					35.671603
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市花見川区幕張本郷5-18-1",
+				"capacity": "4500",
+				"name": "幕張本郷中学校",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12102",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.111265,
+					35.664355
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市花見川区犢橋町213-4",
+				"capacity": "5900",
+				"name": "緑が丘中学校",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12102",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.09616,
+					35.66391
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市花見川区さつきが丘1-18",
+				"capacity": "10500",
+				"name": "犢橋貝塚公園",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12102",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.11919087,
+					35.67736589
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市花見川区三角町656-4",
+				"capacity": "-1",
+				"name": "犢橋公園",
+				"disasterCategory": "指定なし",
+				"facilityType": "広域避難所",
+				"facilityScale": "-1",
+				"administrativeArea": "12102",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.113577,
+					35.6668139991
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市花見川区犢橋町162-1",
+				"capacity": "170",
+				"name": "犢橋公民館",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12102",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.108238,
+					35.673382
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市花見川区犢橋町774",
+				"capacity": "1700",
+				"name": "犢橋小学校",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12102",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.116987,
+					35.677604
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市花見川区三角町656-2",
+				"capacity": "5000",
+				"name": "犢橋中学校",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設、広域避難所",
+				"facilityScale": "-1",
+				"administrativeArea": "12102",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.115682,
+					35.647218
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市稲毛区園生町446-1",
+				"capacity": "3900",
+				"name": "あやめ台小学校",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12103",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.131003587,
+					35.6656862976
+				]
+			},
+			"properties": {
+				"level": 3,
+				"address": "千葉県千葉市稲毛区長沼原町882-1",
+				"capacity": "-1",
+				"name": "スマートコミュニティ稲毛グラウンド",
+				"disasterCategory": "指定なし",
+				"facilityType": "広域避難所",
+				"facilityScale": "-1",
+				"administrativeArea": "12103",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.08774,
+					35.632664
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市稲毛区稲丘町19-30",
+				"capacity": "2400",
+				"name": "稲丘小学校",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12103",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.08315,
+					35.6362
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市稲毛区稲毛1-10",
+				"capacity": "11000",
+				"name": "稲毛公園",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12103",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.083358,
+					35.6365529991
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市稲毛区稲毛1-10-17",
+				"capacity": "220",
+				"name": "稲毛公民館",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12103",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.083046,
+					35.640801
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市稲毛区稲毛町5-535",
+				"capacity": "1800",
+				"name": "稲毛小学校",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12103",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.082157,
+					35.643884
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市稲毛区稲毛町5-120",
+				"capacity": "4600",
+				"name": "稲毛中学校",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12103",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.08728113,
+					35.64155977
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市稲毛区稲毛東5-8",
+				"capacity": "4000",
+				"name": "稲毛東公園",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12103",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.09785,
+					35.647329
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市稲毛区小仲台9-30-1",
+				"capacity": "4300",
+				"name": "園生小学校",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12103",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.105778,
+					35.6630119991
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市稲毛区宮野木町2150-4",
+				"capacity": "690",
+				"name": "宮野木スポーツセンター",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12103",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.109738,
+					35.658994
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市稲毛区宮野木町2100",
+				"capacity": "3600",
+				"name": "宮野木小学校",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12103",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.106414,
+					35.6362479991
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市稲毛区穴川4-12-3",
+				"capacity": "1000",
+				"name": "穴川コミュニティセンター",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12103",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.104655,
+					35.637719
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市稲毛区穴川4-11-32",
+				"capacity": "9100",
+				"name": "県立京葉工業高等学校",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12103",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.100743,
+					35.640616
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市稲毛区小仲台5-10-1",
+				"capacity": "7200",
+				"name": "県立千葉女子高等学校",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12103",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.111182,
+					35.625527
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市稲毛区轟町1-18-52",
+				"capacity": "7800",
+				"name": "県立千葉東高等学校",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12103",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.113432,
+					35.66255
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市稲毛区長沼町153",
+				"capacity": "9700",
+				"name": "県立千葉北高等学校",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12103",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.109706,
+					35.6246859991
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市稲毛区轟町1-12-3",
+				"capacity": "210",
+				"name": "轟公民館",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12103",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.10833814,
+					35.6302759621
+				]
+			},
+			"properties": {
+				"level": 4,
+				"address": "千葉県千葉市稲毛区轟町3-4-30",
+				"capacity": "3600",
+				"name": "轟町小学校",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12103",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.107956641,
+					35.631097028
+				]
+			},
+			"properties": {
+				"level": 4,
+				"address": "千葉県千葉市稲毛区轟町3-5-14",
+				"capacity": "3800",
+				"name": "轟町中学校",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12103",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.093985,
+					35.6264239991
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市稲毛区黒砂2-4-18",
+				"capacity": "210",
+				"name": "黒砂公民館",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12103",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.13801563,
+					35.66387049
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市稲毛区山王町182-1、184-2",
+				"capacity": "3800",
+				"name": "山王ふれあい公園",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12103",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.145503,
+					35.657542
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市稲毛区六方町55-29",
+				"capacity": "200",
+				"name": "山王公民館",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12103",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.142708,
+					35.665078
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市稲毛区山王町121",
+				"capacity": "4400",
+				"name": "山王小学校",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12103",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.099484242,
+					35.6448061384
+				]
+			},
+			"properties": {
+				"level": 3,
+				"address": "千葉県千葉市稲毛区小仲台9-46-1",
+				"capacity": "11100",
+				"name": "市立千葉高等学校",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12103",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.109349,
+					35.631498
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市稲毛区轟町3-6-25",
+				"capacity": "2200",
+				"name": "市立第二養護学校",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12103",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.10226522,
+					35.63816532
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市稲毛区小仲台4-2、-10",
+				"capacity": "4300",
+				"name": "小園公園",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12103",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.099067,
+					35.639364
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市稲毛区小仲台5-7-1",
+				"capacity": "370",
+				"name": "小中台公民館",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12103",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.095934,
+					35.639691
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市稲毛区小仲台6-34-1",
+				"capacity": "3500",
+				"name": "小中台小学校",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12103",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.09216121,
+					35.65253786
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市稲毛区小中台町400-1、-3",
+				"capacity": "3300",
+				"name": "小中台西公園",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12103",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.100255,
+					35.645737
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市稲毛区小仲台9-46-2",
+				"capacity": "4400",
+				"name": "小中台中学校",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12103",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.089172,
+					35.646995
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市稲毛区小仲台8-15-1",
+				"capacity": "3700",
+				"name": "小中台南小学校",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12103",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.09894825,
+					35.62890587
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市稲毛区黒砂台3-1",
+				"capacity": "6500",
+				"name": "西千葉公園",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12103",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.116788,
+					35.63378
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市稲毛区天台3-16-5",
+				"capacity": "200",
+				"name": "千草台公民館",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12103",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.116121,
+					35.637883
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市稲毛区天台5-11-1",
+				"capacity": "2000",
+				"name": "千草台小学校",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12103",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.118097,
+					35.636859
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市稲毛区千草台2-3-1",
+				"capacity": "4800",
+				"name": "千草台中学校",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12103",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.122986,
+					35.63161
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市稲毛区作草部町1298-1",
+				"capacity": "4100",
+				"name": "千草台東小学校",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12103",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.123701697,
+					35.6496974511
+				]
+			},
+			"properties": {
+				"level": 3,
+				"address": "千葉県千葉市稲毛区天台町323",
+				"capacity": "-1",
+				"name": "千葉県総合スポーツセンター",
+				"disasterCategory": "指定なし",
+				"facilityType": "広域避難所",
+				"facilityScale": "-1",
+				"administrativeArea": "12103",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.102711,
+					35.628832
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市稲毛区弥生町1-33",
+				"capacity": "-1",
+				"name": "千葉大学構内",
+				"disasterCategory": "指定なし",
+				"facilityType": "広域避難所",
+				"facilityScale": "-1",
+				"administrativeArea": "12103",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.119788,
+					35.654104
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市稲毛区園生町384-93",
+				"capacity": "200",
+				"name": "草野公民館",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12103",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.125459,
+					35.65319
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市稲毛区園生町1385",
+				"capacity": "3400",
+				"name": "草野小学校",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12103",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.127431,
+					35.652496
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市稲毛区園生町1397",
+				"capacity": "4400",
+				"name": "草野中学校",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12103",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.09740601,
+					35.63932569
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市稲毛区小仲台5-1",
+				"capacity": "3000",
+				"name": "仲よし公園",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12103",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.126123,
+					35.6636289991
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市稲毛区長沼町461-8",
+				"capacity": "1060",
+				"name": "長沼コミュニティセンター",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12103",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.129934,
+					35.668389
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市稲毛区長沼原町304-1",
+				"capacity": "430",
+				"name": "長沼原勤労市民プラザ",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12103",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.11330965,
+					35.6566926
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市稲毛区長沼町255-1、253",
+				"capacity": "6300",
+				"name": "長沼町公園",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12103",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.117672,
+					35.6254729991
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市稲毛区作草部町2-8-53",
+				"capacity": "210",
+				"name": "都賀公民館",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12103",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.119903,
+					35.629083
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市稲毛区作草部町938",
+				"capacity": "3900",
+				"name": "都賀小学校",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12103",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.12318,
+					35.63075
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市稲毛区作草部町1306-1",
+				"capacity": "3700",
+				"name": "都賀中学校",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12103",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.107349,
+					35.648662
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市稲毛区園生町588",
+				"capacity": "4300",
+				"name": "柏台小学校",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12103",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.101267,
+					35.625832
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市稲毛区弥生町3-18",
+				"capacity": "2000",
+				"name": "弥生小学校",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12103",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.107194,
+					35.657836
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市稲毛区宮野木町1807-3",
+				"capacity": "210",
+				"name": "緑が丘公民館",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12103",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.097851,
+					35.623471
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市稲毛区緑町2-13-1",
+				"capacity": "3800",
+				"name": "緑町小学校",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12103",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.097379,
+					35.622721
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市稲毛区緑町2-3-1",
+				"capacity": "5600",
+				"name": "緑町中学校",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12103",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.13128148,
+					35.63076455
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市若葉区みつわ台1-28",
+				"capacity": "6200",
+				"name": "みつわ台公園",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12104",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.135503,
+					35.639264
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市若葉区みつわ台3-12-17",
+				"capacity": "200",
+				"name": "みつわ台公民館",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12104",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.136284,
+					35.640958
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市若葉区みつわ台3-3-1",
+				"capacity": "460",
+				"name": "みつわ台体育館",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12104",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.13265452,
+					35.63525451
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市若葉区みつわ台1-18",
+				"capacity": "6100",
+				"name": "みつわ台第一公園",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12104",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.13545,
+					35.6412499991
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市若葉区みつわ台3-2",
+				"capacity": "8300",
+				"name": "みつわ台第二公園",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12104",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.131208,
+					35.635388
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市若葉区みつわ台2-41-1",
+				"capacity": "7300",
+				"name": "みつわ台中学校",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12104",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.130597,
+					35.634027
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市若葉区みつわ台1-17-1",
+				"capacity": "4100",
+				"name": "みつわ台南小学校",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12104",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.137836884,
+					35.6413891322
+				]
+			},
+			"properties": {
+				"level": 3,
+				"address": "千葉県千葉市若葉区みつわ台3-5-1",
+				"capacity": "4400",
+				"name": "みつわ台北小学校",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12104",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.133694866,
+					35.6543671091
+				]
+			},
+			"properties": {
+				"level": 3,
+				"address": "千葉県千葉市若葉区愛生町102-1",
+				"capacity": "4860",
+				"name": "愛生運動広場",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12104",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.16461476,
+					35.62446291
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市若葉区桜木町163",
+				"capacity": "-1",
+				"name": "加曽利貝塚公園",
+				"disasterCategory": "指定なし",
+				"facilityType": "広域避難所",
+				"facilityScale": "-1",
+				"administrativeArea": "12104",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.152042,
+					35.6121379991
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市若葉区加曽利町892-6",
+				"capacity": "160",
+				"name": "加曽利公民館",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12104",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.157674,
+					35.613844
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市若葉区加曽利町961-5",
+				"capacity": "4300",
+				"name": "加曽利中学校",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12104",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.153348,
+					35.623975
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市若葉区貝塚1-7-1",
+				"capacity": "5800",
+				"name": "貝塚中学校",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12104",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.214708,
+					35.640034
+				]
+			},
+			"properties": {
+				"level": 3,
+				"address": "千葉県千葉市若葉区下田町573",
+				"capacity": "290",
+				"name": "旧更科小学校下田分校",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12104",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.194978068,
+					35.5932494908
+				]
+			},
+			"properties": {
+				"level": 3,
+				"address": "千葉県千葉市若葉区多部田町802",
+				"capacity": "-1",
+				"name": "京葉カントリー倶楽部",
+				"disasterCategory": "指定なし",
+				"facilityType": "広域避難所",
+				"facilityScale": "-1",
+				"administrativeArea": "12104",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.168763,
+					35.614559
+				]
+			},
+			"properties": {
+				"level": 3,
+				"address": "千葉県千葉市若葉区大宮町2699-1",
+				"capacity": "280",
+				"name": "県立桜が丘特別支援学校",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12104",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.158708,
+					35.64325
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市若葉区若松町429",
+				"capacity": "14500",
+				"name": "県立若松高等学校",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12104",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.18787,
+					35.62117
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市若葉区干城台西2-1-1",
+				"capacity": "10900",
+				"name": "県立千城台高等学校",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12104",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.170068,
+					35.602948
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市若葉区大宮町2699-1",
+				"capacity": "10600",
+				"name": "県立千葉大宮高等学校",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12104",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.210286,
+					35.602171
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市若葉区高根町875-1",
+				"capacity": "9900",
+				"name": "県立泉高等学校",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12104",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.131736,
+					35.648886
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市若葉区源町541-6",
+				"capacity": "4000",
+				"name": "源小学校",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12104",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.19706155,
+					35.62324266
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市若葉区千城台東2-45",
+				"capacity": "6500",
+				"name": "御成公園",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12104",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.20076499,
+					35.63569868
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市若葉区御成台3-2",
+				"capacity": "7700",
+				"name": "御成台公園",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12104",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.227806,
+					35.6178319991
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市若葉区更科町2254-1",
+				"capacity": "200",
+				"name": "更科公民館",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12104",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.227673,
+					35.619754
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市若葉区更科町2073",
+				"capacity": "2300",
+				"name": "更科小学校",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12104",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.237701,
+					35.6001999991
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市若葉区富田町83",
+				"capacity": "1000",
+				"name": "更科小学校富田分校",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12104",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.226451,
+					35.617643
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市若葉区更科町2112",
+				"capacity": "3100",
+				"name": "更科中学校",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12104",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.181564,
+					35.612003
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市若葉区坂月町298",
+				"capacity": "3700",
+				"name": "坂月小学校",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12104",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.15274629,
+					35.62102302
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市若葉区桜木町423",
+				"capacity": "6100",
+				"name": "桜木公園",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12104",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.16035,
+					35.6227749991
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市若葉区桜木町3-17-29",
+				"capacity": "270",
+				"name": "桜木公民館",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12104",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.159487,
+					35.621059
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市若葉区桜木3-26-1",
+				"capacity": "2800",
+				"name": "桜木小学校",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12104",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.142652,
+					35.653025
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市若葉区若松町774",
+				"capacity": "3900",
+				"name": "山王中学校",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12104",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.166947,
+					35.59755
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市若葉区大宮町1066-1",
+				"capacity": "4400",
+				"name": "市立養護学校",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12104",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.167546,
+					35.6350969991
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市若葉区若松町2117-2",
+				"capacity": "200",
+				"name": "若松公民館",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12104",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.167818,
+					35.641335
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市若葉区若松町360-1",
+				"capacity": "4400",
+				"name": "若松小学校",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12104",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.17188,
+					35.650298
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市若葉区若松台2-25-1",
+				"capacity": "3300",
+				"name": "若松台小学校",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12104",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.169597,
+					35.635725
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市若葉区若松町2106-2",
+				"capacity": "4600",
+				"name": "若松中学校",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12104",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.173069,
+					35.631892
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市若葉区小倉台5-1-1",
+				"capacity": "5000",
+				"name": "小倉小学校",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12104",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.17079,
+					35.62931
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市若葉区小倉台4-7",
+				"capacity": "3600",
+				"name": "小倉台公園",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12104",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.18677318,
+					35.62760709
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市若葉区千城台北2-1",
+				"capacity": "3100",
+				"name": "城北公園",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12104",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.168846,
+					35.600088
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市若葉区大宮町2655",
+				"capacity": "6400",
+				"name": "千城小学校",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12104",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.186969171,
+					35.6222065964
+				]
+			},
+			"properties": {
+				"level": 3,
+				"address": "千葉県千葉市若葉区千城台西2-1-1",
+				"capacity": "2000",
+				"name": "千城台コミュニティセンター",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12104",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.196258,
+					35.617281
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市若葉区千城台東3-18-1",
+				"capacity": "3800",
+				"name": "千城台旭小学校",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12104",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.19100883,
+					35.61661151
+				]
+			},
+			"properties": {
+				"level": 3,
+				"address": "千葉県千葉市若葉区千城台南1-21",
+				"capacity": "-1",
+				"name": "千城台公園一帯",
+				"disasterCategory": "指定なし",
+				"facilityType": "広域避難所",
+				"facilityScale": "-1",
+				"administrativeArea": "12104",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.187201,
+					35.62228
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市若葉区千城台西2-1-1",
+				"capacity": "410",
+				"name": "千城台公民館",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12104",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.18055355,
+					35.62192222
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市若葉区千城台西1-15",
+				"capacity": "3400",
+				"name": "千城台西公園",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12104",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.182593,
+					35.622726
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市若葉区千城台西2-21-1",
+				"capacity": "4800",
+				"name": "千城台西小学校",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12104",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.184648,
+					35.621531
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市若葉区千城台西2-20-1",
+				"capacity": "6600",
+				"name": "千城台西中学校",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12104",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.191448,
+					35.622349
+				]
+			},
+			"properties": {
+				"level": 3,
+				"address": "千葉県千葉市若葉区千城台東1-15-1",
+				"capacity": "3400",
+				"name": "千城台東小学校",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12104",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.189530157,
+					35.6180645196
+				]
+			},
+			"properties": {
+				"level": 4,
+				"address": "千葉県千葉市若葉区千城台南1-19-1",
+				"capacity": "3900",
+				"name": "千城台南小学校",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設、広域避難所",
+				"facilityScale": "-1",
+				"administrativeArea": "12104",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.190981163,
+					35.6184101808
+				]
+			},
+			"properties": {
+				"level": 4,
+				"address": "千葉県千葉市若葉区千城台南1-20-1",
+				"capacity": "5100",
+				"name": "千城台南中学校",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設、広域避難所",
+				"facilityScale": "-1",
+				"administrativeArea": "12104",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.18376,
+					35.628809
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市若葉区千城台北1-4-1",
+				"capacity": "4600",
+				"name": "千城台北小学校",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12104",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.2260592,
+					35.57944381
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市若葉区野呂町108",
+				"capacity": "-1",
+				"name": "泉自然公園",
+				"disasterCategory": "指定なし",
+				"facilityType": "広域避難所",
+				"facilityScale": "-1",
+				"administrativeArea": "12104",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.256224929,
+					35.5983696929
+				]
+			},
+			"properties": {
+				"level": 3,
+				"address": "千葉県千葉市若葉区富田町1140",
+				"capacity": "-1",
+				"name": "袖ヶ浦カンツリー倶楽部新袖コース",
+				"disasterCategory": "指定なし",
+				"facilityType": "広域避難所",
+				"facilityScale": "-1",
+				"administrativeArea": "12104",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.181066,
+					35.5965429991
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市若葉区大宮町3221-2",
+				"capacity": "200",
+				"name": "大宮公民館",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12104",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.182038,
+					35.596116
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市若葉区大宮台7-8-1",
+				"capacity": "4200",
+				"name": "大宮小学校",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12104",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.186206,
+					35.585061
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市若葉区大宮町2082",
+				"capacity": "5100",
+				"name": "大宮台小学校",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設、広域避難所",
+				"facilityScale": "-1",
+				"administrativeArea": "12104",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.186623,
+					35.586283
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市若葉区大宮町2077",
+				"capacity": "5600",
+				"name": "大宮中学校",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12104",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.185925017,
+					35.5868858523
+				]
+			},
+			"properties": {
+				"level": 3,
+				"address": "千葉県千葉市若葉区大宮町2077",
+				"capacity": "-1",
+				"name": "大宮中学校一帯",
+				"disasterCategory": "指定なし",
+				"facilityType": "広域避難所",
+				"facilityScale": "-1",
+				"administrativeArea": "12104",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.154629,
+					35.6343559991
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市若葉区都賀4-20-1",
+				"capacity": "1000",
+				"name": "都賀コミュニティセンター",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12104",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.141847,
+					35.643832
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市若葉区都賀の台2-13-1",
+				"capacity": "3100",
+				"name": "都賀の台小学校",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12104",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.230641,
+					35.58379
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市若葉区野呂町622-10",
+				"capacity": "160",
+				"name": "白井公民館",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12104",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.231093,
+					35.580784
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市若葉区野呂町215",
+				"capacity": "3100",
+				"name": "白井小学校",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12104",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.225482,
+					35.587561
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市若葉区野呂町623",
+				"capacity": "4600",
+				"name": "白井中学校",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12104",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.14775799,
+					35.63389304
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市若葉区都賀2-5",
+				"capacity": "3000",
+				"name": "美しの森公園",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12104",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.145125,
+					35.628696
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市若葉区貝塚町1093",
+				"capacity": "2500",
+				"name": "北貝塚小学校",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12104",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.151141892,
+					35.6544283805
+				]
+			},
+			"properties": {
+				"level": 3,
+				"address": "千葉県千葉市若葉区若松町902",
+				"capacity": "-1",
+				"name": "陸上自衛隊高射学校",
+				"disasterCategory": "指定なし",
+				"facilityType": "広域避難所",
+				"facilityScale": "-1",
+				"administrativeArea": "12104",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.26375,
+					35.52102
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市緑区あすみが丘6-1",
+				"capacity": "5600",
+				"name": "あすみが丘ふれあいの広場公園",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12105",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.2644986,
+					35.51205311
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市緑区あすみが丘9-13",
+				"capacity": "3000",
+				"name": "あすみが丘やすらぎの広場公園",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12105",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.263866,
+					35.51993
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市緑区あすみが丘6-2",
+				"capacity": "3600",
+				"name": "あすみが丘小学校",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12105",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.17246016,
+					35.5604701
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市緑区おゆみ野2-42",
+				"capacity": "3900",
+				"name": "おゆみ野さくら公園",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12105",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.164172,
+					35.5561089991
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市緑区おゆみ野中央2-7-6",
+				"capacity": "430",
+				"name": "おゆみ野公民館",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12105",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.168709,
+					35.544753
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市緑区おゆみ野南4-26",
+				"capacity": "3470",
+				"name": "おゆみ野南小学校",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12105",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.236401,
+					35.534864
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市緑区越智町822-7",
+				"capacity": "250",
+				"name": "越智公民館",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12105",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.237036,
+					35.5319
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市緑区越智町705-359",
+				"capacity": "4800",
+				"name": "越智小学校",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12105",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.23758111,
+					35.53446121
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市緑区越智町810-7",
+				"capacity": "3700",
+				"name": "越智中央公園",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12105",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.241369,
+					35.533456
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市緑区越智町651",
+				"capacity": "7300",
+				"name": "越智中学校",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12105",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.175683,
+					35.5599919991
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市緑区おゆみ野3-15-2",
+				"capacity": "1080",
+				"name": "鎌取コミュニティセンター",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12105",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.172931,
+					35.547927
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市緑区おゆみ野南5-31",
+				"capacity": "3400",
+				"name": "金沢小学校",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12105",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.274366,
+					35.523403
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市緑区あすみが丘東2-24-1",
+				"capacity": "8700",
+				"name": "県立土気高等学校",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12105",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.146235,
+					35.5498899991
+				]
+			},
+			"properties": {
+				"level": 3,
+				"address": "千葉県千葉市緑区古市場町474-277",
+				"capacity": "900",
+				"name": "古市場公園体育館・野球場",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12105",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.261743,
+					35.524743
+				]
+			},
+			"properties": {
+				"level": 3,
+				"address": "千葉県千葉市緑区あすみが丘4-38",
+				"capacity": "-1",
+				"name": "土気南中学校一帯",
+				"disasterCategory": "指定なし",
+				"facilityType": "広域避難所",
+				"facilityScale": "-1",
+				"administrativeArea": "12105",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.181876,
+					35.5552039991
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市緑区おゆみ野4-45",
+				"capacity": "3000",
+				"name": "小谷小学校",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12105",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.285079659,
+					35.5242809521
+				]
+			},
+			"properties": {
+				"level": 3,
+				"address": "千葉県千葉市緑区土気町22",
+				"capacity": "-1",
+				"name": "昭和の森（第一駐車場）",
+				"disasterCategory": "指定なし",
+				"facilityType": "広域避難所",
+				"facilityScale": "-1",
+				"administrativeArea": "12105",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.163902,
+					35.557565
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市緑区おゆみ野中央1-26",
+				"capacity": "3400",
+				"name": "扇田小学校",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12105",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.17868,
+					35.55372
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市緑区おゆみ野6-11",
+				"capacity": "-1",
+				"name": "泉谷公園",
+				"disasterCategory": "指定なし",
+				"facilityType": "広域避難所",
+				"facilityScale": "-1",
+				"administrativeArea": "12105",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.173903,
+					35.554509
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市緑区おゆみ野中央4-3",
+				"capacity": "5100",
+				"name": "泉谷小学校",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12105",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.174217,
+					35.555133
+				]
+			},
+			"properties": {
+				"level": 3,
+				"address": "千葉県千葉市緑区おゆみ野中央4-3",
+				"capacity": "-1",
+				"name": "泉谷小学校一帯",
+				"disasterCategory": "指定なし",
+				"facilityType": "広域避難所",
+				"facilityScale": "-1",
+				"administrativeArea": "12105",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.172597,
+					35.554787
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市緑区おゆみ野中央4-2",
+				"capacity": "7300",
+				"name": "泉谷中学校",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設、広域避難所",
+				"facilityScale": "-1",
+				"administrativeArea": "12105",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.25770216,
+					35.5248111191
+				]
+			},
+			"properties": {
+				"level": 3,
+				"address": "千葉県千葉市緑区大椎町1809-1",
+				"capacity": "-1",
+				"name": "創造の杜公園",
+				"disasterCategory": "指定なし",
+				"facilityType": "広域避難所",
+				"facilityScale": "-1",
+				"administrativeArea": "12105",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.185058898,
+					35.5639091615
+				]
+			},
+			"properties": {
+				"level": 3,
+				"address": "千葉県千葉市緑区辺田町567",
+				"capacity": "-1",
+				"name": "袖ヶ浦カンツリー倶楽部袖ヶ浦コース",
+				"disasterCategory": "指定なし",
+				"facilityType": "広域避難所",
+				"facilityScale": "-1",
+				"administrativeArea": "12105",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.262353,
+					35.514419
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市緑区あすみが丘6-38",
+				"capacity": "1900",
+				"name": "大椎小学校",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12105",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.270018,
+					35.516459
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市緑区あすみが丘8-26",
+				"capacity": "4700",
+				"name": "大椎中学校",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12105",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.250173,
+					35.530651
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市緑区大木戸町317",
+				"capacity": "3400",
+				"name": "大木戸小学校",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12105",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.23095085,
+					35.51273158
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市緑区大野台1-6-2",
+				"capacity": "18500",
+				"name": "大野台中央公園",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12105",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.163852,
+					35.5436699991
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市緑区富岡町290-1",
+				"capacity": "160",
+				"name": "椎名公民館",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12105",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.163403,
+					35.541816
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市緑区茂呂町582",
+				"capacity": "4100",
+				"name": "椎名小学校",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12105",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.265273,
+					35.5212649991
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市緑区あすみが丘7-2-4",
+				"capacity": "1800",
+				"name": "土気あすみが丘プラザ",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12105",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.273638,
+					35.530748
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市緑区土気町1631-7",
+				"capacity": "200",
+				"name": "土気公民館",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12105",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.273256,
+					35.530691
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市緑区土気町1634",
+				"capacity": "580",
+				"name": "土気市民センター",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12105",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.273338,
+					35.531475
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市緑区土気町1634-2",
+				"capacity": "2700",
+				"name": "土気小学校",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12105",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.272532,
+					35.540957
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市緑区土気町1400",
+				"capacity": "5400",
+				"name": "土気中学校",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設、広域避難所",
+				"facilityScale": "-1",
+				"administrativeArea": "12105",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.265575,
+					35.523185
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市緑区あすみが丘4-16",
+				"capacity": "3600",
+				"name": "土気南小学校",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12105",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.26123,
+					35.524965
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市緑区あすみが丘4-38",
+				"capacity": "4400",
+				"name": "土気南中学校",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12105",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.270176,
+					35.500928
+				]
+			},
+			"properties": {
+				"level": 3,
+				"address": "千葉県千葉市緑区小山町359-6",
+				"capacity": "-1",
+				"name": "東急セブンハンドレッドクラブ",
+				"disasterCategory": "指定なし",
+				"facilityType": "広域避難所",
+				"facilityScale": "-1",
+				"administrativeArea": "12105",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.180125,
+					35.568758
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市緑区辺田町141",
+				"capacity": "3800",
+				"name": "平山小学校",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12105",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.253534072,
+					35.5529267151
+				]
+			},
+			"properties": {
+				"level": 3,
+				"address": "千葉県千葉市緑区平川町405",
+				"capacity": "-1",
+				"name": "平川カントリークラブ",
+				"disasterCategory": "指定なし",
+				"facilityType": "広域避難所",
+				"facilityScale": "-1",
+				"administrativeArea": "12105",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.175809447,
+					35.5381664617
+				]
+			},
+			"properties": {
+				"level": 3,
+				"address": "千葉県千葉市緑区大金沢町311",
+				"capacity": "-1",
+				"name": "本千葉カントリークラブ",
+				"disasterCategory": "指定なし",
+				"facilityType": "広域避難所",
+				"facilityScale": "-1",
+				"administrativeArea": "12105",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.1684992,
+					35.55681975
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市緑区おゆみ野有吉32",
+				"capacity": "-1",
+				"name": "有吉公園",
+				"disasterCategory": "指定なし",
+				"facilityType": "広域避難所",
+				"facilityScale": "-1",
+				"administrativeArea": "12105",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.166541,
+					35.561564
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市緑区おゆみ野1-53",
+				"capacity": "3700",
+				"name": "有吉小学校",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12105",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.170661,
+					35.56055
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市緑区おゆみ野2-41",
+				"capacity": "5900",
+				"name": "有吉中学校",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12105",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.203201,
+					35.5498569991
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市緑区誉田町1-789-49",
+				"capacity": "680",
+				"name": "誉田公民館",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12105",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.204374,
+					35.549509
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市緑区誉田町1-27",
+				"capacity": "3600",
+				"name": "誉田小学校",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12105",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.202818,
+					35.552509
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市緑区誉田町1-138",
+				"capacity": "5200",
+				"name": "誉田中学校",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設、広域避難所",
+				"facilityScale": "-1",
+				"administrativeArea": "12105",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.218261,
+					35.549481
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市緑区誉田2-21-84",
+				"capacity": "3800",
+				"name": "誉田東小学校",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12105",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.199653341,
+					35.5486127916
+				]
+			},
+			"properties": {
+				"level": 3,
+				"address": "千葉県千葉市緑区誉田1-780",
+				"capacity": "4800",
+				"name": "誉田南公園",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12105",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.07437364,
+					35.63450023
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市美浜区高洲4-2",
+				"capacity": "-1",
+				"name": "こじま公園",
+				"disasterCategory": "指定なし",
+				"facilityType": "広域避難所",
+				"facilityScale": "-1",
+				"administrativeArea": "12106",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.06504223,
+					35.62944791
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市美浜区磯辺1-26",
+				"capacity": "3900",
+				"name": "磯辺公園",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12106",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.061753,
+					35.6281959991
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市美浜区磯辺1-48-1",
+				"capacity": "200",
+				"name": "磯辺公民館",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12106",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.061928,
+					35.63211
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市美浜区磯辺5-2-1",
+				"capacity": "4800",
+				"name": "磯辺第一小学校",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12106",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.054068,
+					35.632761
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市美浜区磯辺7-1-1",
+				"capacity": "7600",
+				"name": "磯辺第一中学校",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12106",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.064187,
+					35.630247
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市美浜区磯辺1-25-1",
+				"capacity": "3200",
+				"name": "磯辺第三小学校",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12106",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.058188,
+					35.631608
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市美浜区磯辺4-16-1",
+				"capacity": "3800",
+				"name": "磯辺第四小学校",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12106",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.051688,
+					35.63633
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市美浜区磯辺7-17-1",
+				"capacity": "3500",
+				"name": "磯辺第二小学校",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12106",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.062493,
+					35.62747
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市美浜区磯辺1-50-1",
+				"capacity": "5000",
+				"name": "磯辺第二中学校",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12106",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.07808403,
+					35.63495726
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市美浜区稲岸海岸4-15、4-1",
+				"capacity": "-1",
+				"name": "稲岸公園",
+				"disasterCategory": "指定なし",
+				"facilityType": "広域避難所",
+				"facilityScale": "-1",
+				"administrativeArea": "12106",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.079716,
+					35.631866
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市美浜区稲毛海岸3-4-1",
+				"capacity": "460",
+				"name": "稲浜公民館",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12106",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.084491,
+					35.629886
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市美浜区稲毛海岸2-3-2",
+				"capacity": "3100",
+				"name": "稲浜小学校",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設、広域避難所",
+				"facilityScale": "-1",
+				"administrativeArea": "12106",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.082241,
+					35.632886
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市美浜区稲毛海岸2-3-3",
+				"capacity": "5500",
+				"name": "稲浜中学校",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設、広域避難所",
+				"facilityScale": "-1",
+				"administrativeArea": "12106",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.083307171,
+					35.6316229531
+				]
+			},
+			"properties": {
+				"level": 3,
+				"address": "千葉県千葉市美浜区稲毛海岸2-3",
+				"capacity": "-1",
+				"name": "稲毛海岸２丁目公園",
+				"disasterCategory": "指定なし",
+				"facilityType": "広域避難所",
+				"facilityScale": "-1",
+				"administrativeArea": "12106",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.07513,
+					35.636941
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市美浜区稲毛海岸5-7-1",
+				"capacity": "3700",
+				"name": "稲毛第二小学校",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12106",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.04155,
+					35.640857
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市美浜区打瀬3-3-1",
+				"capacity": "2600",
+				"name": "海浜打瀬小学校",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12106",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.058267,
+					35.626598
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市美浜区磯辺2-7-1",
+				"capacity": "14300",
+				"name": "県立磯辺高等学校",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12106",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.057132,
+					35.640107
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市美浜区真砂4-17-1",
+				"capacity": "12400",
+				"name": "県立検見川高等学校",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12106",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.053549,
+					35.627081
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市美浜区磯辺3-30-3",
+				"capacity": "11200",
+				"name": "県立千葉西高等学校",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12106",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.052049,
+					35.647995
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市美浜区若葉3-1-6",
+				"capacity": "24900",
+				"name": "県立幕張総合高等学校",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12106",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.054056812,
+					35.6515407771
+				]
+			},
+			"properties": {
+				"level": 3,
+				"address": "千葉県千葉市美浜区若葉2-10-2",
+				"capacity": "1400",
+				"name": "県立幕張総合高等学校（看護科校舎）",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12106",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.10003447,
+					35.61077255
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市美浜区幸町1-4",
+				"capacity": "-1",
+				"name": "幸町公園",
+				"disasterCategory": "指定なし",
+				"facilityType": "広域避難所",
+				"facilityScale": "-1",
+				"administrativeArea": "12106",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.092362,
+					35.6206889991
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市美浜区幸町2-12-4",
+				"capacity": "420",
+				"name": "幸町公民館",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12106",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.088435,
+					35.624193
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市美浜区幸町2-17-4",
+				"capacity": "3000",
+				"name": "幸町第一小学校",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12106",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.090491,
+					35.621193
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市美浜区幸町2-12-7",
+				"capacity": "4900",
+				"name": "幸町第一中学校",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設、広域避難所",
+				"facilityScale": "-1",
+				"administrativeArea": "12106",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.098907,
+					35.611807
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市美浜区幸町1-10-1",
+				"capacity": "2500",
+				"name": "幸町第三小学校",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設、広域避難所",
+				"facilityScale": "-1",
+				"administrativeArea": "12106",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.091157,
+					35.621554
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市美浜区幸町2-12-12",
+				"capacity": "3600",
+				"name": "幸町第四小学校",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設、広域避難所",
+				"facilityScale": "-1",
+				"administrativeArea": "12106",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.095129,
+					35.617944
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市美浜区幸町2-9-4",
+				"capacity": "3900",
+				"name": "幸町第二小学校",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12106",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.098074,
+					35.612584
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市美浜区幸町1-10-2",
+				"capacity": "4300",
+				"name": "幸町第二中学校",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設、広域避難所",
+				"facilityScale": "-1",
+				"administrativeArea": "12106",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.071157,
+					35.6269809991
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市美浜区高洲3-12-1",
+				"capacity": "1300",
+				"name": "高洲コミュニティセンター",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12106",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.076196,
+					35.62774913
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市美浜区高洲3-2",
+				"capacity": "3600",
+				"name": "高洲公園",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12106",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.075506,
+					35.6336059991
+				]
+			},
+			"properties": {
+				"level": 3,
+				"address": "千葉県千葉市美浜区高洲4-2-1",
+				"capacity": "670",
+				"name": "高洲市民プール体育館",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設、広域避難所",
+				"facilityScale": "-1",
+				"administrativeArea": "12106",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.079769,
+					35.624942
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市美浜区高洲2-2-20",
+				"capacity": "3600",
+				"name": "高洲第一小学校",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12106",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.077381,
+					35.623137
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市美浜区高洲2-3-18",
+				"capacity": "5800",
+				"name": "高洲第一中学校",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12106",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.074242,
+					35.626636
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市美浜区高洲3-3-11",
+				"capacity": "4600",
+				"name": "高洲第三小学校",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12106",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.078102,
+					35.630747
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市美浜区高洲1-15-1",
+				"capacity": "4000",
+				"name": "高洲第四小学校",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12106",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.075825,
+					35.621943
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市美浜区高洲2-5-13",
+				"capacity": "3900",
+				"name": "高洲第二小学校",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12106",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.071798,
+					35.632525
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市美浜区高洲4-4-3",
+				"capacity": "5800",
+				"name": "高洲第二中学校",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12106",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.07389235,
+					35.61967995
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市美浜区高浜1-8",
+				"capacity": "3800",
+				"name": "高浜公園",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12106",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.073359,
+					35.620207
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市美浜区高浜1-8-3",
+				"capacity": "210",
+				"name": "高浜公民館",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12106",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.076075,
+					35.619999
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市美浜区高浜1-4-1",
+				"capacity": "2300",
+				"name": "高浜第一小学校",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12106",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.069742,
+					35.623248
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市美浜区高浜4-8-2",
+				"capacity": "3800",
+				"name": "高浜第三小学校",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12106",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.067048,
+					35.620832
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市美浜区高浜3-3-1",
+				"capacity": "3100",
+				"name": "高浜第二小学校",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12106",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.071048,
+					35.623748
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市美浜区高浜4-8-1",
+				"capacity": "9400",
+				"name": "高浜中学校",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12106",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.068326,
+					35.620165
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市美浜区高浜3-1-1",
+				"capacity": "11900",
+				"name": "市立稲毛高等学校・附属中学校",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12106",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.06064,
+					35.6391899991
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市美浜区真砂4-1-7",
+				"capacity": "880",
+				"name": "真砂コミュニティセンター",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12106",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.06948916,
+					35.63419778
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市美浜区真砂1-11",
+				"capacity": "3900",
+				"name": "真砂公園",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12106",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.06841023,
+					35.63926058
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市美浜区真砂2-13",
+				"capacity": "-1",
+				"name": "真砂第１公園",
+				"disasterCategory": "指定なし",
+				"facilityType": "広域避難所",
+				"facilityScale": "-1",
+				"administrativeArea": "12106",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.06413826,
+					35.6375171
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市美浜区真砂3-15",
+				"capacity": "-1",
+				"name": "真砂第２公園",
+				"disasterCategory": "指定なし",
+				"facilityType": "広域避難所",
+				"facilityScale": "-1",
+				"administrativeArea": "12106",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.05961843,
+					35.64146228
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市美浜区真砂4-4",
+				"capacity": "-1",
+				"name": "真砂第３公園",
+				"disasterCategory": "指定なし",
+				"facilityType": "広域避難所",
+				"facilityScale": "-1",
+				"administrativeArea": "12106",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.06703,
+					35.64462
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市美浜区真砂5-1",
+				"capacity": "-1",
+				"name": "真砂第４公園",
+				"disasterCategory": "指定なし",
+				"facilityType": "広域避難所",
+				"facilityScale": "-1",
+				"administrativeArea": "12106",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.06927,
+					35.64044
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市美浜区真砂2-3-1",
+				"capacity": "4600",
+				"name": "真砂第一小学校",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設、広域避難所",
+				"facilityScale": "-1",
+				"administrativeArea": "12106",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.063076,
+					35.645106
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市美浜区真砂5-18-2",
+				"capacity": "5900",
+				"name": "真砂第一中学校",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設、広域避難所",
+				"facilityScale": "-1",
+				"administrativeArea": "12106",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.069326,
+					35.632663
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市美浜区真砂1-12-15",
+				"capacity": "4400",
+				"name": "真砂第五小学校",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12106",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.05891,
+					35.64244
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市美浜区真砂4-5-1",
+				"capacity": "2900",
+				"name": "真砂第三小学校",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設、広域避難所",
+				"facilityScale": "-1",
+				"administrativeArea": "12106",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.065992,
+					35.636885
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市美浜区真砂3-14-1",
+				"capacity": "3500",
+				"name": "真砂第四小学校",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設、広域避難所",
+				"facilityScale": "-1",
+				"administrativeArea": "12106",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.061659,
+					35.64394
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市美浜区真砂5-18-1",
+				"capacity": "4100",
+				"name": "真砂第二小学校",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設、広域避難所",
+				"facilityScale": "-1",
+				"administrativeArea": "12106",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.067076,
+					35.637913
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市美浜区真砂2-13-1",
+				"capacity": "4300",
+				"name": "真砂第二中学校",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設、広域避難所",
+				"facilityScale": "-1",
+				"administrativeArea": "12106",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.064182,
+					35.64160757
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市美浜区真砂5-15",
+				"capacity": "-1",
+				"name": "真砂中央公園",
+				"disasterCategory": "指定なし",
+				"facilityType": "広域避難所",
+				"facilityScale": "-1",
+				"administrativeArea": "12106",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.0438,
+					35.657271
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市美浜区若葉1-4-1",
+				"capacity": "-1",
+				"name": "神田外語大学",
+				"disasterCategory": "指定なし",
+				"facilityType": "広域避難所",
+				"facilityScale": "-1",
+				"administrativeArea": "12106",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.07082232,
+					35.64197936
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市美浜区真砂1丁目",
+				"capacity": "-1",
+				"name": "袖ヶ浦第３緑地",
+				"disasterCategory": "指定なし",
+				"facilityType": "広域避難所",
+				"facilityScale": "-1",
+				"administrativeArea": "12106",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.08397745,
+					35.63106416
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市美浜区稲毛海岸2-3",
+				"capacity": "-1",
+				"name": "袖ヶ浦第５緑地",
+				"disasterCategory": "指定なし",
+				"facilityType": "広域避難所",
+				"facilityScale": "-1",
+				"administrativeArea": "12106",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.046818,
+					35.639491
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市美浜区打瀬2-13",
+				"capacity": "310",
+				"name": "打瀬公民館",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12106",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.047281,
+					35.642265
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市美浜区打瀬1-3-1",
+				"capacity": "3000",
+				"name": "打瀬小学校",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12106",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.043134,
+					35.636885
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市美浜区打瀬3-12-1",
+				"capacity": "4200",
+				"name": "打瀬中学校",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12106",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.05695,
+					35.63033
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市美浜区磯辺4-27",
+				"capacity": "5700",
+				"name": "中磯辺公園",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12106",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.06874557,
+					35.62214988
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市美浜区高浜4-6",
+				"capacity": "3800",
+				"name": "中高浜公園",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12106",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.07127,
+					35.636246
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市美浜区真砂1-2-2",
+				"capacity": "-1",
+				"name": "東京歯科大学一帯",
+				"disasterCategory": "指定なし",
+				"facilityType": "広域避難所",
+				"facilityScale": "-1",
+				"administrativeArea": "12106",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.06542131,
+					35.62000405
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市美浜区高浜3-2",
+				"capacity": "3000",
+				"name": "南高浜公園",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12106",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.044809136,
+					35.6382665901
+				]
+			},
+			"properties": {
+				"level": 4,
+				"address": "千葉県千葉市美浜区打瀬2-18-1",
+				"capacity": "3000",
+				"name": "美浜打瀬小学校",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12106",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.03203288,
+					35.65807006
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市美浜区浜田2-126",
+				"capacity": "3500",
+				"name": "浜田公園",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12106",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.05479241,
+					35.63736063
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市美浜区磯辺6-4",
+				"capacity": "5400",
+				"name": "北磯辺公園",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12106",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.06387,
+					35.62598
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市美浜区高浜5-19",
+				"capacity": "3200",
+				"name": "北高浜公園",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12106",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.04024948,
+					35.6435630191
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市美浜区ひび野2丁目",
+				"capacity": "-1",
+				"name": "幕張海浜公園",
+				"disasterCategory": "指定なし",
+				"facilityType": "広域避難所",
+				"facilityScale": "-1",
+				"administrativeArea": "12106",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.05023,
+					35.6489369991
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市美浜区若葉3-1-8",
+				"capacity": "1100",
+				"name": "幕張勤労市民プラザ",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12106",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.036352,
+					35.6655759991
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市美浜区幕張西2-6-2",
+				"capacity": "230",
+				"name": "幕張西公民館",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12106",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.037883,
+					35.66477
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市美浜区幕張西2-8-1",
+				"capacity": "3600",
+				"name": "幕張西小学校",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設、広域避難所",
+				"facilityScale": "-1",
+				"administrativeArea": "12106",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.04091216,
+					35.66316639
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市美浜区幕張西3-4",
+				"capacity": "4800",
+				"name": "幕張西第２公園",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12106",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.0327473,
+					35.66232818
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市美浜区幕張西6-2-1",
+				"capacity": "4800",
+				"name": "幕張西第３公園",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設",
+				"facilityScale": "-1",
+				"administrativeArea": "12106",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.037605,
+					35.663437
+				]
+			},
+			"properties": {
+				"level": 1,
+				"address": "千葉県千葉市美浜区幕張西2-9-1",
+				"capacity": "5900",
+				"name": "幕張西中学校",
+				"disasterCategory": "指定なし",
+				"facilityType": "避難場所、避難所、避難施設、広域避難所",
+				"facilityScale": "-1",
+				"administrativeArea": "12106",
+				"height": "0"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					140.03619,
+					35.6638799991
+				]
+			},
+			"properties": {
+				"level": 3,
+				"address": "千葉県千葉市美浜区幕張西2-10",
+				"capacity": "-1",
+				"name": "幕張西第一公園",
+				"disasterCategory": "指定なし",
+				"facilityType": "広域避難所",
+				"facilityScale": "-1",
+				"administrativeArea": "12106",
+				"height": "0"
+			}
+		}
+	],
+	"name": "12100_chiba-shi_city_2024_shelter",
+	"type": "FeatureCollection"
+}

@@ -1,0 +1,112 @@
+{
+  "$ref": "#/definitions/FeatureCollection",
+  "definitions": {
+    "FeatureCollection": {
+      "title": "Google Maps Places 地物コレクション",
+      "description": "Google Maps Places APIから取得したレストランや施設のGeoJSONデータ",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "type": {
+          "type": "string",
+          "enum": ["FeatureCollection"],
+          "description": "GeoJSONのタイプ"
+        },
+        "features": {
+          "type": "array",
+          "items": { "$ref": "#/definitions/PlaceFeature" },
+          "description": "場所の地物配列"
+        }
+      },
+      "required": ["type", "features"]
+    },
+
+    "PlaceFeature": {
+      "title": "Google Maps Places 地物",
+      "description": "Google Maps Places APIの個別場所データ",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "type": {
+          "type": "string",
+          "enum": ["Feature"],
+          "description": "GeoJSON地物のタイプ"
+        },
+        "geometry": {
+          "$ref": "#/definitions/PointGeometry",
+          "description": "場所の座標情報"
+        },
+        "properties": {
+          "$ref": "#/definitions/PlaceProperties",
+          "description": "場所の詳細情報"
+        }
+      },
+      "required": ["type", "geometry", "properties"]
+    },
+
+    "PointGeometry": {
+      "title": "ポイント座標",
+      "description": "場所の緯度経度座標",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "type": {
+          "type": "string",
+          "enum": ["Point"],
+          "description": "ジオメトリタイプ"
+        },
+        "coordinates": {
+          "type": "array",
+          "items": { "type": "number" },
+          "minItems": 2,
+          "maxItems": 2,
+          "description": "[経度, 緯度]の配列"
+        }
+      },
+      "required": ["type", "coordinates"]
+    },
+
+    "PlaceProperties": {
+      "title": "場所のプロパティ",
+      "description": "Google Maps Places APIから取得した場所の詳細情報",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "name": {
+          "type": "string",
+          "description": "場所の名前"
+        },
+        "place_id": {
+          "type": "string",
+          "description": "Google Places APIの一意ID"
+        },
+        "rating": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 5,
+          "description": "評価（0-5の範囲）"
+        },
+        "price_level": {
+          "type": ["integer", "null"],
+          "minimum": 0,
+          "maximum": 4,
+          "description": "価格レベル（0-4、nullの場合は未設定）"
+        },
+        "types": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "場所のタイプ（restaurant, food, establishment等）"
+        },
+        "vicinity": {
+          "type": ["string", "null"],
+          "description": "近隣情報（Places APIの一部レスポンスに含まれる）"
+        },
+        "formatted_address": {
+          "type": "string",
+          "description": "フォーマットされた住所"
+        }
+      },
+      "required": ["name", "place_id", "rating", "types", "formatted_address"]
+    }
+  }
+}

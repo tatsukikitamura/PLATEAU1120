@@ -1,0 +1,288 @@
+{
+  "$ref": "#/definitions/BuildingLOD2Schema",
+  "definitions": {
+    "BuildingLOD2Schema": {
+      "title": "建物データ LOD2 スキーマ",
+      "description": "Level of Detail 2 の建物データ用3D Tilesスキーマ",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "meshcode": {
+          "type": "string",
+          "description": "メッシュコード（地域を特定するためのコード）"
+        },
+        "feature_type": {
+          "type": "string",
+          "description": "フィーチャータイプ（データの種類）"
+        },
+        "city_code": {
+          "type": "string",
+          "description": "市区町村コード（行政区域を特定するコード）"
+        },
+        "city_name": {
+          "type": "string",
+          "description": "市区町村名"
+        },
+        "gml_id": {
+          "type": "string",
+          "description": "GML ID（地理情報の一意識別子）"
+        },
+        "attributes": {
+          "type": "object",
+          "description": "その他の属性情報（JSONオブジェクト形式）"
+        },
+        "gml_name": {
+          "type": "string",
+          "description": "GML名前（地理情報の名称）"
+        },
+        "creation_date": {
+          "type": "string",
+          "format": "date",
+          "description": "データ作成日"
+        },
+        "building_class": {
+          "type": "string",
+          "description": "建物クラス（建物の分類）"
+        },
+        "building_usage": {
+          "type": "string",
+          "description": "建物用途（住宅、商業施設など）"
+        },
+        "measured_height": {
+          "type": "number",
+          "description": "測定高さ（メートル単位）",
+          "minimum": 3.1,
+          "maximum": 150.3
+        },
+        "building_id": {
+          "type": "string",
+          "description": "建物ID（建物の一意識別子）"
+        },
+        "prefecture": {
+          "type": "string",
+          "description": "都道府県名"
+        },
+        "city": {
+          "type": "string",
+          "description": "市区町村名"
+        },
+        "survey_year": {
+          "type": "integer",
+          "description": "調査年",
+          "minimum": 1900,
+          "maximum": 2100
+        },
+        "geometry_source_lod1": {
+          "type": "string",
+          "description": "LOD1幾何学記述の情報源"
+        },
+        "lod_type": {
+          "type": "string",
+          "description": "LODタイプ（詳細度レベル）"
+        },
+        "lod1_height_type": {
+          "type": "string",
+          "description": "LOD1高さタイプ"
+        },
+        "flood_rank_l1_plan": {
+          "type": "string",
+          "description": "都川水系 L1（計画規模）浸水ランク"
+        },
+        "flood_rank_code_l1_plan": {
+          "type": "integer",
+          "description": "都川水系 L1（計画規模）浸水ランクコード",
+          "minimum": 1,
+          "maximum": 3
+        },
+        "flood_depth_l1_plan": {
+          "type": "number",
+          "description": "都川水系 L1（計画規模）浸水深（メートル）",
+          "minimum": 0.01,
+          "maximum": 1.986
+        },
+        "flood_rank_l2_max": {
+          "type": "string",
+          "description": "都川水系 L2（想定最大規模）浸水ランク"
+        },
+        "flood_rank_code_l2_max": {
+          "type": "integer",
+          "description": "都川水系 L2（想定最大規模）浸水ランクコード",
+          "minimum": 1,
+          "maximum": 5
+        },
+        "flood_depth_l2_max": {
+          "type": "number",
+          "description": "都川水系 L2（想定最大規模）浸水深（メートル）",
+          "minimum": 0.011,
+          "maximum": 4.672
+        },
+        "flood_duration_l2_max": {
+          "type": "number",
+          "description": "都川水系 L2（想定最大規模）浸水継続時間（時間）",
+          "minimum": 0.001,
+          "maximum": 224.45
+        },
+        "murata_river_flood_rank_l2_max": {
+          "type": "string",
+          "description": "村田川水系 L2（想定最大規模）浸水ランク"
+        },
+        "murata_river_flood_rank_code_l2_max": {
+          "type": "integer",
+          "description": "村田川水系 L2（想定最大規模）浸水ランクコード",
+          "minimum": 1,
+          "maximum": 6
+        },
+        "murata_river_flood_depth_l2_max": {
+          "type": "number",
+          "description": "村田川水系 L2（想定最大規模）浸水深（メートル）",
+          "minimum": 0.01,
+          "maximum": 7.289
+        },
+        "murata_river_flood_duration_l2_max": {
+          "type": "number",
+          "description": "村田川水系 L2（想定最大規模）浸水継続時間（時間）",
+          "minimum": 0.017,
+          "maximum": 30.483
+        },
+        "hamano_river_flood_rank_l2_max": {
+          "type": "string",
+          "description": "浜野川水系 L2（想定最大規模）浸水ランク"
+        },
+        "hamano_river_flood_rank_code_l2_max": {
+          "type": "integer",
+          "description": "浜野川水系 L2（想定最大規模）浸水ランクコード",
+          "minimum": 1,
+          "maximum": 6
+        },
+        "hamano_river_flood_depth_l2_max": {
+          "type": "number",
+          "description": "浜野川水系 L2（想定最大規模）浸水深（メートル）",
+          "minimum": 0.01,
+          "maximum": 7.871
+        },
+        "ikumi_river_flood_rank_l2_max": {
+          "type": "string",
+          "description": "生実川水系 L2（想定最大規模）浸水ランク"
+        },
+        "ikumi_river_flood_rank_code_l2_max": {
+          "type": "integer",
+          "description": "生実川水系 L2（想定最大規模）浸水ランクコード",
+          "minimum": 1,
+          "maximum": 6
+        },
+        "ikumi_river_flood_depth_l2_max": {
+          "type": "number",
+          "description": "生実川水系 L2（想定最大規模）浸水深（メートル）",
+          "minimum": 0.01,
+          "maximum": 7.516
+        },
+        "tsunami_flood_rank": {
+          "type": "string",
+          "description": "津波浸水想定 浸水ランク"
+        },
+        "tsunami_flood_rank_code": {
+          "type": "integer",
+          "description": "津波浸水想定 浸水ランクコード",
+          "minimum": 1,
+          "maximum": 5
+        },
+        "tsunami_flood_depth": {
+          "type": "number",
+          "description": "津波浸水想定 浸水深（メートル）",
+          "minimum": 0.01,
+          "maximum": 4.37
+        },
+        "storm_surge_flood_rank": {
+          "type": "string",
+          "description": "高潮浸水想定 浸水ランク"
+        },
+        "storm_surge_flood_rank_code": {
+          "type": "integer",
+          "description": "高潮浸水想定 浸水ランクコード",
+          "minimum": 1,
+          "maximum": 6
+        },
+        "storm_surge_flood_depth": {
+          "type": "number",
+          "description": "高潮浸水想定 浸水深（メートル）",
+          "minimum": 0.01,
+          "maximum": 9.65
+        },
+        "inland_flood_rank": {
+          "type": "string",
+          "description": "内水浸水想定 浸水ランク"
+        },
+        "inland_flood_rank_code": {
+          "type": "integer",
+          "description": "内水浸水想定 浸水ランクコード",
+          "minimum": 1,
+          "maximum": 5
+        },
+        "inland_flood_depth": {
+          "type": "number",
+          "description": "内水浸水想定 浸水深（メートル）",
+          "minimum": 0.01,
+          "maximum": 3.646
+        },
+        "土砂災害リスク_急傾斜地の崩落_区域区分": {
+          "type": "string",
+          "description": "土砂災害リスク 急傾斜地の崩落 区域区分"
+        },
+        "土砂災害リスク_急傾斜地の崩落_区域区分コード": {
+          "type": "integer",
+          "description": "土砂災害リスク 急傾斜地の崩落 区域区分コード"
+        },
+        "_lod": {
+          "type": "string",
+          "description": "Level of Detail（詳細度レベル）"
+        },
+        "_lod_type": {
+          "type": "string",
+          "description": "LODタイプ（詳細度レベルタイプ）"
+        },
+        "_x": {
+          "type": "number",
+          "description": "X座標（メタデータ）"
+        },
+        "_y": {
+          "type": "number",
+          "description": "Y座標（メタデータ）"
+        },
+        "_xmin": {
+          "type": "number",
+          "description": "X座標最小値（バウンディングボックス）"
+        },
+        "_xmax": {
+          "type": "number",
+          "description": "X座標最大値（バウンディングボックス）"
+        },
+        "_ymin": {
+          "type": "number",
+          "description": "Y座標最小値（バウンディングボックス）"
+        },
+        "_ymax": {
+          "type": "number",
+          "description": "Y座標最大値（バウンディングボックス）"
+        },
+        "_zmin": {
+          "type": "number",
+          "description": "Z座標最小値（バウンディングボックス）"
+        },
+        "_zmax": {
+          "type": "number",
+          "description": "Z座標最大値（バウンディングボックス）"
+        }
+      },
+      "required": [
+        "meshcode",
+        "feature_type",
+        "city_code",
+        "city_name",
+        "gml_id",
+        "building_class",
+        "building_usage",
+        "measured_height"
+      ]
+    }
+  }
+}

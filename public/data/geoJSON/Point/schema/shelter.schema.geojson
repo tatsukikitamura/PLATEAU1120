@@ -1,0 +1,148 @@
+{
+    "$ref": "#/definitions/Welcome",
+    "definitions": {
+        "Welcome": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "features": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/Feature"
+                    }
+                },
+                "name": {
+                    "type": "string"
+                },
+                "type": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "features",
+                "name",
+                "type"
+            ],
+            "title": "Welcome"
+        },
+        "Feature": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "type": {
+                    "$ref": "#/definitions/FeatureType"
+                },
+                "geometry": {
+                    "$ref": "#/definitions/Geometry"
+                },
+                "properties": {
+                    "$ref": "#/definitions/Properties"
+                }
+            },
+            "required": [
+                "geometry",
+                "properties",
+                "type"
+            ],
+            "title": "Feature"
+        },
+        "Geometry": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "type": {
+                    "$ref": "#/definitions/GeometryType"
+                },
+                "coordinates": {
+                    "type": "array",
+                    "items": {
+                        "type": "number"
+                    }
+                }
+            },
+            "required": [
+                "coordinates",
+                "type"
+            ],
+            "title": "Geometry"
+        },
+        "Properties": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "level": {
+                    "type": "integer"
+                },
+                "address": {
+                    "type": "string"
+                },
+                "capacity": {
+                    "type": "string",
+                    "format": "integer"
+                },
+                "name": {
+                    "type": "string"
+                },
+                "disasterCategory": {
+                    "$ref": "#/definitions/DisasterCategoryEnum"
+                },
+                "facilityType": {
+                    "$ref": "#/definitions/FacilityTypeEnum"
+                },
+                "facilityScale": {
+                    "type": "string",
+                    "format": "integer"
+                },
+                "administrativeArea": {
+                    "type": "string",
+                    "format": "integer"
+                },
+                "height": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "level",
+                "address",
+                "capacity",
+                "name",
+                "disasterCategory",
+                "facilityType",
+                "facilityScale",
+                "administrativeArea",
+                "height"
+            ],
+            "title": "Properties"
+        },
+        "GeometryType": {
+            "type": "string",
+            "enum": [
+                "Point"
+            ],
+            "title": "GeometryType"
+        },
+        "DisasterCategoryEnum": {
+            "type": "string",
+            "enum": [
+                "指定なし"
+            ],
+            "title": "DisasterCategoryEnum"
+        },
+        "FacilityTypeEnum": {
+            "type": "string",
+            "enum": [
+                "広域避難所",
+                "避難場所、避難所、避難施設",
+                "避難場所、避難所、避難施設、広域避難所"
+            ],
+            "title": "FacilityTypeEnum"
+        },
+        "FeatureType": {
+            "type": "string",
+            "enum": [
+                "Feature"
+            ],
+            "title": "FeatureType"
+        }
+    }
+}

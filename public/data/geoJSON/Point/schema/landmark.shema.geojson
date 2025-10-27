@@ -1,0 +1,110 @@
+{
+	"$ref": "#/definitions/FeatureCollection",
+	"definitions": {
+	  "FeatureCollection": {
+		"title": "地物コレクション",
+		"description": "GeoJSONのルート構造。複数の地物を格納します。",
+		"type": "object",
+		"additionalProperties": false,
+		"properties": {
+		  "features": {
+			"type": "array",
+			"items": { "$ref": "#/definitions/Feature" }
+		  },
+		  "name": {
+			"type": "string",
+			"description": "このデータセットの名前"
+		  },
+		  "type": {
+			"type": "string",
+			"enum": ["FeatureCollection"] 
+		  }
+		},
+		"required": ["features", "name", "type"]
+	  },
+  
+	  "Feature": {
+		"title": "地物",
+		"type": "object",
+		"additionalProperties": false,
+		"properties": {
+		  "type": {
+			"$ref": "#/definitions/FeatureType"
+		  },
+		  "geometry": {
+			"$ref": "#/definitions/Geometry"
+		  },
+		  "properties": {
+			"$ref": "#/definitions/FacilityProperties" 
+		  }
+		},
+		"required": ["geometry", "properties", "type"]
+	  },
+  
+	  "Geometry": {
+		"title": "地理形状",
+		"type": "object",
+		"additionalProperties": false,
+		"properties": {
+		  "type": {
+			"$ref": "#/definitions/GeometryType"
+		  },
+		  "coordinates": {
+			"type": "array",
+			"description": "経度、緯度の順",
+			"items": { "type": "number" }
+		  }
+		},
+		"required": ["coordinates", "type"]
+	  },
+	  "FacilityProperties": {
+		"title": "施設の属性情報",
+		"type": "object",
+		"additionalProperties": false,
+		"properties": {
+		  "name": {
+			"type": "string",
+			"description": "施設の名称"
+		  },
+		  "category": {
+			"description": "施設の種類",
+			"$ref": "#/definitions/FacilityCategory"
+		  },
+		  "height_meters": {
+			"type": "number", 
+			"description": "建物の高さ（メートル単位）"
+		  }
+		},
+		"required": ["name", "category", "height_meters"]
+	  },
+  
+	  "GeometryType": {
+		"type": "string",
+		"enum": ["Point"],
+		"title": "地理形状タイプ"
+	  },
+  
+	  "FacilityCategory": {
+		"title": "施設カテゴリ",
+		"type": "string",
+		"enum": [
+		  "警察署",
+		  "消防署",
+		  "学校",
+		  "郵便局",
+		  "病院",
+		  "指定公共機関",
+		  "国の機関",
+		  "地方の機関",
+		  "保健所",
+		  "博物館・美術館"
+		]
+	  },
+  
+	  "FeatureType": {
+		"type": "string",
+		"enum": ["Feature"],
+		"title": "地物タイプ"
+	  }
+	}
+  }
