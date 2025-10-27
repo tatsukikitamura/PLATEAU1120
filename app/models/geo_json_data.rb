@@ -38,6 +38,118 @@ class GeoJsonData < ApplicationRecord
     self[:metadata] = hash.to_json
   end
 
+  # スキーマ概要のJSONパース
+  def schema_summary_hash
+    return {} if schema_summary.blank?
+    JSON.parse(schema_summary)
+  rescue JSON::ParserError
+    {}
+  end
+
+  def schema_summary_hash=(hash)
+    self.schema_summary = hash.to_json
+  end
+
+  # スキーマ概要を抽出
+  def extract_schema_summary
+    return {} unless file_exists?
+
+    geojson_path = Rails.root.join("public", file_path)
+    geojson_data = JSON.parse(File.read(geojson_path))
+
+    # schemaファイルのパスを推測
+    schema_path = schema_file_path
+    schema_info = {}
+
+    # schemaファイルが存在する場合は読み込む
+    if schema_path && File.exist?(schema_path)
+      schema_data = JSON.parse(File.read(schema_path))
+      properties_def = schema_data["definitions"]["Properties"] rescue nil
+
+      if properties_def && properties_def["properties"]
+        schema_info = properties_def["properties"]
+      end
+    end
+
+    # 実際のGeoJSONデータからサンプル値を抽出
+    features = geojson_data["features"] || []
+    feature_count = features.length
+
+    properties_info = {}
+    
+    # 各フィーチャーのプロパティからサンプル値を収集
+    features.take(100).each do |feature|
+      props = feature["properties"] || {}
+      props.each do |key, value|
+        next if value.nil?
+        
+        unless properties_info[key]
+          properties_info[key] = {
+            "type" => value.class.name.downcase,
+            "description" => get_property_description(key),
+            "samples" => []
+          }
+        end
+        
+        # サンプル値を収集（最大3つ）
+        if properties_info[key]["samples"].length < 3 && !properties_info[key]["samples"].include?(value)
+          properties_info[key]["samples"] << value
+        end
+      end
+    end
+
+    # schemaファイルの情報と実データの情報をマージ
+    properties_info.each do |key, info|
+      if schema_info[key]
+        info.merge!(schema_info[key])
+      end
+    end
+
+    {
+      "properties" => properties_info,
+      "feature_count" => feature_count
+    }
+  end
+
+  # schemaファイルのパスを取得
+  def schema_file_path
+    base_path = file_path.gsub(".geojson", "")
+    
+    # PointとMultiLineStringのschemaファイル位置が異なる
+    case data_type
+    when "Point"
+      "public/data/geoJSON/Point/schema/#{name}.schema.geojson"
+    when "MultiLineString"
+      "public/data/geoJSON/MultiLineString/schema/#{name}.schema.geojson"
+    else
+      nil
+    end
+  end
+
+  # プロパティ名から日本語の説明を生成
+  def get_property_description(key)
+    descriptions = {
+      "parkName" => "公園名",
+      "parkType" => "公園種別",
+      "areaInService" => "供用面積",
+      "stationName" => "駅名",
+      "lineName" => "路線名",
+      "operatorType" => "運営者種別",
+      "railwayCategory" => "鉄道種別",
+      "name" => "名称",
+      "address" => "住所",
+      "capacity" => "収容人数",
+      "facilityType" => "施設種別",
+      "disasterCategory" => "災害種別",
+      "level" => "レベル",
+      "height" => "高さ",
+      "municipalityName" => "市区町村名",
+      "prefectureName" => "都道府県名"
+    }
+    
+    descriptions[key] || key
+  end
+
   # ファイルの存在確認
   def file_exists?
     File.exist?(Rails.root.join("public", file_path))

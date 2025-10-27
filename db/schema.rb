@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[8.0].define(version: 2025_10_24_020738) do
+ActiveRecord::Schema[8.0].define(version: 2025_10_27_025010) do
   create_table "filter_conditions", force: :cascade do |t|
     t.string "name", null: false
     t.text "conditions", null: false
@@ -36,6 +36,7 @@ ActiveRecord::Schema[8.0].define(version: 2025_10_24_020738) do
     t.integer "display_order", default: 0
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.text "schema_summary"
     t.index ["data_type", "visible"], name: "index_geo_json_data_on_data_type_and_visible"
     t.index ["data_type"], name: "index_geo_json_data_on_data_type"
     t.index ["visible"], name: "index_geo_json_data_on_visible"

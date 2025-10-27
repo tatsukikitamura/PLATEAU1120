@@ -1,6 +1,6 @@
 class MainController < ApplicationController
-  before_action :load_geojson_data, only: [ :cesium, :map2d, :tourist_route ]
-  before_action :load_filter_conditions, only: [ :cesium, :map2d, :tourist_route ]
+  before_action :load_geojson_data, only: [ :cesium, :map2d, :tourist_route, :chatbot_map ]
+  before_action :load_filter_conditions, only: [ :cesium, :map2d, :tourist_route, :chatbot_map ]
 
   def home
     # ホームページ（3D/2D選択画面）
@@ -51,6 +51,20 @@ class MainController < ApplicationController
 
     # データの詳細統計
     @detailed_stats = GeoJsonData.stats
+  end
+
+  def chatbot
+    # AIチャットbotページ
+  end
+
+  def chatbot_map
+    # AIチャットbot & 3Dマップ統合ページ
+    @point_data = @geojson_data.by_data_type("Point").visible.ordered
+    @line_data = @geojson_data.by_data_type("MultiLineString").visible.ordered
+    @tileset_data = @geojson_data.by_data_type("3DTiles").visible.ordered
+    @osm_data = @geojson_data.by_data_type("OSM").visible.ordered
+
+    ensure_default_filters
   end
 
   # データの再読み込み

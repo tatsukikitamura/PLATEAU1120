@@ -2,6 +2,8 @@
  * フィルタリングロジック
  */
 
+import { setDescriptionsForEntities } from "plateau/cesium/infobox_customizer";
+
 // 未使用の関数を削除:
 // - filterGeoJSON: 定義されているが使用されていない
 // - applyFilterToUrls: applyMultiDataTypeFilterで代替可能
@@ -35,6 +37,9 @@ export async function applyMultiDataTypeFilter(viewer, urls, predicatesMap, data
       );
       
       const entities = ds.entities.values;
+
+      // InfoBoxのdescriptionを設定
+      setDescriptionsForEntities(entities);
 
       // 読み込んだ全データに対し、表示条件をリセット（loadGeoJSONと同じ設定）
       for (const entity of entities) {

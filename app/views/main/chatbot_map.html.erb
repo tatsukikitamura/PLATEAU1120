@@ -1,0 +1,296 @@
+<% content_for :title, "AIチャットbot & 3Dマップ - PLATEAU-1120" %>
+<% content_for :head do %>
+  <meta name="turbo-visit-control" content="reload">
+<% end %>
+
+<style>
+  /* グローバルレイアウト */
+  body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    overflow: hidden;
+  }
+
+  .chatbot-map-container {
+    display: flex;
+    height: 100vh;
+  }
+
+  /* 左側: チャットエリア */
+  .chat-area {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    background-color: #f8f9fa;
+    border-right: 2px solid #dee2e6;
+  }
+
+  .chat-header {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .chat-header h3 {
+    margin: 0;
+    font-size: 1.2rem;
+  }
+
+  .chat-messages-container {
+    flex: 1;
+    overflow-y: auto;
+    padding: 1rem;
+    background-color: #ffffff;
+  }
+
+  .chat-input-container {
+    padding: 1rem;
+    background-color: white;
+    border-top: 1px solid #dee2e6;
+  }
+
+  /* 右側: マップエリア */
+  .map-area {
+    width: 50%;
+    position: relative;
+  }
+
+  #cesiumContainer {
+    width: 100%;
+    height: 100%;
+  }
+
+  /* レスポンシブデザイン */
+  @media (max-width: 768px) {
+    .chatbot-map-container {
+      flex-direction: column;
+    }
+
+    .chat-area,
+    .map-area {
+      width: 100%;
+      height: 50%;
+    }
+
+    .map-area {
+      order: 1;
+    }
+
+    .chat-area {
+      order: 2;
+    }
+  }
+
+  /* メッセージスタイル */
+  .message {
+    display: flex;
+    margin-bottom: 1.5rem;
+    animation: fadeIn 0.3s ease;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .message-avatar {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1rem;
+    flex-shrink: 0;
+    margin-right: 0.75rem;
+  }
+
+  .user-message .message-avatar {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+  }
+
+  .bot-message .message-avatar {
+    background: linear-gradient(135deg, #28a745 0%, #20c997 100%);
+    color: white;
+  }
+
+  .message-content {
+    flex: 1;
+    min-width: 0;
+  }
+
+  .message-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.5rem;
+    font-size: 0.85rem;
+  }
+
+  .message-header strong {
+    color: #333;
+  }
+
+  .timestamp {
+    color: #6c757d;
+    font-size: 0.8rem;
+  }
+
+  .message-text {
+    background-color: #f0f0f0;
+    padding: 0.75rem;
+    border-radius: 8px;
+    line-height: 1.5;
+    word-wrap: break-word;
+  }
+
+  .user-message {
+    flex-direction: row-reverse;
+  }
+
+  .user-message .message-avatar {
+    margin-right: 0;
+    margin-left: 0.75rem;
+  }
+
+  .user-message .message-text {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+  }
+
+  .typing-indicator {
+    display: flex;
+    align-items: center;
+    padding: 0.5rem 0;
+  }
+
+  .typing-indicator span {
+    height: 6px;
+    width: 6px;
+    background-color: #6c757d;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 4px;
+    animation: typing 1.4s infinite;
+  }
+
+  .typing-indicator span:nth-child(2) {
+    animation-delay: 0.2s;
+  }
+
+  .typing-indicator span:nth-child(3) {
+    animation-delay: 0.4s;
+  }
+
+  @keyframes typing {
+    0%, 60%, 100% {
+      transform: translateY(0);
+    }
+    30% {
+      transform: translateY(-8px);
+    }
+  }
+
+  /* カスタムスクロールバー */
+  .chat-messages-container::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  .chat-messages-container::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+
+  .chat-messages-container::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 3px;
+  }
+
+  .chat-messages-container::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+</style>
+
+<div class="chatbot-map-container">
+  <!-- 左側: チャットエリア -->
+  <div class="chat-area">
+    <!-- ヘッダー -->
+    <div class="chat-header">
+      <div>
+        <h3>
+          <i class="fas fa-robot me-2"></i>
+          AIチャットbot
+        </h3>
+      </div>
+      <div>
+        <button class="btn btn-sm btn-light" id="clearChatBtn" title="履歴をクリア">
+          <i class="fas fa-trash"></i>
+        </button>
+        <button class="btn btn-sm btn-light" id="clearMapBtn" title="マップをクリア">
+          <i class="fas fa-map"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- メッセージエリア -->
+    <div class="chat-messages-container" id="chatMessages">
+      <!-- ウェルカムメッセージ -->
+      <div class="message bot-message">
+        <div class="message-avatar">
+          <i class="fas fa-robot"></i>
+        </div>
+        <div class="message-content">
+          <div class="message-header">
+            <strong>AIアシスタント</strong>
+            <span class="timestamp">ただいま</span>
+          </div>
+          <div class="message-text">
+            こんにちは！千葉市の地理空間データに関する質問にお答えします。<br>
+            回答したデータは自動的に右側のマップに表示されます。
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 入力エリア -->
+    <div class="chat-input-container">
+      <form id="chatForm">
+        <div class="input-group">
+          <textarea
+            class="form-control"
+            id="messageInput"
+            rows="2"
+            placeholder="メッセージを入力..."
+            autocomplete="off"
+          ></textarea>
+          <button class="btn btn-primary" type="submit" id="sendBtn">
+            <i class="fas fa-paper-plane"></i>
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- 右側: マップエリア -->
+  <div class="map-area">
+    <div id="cesiumContainer"></div>
+  </div>
+</div>
+
+<%= content_for :javascript do %>
+  
+  <script type="module">
+    import "chatbot_map_application";
+  </script>
+<% end %>
+

@@ -2,6 +2,11 @@
  * GeoJSON読み込み機能
  */
 
+import { setDescriptionsForEntities, addInfoBoxStyles } from "plateau/cesium/infobox_customizer";
+
+// InfoBoxのスタイルを追加（初回のみ）
+addInfoBoxStyles();
+
 export const GEOJSON_URLS = [
   "/data/geoJSON/MultiLineString/border.geojson",
   "/data/geoJSON/MultiLineString/emergency_route.geojson",
@@ -33,6 +38,10 @@ export async function loadGeoJSON(viewer, urls) {
 
       // 読み込んだ全データに対し、表示条件をリセット
       const entities = dataSource.entities.values;
+      
+      // InfoBoxのdescriptionを設定
+      setDescriptionsForEntities(entities);
+      
       for (const entity of entities) {
         // Billboard (アイコン) や Point (点) の表示条件を解除
         if (entity.point) {

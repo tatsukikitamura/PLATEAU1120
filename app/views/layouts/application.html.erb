@@ -1,82 +1,66 @@
 <!DOCTYPE html>
 <html lang="ja">
   <head>
-    <!-- 基本メタタグ -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="mobile-web-app-capable" content="yes">
     
-    <!-- セキュリティ -->
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
     
-    <!-- ページタイトル -->
     <title><%= content_for(:title) || "PLATEAU-1120 - 千葉市地理空間データビューアー" %></title>
     
-    <!-- SEO・OGP -->
     <meta name="description" content="千葉市の地理空間データを活用した次世代デジタルツイン・観光ルート最適化システム">
     <meta name="keywords" content="PLATEAU,地理空間データ,千葉市,3D地図,観光ルート最適化,デジタルツイン">
     <meta name="author" content="PLATEAU-1120 Team">
     
-    <!-- Open Graph -->
     <meta property="og:title" content="<%= content_for(:title) || 'PLATEAU-1120' %>">
     <meta property="og:description" content="千葉市の地理空間データを活用した次世代デジタルツイン・観光ルート最適化システム">
     <meta property="og:type" content="website">
     <meta property="og:url" content="<%= request.url %>">
     <meta property="og:image" content="<%= request.base_url %>/icon.png">
     
-    <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="<%= content_for(:title) || 'PLATEAU-1120' %>">
     <meta name="twitter:description" content="千葉市の地理空間データを活用した次世代デジタルツイン・観光ルート最適化システム">
     <meta name="twitter:image" content="<%= request.base_url %>/icon.png">
     
-    <!-- ファビコン -->
     <link rel="icon" href="/icon.png" type="image/png">
     <link rel="icon" href="/icon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="/icon.png">
     
-    <!-- PWA Manifest (将来の拡張用) -->
-    <%#= tag.link rel: "manifest", href: pwa_manifest_path(format: :json) %>
+    <meta name="cesium-ion-token" content="<%= ENV['CESIUM_ION_ACCESS_TOKEN'] || '' %>">
     
-    <!-- 外部ライブラリの読み込み -->
-    <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Font Awesome -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
-    <!-- Cesium CSS -->
-    <link href="https://cesium.com/downloads/cesiumjs/releases/1.134/Build/Cesium/Widgets/widgets.css" rel="stylesheet">
-    <!-- Leaflet CSS -->
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
     
-    <!-- アプリケーション固有のスタイル -->
+    <% if request.path.include?('cesium') || request.path.include?('chatbot_map') %>
+      <link href="https://cesium.com/downloads/cesiumjs/releases/1.134/Build/Cesium/Widgets/widgets.css" rel="stylesheet">
+    <% end %>
+    
+    <% if request.path.include?('map2d') %>
+      <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+    <% end %>
+    
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     
-    <!-- ページ固有のheadコンテンツ -->
     <%= yield :head %>
-    
-    <!-- Cesium Ion Token -->
-    <meta name="cesium-ion-token" content="<%= ENV['CESIUM_ION_ACCESS_TOKEN'] || '' %>">
   </head>
 
   <body class="d-flex flex-column" style="min-height: 100vh;" data-turbo="false">
-    <!-- ナビゲーションバー（2D地図とCesiumページでは非表示） -->
-    <% unless request.path.include?('map2d') || request.path.include?('cesium') %>
+    <% unless request.path.include?('map2d') || request.path.include?('cesium') || request.path.include?('chatbot_map') %>
       <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow-sm">
         <div class="container">
-          <!-- ブランドロゴ -->
           <a class="navbar-brand fw-bold" href="/">
             <i class="fas fa-map-marked-alt me-2"></i>
             PLATEAU-1120
           </a>
           
-          <!-- モバイルメニューボタン -->
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="ナビゲーションメニュー">
             <span class="navbar-toggler-icon"></span>
           </button>
           
-          <!-- ナビゲーションメニュー -->
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav me-auto">
               <li class="nav-item">
@@ -85,24 +69,42 @@
                   ホーム
                 </a>
               </li>
+              
               <li class="nav-item">
                 <a class="nav-link <%= 'active' if current_page?('/cesium') %>" href="/cesium">
                   <i class="fas fa-cube me-1"></i>
                   3D地図
                 </a>
               </li>
+              
               <li class="nav-item">
                 <a class="nav-link <%= 'active' if current_page?('/map2d') %>" href="/map2d">
                   <i class="fas fa-map me-1"></i>
                   2D地図
                 </a>
               </li>
+              
               <li class="nav-item">
                 <a class="nav-link <%= 'active' if current_page?('/tourist_route') %>" href="/tourist_route">
                   <i class="fas fa-route me-1"></i>
                   観光ルート最適化AI
                 </a>
               </li>
+              
+              <li class="nav-item">
+                <a class="nav-link <%= 'active' if current_page?('/chatbot') %>" href="/chatbot">
+                  <i class="fas fa-robot me-1"></i>
+                  AIチャットbot
+                </a>
+              </li>
+              
+              <li class="nav-item">
+                <a class="nav-link <%= 'active' if current_page?('/chatbot_map') %>" href="/chatbot_map">
+                  <i class="fas fa-comments me-1"></i>
+                  チャット & マップ
+                </a>
+              </li>
+              
               <li class="nav-item">
                 <a class="nav-link <%= 'active' if current_page?('/info') %>" href="/info">
                   <i class="fas fa-info-circle me-1"></i>
@@ -111,7 +113,6 @@
               </li>
             </ul>
             
-            <!-- ユーザーメニュー（将来の拡張用） -->
             <ul class="navbar-nav">
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -125,9 +126,7 @@
       </nav>
     <% end %>
 
-    <!-- メインコンテンツ -->
     <main class="flex-grow-1">
-      <!-- フラッシュメッセージ -->
       <% if notice %>
         <div class="alert alert-success alert-dismissible fade show m-0" role="alert">
           <i class="fas fa-check-circle me-2"></i>
@@ -144,11 +143,9 @@
         </div>
       <% end %>
       
-      <!-- ページコンテンツ -->
       <%= yield %>
     </main>
 
-    <!-- フッター -->
     <footer class="bg-light border-top mt-auto">
       <div class="container py-4">
         <div class="row">
@@ -161,6 +158,7 @@
               千葉市の地理空間データを活用した次世代デジタルツイン・観光ルート最適化システム
             </p>
           </div>
+          
           <div class="col-md-6 text-md-end">
             <div class="mb-2">
               <a href="https://github.com/tatsukikitamura/PLATEAU1120" class="text-muted me-3" target="_blank" rel="noopener">
@@ -180,21 +178,20 @@
       </div>
     </footer>
 
-    <!-- JavaScript ライブラリ -->
-    <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- Leaflet JS -->
-    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-    <!-- Cesium JS (3D地図ページでのみ読み込み) -->
-    <% if request.path.include?('cesium') %>
+    
+    <% if request.path.include?('map2d') %>
+      <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <% end %>
+    
+    <% if request.path.include?('cesium') || request.path.include?('chatbot_map') %>
       <script src="https://cesium.com/downloads/cesiumjs/releases/1.134/Build/Cesium/Cesium.js" 
               onload="console.log('Cesium library loaded successfully')" 
               onerror="console.error('Failed to load Cesium library')"></script>
     <% end %>
-    <!-- アプリケーション固有のJavaScript -->
+    
     <%= javascript_importmap_tags %>
     
-    <!-- ページ固有のJavaScript -->
     <%= yield :javascript %>
   </body>
 </html>

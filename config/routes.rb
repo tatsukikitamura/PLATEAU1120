@@ -5,6 +5,8 @@ Rails.application.routes.draw do
   get "index", to: "main#index"
   get "tourist_route", to: "main#tourist_route"
   get "info", to: "main#info"
+  get "chatbot", to: "main#chatbot"
+  get "chatbot_map", to: "main#chatbot_map"
   post "reload_data", to: "main#reload_data"
 
   # API routes
@@ -33,5 +35,9 @@ Rails.application.routes.draw do
       post :directions
       post :geocode
     end
+
+    # Chatbot API routes
+    post "chatbot/select_data", to: "chatbot#select_data"
+    post "chatbot/generate_response", to: "chatbot#generate_response"
   end
 end
