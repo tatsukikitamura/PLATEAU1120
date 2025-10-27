@@ -16,7 +16,7 @@ module ActiveSupport
     include FactoryBot::Syntax::Methods
 
     # Add more helper methods to be used by all tests here...
-    
+
     # テスト用のGeoJSONファイルを作成するヘルパー
     def create_test_geojson_file(file_path, geojson_data)
       full_path = Rails.root.join("public", file_path)
@@ -29,7 +29,7 @@ module ActiveSupport
     def cleanup_test_geojson_file(file_path)
       full_path = Rails.root.join("public", file_path)
       File.delete(full_path) if File.exist?(full_path)
-      
+
       # ディレクトリが空の場合のみ削除
       dir_path = File.dirname(full_path)
       if Dir.exist?(dir_path) && Dir.empty?(dir_path)
@@ -44,17 +44,17 @@ module ActiveSupport
         "features" => [
           {
             "type" => "Feature",
-            "geometry" => { "type" => "Point", "coordinates" => [139.745433, 35.658581] },
+            "geometry" => { "type" => "Point", "coordinates" => [ 139.745433, 35.658581 ] },
             "properties" => { "name" => "Tokyo Station", "type" => "station", "category" => "transport" }
           },
           {
             "type" => "Feature",
-            "geometry" => { "type" => "Point", "coordinates" => [139.700258, 35.658581] },
+            "geometry" => { "type" => "Point", "coordinates" => [ 139.700258, 35.658581 ] },
             "properties" => { "name" => "Shibuya Park", "type" => "park", "category" => "leisure" }
           },
           {
             "type" => "Feature",
-            "geometry" => { "type" => "Point", "coordinates" => [139.691706, 35.689487] },
+            "geometry" => { "type" => "Point", "coordinates" => [ 139.691706, 35.689487 ] },
             "properties" => { "name" => "Tokyo Tower", "type" => "landmark", "category" => "tourism" }
           }
         ]
@@ -89,11 +89,11 @@ module ActiveSupport
     def assert_json_response(expected_keys = [])
       assert_response :success
       response_data = JSON.parse(response.body)
-      
+
       expected_keys.each do |key|
         assert response_data.key?(key), "Expected response to include '#{key}'"
       end
-      
+
       response_data
     end
 

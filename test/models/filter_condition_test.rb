@@ -41,7 +41,7 @@ class FilterConditionTest < ActiveSupport::TestCase
   test "should parse conditions hash correctly" do
     conditions_json = { "type_equals" => "landmark", "name_contains" => "park" }.to_json
     @filter_condition.conditions = conditions_json
-    
+
     expected_hash = { "type_equals" => "landmark", "name_contains" => "park" }
     assert_equal expected_hash, @filter_condition.conditions_hash
   end
@@ -63,10 +63,10 @@ class FilterConditionTest < ActiveSupport::TestCase
       { "properties" => { "name" => "Shibuya Station" } },
       { "properties" => { "name" => "Tokyo Park" } }
     ]
-    
+
     @filter_condition.conditions_hash = { "name_contains" => "Station" }
     filtered = @filter_condition.apply_to_geojson(geojson_data)
-    
+
     assert_equal 2, filtered.count
     assert_includes filtered.map { |f| f["properties"]["name"] }, "Tokyo Station"
     assert_includes filtered.map { |f| f["properties"]["name"] }, "Shibuya Station"
@@ -78,10 +78,10 @@ class FilterConditionTest < ActiveSupport::TestCase
       { "properties" => { "type" => "station" } },
       { "properties" => { "type" => "landmark" } }
     ]
-    
+
     @filter_condition.conditions_hash = { "type_equals" => "landmark" }
     filtered = @filter_condition.apply_to_geojson(geojson_data)
-    
+
     assert_equal 2, filtered.count
     assert filtered.all? { |f| f["properties"]["type"] == "landmark" }
   end
@@ -92,18 +92,18 @@ class FilterConditionTest < ActiveSupport::TestCase
       { "properties" => { "category" => "leisure" } },
       { "properties" => { "category" => "transport" } }
     ]
-    
+
     @filter_condition.conditions_hash = { "category_equals" => "transport" }
     filtered = @filter_condition.apply_to_geojson(geojson_data)
-    
+
     assert_equal 2, filtered.count
     assert filtered.all? { |f| f["properties"]["category"] == "transport" }
   end
 
   test "should return original data when conditions are blank" do
-    geojson_data = [{ "properties" => { "name" => "test" } }]
+    geojson_data = [ { "properties" => { "name" => "test" } } ]
     @filter_condition.conditions_hash = {}
-    
+
     assert_equal geojson_data, @filter_condition.apply_to_geojson(geojson_data)
   end
 
@@ -113,9 +113,9 @@ class FilterConditionTest < ActiveSupport::TestCase
   end
 
   test "should generate combined description" do
-    @filter_condition.conditions_hash = { 
-      "name_contains" => "park", 
-      "type_equals" => "landmark" 
+    @filter_condition.conditions_hash = {
+      "name_contains" => "park",
+      "type_equals" => "landmark"
     }
     assert_equal "名前に「park」を含む かつ タイプが「landmark」", @filter_condition.description
   end
@@ -127,7 +127,7 @@ class FilterConditionTest < ActiveSupport::TestCase
 
   test "should create default filters" do
     created_filters = FilterCondition.create_default_filters
-    
+
     assert_equal 4, created_filters.count
     assert created_filters.any? { |f| f.name == "ランドマークのみ" }
     assert created_filters.any? { |f| f.name == "公園のみ" }
@@ -138,7 +138,7 @@ class FilterConditionTest < ActiveSupport::TestCase
   test "should not create duplicate default filters" do
     # 最初にデフォルトフィルタを作成
     FilterCondition.create_default_filters
-    
+
     # 再度作成しても重複しない
     created_filters = FilterCondition.create_default_filters
     assert_equal 4, created_filters.count
@@ -146,7 +146,7 @@ class FilterConditionTest < ActiveSupport::TestCase
 
   test "should return correct stats" do
     FilterCondition.create_default_filters
-    
+
     stats = FilterCondition.stats
     assert stats.key?(:total)
     assert stats.key?(:active)
@@ -159,7 +159,7 @@ class FilterConditionTest < ActiveSupport::TestCase
   test "active scope should return only active filters" do
     FilterCondition.create!(name: "Active Filter", conditions: "{}", active: true)
     FilterCondition.create!(name: "Inactive Filter", conditions: "{}", active: false)
-    
+
     active_filters = FilterCondition.active
     assert_equal 1, active_filters.count
     assert_equal "Active Filter", active_filters.first.name
@@ -168,7 +168,7 @@ class FilterConditionTest < ActiveSupport::TestCase
   test "by_data_type scope should filter by data type" do
     FilterCondition.create!(name: "Point Filter", data_type: "Point", conditions: "{}")
     FilterCondition.create!(name: "Line Filter", data_type: "MultiLineString", conditions: "{}")
-    
+
     point_filters = FilterCondition.by_data_type("Point")
     assert_equal 1, point_filters.count
     assert_equal "Point Filter", point_filters.first.name
@@ -178,7 +178,7 @@ class FilterConditionTest < ActiveSupport::TestCase
     FilterCondition.create!(name: "Z Filter", priority: 2, conditions: "{}")
     FilterCondition.create!(name: "A Filter", priority: 1, conditions: "{}")
     FilterCondition.create!(name: "B Filter", priority: 1, conditions: "{}")
-    
+
     ordered_filters = FilterCondition.ordered
     assert_equal "A Filter", ordered_filters.first.name
     assert_equal "B Filter", ordered_filters.second.name

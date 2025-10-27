@@ -58,5 +58,4 @@ class GeoJsonDataTest < ActiveSupport::TestCase
     # モデルの実装では、JSON文字列がそのまま返される
     assert_equal valid_metadata.to_json, @geo_json_data.metadata
   end
-
 end

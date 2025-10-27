@@ -17,4 +17,3 @@ pin_all_from "app/javascript/plateau", under: "plateau"
 
 # InfoBox カスタマイザーを明示的に登録
 pin "plateau/cesium/infobox_customizer", to: "infobox_customizer.js"
-

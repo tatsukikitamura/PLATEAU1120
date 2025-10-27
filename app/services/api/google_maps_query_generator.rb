@@ -27,7 +27,7 @@ class Api::GoogleMapsQueryGenerator
     system_prompt = <<~PROMPT
       あなたは千葉市の地理空間データを扱うAIアシスタントです。
       ユーザーの質問から、Google Maps API（Places検索、Geocoding、Directions）に渡す適切な検索クエリを生成してください。
-      
+
       以下の形式でJSONを返してください：
       {
         "type": "places" または "geocode" または "directions",
@@ -37,19 +37,19 @@ class Api::GoogleMapsQueryGenerator
           "destination": "目的地（directionsの場合）"
         }
       }
-      
+
       判定基準：
       - 施設名やお店の名前を含む場合（例：「カフェ」「レストラン」「コンビニ」「公園」）→ type: "places"
       - 住所や地名を探す場合（例：「千葉駅」「幕張メッセ」）→ type: "geocode"
       - 経路やルートを求める場合（例：「から」「までの道順」「行き方」）→ type: "directions"
-      
+
       質問文から重要なキーワードだけを抽出してください。説明文は不要です。
       千葉市に関連する質問のみを処理してください。
     PROMPT
 
     user_prompt = <<~PROMPT
       ユーザーの質問: #{user_query}
-      
+
       Google Maps APIに渡す適切な検索クエリをJSON形式で返してください。
     PROMPT
 
@@ -69,7 +69,7 @@ class Api::GoogleMapsQueryGenerator
 
     if response && response["choices"]&.first
       ai_response = response["choices"].first["message"]["content"].strip
-      
+
       begin
         query_data = JSON.parse(ai_response)
         Rails.logger.info "AI生成クエリ: #{query_data.inspect}"
@@ -129,4 +129,3 @@ class Api::GoogleMapsQueryGenerator
     nil
   end
 end
-

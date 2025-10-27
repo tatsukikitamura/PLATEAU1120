@@ -56,18 +56,18 @@ FactoryBot.define do
         # テスト用のGeoJSONファイルを作成
         file_path = Rails.root.join("public", geo_json_data.file_path)
         FileUtils.mkdir_p(File.dirname(file_path))
-        
+
         sample_geojson = {
           "type" => "FeatureCollection",
           "features" => [
             {
               "type" => "Feature",
-              "geometry" => { "type" => "Point", "coordinates" => [139.745433, 35.658581] },
+              "geometry" => { "type" => "Point", "coordinates" => [ 139.745433, 35.658581 ] },
               "properties" => { "name" => "Test Place", "type" => "landmark" }
             }
           ]
         }
-        
+
         File.write(file_path, sample_geojson.to_json)
       end
     end
@@ -77,28 +77,28 @@ FactoryBot.define do
       after(:create) do |geo_json_data|
         file_path = Rails.root.join("public", geo_json_data.file_path)
         FileUtils.mkdir_p(File.dirname(file_path))
-        
+
         sample_geojson = {
           "type" => "FeatureCollection",
           "features" => [
             {
               "type" => "Feature",
-              "geometry" => { "type" => "Point", "coordinates" => [139.745433, 35.658581] },
+              "geometry" => { "type" => "Point", "coordinates" => [ 139.745433, 35.658581 ] },
               "properties" => { "name" => "Tokyo Station", "type" => "station" }
             },
             {
               "type" => "Feature",
-              "geometry" => { "type" => "Point", "coordinates" => [139.700258, 35.658581] },
+              "geometry" => { "type" => "Point", "coordinates" => [ 139.700258, 35.658581 ] },
               "properties" => { "name" => "Shibuya Park", "type" => "park" }
             },
             {
               "type" => "Feature",
-              "geometry" => { "type" => "Point", "coordinates" => [139.691706, 35.689487] },
+              "geometry" => { "type" => "Point", "coordinates" => [ 139.691706, 35.689487 ] },
               "properties" => { "name" => "Tokyo Tower", "type" => "landmark" }
             }
           ]
         }
-        
+
         File.write(file_path, sample_geojson.to_json)
       end
     end

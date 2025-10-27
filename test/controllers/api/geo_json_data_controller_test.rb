@@ -9,7 +9,7 @@ class Api::GeoJsonDataControllerTest < ActionDispatch::IntegrationTest
       visible: true,
       display_order: 1
     )
-    
+
     # テスト用のGeoJSONファイルを作成
     @test_file_path = Rails.root.join("public", @geo_json_data.file_path)
     FileUtils.mkdir_p(File.dirname(@test_file_path))
@@ -18,12 +18,12 @@ class Api::GeoJsonDataControllerTest < ActionDispatch::IntegrationTest
       "features" => [
         {
           "type" => "Feature",
-          "geometry" => { "type" => "Point", "coordinates" => [139.745433, 35.658581] },
+          "geometry" => { "type" => "Point", "coordinates" => [ 139.745433, 35.658581 ] },
           "properties" => { "name" => "Tokyo Station", "type" => "station" }
         },
         {
           "type" => "Feature",
-          "geometry" => { "type" => "Point", "coordinates" => [139.700258, 35.658581] },
+          "geometry" => { "type" => "Point", "coordinates" => [ 139.700258, 35.658581 ] },
           "properties" => { "name" => "Shibuya Station", "type" => "station" }
         }
       ]
@@ -35,7 +35,7 @@ class Api::GeoJsonDataControllerTest < ActionDispatch::IntegrationTest
     # テストファイルをクリーンアップ
     if @test_file_path && File.exist?(@test_file_path)
       File.delete(@test_file_path)
-      
+
       # ディレクトリが空の場合のみ削除
       dir_path = File.dirname(@test_file_path)
       if Dir.exist?(dir_path) && Dir.empty?(dir_path)
@@ -47,7 +47,7 @@ class Api::GeoJsonDataControllerTest < ActionDispatch::IntegrationTest
   test "should get index" do
     get api_geo_json_data_path
     assert_response :success
-    
+
     response_data = JSON.parse(response.body)
     assert response_data.key?("data")
     assert response_data.key?("meta")
@@ -62,10 +62,10 @@ class Api::GeoJsonDataControllerTest < ActionDispatch::IntegrationTest
       file_path: "data/geoJSON/MultiLineString/test.geojson",
       visible: true
     )
-    
+
     get api_geo_json_data_path, params: { data_type: "Point" }
     assert_response :success
-    
+
     response_data = JSON.parse(response.body)
     assert_equal 1, response_data["data"].count
     assert_equal "テストデータ", response_data["data"].first["name"]
@@ -78,10 +78,10 @@ class Api::GeoJsonDataControllerTest < ActionDispatch::IntegrationTest
       file_path: "data/geoJSON/Point/another.geojson",
       visible: true
     )
-    
+
     get api_geo_json_data_path, params: { search: "テスト" }
     assert_response :success
-    
+
     response_data = JSON.parse(response.body)
     assert_equal 1, response_data["data"].count
     assert_equal "テストデータ", response_data["data"].first["name"]
@@ -91,7 +91,7 @@ class Api::GeoJsonDataControllerTest < ActionDispatch::IntegrationTest
     get api_geo_json_datum_path(@geo_json_data)
     # 実際のレスポンスは200で返される
     assert_response :success
-    
+
     response_data = JSON.parse(response.body)
     assert_equal "ファイルが見つかりません", response_data["error"]
   end
@@ -101,7 +101,7 @@ class Api::GeoJsonDataControllerTest < ActionDispatch::IntegrationTest
   test "should handle show with not found data" do
     get api_geo_json_datum_path(99999)
     assert_response :not_found
-    
+
     response_data = JSON.parse(response.body)
     assert_equal "データが見つかりません", response_data["error"]
   end
@@ -114,11 +114,11 @@ class Api::GeoJsonDataControllerTest < ActionDispatch::IntegrationTest
       conditions: { "type_equals" => "station" }.to_json,
       active: true
     )
-    
+
     post apply_filter_api_geo_json_datum_path(@geo_json_data), params: {
-      filter_condition_ids: [filter_condition.id]
+      filter_condition_ids: [ filter_condition.id ]
     }
-    
+
     # ファイルが存在しない場合は404が返される
     assert_response :not_found
     response_data = JSON.parse(response.body)
@@ -133,18 +133,18 @@ class Api::GeoJsonDataControllerTest < ActionDispatch::IntegrationTest
       conditions: { "type_equals" => "station" }.to_json,
       active: true
     )
-    
+
     filter2 = FilterCondition.create!(
       name: "Tokyo Filter",
       data_type: "Point",
       conditions: { "name_contains" => "Tokyo" }.to_json,
       active: true
     )
-    
+
     post apply_filter_api_geo_json_datum_path(@geo_json_data), params: {
-      filter_condition_ids: [filter1.id, filter2.id]
+      filter_condition_ids: [ filter1.id, filter2.id ]
     }
-    
+
     # ファイルが存在しない場合は404が返される
     assert_response :not_found
     response_data = JSON.parse(response.body)
@@ -160,29 +160,28 @@ class Api::GeoJsonDataControllerTest < ActionDispatch::IntegrationTest
       file_path: "data/geoJSON/MultiLineString/test.geojson",
       visible: false
     )
-    
+
     get statistics_api_geo_json_data_path
     assert_response :success
-    
+
     response_data = JSON.parse(response.body)
     assert response_data.key?("overall")
     assert response_data.key?("by_data_type")
-    
+
     assert_equal 2, response_data["overall"]["total"]
     assert_equal 1, response_data["overall"]["visible"]
     assert_equal 1, response_data["overall"]["hidden"]
-    
+
     assert response_data["by_data_type"].key?("Point")
     assert response_data["by_data_type"].key?("MultiLineString")
   end
 
   test "should handle empty filter condition ids" do
     post apply_filter_api_geo_json_datum_path(@geo_json_data), params: {}
-    
+
     # ファイルが存在しない場合は404が返される
     assert_response :not_found
     response_data = JSON.parse(response.body)
     assert_equal "ファイルが見つかりません", response_data["error"]
   end
-
 end

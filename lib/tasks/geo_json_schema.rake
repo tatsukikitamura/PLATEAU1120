@@ -2,14 +2,14 @@ namespace :geo_json do
   desc "Extract and save schema summaries for all GeoJSON data"
   task extract_schemas: :environment do
     puts "Starting schema extraction for GeoJSON data..."
-    
+
     count = 0
     error_count = 0
-    
+
     GeoJsonData.find_each do |record|
       begin
         schema_summary = record.extract_schema_summary
-        
+
         if schema_summary.present?
           record.schema_summary_hash = schema_summary
           if record.save
@@ -28,10 +28,9 @@ namespace :geo_json do
         error_count += 1
       end
     end
-    
+
     puts "\nSchema extraction completed:"
     puts "  Success: #{count}"
     puts "  Errors:  #{error_count}"
   end
 end
-

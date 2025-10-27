@@ -117,7 +117,7 @@ class Api::GoogleMapsGeoJsonService
       Rails.logger.info "routes present?: #{directions_response['routes'].present?}"
       Rails.logger.info "routes count: #{directions_response['routes']&.count || 0}"
     end
-    
+
     return create_empty_geojson unless directions_response["routes"]
 
     features = directions_response["routes"].map.with_index do |route, index|
@@ -125,15 +125,15 @@ class Api::GoogleMapsGeoJsonService
         Rails.logger.info "Processing route #{index}: #{route['summary']}"
         Rails.logger.info "Route legs count: #{route['legs']&.count || 0}"
       end
-      
+
       # ルートの座標配列を取得
       coordinates = extract_route_coordinates(route)
-      
+
       if Rails.env.development?
         Rails.logger.info "Extracted coordinates count: #{coordinates.count}"
         Rails.logger.info "Coordinates empty?: #{coordinates.empty?}"
       end
-      
+
       next nil if coordinates.empty?
 
       {
@@ -247,14 +247,14 @@ class Api::GoogleMapsGeoJsonService
           Rails.logger.info "Processing step: #{step['html_instructions']}"
           Rails.logger.info "Step polyline points: #{step['polyline']['points']}"
         end
-        
+
         # 各ステップの座標を取得
         step_coords = decode_polyline(step["polyline"]["points"])
-        
+
         if Rails.env.development?
           Rails.logger.info "Decoded step coordinates count: #{step_coords.count}"
         end
-        
+
         coordinates.concat(step_coords)
       end
     end
@@ -269,27 +269,27 @@ class Api::GoogleMapsGeoJsonService
       Rails.logger.info "Encoded polyline: #{encoded}"
       Rails.logger.info "Encoded blank?: #{encoded.blank?}"
     end
-    
+
     return [] if encoded.blank?
 
     begin
       # polylinesライブラリを使用してデコード
       points = Polylines::Decoder.decode_polyline(encoded)
-      
+
       if Rails.env.development?
         Rails.logger.info "Decoded points count: #{points.count}"
         Rails.logger.info "First few points: #{points.first(3)}"
       end
-      
+
       # [lat, lng]の配列を[lng, lat]のGeoJSON形式に変換
-      coordinates = points.map { |lat, lng| [lng, lat] }
-      
+      coordinates = points.map { |lat, lng| [ lng, lat ] }
+
       if Rails.env.development?
         Rails.logger.info "Converted coordinates count: #{coordinates.count}"
         Rails.logger.info "First few coordinates: #{coordinates.first(3)}"
         Rails.logger.info "=== End Decode Polyline Debug ==="
       end
-      
+
       coordinates
     rescue => e
       Rails.logger.error "Polyline decode error: #{e.message}"

@@ -76,13 +76,13 @@ class GeoJsonData < ApplicationRecord
     feature_count = features.length
 
     properties_info = {}
-    
+
     # 各フィーチャーのプロパティからサンプル値を収集
     features.take(100).each do |feature|
       props = feature["properties"] || {}
       props.each do |key, value|
         next if value.nil?
-        
+
         unless properties_info[key]
           properties_info[key] = {
             "type" => value.class.name.downcase,
@@ -90,7 +90,7 @@ class GeoJsonData < ApplicationRecord
             "samples" => []
           }
         end
-        
+
         # サンプル値を収集（最大3つ）
         if properties_info[key]["samples"].length < 3 && !properties_info[key]["samples"].include?(value)
           properties_info[key]["samples"] << value
@@ -114,7 +114,7 @@ class GeoJsonData < ApplicationRecord
   # schemaファイルのパスを取得
   def schema_file_path
     base_path = file_path.gsub(".geojson", "")
-    
+
     # PointとMultiLineStringのschemaファイル位置が異なる
     case data_type
     when "Point"
@@ -146,7 +146,7 @@ class GeoJsonData < ApplicationRecord
       "municipalityName" => "市区町村名",
       "prefectureName" => "都道府県名"
     }
-    
+
     descriptions[key] || key
   end
 
