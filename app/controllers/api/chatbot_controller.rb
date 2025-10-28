@@ -67,6 +67,7 @@ class Api::ChatbotController < ApplicationController
   def generate_response
     messages = params[:messages] || []
     selected_data_info = params[:selected_data] || []
+    google_maps_query = params[:google_maps_query]
 
     if messages.blank?
       render json: {
@@ -90,7 +91,15 @@ class Api::ChatbotController < ApplicationController
     # データが空の場合の処理
     if selected_data.empty?
       Rails.logger.warn "データが見つかりません。Google Maps APIを使用してください。"
-      response = "申し訳ございません。該当するPLATEAUデータが見つかりませんでした。マップに表示されたGoogle Mapsの検索結果をご覧ください。"
+      
+      # AIにコンテキストを提供して文脈を踏まえた回答を生成
+      if google_maps_query.present?
+        context_prompt = build_google_maps_context(google_maps_query)
+        response = service.chat(messages, system_prompt: context_prompt)
+      else
+        # Google Mapsクエリがない場合は従来のメッセージ
+        response = "申し訳ございません。該当するPLATEAUデータが見つかりませんでした。マップに表示されたGoogle Mapsの検索結果をご覧ください。"
+      end
     else
       # 選択されたデータで回答生成
       response = service.chat_with_selected_data(messages, selected_data)
@@ -122,5 +131,28 @@ class Api::ChatbotController < ApplicationController
 
   def validate_api_key_method
     validate_api_keys
+  end
+
+  # Google MapsクエリからAI用のコンテキストを構築
+  def build_google_maps_context(google_maps_query)
+    query_type = google_maps_query["type"] || "unknown"
+    query_text = google_maps_query["query"] || ""
+    
+    context = <<~CONTEXT
+      ユーザーの質問に対して、該当するPLATEAUデータが見つかりませんでした。
+      代わりにGoogle Maps APIで#{query_type}検索を行い、マップに表示しています。
+      
+      検索内容: #{query_text}
+      
+      以下の点を考慮して回答してください:
+      1. ユーザーの質問意図を理解して回答する
+      2. マップにGoogle Mapsの検索結果が表示されていることを伝える
+      3. 謝罪は不要。状況を自然に説明する
+      4. 必要に応じて、検索結果の見方や活用方法を案内する
+      
+      簡潔で親切な日本語で回答してください。
+    CONTEXT
+
+    context
   end
 end

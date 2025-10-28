@@ -360,7 +360,7 @@ document.addEventListener("DOMContentLoaded", async function () {
   }
   
   // Call AI response generation API
-  async function generateResponse(messages, selectedData) {
+  async function generateResponse(messages, selectedData, googleMapsQuery = null) {
     try {
       const response = await fetch('/api/chatbot/generate_response', {
         method: 'POST',
@@ -370,7 +370,8 @@ document.addEventListener("DOMContentLoaded", async function () {
         },
         body: JSON.stringify({
           messages: messages,
-          selected_data: selectedData
+          selected_data: selectedData,
+          google_maps_query: googleMapsQuery
         })
       });
       
@@ -468,7 +469,7 @@ document.addEventListener("DOMContentLoaded", async function () {
       
       // 2段階目: AI回答生成
       updateTypingIndicator('✨ AI回答を生成しています...');
-      const aiResponse = await generateResponse(chatHistory, selectedData);
+      const aiResponse = await generateResponse(chatHistory, selectedData, googleMapsQuery);
       
       chatHistory.push({ role: 'assistant', content: aiResponse });
       

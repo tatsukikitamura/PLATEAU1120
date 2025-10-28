@@ -145,19 +145,24 @@ document.addEventListener('DOMContentLoaded', function() {
       
       const data = await response.json();
       
-      if (data.success && data.selected_data) {
-        return data.selected_data;
+      if (data.success) {
+        return {
+          selected_data: data.selected_data || [],
+          should_display_on_map: data.should_display_on_map || false,
+          should_use_google_maps: data.should_use_google_maps || false,
+          google_maps_query: data.google_maps_query || null
+        };
       } else {
         throw new Error(data.error || 'Unknown error occurred');
       }
     } catch (error) {
       console.error('Data selection API error:', error);
-      return null;
+      return { selected_data: null, should_display_on_map: false, should_use_google_maps: false, google_maps_query: null };
     }
   }
   
   // Call AI response generation API (2段階目)
-  async function generateResponse(messages, selectedData) {
+  async function generateResponse(messages, selectedData, googleMapsQuery = null) {
     try {
       const response = await fetch('/api/chatbot/generate_response', {
         method: 'POST',
@@ -167,7 +172,8 @@ document.addEventListener('DOMContentLoaded', function() {
         },
         body: JSON.stringify({
           messages: messages,
-          selected_data: selectedData
+          selected_data: selectedData,
+          google_maps_query: googleMapsQuery
         })
       });
       
@@ -196,7 +202,12 @@ document.addEventListener('DOMContentLoaded', function() {
       
       // 1段階目: データ選択
       updateTypingIndicator('📊 関連データを選択しています...');
-      const selectedData = await selectData(userMessage);
+      const selectionResult = await selectData(userMessage);
+      
+      const selectedData = selectionResult?.selected_data || null;
+      const shouldDisplayOnMap = selectionResult?.should_display_on_map || false;
+      const shouldUseGoogleMaps = selectionResult?.should_use_google_maps || false;
+      const googleMapsQuery = selectionResult?.google_maps_query || null;
       
       if (selectedData && selectedData.length > 0) {
         // データ選択結果を表示
@@ -205,7 +216,7 @@ document.addEventListener('DOMContentLoaded', function() {
       
       // 2段階目: AI回答生成
       updateTypingIndicator('✨ AI回答を生成しています...');
-      const aiResponse = await generateResponse(chatHistory, selectedData);
+      const aiResponse = await generateResponse(chatHistory, selectedData, googleMapsQuery);
       
       // Add bot response to history
       chatHistory.push({ role: 'assistant', content: aiResponse });
