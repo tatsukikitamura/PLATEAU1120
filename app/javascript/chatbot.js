@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', function() {
   let messageId = 0;
   
   // Add message to chat
-  function addMessage(text, isUser = false) {
+  function addMessage(text, isUser= false) {
     const messageDiv = document.createElement('div');
     messageDiv.className = `message ${isUser ? 'user-message' : 'bot-message'}`;
     messageDiv.id = `message-${messageId++}`;
@@ -55,9 +55,11 @@ document.addEventListener('DOMContentLoaded', function() {
     messageDiv.appendChild(avatar);
     messageDiv.appendChild(content);
     
-    chatMessages.appendChild(messageDiv);
+    if (chatMessages) {
+      chatMessages.appendChild(messageDiv);
+    }
     scrollToBottom();
-    
+
     return messageDiv;
   }
   

@@ -1,162 +1,125 @@
 /**
  * UI操作とイベントリスナーを管理するモジュール
  */
-import { loadGeoJSON, GEOJSON_URLS } from "plateau/cesium/geojson_loader";
-import { load3DTiles, TILESET_URLS } from "plateau/cesium/tiles_loader";
-import { clearGeoJSONDataSources } from "plateau/utils/data_manager";
 import {
-  loadSchema,
-  extractPropertyFields,
-  buildMultiSchemaPredicates,
-} from "plateau/filters/schema";
-import {
-  renderFilterFields,
-  collectCriteriaFromForm,
-} from "plateau/filters/filter_form";
-import { applyMultiDataTypeFilter } from "plateau/filters/filter_logic";
-import { loadOsmBuildings } from "plateau/cesium/osm_buildings";
-import { 
-  DATA_TYPE_MAPPING, 
-  getDataTypeInfo, 
-  filterUrlsWithSchema,
-  groupUrlsByDataType 
-} from "plateau/filters/data_type_mapping";
-import {
+  loadGeoJSON,
+  GEOJSON_URLS,
+  load3DTiles,
+  TILESET_URLS,
+  loadOsmBuildings,
   loadGoogleMapsPlaces,
   loadGoogleMapsDirections,
   loadGoogleMapsGeocode,
   clearGoogleMapsData,
-  toggleGoogleMapsData
-} from "plateau/cesium/google_maps_loader";
+  toggleGoogleMapsData,
+} from "plateau/cesium";
+import {
+  loadSchema,
+  extractPropertyFields,
+  buildMultiSchemaPredicates,
+  renderFilterFields,
+  collectCriteriaFromForm,
+  applyMultiDataTypeFilter,
+  DATA_TYPE_MAPPING,
+  getDataTypeInfo,
+  filterUrlsWithSchema,
+  groupUrlsByDataType,
+} from "plateau/filters";
+import { clearGeoJSONDataSources } from "plateau/utils";
 
 /**
  * UIコントローラーを初期化する
  * @param {Cesium.Viewer} viewer - Cesiumのビューアーインスタンス
  */
-export function initializeUIController(viewer) {
-  // DOM要素の取得
-  const pointButton = document.getElementById("point-button");
-  const lineButton = document.getElementById("line-button");
-  const multiLineButton = document.getElementById("multi-line-button");
-  const googleapiButton = document.getElementById("googleapi-button");
-  const allDataButton = document.getElementById("all-data-button");
-  const osmBuildingsButton = document.getElementById("osm-buildings-button");
-  const homeButton = document.getElementById("home-button");
-  const pointSelectionContainer = document.getElementById(
-    "point-selection-container"
-  );
-  const googleapiContainer = document.getElementById("googleapi-container");
-  const landmarkButton = document.getElementById("landmark-button");
-  const parkButton = document.getElementById("park-button");
-  const shelterButton = document.getElementById("shelter-button");
-  const stationButton = document.getElementById("station-button");
-  const allPointsButton = document.getElementById("all-points-button");
-  const filterToggleBtn = document.getElementById("filter-toggle-btn");
-  const filterFormContainer = document.getElementById("dynamic-filter-form");
-  const applyFilterBtn = document.getElementById("apply-filter-btn");
-  const clearFilterBtn = document.getElementById("clear-filter-btn");
-  
-  // ナビ関連のDOM要素
-  const navToggleBtn = document.getElementById("nav-toggle-btn");
-  const navContainer = document.getElementById("nav-container");
-  const placesSearchBtn = document.getElementById("places-search-btn");
-  const directionsBtn = document.getElementById("directions-btn");
-  const geocodeBtn = document.getElementById("geocode-btn");
-  const clearNavBtn = document.getElementById("clear-nav-btn");
-
-  // フィルターUIの状態を保持（複数スキーマ対応）
-  const filterState = {
-    schemas: {}, // データ型別のスキーマ
-    schemaFieldsMap: {}, // データ型別のフィールド定義
-    criteria: {},
-    lastLoadedUrls: [],
-  };
-
-  // フィルターコンテナの取得と初期状態設定
-  const filterContainer = document.getElementById("filter-container");
-  if (filterContainer) {
-    filterContainer.style.display = "none"; // 初期状態で非表示
+export default class UIController{
+  constructor(viewer){
+    this.viewer = viewer;
+    this.osmLoaded = false;
+    this.filterState = {
+      schemas: {},
+      schemaFieldsMap: {},
+      criteria: {},
+      lastLoadedUrls: [],
+    };
+    this.pointButton = document.getElementById("point-button");
+    this.lineButton = document.getElementById("line-button");
+    this.multiLineButton = document.getElementById("multi-line-button");
+    this.googleapiButton = document.getElementById("googleapi-button");
+    this.allDataButton = document.getElementById("all-data-button");
+    this.osmBuildingsButton = document.getElementById("osm-buildings-button");
+    this.homeButton = document.getElementById("home-button");
+    this.pointSelectionContainer = document.getElementById("point-selection-container");
+    this.googleapiContainer = document.getElementById("googleapi-container");
+    this.landmarkButton = document.getElementById("landmark-button");
+    this.parkButton = document.getElementById("park-button");
+    this.shelterButton = document.getElementById("shelter-button");
+    this.stationButton = document.getElementById("station-button");
+    this.allPointsButton = document.getElementById("all-points-button");
+    this.filterToggleBtn = document.getElementById("filter-toggle-btn");
+    this.filterFormContainer = document.getElementById("dynamic-filter-form");
+    this.applyFilterBtn = document.getElementById("apply-filter-btn");
+    this.clearFilterBtn = document.getElementById("clear-filter-btn");
+    this.navToggleBtn = document.getElementById("nav-toggle-btn");
+    this.navContainer = document.getElementById("nav-container");
+    this.placesSearchBtn = document.getElementById("places-search-btn");
+    this.directionsBtn = document.getElementById("directions-btn");
+    this.geocodeBtn = document.getElementById("geocode-btn");
+    this.clearNavBtn = document.getElementById("clear-nav-btn");
+    this.filterContainer = document.getElementById("filter-container");
+    this.googleapiContainer = document.getElementById("googleapi-container");
+    this.hideFilterContainer();
+    this.hideNavContainer();
+    this.hideGoogleapiContainer();
+    this.hidePointSelectionContainer();
+    this.bindEvents();
   }
-  
-  // ナビコンテナの取得と初期状態設定
-  if (navContainer) {
-    navContainer.style.display = "none"; // 初期状態で非表示
-  }
-  
-  // GoogleAPIコンテナの取得と初期状態設定
-  if (googleapiContainer) {
-    googleapiContainer.style.display = "none"; // 初期状態で非表示
+
+  showFilterContainer(){
+    if (this.filterContainer) {
+      this.filterContainer.style.display = "block";
+    }
+  };hideFilterContainer(){
+    if (this.filterContainer) {
+      this.filterContainer.style.display = "none";
+    }
   }
 
   // フィルターコンテナの表示/非表示を制御する関数
-  const showFilterContainer = () => {
-    if (filterContainer) {
-      filterContainer.style.display = "block";
-    }
-  };
-
-  const hideFilterContainer = () => {
-    if (filterContainer) {
-      filterContainer.style.display = "none";
-    }
-  };
   
   // ナビコンテナの表示/非表示を制御する関数
-  const showNavContainer = () => {
-    if (navContainer) {
-      navContainer.style.display = "block";
+  showNavContainer(){
+    if (this.navContainer) {
+      this.navContainer.style.display = "block";
     }
-  };
-
-  const hideNavContainer = () => {
-    if (navContainer) {
-      navContainer.style.display = "none";
+  };hideNavContainer(){
+    if (this.navContainer) {
+      this.navContainer.style.display = "none";
     }
   };
   
   // GoogleAPIコンテナの表示/非表示を制御する関数
-  const showGoogleapiContainer = () => {
-    if (googleapiContainer) {
-      googleapiContainer.style.display = "block";
+  showGoogleapiContainer(){
+    if (this.googleapiContainer) {
+      this.googleapiContainer.style.display = "block";
     }
-  };
-
-  const hideGoogleapiContainer = () => {
-    if (googleapiContainer) {
-      googleapiContainer.style.display = "none";
+  };hideGoogleapiContainer(){
+    if (this.googleapiContainer) {
+      this.googleapiContainer.style.display = "none";
     }
-  };
-
-  // フィルターボタンのクリックイベント
-  if (filterToggleBtn) {
-    filterToggleBtn.addEventListener("click", () => {
-      console.log("フィルターボタンがクリックされました");
-      if (filterContainer && filterContainer.style.display === "none") {
-        showFilterContainer();
-        hideNavContainer(); // ナビコンテナを非表示
-        hideGoogleapiContainer(); // GoogleAPIコンテナを非表示
-      } else {
-        hideFilterContainer();
-      }
-    });
   }
-  
-  // ナビボタンのクリックイベント
-  if (navToggleBtn) {
-    navToggleBtn.addEventListener("click", () => {
-      console.log("ナビボタンがクリックされました");
-      if (navContainer && navContainer.style.display === "none") {
-        showNavContainer();
-        hideFilterContainer(); // フィルターコンテナを非表示
-        hideGoogleapiContainer(); // GoogleAPIコンテナを非表示
-      } else {
-        hideNavContainer();
-      }
-    });
+
+  showPointSelectionContainer(){
+    if (this.pointSelectionContainer) {
+      this.pointSelectionContainer.style.display = "block";
+    }
+  };hidePointSelectionContainer(){
+    if (this.pointSelectionContainer) {
+      this.pointSelectionContainer.style.display = "none";
+    }
   }
 
   // 複数スキーマの読み込みとフィールド統合
-  async function loadAndMergeSchemas(urls) {
+  async loadAndMergeSchemas(urls) {
     const schemaUrls = filterUrlsWithSchema(urls);
     const schemaFieldsMap = {};
     
@@ -167,7 +130,7 @@ export function initializeUIController(viewer) {
           const schema = await loadSchema(dataTypeInfo.schemaPath);
           const fields = extractPropertyFields(schema);
           schemaFieldsMap[dataTypeInfo.dataType] = fields;
-          filterState.schemas[dataTypeInfo.dataType] = schema;
+          this.filterState.schemas[dataTypeInfo.dataType] = schema;
           console.log(`スキーマ読み込み完了: ${dataTypeInfo.dataType}`);
         } catch (e) {
           console.error(`スキーマ読み込みエラー (${dataTypeInfo.dataType}):`, e);
@@ -175,136 +138,140 @@ export function initializeUIController(viewer) {
       }
     }
     
-    filterState.schemaFieldsMap = schemaFieldsMap;
+    this.filterState.schemaFieldsMap = schemaFieldsMap;
     return schemaFieldsMap;
   }
 
   // 共通のデータロード処理を関数化
-  async function loadDataAndUpdateFilter(viewer, urls, buttonName) {
+  async loadDataAndUpdateFilter(urls, buttonName) {
     console.log(`${buttonName}ボタンがクリックされました`);
-    clearGeoJSONDataSources(viewer);
-    await loadGeoJSON(viewer, urls);
-    filterState.lastLoadedUrls = urls;
+    clearGeoJSONDataSources(this.viewer);
+    await loadGeoJSON(this.viewer, urls);
+    this.filterState.lastLoadedUrls = urls;
     
-    hideFilterContainer();
+    this.hideFilterContainer();
     
     // スキーマを読み込んでフィルターUIを更新
-    const schemaFieldsMap = await loadAndMergeSchemas(urls);
-    renderFilterFields(filterFormContainer, schemaFieldsMap, filterState.criteria);
+    const schemaFieldsMap = await this.loadAndMergeSchemas(urls);
+    renderFilterFields(this.filterFormContainer, schemaFieldsMap, this.filterState.criteria);
   }
 
-  // Pointボタン: Point選択メニューの表示/非表示
-  pointButton.addEventListener("click", () => {
-    console.log("Pointボタンがクリックされました");
-    if (pointSelectionContainer.style.display === "none") {
-      pointSelectionContainer.style.display = "block";
-      hideGoogleapiContainer(); // GoogleAPIコンテナを非表示
-    } else {
-      pointSelectionContainer.style.display = "none";
+  bindEvents(){
+    if (this.navToggleBtn) {
+      this.navToggleBtn.addEventListener("click", () => {
+        console.log("ナビボタンがクリックされました");
+        if (this.navContainer && this.navContainer.style.display === "none") {
+          this.showNavContainer();
+          this.hideFilterContainer(); // フィルターコンテナを非表示
+          this.hideGoogleapiContainer(); // GoogleAPIコンテナを非表示
+        } else {
+          this.hideNavContainer();
+        }
+      }); 
     }
-  });
-  
-  // GoogleAPIボタン: GoogleAPI検索メニューの表示/非表示
-  if (googleapiButton) {
-    googleapiButton.addEventListener("click", () => {
+    if (this.pointButton) {
+      this.pointButton.addEventListener("click", () => {
+        console.log("Pointボタンがクリックされました");
+        if (this.pointSelectionContainer.style.display === "none") {
+          this.showPointSelectionContainer();        
+          this.hideGoogleapiContainer(); // GoogleAPIコンテナを非表示
+        } else {
+          this.hidePointSelectionContainer();
+          this.hideGoogleapiContainer(); // GoogleAPIコンテナを非表示
+        }
+      });
+    }
+    if (this.lineButton) {
+      this.lineButton.addEventListener("click", () => {
+        console.log("Lineボタンがクリックされました");
+        load3DTiles(this.viewer, TILESET_URLS);
+        this.hideFilterContainer();
+        this.hideNavContainer();
+      });
+    }
+    if (this.multiLineButton) {
+      this.multiLineButton.addEventListener("click", () => {
+        console.log("Multi Lineボタンがクリックされました");
+        clearGeoJSONDataSources(this.viewer);
+        const multiLineUrls = GEOJSON_URLS.filter((url) =>
+          url.includes("MultiLineString")
+        );
+      });
+  }
+  if (this.googleapiButton) {
+    this.googleapiButton.addEventListener("click", () => {
       console.log("GoogleAPIボタンがクリックされました");
-      if (googleapiContainer.style.display === "none") {
-        googleapiContainer.style.display = "block";
-        hideFilterContainer(); // フィルターコンテナを非表示
-        hideNavContainer(); // ナビコンテナを非表示
-        pointSelectionContainer.style.display = "none"; // Point選択コンテナを非表示
-      } else {
-        googleapiContainer.style.display = "none";
+      if (this.googleapiContainer.style.display === "none") {
+        this.googleapiContainer.style.display = "block";
+        this.hideFilterContainer();
+        this.hideNavContainer();
       }
     });
   }
-
-  // Lineボタン: 3D Tilesの読み込み
-  lineButton.addEventListener("click", () => {
-    console.log("Lineボタンがクリックされました");
-    load3DTiles(viewer, TILESET_URLS);
-    hideFilterContainer();
-    hideGoogleapiContainer();
-  });
-
-  // Multi Lineボタン: MultiLineStringデータのみロード
-  multiLineButton.addEventListener("click", () => {
-    console.log("Multi Lineボタンがクリックされました");
-    clearGeoJSONDataSources(viewer);
-    const multiLineUrls = GEOJSON_URLS.filter((url) =>
-      url.includes("MultiLineString")
-    );
-    loadGeoJSON(viewer, multiLineUrls);
-    filterState.lastLoadedUrls = multiLineUrls;
-    hideFilterContainer();
-    hideGoogleapiContainer();
-  });
-
-  // OSM Buildingsボタン: 一度だけロード
-  let osmLoaded = false;
-  if (osmBuildingsButton) {
-    osmBuildingsButton.addEventListener("click", async () => {
-      if (osmLoaded) {
+  if (this.osmBuildingsButton) {
+    this.osmBuildingsButton.addEventListener("click", async () => {
+      if (this.osmLoaded) {
         console.log("OSM Buildingsはすでにロード済みです");
         return;
       }
-      await loadOsmBuildings(viewer);
-      osmLoaded = true;
-      hideFilterContainer();
-      hideGoogleapiContainer();
+      await loadOsmBuildings(this.viewer);
+      this.osmLoaded = true;
+      this.hideFilterContainer();
+      this.hideGoogleapiContainer();
     });
   }
+  // OSM Buildingsボタン: 一度だけロード
 
   // ランドマークボタン
-  landmarkButton.addEventListener("click", () => 
-    loadDataAndUpdateFilter(viewer, ["/data/geoJSON/Point/landmark.geojson"], "ランドマーク")
+  this.landmarkButton.addEventListener("click", () => 
+    this.loadDataAndUpdateFilter(["/data/geoJSON/Point/landmark.geojson"], "ランドマーク")
   );
 
   // 公園ボタン
-  parkButton.addEventListener("click", () => 
-    loadDataAndUpdateFilter(viewer, ["/data/geoJSON/Point/park.geojson"], "公園")
+  this.parkButton.addEventListener("click", () => 
+    this.loadDataAndUpdateFilter(["/data/geoJSON/Point/park.geojson"], "公園")
   );
 
   // 避難所ボタン
-  shelterButton.addEventListener("click", () => 
-    loadDataAndUpdateFilter(viewer, ["/data/geoJSON/Point/shelter.geojson"], "避難所")
+  this.shelterButton.addEventListener("click", () => 
+    this.loadDataAndUpdateFilter(["/data/geoJSON/Point/shelter.geojson"], "避難所")
   );
 
   // 駅ボタン
-  stationButton.addEventListener("click", () => 
-    loadDataAndUpdateFilter(viewer, ["/data/geoJSON/Point/station.geojson"], "駅")
+  this.stationButton.addEventListener("click", () => 
+    this.loadDataAndUpdateFilter(["/data/geoJSON/Point/station.geojson"], "駅")
   );
 
   // すべてのPointボタン
-  allPointsButton.addEventListener("click", () => 
-    loadDataAndUpdateFilter(viewer, GEOJSON_URLS, "すべてのPoint")
+  this.allPointsButton.addEventListener("click", () => 
+    this.loadDataAndUpdateFilter(GEOJSON_URLS, "すべてのPoint")
   );
 
   // 全てのデータボタン
-  if (allDataButton) {
-    allDataButton.addEventListener("click", () => {
-      loadDataAndUpdateFilter(viewer, GEOJSON_URLS, "全てのデータ");
-      hideGoogleapiContainer();
+  if (this.allDataButton) {
+    this.allDataButton.addEventListener("click", () => {
+      this.loadDataAndUpdateFilter(GEOJSON_URLS, "全てのデータ");
+      this.hideGoogleapiContainer();
     });
   }
 
   // ホームボタン
-  if (homeButton) {
-    homeButton.addEventListener("click", () => {
+  if (this.homeButton) {
+    this.homeButton.addEventListener("click", () => {
       window.location.href = "/";
     });
   }
 
   // フィルター適用ボタン
-  applyFilterBtn.addEventListener("click", async () => {
+  this.applyFilterBtn.addEventListener("click", async () => {
     if (
-      !filterState.lastLoadedUrls ||
-      filterState.lastLoadedUrls.length === 0
+      !this.filterState.lastLoadedUrls ||
+      this.filterState.lastLoadedUrls.length === 0
     ) {
       console.warn("先に表示対象のデータをロードしてください");
       return;
     }
-    if (!filterState.schemaFieldsMap || Object.keys(filterState.schemaFieldsMap).length === 0) {
+    if (!this.filterState.schemaFieldsMap || Object.keys(this.filterState.schemaFieldsMap).length === 0) {
       console.warn("スキーマが読み込まれていません");
       return;
     }
@@ -312,44 +279,44 @@ export function initializeUIController(viewer) {
     console.log("=== フィルター適用ボタンクリック ===");
     
     // 入力値収集
-    filterState.criteria = collectCriteriaFromForm(filterFormContainer);
-    console.log("収集されたフィルター条件:", filterState.criteria);
+    this.filterState.criteria = collectCriteriaFromForm(this.filterFormContainer);
+    console.log("収集されたフィルター条件:", this.filterState.criteria);
 
     // データ再読み込みとフィルタ適用
-    clearGeoJSONDataSources(viewer);
+    clearGeoJSONDataSources(this.viewer);
     
     // 複数データ型に対応したフィルタ適用
-    const predicatesMap = buildMultiSchemaPredicates(filterState.criteria, filterState.schemaFieldsMap);
+    const predicatesMap = buildMultiSchemaPredicates(this.filterState.criteria, this.filterState.schemaFieldsMap);
     console.log("生成されたpredicates:", Object.keys(predicatesMap));
     
-    await applyMultiDataTypeFilter(viewer, filterState.lastLoadedUrls, predicatesMap, DATA_TYPE_MAPPING);
+    await applyMultiDataTypeFilter(this.viewer, this.filterState.lastLoadedUrls, predicatesMap, DATA_TYPE_MAPPING);
     
     console.log("=== フィルター適用完了 ===");
   });
 
   // フィルタークリアボタン
-  clearFilterBtn.addEventListener("click", () => {
-    filterState.criteria = {};
+  this.clearFilterBtn.addEventListener("click", () => {
+    this.filterState.criteria = {};
     renderFilterFields(
-      filterFormContainer,
-      filterState.schemaFieldsMap,
-      filterState.criteria
+      this.filterFormContainer,
+      this.filterState.schemaFieldsMap,
+      this.filterState.criteria
     );
-    if (filterState.lastLoadedUrls && filterState.lastLoadedUrls.length > 0) {
-      clearGeoJSONDataSources(viewer);
-      loadGeoJSON(viewer, filterState.lastLoadedUrls);
+    if (this.filterState.lastLoadedUrls && this.filterState.lastLoadedUrls.length > 0) {
+      clearGeoJSONDataSources(this.viewer);
+      loadGeoJSON(this.viewer, this.filterState.lastLoadedUrls);
     }
   });
   
   // Google Maps Places検索ボタン
-  if (placesSearchBtn) {
-    placesSearchBtn.addEventListener("click", async () => {
+  if (this.placesSearchBtn) {
+    this.placesSearchBtn.addEventListener("click", async () => {
       const queryInput = document.getElementById("places-query-input");
       const locationInput = document.getElementById("places-location-input");
       const radiusInput = document.getElementById("places-radius-input");
       const typeInput = document.getElementById("places-type-input");
       
-      if (!queryInput || !queryInput.value.trim()) {
+      if (!this.placesSearchBtn.queryInput || !this.placesSearchBtn.queryInput.value.trim()) {
         alert("検索クエリを入力してください");
         return;
       }
@@ -366,7 +333,7 @@ export function initializeUIController(viewer) {
       }
       
       try {
-        await loadGoogleMapsPlaces(viewer, searchParams, {
+        await loadGoogleMapsPlaces(this.viewer, searchParams, {
           stroke: Cesium.Color.HOTPINK,
           fill: Cesium.Color.PINK,
           markerSymbol: '🍽️'
@@ -379,8 +346,8 @@ export function initializeUIController(viewer) {
   }
   
   // Google Maps Directionsボタン
-  if (directionsBtn) {
-    directionsBtn.addEventListener("click", async () => {
+  if (this.directionsBtn) {
+    this.directionsBtn.addEventListener("click", async () => {
       const originInput = document.getElementById("directions-origin-input");
       const destinationInput = document.getElementById("directions-destination-input");
       const modeInput = document.getElementById("directions-mode-input");
@@ -397,7 +364,7 @@ export function initializeUIController(viewer) {
       };
       
       try {
-        await loadGoogleMapsDirections(viewer, routeParams, {
+        await loadGoogleMapsDirections(this.viewer, routeParams, {
           stroke: Cesium.Color.YELLOW,
           strokeWidth: 4
         });
@@ -409,8 +376,8 @@ export function initializeUIController(viewer) {
   }
   
   // Google Maps Geocodingボタン
-  if (geocodeBtn) {
-    geocodeBtn.addEventListener("click", async () => {
+  if (this.geocodeBtn) {
+    this.geocodeBtn.addEventListener("click", async () => {
       const addressInput = document.getElementById("geocode-address-input");
       
       if (!addressInput || !addressInput.value.trim()) {
@@ -419,7 +386,7 @@ export function initializeUIController(viewer) {
       }
       
       try {
-        await loadGoogleMapsGeocode(viewer, addressInput.value.trim(), {
+        await loadGoogleMapsGeocode(this.viewer, addressInput.value.trim(), {
           stroke: Cesium.Color.BLUE,
           fill: Cesium.Color.LIGHTBLUE,
           markerSymbol: '📍'
@@ -432,10 +399,11 @@ export function initializeUIController(viewer) {
   }
   
   // ナビデータクリアボタン
-  if (clearNavBtn) {
-    clearNavBtn.addEventListener("click", () => {
-      clearGoogleMapsData(viewer);
+  if (this.clearNavBtn) {
+    this.clearNavBtn.addEventListener("click", () => {
+      clearGoogleMapsData(this.viewer);
       console.log("ナビデータをクリアしました");
     });
   }
+}
 }

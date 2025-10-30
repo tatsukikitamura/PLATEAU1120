@@ -1,4 +1,6 @@
+import UIController from "plateau/ui/controller";
 // Cesium専用のエントリーポイント
+
 
 // Cesiumライブラリの読み込み完了を待つ関数
 function waitForCesium() {
@@ -75,22 +77,10 @@ document.addEventListener("DOMContentLoaded", async function () {
   });
 
   // 新しいモジュールパスからインポート
-  const { initializeUIController } = await import("plateau/ui/controller");
 
   // メイン処理の実行
-  await main(viewer, {
-    initializeUIController,
-  });
-});
 
-/**
- * メイン関数
- */
-async function main(viewer, modules) {
-  const { initializeUIController } = modules;
-
-  // UIコントローラーの初期化
-  initializeUIController(viewer);
+  const uiController = new UIController(viewer);
 
   console.log("Cesium application initialized successfully");
-}
+});
