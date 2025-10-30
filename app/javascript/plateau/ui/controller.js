@@ -91,7 +91,8 @@ export default class UIController{
     if (this.navContainer) {
       this.navContainer.style.display = "block";
     }
-  };hideNavContainer(){
+  };
+  hideNavContainer(){
     if (this.navContainer) {
       this.navContainer.style.display = "none";
     }
@@ -102,7 +103,8 @@ export default class UIController{
     if (this.googleapiContainer) {
       this.googleapiContainer.style.display = "block";
     }
-  };hideGoogleapiContainer(){
+  };
+  hideGoogleapiContainer(){
     if (this.googleapiContainer) {
       this.googleapiContainer.style.display = "none";
     }
@@ -112,7 +114,8 @@ export default class UIController{
     if (this.pointSelectionContainer) {
       this.pointSelectionContainer.style.display = "block";
     }
-  };hidePointSelectionContainer(){
+  };
+  hidePointSelectionContainer(){
     if (this.pointSelectionContainer) {
       this.pointSelectionContainer.style.display = "none";
     }
@@ -197,75 +200,62 @@ export default class UIController{
           url.includes("MultiLineString")
         );
       });
-  }
-  if (this.googleapiButton) {
-    this.googleapiButton.addEventListener("click", () => {
-      console.log("GoogleAPIボタンがクリックされました");
-      if (this.googleapiContainer.style.display === "none") {
-        this.googleapiContainer.style.display = "block";
-        this.hideFilterContainer();
-        this.hideNavContainer();
-      }
-    });
-  }
-  if (this.osmBuildingsButton) {
+    }
+    if (this.googleapiButton) {
+      this.googleapiButton.addEventListener("click", () => {
+        console.log("GoogleAPIボタンがクリックされました");
+        if (this.googleapiContainer.style.display === "none") {
+          this.showGoogleapiContainer();
+          this.hideFilterContainer();
+          this.hideNavContainer();
+        } else {
+          this.hideGoogleapiContainer();
+        }
+      });
+    }
+    if (this.osmBuildingsButton) {
     this.osmBuildingsButton.addEventListener("click", async () => {
-      if (this.osmLoaded) {
-        console.log("OSM Buildingsはすでにロード済みです");
-        return;
+        console.log("OSM Buildingsボタンがクリックされました");
+        if (this.osmLoaded) {
+          console.log("OSM Buildingsはすでにロード済みです");
+          return;
+        }
+        await loadOsmBuildings(this.viewer);
+        this.osmLoaded = true;
+        this.hideFilterContainer();
+        this.hideGoogleapiContainer();
+      });
+    }
+
+    // すべてのPointボタン
+    if (this.allPointsButton) {
+      this.allPointsButton.addEventListener("click", () => {
+        this.loadDataAndUpdateFilter(GEOJSON_URLS, "すべてのPoint");
+        this.hideGoogleapiContainer(  );
+      });
+    }
+
+    // 全てのデータボタン
+   if (this.allDataButton) {
+      this.allDataButton.addEventListener("click", () => {
+        this.loadDataAndUpdateFilter(GEOJSON_URLS, "全てのデータ");
+          this.hideGoogleapiContainer();
+        });
       }
-      await loadOsmBuildings(this.viewer);
-      this.osmLoaded = true;
-      this.hideFilterContainer();
-      this.hideGoogleapiContainer();
-    });
-  }
-  // OSM Buildingsボタン: 一度だけロード
+    
 
-  // ランドマークボタン
-  this.landmarkButton.addEventListener("click", () => 
-    this.loadDataAndUpdateFilter(["/data/geoJSON/Point/landmark.geojson"], "ランドマーク")
-  );
-
-  // 公園ボタン
-  this.parkButton.addEventListener("click", () => 
-    this.loadDataAndUpdateFilter(["/data/geoJSON/Point/park.geojson"], "公園")
-  );
-
-  // 避難所ボタン
-  this.shelterButton.addEventListener("click", () => 
-    this.loadDataAndUpdateFilter(["/data/geoJSON/Point/shelter.geojson"], "避難所")
-  );
-
-  // 駅ボタン
-  this.stationButton.addEventListener("click", () => 
-    this.loadDataAndUpdateFilter(["/data/geoJSON/Point/station.geojson"], "駅")
-  );
-
-  // すべてのPointボタン
-  this.allPointsButton.addEventListener("click", () => 
-    this.loadDataAndUpdateFilter(GEOJSON_URLS, "すべてのPoint")
-  );
-
-  // 全てのデータボタン
-  if (this.allDataButton) {
-    this.allDataButton.addEventListener("click", () => {
-      this.loadDataAndUpdateFilter(GEOJSON_URLS, "全てのデータ");
-      this.hideGoogleapiContainer();
-    });
-  }
-
-  // ホームボタン
-  if (this.homeButton) {
-    this.homeButton.addEventListener("click", () => {
-      window.location.href = "/";
-    });
-  }
+    // ホームボタン
+    if (this.homeButton) {
+      this.homeButton.addEventListener("click", () => {
+        window.location.href = "/";
+        });
+      }
+    
 
   // フィルター適用ボタン
-  this.applyFilterBtn.addEventListener("click", async () => {
-    if (
-      !this.filterState.lastLoadedUrls ||
+    this.applyFilterBtn.addEventListener("click", async () => {
+      if (
+        !this.filterState.lastLoadedUrls ||
       this.filterState.lastLoadedUrls.length === 0
     ) {
       console.warn("先に表示対象のデータをロードしてください");
