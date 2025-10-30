@@ -1,4 +1,4 @@
-require_relative '../concerns/google_maps_api_client'
+require_relative "../concerns/google_maps_api_client"
 
 module GoogleMaps
   class GeoJsonService
