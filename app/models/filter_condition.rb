@@ -11,7 +11,7 @@ class FilterCondition < ApplicationRecord
   scope :ordered, -> { order(:priority, :name) }
 
   # 条件のJSONパース
-  def conwditions_hash
+  def conditions_hash
     return {} if conditions.blank?
     JSON.parse(conditions)
   rescue JSON::ParserError

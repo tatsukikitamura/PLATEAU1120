@@ -316,7 +316,7 @@ export default class UIController{
       const radiusInput = document.getElementById("places-radius-input");
       const typeInput = document.getElementById("places-type-input");
       
-      if (!this.placesSearchBtn.queryInput || !this.placesSearchBtn.queryInput.value.trim()) {
+      if (!queryInput || !queryInput.value.trim()) {
         alert("検索クエリを入力してください");
         return;
       }
