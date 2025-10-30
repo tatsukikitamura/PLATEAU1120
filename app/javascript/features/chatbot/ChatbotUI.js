@@ -1,5 +1,5 @@
 // Chatbot UI functionality
-import { renderMarkdown } from "markdown_renderer";
+import { renderMarkdown } from "services/markdown";
 
 export default class ChatbotUI {
   constructor(elements, options = {}) {

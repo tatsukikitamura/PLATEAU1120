@@ -1,4 +1,4 @@
-// Simple Markdown parser for chatbot responses
+// Common Markdown rendering utility
 export function renderMarkdown(text) {
   let html = text
     // Headers
@@ -13,17 +13,17 @@ export function renderMarkdown(text) {
     .replace(/`(.+?)`/g, '<code>$1</code>')
     // Lists
     .replace(/^\- (.+)$/gm, '<li>$1</li>');
-  
+
   // Wrap consecutive list items
   html = html.replace(/(<li>.*<\/li>\n?)+/g, (match) => {
     return '<ul>' + match.replace(/\n$/, '') + '</ul>';
   });
-  
+
   // Wrap paragraphs (but not already wrapped content)
   const lines = html.split('\n');
   let result = '';
   let currentParagraph = '';
-  
+
   lines.forEach(line => {
     if (line.trim() === '') {
       if (currentParagraph.trim()) {
@@ -45,7 +45,7 @@ export function renderMarkdown(text) {
       currentParagraph += line + ' ';
     }
   });
-  
+
   if (currentParagraph.trim()) {
     if (!currentParagraph.trim().startsWith('<')) {
       result += '<p>' + currentParagraph.trim() + '</p>';
@@ -53,9 +53,10 @@ export function renderMarkdown(text) {
       result += currentParagraph;
     }
   }
-  
+
   return result || html;
 }
 
-console.log("📝 markdown_renderer.js loaded");
+export default { renderMarkdown };
+
 
