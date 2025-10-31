@@ -1,443 +1,179 @@
 <% content_for :title, "PLATEAU-1120 - 千葉市地理空間データビューアー" %>
 
-<!-- スワイプナビゲーション -->
-<div class="swipe-navigation d-md-none">
-  <div class="swipe-indicators">
-    <span class="swipe-dot active" data-slide="0"></span>
-    <span class="swipe-dot" data-slide="1"></span>
-    <span class="swipe-dot" data-slide="2"></span>
-  </div>
-</div>
-
-<div class="hero-section">
-  <div class="container">
-    <div class="hero-content text-center">
-      <h1 class="hero-title">
-        <i class="fas fa-map-marked-alt me-3"></i>
+<!-- ヒーローセクション -->
+<div class="relative overflow-hidden bg-gradient-to-br from-indigo-500 to-purple-600 text-white">
+  <div class="relative mx-auto max-w-7xl px-4 py-20 sm:py-24">
+    <div class="text-center">
+      <h1 class="mb-4 text-4xl font-extrabold tracking-tight drop-shadow sm:text-5xl md:text-6xl">
+        <i class="fas fa-map-marked-alt mr-3"></i>
         PLATEAU-1120
       </h1>
-      <p class="hero-subtitle">
+      <p class="mx-auto mb-8 max-w-3xl text-base opacity-95 sm:text-lg">
         千葉市の地理空間データを活用した<br>
         次世代デジタルツイン・観光ルート最適化システム
       </p>
-      <div class="hero-badges">
-        <span class="badge bg-primary me-2">
-          <i class="fas fa-cube me-1"></i>3D地図
+      <div class="flex flex-wrap items-center justify-center gap-2">
+        <span class="inline-flex items-center rounded-full bg-blue-600/90 px-3 py-1 text-sm shadow-sm">
+          <i class="fas fa-cube mr-2"></i>3D地図
         </span>
-        <span class="badge bg-success me-2">
-          <i class="fas fa-map me-1"></i>2D地図
+        <span class="inline-flex items-center rounded-full bg-green-600/90 px-3 py-1 text-sm shadow-sm">
+          <i class="fas fa-map mr-2"></i>2D地図
         </span>
-        <span class="badge bg-warning me-2">
-          <i class="fas fa-route me-1"></i>AI最適化
+        <span class="inline-flex items-center rounded-full bg-yellow-500/90 px-3 py-1 text-sm shadow-sm">
+          <i class="fas fa-route mr-2"></i>AI最適化
         </span>
-        <span class="badge bg-info">
-          <i class="fas fa-database me-1"></i>PLATEAU
+        <span class="inline-flex items-center rounded-full bg-cyan-500/90 px-3 py-1 text-sm shadow-sm">
+          <i class="fas fa-database mr-2"></i>PLATEAU
         </span>
       </div>
     </div>
   </div>
 </div>
 
-<div class="container my-5">
+<div class="mx-auto my-12 max-w-7xl px-4">
   <!-- メイン機能カード -->
-  <div class="row g-4 mb-5">
-    <div class="col-lg-4 col-md-6">
-      <div class="card h-100 feature-card feature-card-3d">
-        <div class="card-body text-center p-4">
-          <div class="feature-icon mb-3">
-            <i class="fas fa-cube"></i>
-          </div>
-          <h3 class="card-title">3D地図ビューアー</h3>
-          <p class="card-text">
-            Cesium.jsを使用した高度な3D地理空間ビューアー。
-            千葉市の建物モデルを立体的に表示し、都市の全体像を把握できます。
-          </p>
-          <div class="feature-list">
-            <div class="feature-item">
-              <i class="fas fa-check text-success me-2"></i>
-              3Dタイルセット対応
-            </div>
-            <div class="feature-item">
-              <i class="fas fa-check text-success me-2"></i>
-              建物モデルの表示
-            </div>
-            <div class="feature-item">
-              <i class="fas fa-check text-success me-2"></i>
-              地形に沿った表示
-            </div>
-            <div class="feature-item">
-              <i class="fas fa-check text-success me-2"></i>
-              災害リスク可視化
-            </div>
-          </div>
-          <a href="/cesium" class="btn btn-primary btn-lg mt-3">
-            <i class="fas fa-cube me-2"></i>
-            3D地図を開く
-          </a>
+  <div class="mb-12 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
+    <!-- 3D -->
+    <div class="h-full rounded-xl border-t-4 border-blue-600 bg-white shadow transition-transform duration-300 hover:-translate-y-2 hover:shadow-xl">
+      <div class="p-6 text-center">
+        <div class="mb-3 text-5xl text-blue-600">
+          <i class="fas fa-cube"></i>
         </div>
+        <h3 class="text-xl font-semibold">3D地図ビューアー</h3>
+        <p class="mt-2 text-sm text-gray-600">
+          Cesium.jsを使用した高度な3D地理空間ビューアー。
+          千葉市の建物モデルを立体的に表示し、都市の全体像を把握できます。
+        </p>
+        <div class="mx-auto mt-4 max-w-sm space-y-2 text-left text-sm">
+          <div class="flex items-center"><i class="fas fa-check mr-2 text-green-600"></i>3Dタイルセット対応</div>
+          <div class="flex items-center"><i class="fas fa-check mr-2 text-green-600"></i>建物モデルの表示</div>
+          <div class="flex items-center"><i class="fas fa-check mr-2 text-green-600"></i>地形に沿った表示</div>
+          <div class="flex items-center"><i class="fas fa-check mr-2 text-green-600"></i>災害リスク可視化</div>
+        </div>
+        <a href="/cesium" class="mt-4 inline-flex items-center rounded-lg bg-blue-600 px-5 py-3 text-white shadow transition hover:-translate-y-0.5 hover:bg-blue-700">
+          <i class="fas fa-cube mr-2"></i>
+          3D地図を開く
+        </a>
       </div>
     </div>
 
-    <div class="col-lg-4 col-md-6">
-      <div class="card h-100 feature-card feature-card-2d">
-        <div class="card-body text-center p-4">
-          <div class="feature-icon mb-3">
-            <i class="fas fa-map"></i>
-          </div>
-          <h3 class="card-title">2D地図ビューアー</h3>
-          <p class="card-text">
-            Leafletを使用した軽量で高速な2D地図ビューアー。
-            モバイルデバイスでも快適に動作し、フィルタリング機能も充実しています。
-          </p>
-          <div class="feature-list">
-            <div class="feature-item">
-              <i class="fas fa-check text-success me-2"></i>
-              高速な動作
-            </div>
-            <div class="feature-item">
-              <i class="fas fa-check text-success me-2"></i>
-              シンプルなUI
-            </div>
-            <div class="feature-item">
-              <i class="fas fa-check text-success me-2"></i>
-              モバイル対応
-            </div>
-            <div class="feature-item">
-              <i class="fas fa-check text-success me-2"></i>
-              フィルタリング機能
-            </div>
-          </div>
-          <a href="/map2d" class="btn btn-success btn-lg mt-3">
-            <i class="fas fa-map me-2"></i>
-            2D地図を開く
-          </a>
+    <!-- 2D -->
+    <div class="h-full rounded-xl border-t-4 border-green-600 bg-white shadow transition-transform duration-300 hover:-translate-y-2 hover:shadow-xl">
+      <div class="p-6 text-center">
+        <div class="mb-3 text-5xl text-green-600">
+          <i class="fas fa-map"></i>
         </div>
+        <h3 class="text-xl font-semibold">2D地図ビューアー</h3>
+        <p class="mt-2 text-sm text-gray-600">
+          Leafletを使用した軽量で高速な2D地図ビューアー。
+          モバイルデバイスでも快適に動作し、フィルタリング機能も充実しています。
+        </p>
+        <div class="mx-auto mt-4 max-w-sm space-y-2 text-left text-sm">
+          <div class="flex items-center"><i class="fas fa-check mr-2 text-green-600"></i>高速な動作</div>
+          <div class="flex items-center"><i class="fas fa-check mr-2 text-green-600"></i>シンプルなUI</div>
+          <div class="flex items-center"><i class="fas fa-check mr-2 text-green-600"></i>モバイル対応</div>
+          <div class="flex items-center"><i class="fas fa-check mr-2 text-green-600"></i>フィルタリング機能</div>
+        </div>
+        <a href="/map2d" class="mt-4 inline-flex items-center rounded-lg bg-green-600 px-5 py-3 text-white shadow transition hover:-translate-y-0.5 hover:bg-green-700">
+          <i class="fas fa-map mr-2"></i>
+          2D地図を開く
+        </a>
       </div>
     </div>
 
-    <div class="col-lg-4 col-md-6">
-      <div class="card h-100 feature-card feature-card-ai">
-        <div class="card-body text-center p-4">
-          <div class="feature-icon mb-3">
-            <i class="fas fa-route"></i>
-          </div>
-          <h3 class="card-title">観光ルート最適化AI</h3>
-          <p class="card-text">
-            千葉市の公園・ランドマークデータを活用したAI最適化システム。
-            ユーザーの興味に基づいて最適な観光ルートを提案します。
-          </p>
-          <div class="feature-list">
-            <div class="feature-item">
-              <i class="fas fa-check text-success me-2"></i>
-              AI最適化アルゴリズム
-            </div>
-            <div class="feature-item">
-              <i class="fas fa-check text-success me-2"></i>
-              時間効率最大化
-            </div>
-            <div class="feature-item">
-              <i class="fas fa-check text-success me-2"></i>
-              アクセシビリティ考慮
-            </div>
-            <div class="feature-item">
-              <i class="fas fa-check text-success me-2"></i>
-              リアルタイム可視化
-            </div>
-          </div>
-          <a href="/tourist_route" class="btn btn-warning btn-lg mt-3">
-            <i class="fas fa-route me-2"></i>
-            AI最適化を試す
-          </a>
+    <!-- AI -->
+    <div class="h-full rounded-xl border-t-4 border-yellow-500 bg-white shadow transition-transform duration-300 hover:-translate-y-2 hover:shadow-xl">
+      <div class="p-6 text-center">
+        <div class="mb-3 text-5xl text-yellow-500">
+          <i class="fas fa-route"></i>
         </div>
+        <h3 class="text-xl font-semibold">観光ルート最適化AI</h3>
+        <p class="mt-2 text-sm text-gray-600">
+          千葉市の公園・ランドマークデータを活用したAI最適化システム。
+          ユーザーの興味に基づいて最適な観光ルートを提案します。
+        </p>
+        <div class="mx-auto mt-4 max-w-sm space-y-2 text-left text-sm">
+          <div class="flex items-center"><i class="fas fa-check mr-2 text-green-600"></i>AI最適化アルゴリズム</div>
+          <div class="flex items-center"><i class="fas fa-check mr-2 text-green-600"></i>時間効率最大化</div>
+          <div class="flex items-center"><i class="fas fa-check mr-2 text-green-600"></i>アクセシビリティ考慮</div>
+          <div class="flex items-center"><i class="fas fa-check mr-2 text-green-600"></i>リアルタイム可視化</div>
+        </div>
+        <a href="/tourist_route" class="mt-4 inline-flex items-center rounded-lg bg-yellow-500 px-5 py-3 text-white shadow transition hover:-translate-y-0.5 hover:bg-yellow-600">
+          <i class="fas fa-route mr-2"></i>
+          AI最適化を試す
+        </a>
       </div>
     </div>
   </div>
 
   <!-- データ統計セクション -->
-  <div class="row mb-5">
-    <div class="col-12">
-      <div class="card data-stats-card">
-        <div class="card-header bg-primary text-white">
-          <h4 class="mb-0">
-            <i class="fas fa-database me-2"></i>
-            千葉市データ統計
-          </h4>
+  <div class="mb-12 rounded-xl bg-white shadow">
+    <div class="rounded-t-xl bg-blue-600 px-6 py-4 text-white">
+      <h4 class="m-0 flex items-center text-lg font-semibold">
+        <i class="fas fa-database mr-2"></i>
+        千葉市データ統計
+      </h4>
+    </div>
+    <div class="px-6 py-6">
+      <div class="grid grid-cols-2 gap-4 text-center sm:grid-cols-4">
+        <div class="rounded-lg p-4">
+          <div class="text-2xl font-bold text-blue-600">20,000+</div>
+          <div class="mt-1 text-xs text-gray-500">公園データ</div>
         </div>
-        <div class="card-body">
-          <div class="row text-center">
-            <div class="col-md-3 col-6 mb-3">
-              <div class="stat-item">
-                <div class="stat-number text-primary">20,000+</div>
-                <div class="stat-label">公園データ</div>
-              </div>
-            </div>
-            <div class="col-md-3 col-6 mb-3">
-              <div class="stat-item">
-                <div class="stat-number text-success">7,000+</div>
-                <div class="stat-label">ランドマーク</div>
-              </div>
-            </div>
-            <div class="col-md-3 col-6 mb-3">
-              <div class="stat-item">
-                <div class="stat-number text-info">900+</div>
-                <div class="stat-label">駅データ</div>
-              </div>
-            </div>
-            <div class="col-md-3 col-6 mb-3">
-              <div class="stat-item">
-                <div class="stat-number text-warning">3,779</div>
-                <div class="stat-label">建物モデル</div>
-              </div>
-            </div>
-          </div>
+        <div class="rounded-lg p-4">
+          <div class="text-2xl font-bold text-green-600">7,000+</div>
+          <div class="mt-1 text-xs text-gray-500">ランドマーク</div>
+        </div>
+        <div class="rounded-lg p-4">
+          <div class="text-2xl font-bold text-cyan-600">900+</div>
+          <div class="mt-1 text-xs text-gray-500">駅データ</div>
+        </div>
+        <div class="rounded-lg p-4">
+          <div class="text-2xl font-bold text-yellow-500">3,779</div>
+          <div class="mt-1 text-xs text-gray-500">建物モデル</div>
         </div>
       </div>
     </div>
   </div>
 
-  <!-- 技術仕様セクション -->
-  <div class="row">
-    <div class="col-lg-6 mb-4">
-      <div class="card tech-spec-card">
-        <div class="card-header">
-          <h5 class="mb-0">
-            <i class="fas fa-cogs me-2"></i>
-            技術仕様
-          </h5>
-        </div>
-        <div class="card-body">
-          <div class="tech-list">
-            <div class="tech-item">
-              <strong>フレームワーク:</strong> Ruby on Rails 8.0.3
-            </div>
-            <div class="tech-item">
-              <strong>3Dエンジン:</strong> Cesium.js
-            </div>
-            <div class="tech-item">
-              <strong>2D地図:</strong> Leaflet.js
-            </div>
-            <div class="tech-item">
-              <strong>フロントエンド:</strong> Stimulus + Hotwire
-            </div>
-            <div class="tech-item">
-              <strong>データ形式:</strong> 3D Tiles + GeoJSON
-            </div>
-            <div class="tech-item">
-              <strong>デプロイ:</strong> Docker + Kamal
-            </div>
-          </div>
+  <!-- 技術仕様・主な機能 -->
+  <div class="grid grid-cols-1 gap-6 lg:grid-cols-2">
+    <div class="h-full rounded-xl bg-white shadow">
+      <div class="rounded-t-xl border-b px-6 py-4">
+        <h5 class="m-0 flex items-center text-base font-semibold">
+          <i class="fas fa-cogs mr-2"></i>
+          技術仕様
+        </h5>
+      </div>
+      <div class="px-6 py-6">
+        <div class="space-y-3 text-sm">
+          <div><strong>フレームワーク:</strong> Ruby on Rails 8.0.3</div>
+          <div><strong>3Dエンジン:</strong> Cesium.js</div>
+          <div><strong>2D地図:</strong> Leaflet.js</div>
+          <div><strong>フロントエンド:</strong> Stimulus + Hotwire</div>
+          <div><strong>データ形式:</strong> 3D Tiles + GeoJSON</div>
+          <div><strong>デプロイ:</strong> Docker + Kamal</div>
         </div>
       </div>
     </div>
 
-    <div class="col-lg-6 mb-4">
-      <div class="card features-card">
-        <div class="card-header">
-          <h5 class="mb-0">
-            <i class="fas fa-star me-2"></i>
-            主な機能
-          </h5>
-        </div>
-        <div class="card-body">
-          <div class="features-list">
-            <div class="feature-item">
-              <i class="fas fa-check text-success me-2"></i>
-              3D/2D地理空間データビューアー
-            </div>
-            <div class="feature-item">
-              <i class="fas fa-check text-success me-2"></i>
-              高度なフィルタリング機能
-            </div>
-            <div class="feature-item">
-              <i class="fas fa-check text-success me-2"></i>
-              観光ルート最適化AI
-            </div>
-            <div class="feature-item">
-              <i class="fas fa-check text-success me-2"></i>
-              災害リスク可視化
-            </div>
-            <div class="feature-item">
-              <i class="fas fa-check text-success me-2"></i>
-              スキーマ整合性検証
-            </div>
-            <div class="feature-item">
-              <i class="fas fa-check text-success me-2"></i>
-              レスポンシブデザイン
-            </div>
-          </div>
+    <div class="h-full rounded-xl bg-white shadow">
+      <div class="rounded-t-xl border-b px-6 py-4">
+        <h5 class="m-0 flex items-center text-base font-semibold">
+          <i class="fas fa-star mr-2"></i>
+          主な機能
+        </h5>
+      </div>
+      <div class="px-6 py-6">
+        <div class="space-y-2 text-sm">
+          <div class="flex items-center"><i class="fas fa-check mr-2 text-green-600"></i>3D/2D地理空間データビューアー</div>
+          <div class="flex items-center"><i class="fas fa-check mr-2 text-green-600"></i>高度なフィルタリング機能</div>
+          <div class="flex items-center"><i class="fas fa-check mr-2 text-green-600"></i>観光ルート最適化AI</div>
+          <div class="flex items-center"><i class="fas fa-check mr-2 text-green-600"></i>災害リスク可視化</div>
+          <div class="flex items-center"><i class="fas fa-check mr-2 text-green-600"></i>スキーマ整合性検証</div>
+          <div class="flex items-center"><i class="fas fa-check mr-2 text-green-600"></i>レスポンシブデザイン</div>
         </div>
       </div>
     </div>
   </div>
 </div>
-
-<!-- カスタムCSS -->
-<style>
-.hero-section {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  padding: 80px 0;
-  color: white;
-  position: relative;
-  overflow: hidden;
-}
-
-.hero-section::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="25" cy="25" r="1" fill="rgba(255,255,255,0.1)"/><circle cx="75" cy="75" r="1" fill="rgba(255,255,255,0.1)"/><circle cx="50" cy="10" r="0.5" fill="rgba(255,255,255,0.05)"/><circle cx="10" cy="60" r="0.5" fill="rgba(255,255,255,0.05)"/><circle cx="90" cy="40" r="0.5" fill="rgba(255,255,255,0.05)"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>');
-  opacity: 0.3;
-}
-
-.hero-content {
-  position: relative;
-  z-index: 1;
-}
-
-.hero-title {
-  font-size: 3.5rem;
-  font-weight: bold;
-  margin-bottom: 1rem;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-}
-
-.hero-subtitle {
-  font-size: 1.3rem;
-  margin-bottom: 2rem;
-  opacity: 0.95;
-  line-height: 1.6;
-}
-
-.hero-badges .badge {
-  font-size: 1rem;
-  padding: 0.5rem 1rem;
-  margin: 0.25rem;
-}
-
-.feature-card {
-  border: none;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  transition: all 0.3s ease;
-  border-radius: 12px;
-}
-
-.feature-card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
-}
-
-.feature-card-3d {
-  border-top: 4px solid #007bff;
-}
-
-.feature-card-2d {
-  border-top: 4px solid #28a745;
-}
-
-.feature-card-ai {
-  border-top: 4px solid #ffc107;
-}
-
-.feature-icon {
-  font-size: 3rem;
-  color: #6c757d;
-}
-
-.feature-card-3d .feature-icon {
-  color: #007bff;
-}
-
-.feature-card-2d .feature-icon {
-  color: #28a745;
-}
-
-.feature-card-ai .feature-icon {
-  color: #ffc107;
-}
-
-.feature-list, .features-list {
-  text-align: left;
-  margin: 1rem 0;
-}
-
-.feature-item {
-  margin: 0.5rem 0;
-  font-size: 0.95rem;
-}
-
-.data-stats-card {
-  border: none;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  border-radius: 12px;
-}
-
-.stat-item {
-  padding: 1rem;
-}
-
-.stat-number {
-  font-size: 2rem;
-  font-weight: bold;
-  display: block;
-}
-
-.stat-label {
-  font-size: 0.9rem;
-  color: #6c757d;
-  margin-top: 0.25rem;
-}
-
-.tech-spec-card, .features-card {
-  border: none;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  border-radius: 12px;
-  height: 100%;
-}
-
-.tech-list, .features-list {
-  margin: 0;
-}
-
-.tech-item {
-  margin: 0.75rem 0;
-  font-size: 0.95rem;
-}
-
-.btn {
-  border-radius: 8px;
-  font-weight: 500;
-  transition: all 0.3s ease;
-}
-
-.btn:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-.card-header {
-  border-radius: 12px 12px 0 0 !important;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
-}
-
-@media (max-width: 768px) {
-  .hero-title {
-    font-size: 2.5rem;
-  }
-  
-  .hero-subtitle {
-    font-size: 1.1rem;
-  }
-  
-  .feature-icon {
-    font-size: 2.5rem;
-  }
-  
-  .stat-number {
-    font-size: 1.5rem;
-  }
-}
-</style>
-

@@ -26,25 +26,26 @@ export default class ChatbotUI {
 
   addMessage(text, isUser = false) {
     const messageDiv = document.createElement('div');
-    messageDiv.className = `message ${isUser ? 'user-message' : 'bot-message'}`;
+    // Tailwind化: 表示用はユーティリティ、判定用に既存クラスも保持
+    messageDiv.className = `message ${isUser ? 'user-message' : 'bot-message'} mb-6 flex ${isUser ? 'flex-row-reverse' : ''}`;
     messageDiv.id = `message-${this.messageId++}`;
 
     const avatar = document.createElement('div');
-    avatar.className = 'message-avatar';
+    avatar.className = `message-avatar h-9 w-9 rounded-full flex items-center justify-center text-[1.1rem] flex-shrink-0 ${isUser ? 'ml-3 bg-gradient-to-br from-indigo-600 to-purple-500 text-white' : 'mr-3 bg-gradient-to-br from-green-600 to-teal-400 text-white'}`;
     avatar.innerHTML = `<i class="fas ${isUser ? 'fa-user' : 'fa-robot'}"></i>`;
 
     const content = document.createElement('div');
-    content.className = 'message-content';
+    content.className = 'message-content flex-1 min-w-0';
 
     const header = document.createElement('div');
-    header.className = 'message-header';
+    header.className = 'message-header mb-2 flex items-center justify-between text-[0.85rem]';
     header.innerHTML = `
-      <strong>${isUser ? 'あなた' : 'AIアシスタント'}</strong>
-      <span class="timestamp">${this.getTimestamp()}</span>
+      <strong class="text-gray-800">${isUser ? 'あなた' : 'AIアシスタント'}</strong>
+      <span class="timestamp text-xs text-gray-500">${this.getTimestamp()}</span>
     `;
 
     const messageText = document.createElement('div');
-    messageText.className = 'message-text';
+    messageText.className = `message-text rounded-lg px-3 py-2 leading-relaxed ${isUser ? 'bg-gradient-to-br from-indigo-600 to-purple-500 text-white' : 'bg-gray-100 text-gray-800'}`;
 
     if (isUser) {
       messageText.textContent = text;
@@ -66,19 +67,23 @@ export default class ChatbotUI {
 
   showTypingIndicator() {
     const messageDiv = document.createElement('div');
-    messageDiv.className = 'message bot-message';
+    messageDiv.className = 'message bot-message mb-4 flex';
     messageDiv.id = 'typing-indicator';
 
     const avatar = document.createElement('div');
-    avatar.className = 'message-avatar';
+    avatar.className = 'message-avatar mr-3 h-9 w-9 rounded-full bg-gradient-to-br from-green-600 to-teal-400 text-white flex items-center justify-center text-[1.1rem]';
     avatar.innerHTML = '<i class="fas fa-robot"></i>';
 
     const content = document.createElement('div');
-    content.className = 'message-content';
+    content.className = 'message-content flex-1 min-w-0';
 
     const typingIndicator = document.createElement('div');
-    typingIndicator.className = 'typing-indicator';
-    typingIndicator.innerHTML = '<span></span><span></span><span></span>';
+    typingIndicator.className = 'typing-indicator flex items-center py-2';
+    typingIndicator.innerHTML = `
+      <span class="inline-block h-1.5 w-1.5 rounded-full bg-gray-500 mr-1 animate-bounce"></span>
+      <span class="inline-block h-1.5 w-1.5 rounded-full bg-gray-500 mr-1 animate-bounce" style="animation-delay: 0.2s"></span>
+      <span class="inline-block h-1.5 w-1.5 rounded-full bg-gray-500 mr-1 animate-bounce" style="animation-delay: 0.4s"></span>
+    `;
 
     content.appendChild(typingIndicator);
     messageDiv.appendChild(avatar);
@@ -98,7 +103,7 @@ export default class ChatbotUI {
     if (!indicator) return;
     const content = indicator.querySelector('.message-content');
     if (!content) return;
-    content.innerHTML = `<div style="color: #667eea; font-weight: bold;">${message}</div>`;
+    content.innerHTML = `<div class="text-indigo-600 font-bold">${message}</div>`;
     this.scrollToBottom();
   }
 
@@ -192,10 +197,10 @@ export default class ChatbotUI {
                   if (this.options.onPlotSelectedData) {
                     this.options.onPlotSelectedData(payload);
                   }
-                  btn.innerHTML = '<i class="fas fa-check me-2"></i>表示済み';
+                  btn.innerHTML = '<i class="fas fa-check mr-2"></i>表示済み';
                   btn.disabled = true;
-                  btn.style.background = '#28a745';
-                  btn.style.borderColor = '#28a745';
+                  btn.classList.remove('bg-indigo-600', 'hover:bg-indigo-700');
+                  btn.classList.add('bg-green-600', 'hover:bg-green-600', 'cursor-default');
                 } catch (_) {}
               });
             }
@@ -214,10 +219,10 @@ export default class ChatbotUI {
                 if (this.options.onGoogleMapsQuery) {
                   await this.options.onGoogleMapsQuery(query);
                 }
-                btn.innerHTML = '<i class="fas fa-check me-2"></i>表示済み';
+                btn.innerHTML = '<i class="fas fa-check mr-2"></i>表示済み';
                 btn.disabled = true;
-                btn.style.background = '#28a745';
-                btn.style.borderColor = '#28a745';
+                btn.classList.remove('bg-indigo-600', 'hover:bg-indigo-700');
+                btn.classList.add('bg-green-600', 'hover:bg-green-600', 'cursor-default');
               } catch (e) {
                 alert('マップの表示に失敗しました: ' + e.message);
               }
@@ -260,8 +265,8 @@ export default class ChatbotUI {
   }
 
   buildDataSelectionHtml(selectedData, shouldDisplayOnMap) {
-    let html = '<div style="padding: 1rem; background: #f0f8ff; border-radius: 8px; border-left: 4px solid #667eea;">';
-    html += '<div style="font-weight: bold; margin-bottom: 0.75rem; color: #667eea;">📊 関連データを選択しました</div>';
+    let html = '<div class="p-4 bg-blue-50 rounded-lg border-l-4 border-indigo-500">';
+    html += '<div class="font-bold mb-3 text-indigo-600">📊 関連データを選択しました</div>';
     if (selectedData && selectedData.length > 0) {
       const grouped = {};
       selectedData.forEach(d => {
@@ -269,22 +274,22 @@ export default class ChatbotUI {
         grouped[d.data_type].push(d);
       });
       Object.keys(grouped).forEach(t => {
-        html += `<div style=\"margin-bottom: 0.5rem;\"><strong style=\"color: #333;\">${t}:</strong>`;
+        html += `<div class=\"mb-2\"><strong class=\"text-gray-800\">${t}:</strong>`;
         grouped[t].forEach(d => {
-          html += `<div style=\"margin-left: 1rem; color: #666; margin-top: 0.25rem;\">• ${d.name}</div>`;
+          html += `<div class=\"ml-4 text-gray-600 mt-1\">• ${d.name}</div>`;
         });
         html += '</div>';
       });
       if (shouldDisplayOnMap) {
-        html += `<div style="margin-top: 0.75rem; padding-top: 0.75rem; border-top: 1px solid #ddd;">`;
-        html += `<button class="btn btn-primary btn-sm" data-selected-data='${JSON.stringify(selectedData)}' style="width: 100%; background-color: #667eea; border-color: #667eea; color: white; padding: 0.5rem 1rem; border-radius: 4px; cursor: pointer;">`;
-        html += `<i class=\"fas fa-map-marker-alt me-2\"></i>マップに表示`;
+        html += `<div class=\"mt-3 pt-3 border-t border-gray-200\">`;
+        html += `<button class=\"w-full inline-flex items-center justify-center rounded-md bg-indigo-600 px-4 py-2 text-white text-sm shadow hover:bg-indigo-700\" data-selected-data='${JSON.stringify(selectedData)}'>`;
+        html += `<i class=\"fas fa-map-marker-alt mr-2\"></i>マップに表示`;
         html += `</button></div>`;
       } else {
-        html += '<div style="margin-top: 0.75rem; padding-top: 0.75rem; border-top: 1px solid #ddd; font-style: italic; color: #888; font-size: 0.9rem;">✨ 選択されたデータに基づいて回答を生成しています...</div>';
+        html += '<div class="mt-3 pt-3 border-t border-gray-200 italic text-gray-500 text-sm">✨ 選択されたデータに基づいて回答を生成しています...</div>';
       }
     } else {
-      html += '<div style="color: #666;">全データを使用して回答します</div>';
+      html += '<div class="text-gray-600">全データを使用して回答します</div>';
     }
     html += '</div>';
     return html;
@@ -292,10 +297,10 @@ export default class ChatbotUI {
 
   buildGoogleMapsActionHtml(googleMapsQuery) {
     return `
-      <div style="margin: 10px 0;">
-        <p>🗺️ Google Mapsデータを見つけました。</p>
-        <button class="btn btn-primary" data-google-maps-query='${JSON.stringify(googleMapsQuery)}'>
-          <i class="fas fa-map-marker-alt me-2"></i>マップに表示
+      <div class="my-2">
+        <p class="mb-2">🗺️ Google Mapsデータを見つけました。</p>
+        <button class="inline-flex items-center rounded-md bg-indigo-600 px-4 py-2 text-sm font-medium text-white shadow hover:bg-indigo-700" data-google-maps-query='${JSON.stringify(googleMapsQuery)}'>
+          <i class="fas fa-map-marker-alt mr-2"></i>マップに表示
         </button>
       </div>
     `;
@@ -339,11 +344,18 @@ export default class ChatbotUI {
     if (this.clearChatBtn) {
       this.clearChatBtn.addEventListener('click', () => {
         if (confirm('チャット履歴を削除しますか？')) {
-          const welcomeMessage = this.chatMessages.querySelector('.bot-message');
           this.chatMessages.innerHTML = '';
-          if (welcomeMessage) this.chatMessages.appendChild(welcomeMessage);
+          // Tailwind用に既存のメッセージ生成ロジックを使用してウェルカムを再挿入
+          this.addMessage(
+            'こんにちは！千葉市の地理空間データに関する質問にお答えします。<br>回答したデータは自動的に右側のマップに表示されます。',
+            false
+          );
           this.messageId = 0;
           this.chatHistory = [];
+          // マップや外部表示データもクリア（オプション）
+          if (this.options && typeof this.options.onClear === 'function') {
+            try { this.options.onClear(); } catch (_) {}
+          }
         }
       });
     }

@@ -12,6 +12,7 @@ pin "@hotwired/stimulus", to: "stimulus.min.js"
 pin "@hotwired/stimulus-loading", to: "stimulus-loading.js"
 pin "dompurify", to: "dompurify.js"
 pin_all_from "app/javascript/controllers", under: "controllers"
+pin "menu_toggle", to: "menu_toggle.js"
 
 # PLATEAU関連のJavaScriptモジュール（必要な時のみ読み込み）
 pin_all_from "app/javascript/plateau", under: "plateau"

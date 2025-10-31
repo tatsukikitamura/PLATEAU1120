@@ -86,7 +86,7 @@ document.addEventListener("DOMContentLoaded", async function () {
   
   // ChatbotUIの初期化（UI制御をクラスに委譲）
   const chatbot = new ChatbotUI({
-    chatMessages: document.getElementById('chatMessages'),
+    chatMessages: document.getElementById('chatbot-messages'),
     chatForm: document.getElementById('chatForm'),
     messageInput: document.getElementById('messageInput'),
     sendBtn: document.getElementById('sendBtn'),
@@ -131,6 +131,19 @@ document.addEventListener("DOMContentLoaded", async function () {
       } catch (e) {
         console.error('google maps call error:', e);
         throw e;
+      }
+    },
+    onClear: () => {
+      try {
+        viewer.dataSources.removeAll();
+        viewer.entities.removeAll();
+        if (viewer.scene && viewer.scene.primitives) {
+          viewer.scene.primitives.removeAll();
+        }
+        if (viewer.scene) viewer.scene.requestRender();
+        console.log('Map data cleared');
+      } catch (e) {
+        console.warn('onClear failed to clear map:', e);
       }
     }
   });
