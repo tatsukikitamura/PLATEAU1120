@@ -1,20 +1,27 @@
 from pydantic_settings import BaseSettings
-from pydantic import field_validator, computed_field
+from pydantic import field_validator, computed_field,Field, ConfigDict
 from typing import List
 import os
 
 
 class Settings(BaseSettings):
+    model_config = ConfigDict(
+        env_file = ".env",
+        case_sensitive = False,
+        env_file_encoding = "utf-8",
+        extra = "ignore",  # 定義されていない環境変数を無視
+        populate_by_name = True,  # フィールド名とエイリアスの両方を許可
+    )
     """アプリケーション設定"""
     # OpenAI API設定
-    openai_api_key: str
-    openai_model: str = "gpt-3.5-turbo"
+    openai_api_key: str = Field(...,validation_alias='OPENAI_API_KEY')
+    openai_model: str = Field("gpt-3.5-turbo", validation_alias='OPENAI_MODEL')
     
     # Google Maps API設定
-    google_maps_api_key: str = ""
+    google_maps_api_key: str = Field("", validation_alias='GOOGLE_MAPS_API_KEY')
     
     # ODPT API設定
-    odpt_api_key: str = ""
+    odpt_api_key: str = Field("", validation_alias='ODPT_API_KEY')
     odpt_base_url: str = "https://api.odpt.org/api/v4/"
     
     # FastAPI設定
@@ -22,11 +29,11 @@ class Settings(BaseSettings):
     api_port: int = 8000
     
     # Rails API設定
-    rails_api_url: str = "http://localhost:3000"
+    rails_api_url: str = Field("http://localhost:3000", validation_alias='RAILS_API_URL')
     
     # CORS設定（環境変数からカンマ区切りで読み込み）
     # 文字列として定義し、プロパティでリストに変換
-    cors_origins_str: str = "http://localhost:3000"
+    cors_origins_str: str = Field("http://localhost:3000", validation_alias='CORS_ORIGINS')
     
     @field_validator('cors_origins_str', mode='before')
     @classmethod
@@ -46,20 +53,7 @@ class Settings(BaseSettings):
             return [origin.strip() for origin in self.cors_origins_str.split(",") if origin.strip()]
         return ["http://localhost:3000"]
     
-    class Config:
-        env_file = ".env"
-        case_sensitive = False
-        # 環境変数名のマッピング
-        fields = {
-            'cors_origins_str': {'env': 'CORS_ORIGINS'},
-            'openai_api_key': {'env': 'OPENAI_API_KEY'},
-            'openai_model': {'env': 'OPENAI_MODEL'},
-            'google_maps_api_key': {'env': 'GOOGLE_MAPS_API_KEY'},
-            'odpt_api_key': {'env': 'ODPT_API_KEY'},
-            'odpt_base_url': {'env': 'ODPT_BASE_URL'},
-            'rails_api_url': {'env': 'RAILS_API_URL'}
-        }
-
+    
 
 # インスタンスを作成
 settings = Settings()
