@@ -1,0 +1,228 @@
+<% content_for :title, "プロジェクト概要 - PLATEAU-1120" %>
+
+<div class="mx-auto my-12 max-w-7xl px-4">
+  <!-- プロジェクト概要ヘッダー -->
+  <div class="mb-12">
+    <div class="text-center">
+      <h1 class="mb-4 text-4xl font-extrabold text-indigo-600 sm:text-5xl md:text-6xl">
+        <i class="fas fa-info-circle mr-3"></i>
+        プロジェクト概要
+      </h1>
+      <p class="mx-auto max-w-3xl text-lg text-gray-600">
+        PLATEAU-1120は千葉市の地理空間データを活用した次世代デジタルツイン・観光ルート最適化システムです
+      </p>
+    </div>
+  </div>
+
+  <!-- プロジェクト概要セクション -->
+  <div class="mb-12">
+    <div class="mx-auto max-w-4xl">
+      <div class="rounded-xl bg-white shadow">
+        <div class="rounded-t-xl bg-indigo-600 px-6 py-4 text-white">
+          <h3 class="m-0 flex items-center text-xl font-semibold">
+            <i class="fas fa-project-diagram mr-2"></i>
+            プロジェクトの目的
+          </h3>
+        </div>
+        <div class="p-6">
+          <p class="mb-4 text-gray-700">
+            PLATEAU-1120は、国土交通省が提供するPLATEAU（3D都市モデル）データと千葉市の地理空間データを活用し、
+            3D/2D地図ビューアーとAI最適化技術を組み合わせた次世代デジタルツインシステムです。
+          </p>
+          <p class="text-gray-700">
+            このシステムにより、都市計画、災害対策、観光振興、市民サービスの向上など、
+            様々な分野でのデータ活用を促進し、持続可能なスマートシティの実現を目指しています。
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 主要機能セクション -->
+  
+  <!-- データ統計セクション -->
+  <div class="mb-12 rounded-xl bg-white shadow">
+    <div class="rounded-t-xl bg-cyan-600 px-6 py-4 text-black border-b">
+      <h3 class="m-0 flex items-center text-xl font-semibold">
+        <i class="fas fa-database mr-2"></i>
+        千葉市データ統計
+      </h3>
+    </div>
+    <div class="px-6 py-6">
+      <div class="grid grid-cols-2 gap-4 text-center sm:grid-cols-4">
+        <div class="rounded-lg p-4">
+          <div class="text-2xl font-bold text-blue-600">20,000+</div>
+          <div class="mt-1 text-sm text-gray-600">公園データ</div>
+        </div>
+        <div class="rounded-lg p-4">
+          <div class="text-2xl font-bold text-green-600">7,000+</div>
+          <div class="mt-1 text-sm text-gray-600">ランドマーク</div>
+        </div>
+        <div class="rounded-lg p-4">
+          <div class="text-2xl font-bold text-cyan-600">900+</div>
+          <div class="mt-1 text-sm text-gray-600">駅データ</div>
+        </div>
+        <div class="rounded-lg p-4">
+          <div class="text-2xl font-bold text-yellow-500">3,779</div>
+          <div class="mt-1 text-sm text-gray-600">建物モデル</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 技術仕様セクション -->
+  <div class="mb-12 grid grid-cols-1 gap-6 lg:grid-cols-2">
+    <div class="h-full rounded-xl bg-white shadow">
+      <div class="rounded-t-xl border-b px-6 py-4">
+        <h4 class="m-0 flex items-center text-lg font-semibold">
+          <i class="fas fa-cogs mr-2"></i>
+          技術スタック
+        </h4>
+      </div>
+      <div class="px-6 py-6">
+        <div class="space-y-3 text-sm">
+          <div><strong>Backend:</strong> Ruby on Rails 8.0.3</div>
+          <div><strong>3D Engine:</strong> CesiumJS 1.134</div>
+          <div><strong>2D Map:</strong> Leaflet 1.9.4</div>
+          <div><strong>Frontend:</strong> Hotwire (Turbo + Stimulus)</div>
+          <div><strong>Database:</strong> SQLite3</div>
+          <div><strong>Deployment:</strong> Kamal + Docker</div>
+          <div><strong>Data Format:</strong> 3D Tiles + GeoJSON</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="h-full rounded-xl bg-white shadow">
+      <div class="rounded-t-xl border-b px-6 py-4">
+        <h4 class="m-0 flex items-center text-lg font-semibold">
+          <i class="fas fa-tools mr-2"></i>
+          開発ツール
+        </h4>
+      </div>
+      <div class="px-6 py-6">
+        <div class="space-y-2 text-sm">
+          <div class="flex items-center">
+            <i class="fas fa-check mr-2 text-green-600"></i>
+            Brakeman（セキュリティ分析）
+          </div>
+          <div class="flex items-center">
+            <i class="fas fa-check mr-2 text-green-600"></i>
+            RuboCop（コード品質）
+          </div>
+          <div class="flex items-center">
+            <i class="fas fa-check mr-2 text-green-600"></i>
+            Thruster（HTTP アセット最適化）
+          </div>
+          <div class="flex items-center">
+            <i class="fas fa-check mr-2 text-green-600"></i>
+            Importmap（アセット管理）
+          </div>
+          <div class="flex items-center">
+            <i class="fas fa-check mr-2 text-green-600"></i>
+            Puma（Webサーバー）
+          </div>
+          <div class="flex items-center">
+            <i class="fas fa-check mr-2 text-green-600"></i>
+            Tailwind CSS（UI フレームワーク）
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- データソースセクション -->
+  <div class="mb-12 rounded-xl bg-white shadow">
+    <div class="rounded-t-xl bg-gray-600 px-6 py-4 text-black border-b">
+      <h3 class="m-0 flex items-center text-xl font-semibold">
+        <i class="fas fa-download mr-2"></i>
+        データソース
+      </h3>
+    </div>
+    <div class="px-6 py-6">
+      <div class="grid grid-cols-1 gap-6 md:grid-cols-2">
+        <div>
+          <h5 class="mb-3 text-lg font-semibold">PLATEAU データ</h5>
+          <ul class="space-y-2 text-gray-700">
+            <li class="flex items-start">
+              <i class="fas fa-circle text-xs mr-2 mt-1.5 text-gray-400"></i>
+              3D Tiles（建物モデル LOD1/LOD2）
+            </li>
+            <li class="flex items-start">
+              <i class="fas fa-circle text-xs mr-2 mt-1.5 text-gray-400"></i>
+              MVT（Mapbox Vector Tiles）
+            </li>
+            <li class="flex items-start">
+              <i class="fas fa-circle text-xs mr-2 mt-1.5 text-gray-400"></i>
+              メタデータ（luse, tran）
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h5 class="mb-3 text-lg font-semibold">GeoJSON データ</h5>
+          <ul class="space-y-2 text-gray-700">
+            <li class="flex items-start">
+              <i class="fas fa-circle text-xs mr-2 mt-1.5 text-gray-400"></i>
+              Point（ランドマーク、公園、避難所、駅）
+            </li>
+            <li class="flex items-start">
+              <i class="fas fa-circle text-xs mr-2 mt-1.5 text-gray-400"></i>
+              MultiLineString（境界線、鉄道、緊急輸送道路）
+            </li>
+            <li class="flex items-start">
+              <i class="fas fa-circle text-xs mr-2 mt-1.5 text-gray-400"></i>
+              スキーマファイル（フィルタリング用）
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 活用事例セクション -->
+  <div class="mb-12">
+    <h2 class="mb-8 text-center text-3xl font-bold">
+      <i class="fas fa-lightbulb mr-2 text-yellow-500"></i>
+      活用事例
+    </h2>
+  </div>
+
+  <div class="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
+    <div class="h-full rounded-xl bg-white shadow transition-transform duration-300 hover:-translate-y-2 hover:shadow-xl">
+      <div class="p-6 text-center">
+        <div class="mb-4 text-4xl text-blue-600">
+          <i class="fas fa-city"></i>
+        </div>
+        <h5 class="mb-3 text-lg font-semibold">都市計画</h5>
+        <p class="text-gray-600">
+          3D都市モデルを活用した都市計画の検討・可視化
+        </p>
+      </div>
+    </div>
+
+    <div class="h-full rounded-xl bg-white shadow transition-transform duration-300 hover:-translate-y-2 hover:shadow-xl">
+      <div class="p-6 text-center">
+        <div class="mb-4 text-4xl text-red-600">
+          <i class="fas fa-exclamation-triangle"></i>
+        </div>
+        <h5 class="mb-3 text-lg font-semibold">災害対策</h5>
+        <p class="text-gray-600">
+          災害リスクの可視化と避難経路の最適化
+        </p>
+      </div>
+    </div>
+
+    <div class="h-full rounded-xl bg-white shadow transition-transform duration-300 hover:-translate-y-2 hover:shadow-xl">
+      <div class="p-6 text-center">
+        <div class="mb-4 text-4xl text-green-600">
+          <i class="fas fa-map-marked-alt"></i>
+        </div>
+        <h5 class="mb-3 text-lg font-semibold">観光振興</h5>
+        <p class="text-gray-600">
+          AI最適化による観光ルート提案と地域活性化
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<%= render 'shared/footer' %>
