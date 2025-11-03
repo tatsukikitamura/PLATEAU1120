@@ -2,6 +2,7 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from app.config import settings
 from app.routers import chat, data_selector, determiner, google_maps, odpt
+from app.routers import simulation
 
 # FastAPIアプリケーションを作成
 app = FastAPI(
@@ -25,6 +26,7 @@ app.include_router(data_selector.router, prefix="/api/data-selector", tags=["dat
 app.include_router(determiner.router, prefix="/api/determiner", tags=["determiner"])
 app.include_router(google_maps.router, prefix="/api/google-maps", tags=["google-maps"])
 app.include_router(odpt.router, prefix="/api/odpt", tags=["odpt"])
+app.include_router(simulation.router, prefix="/api/simulation", tags=["simulation"])
 
 
 @app.get("/")

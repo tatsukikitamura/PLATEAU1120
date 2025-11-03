@@ -216,28 +216,28 @@ export default class ChatbotUI {
         
         // directionsの場合のみボタンを表示
         if (isDirections) {
-          const html = this.buildGoogleMapsActionHtml(googleMapsQuery);
-          const gDiv = this.addMessage(html, false);
+        const html = this.buildGoogleMapsActionHtml(googleMapsQuery);
+        const gDiv = this.addMessage(html, false);
           
-          setTimeout(() => {
-            const btn = gDiv.querySelector('.message-text button[data-google-maps-query]');
-            if (btn) {
-              btn.addEventListener('click', async () => {
-                try {
-                  const query = JSON.parse(btn.getAttribute('data-google-maps-query'));
-                  if (this.options.onGoogleMapsQuery) {
-                    await this.options.onGoogleMapsQuery(query);
-                    btn.innerHTML = '<i class="fas fa-check mr-2"></i>表示済み';
-                    btn.disabled = true;
-                    btn.classList.remove('bg-indigo-600', 'hover:bg-indigo-700');
-                    btn.classList.add('bg-green-600', 'hover:bg-green-600', 'cursor-default');
+        setTimeout(() => {
+          const btn = gDiv.querySelector('.message-text button[data-google-maps-query]');
+          if (btn) {
+            btn.addEventListener('click', async () => {
+              try {
+                const query = JSON.parse(btn.getAttribute('data-google-maps-query'));
+                if (this.options.onGoogleMapsQuery) {
+                  await this.options.onGoogleMapsQuery(query);
+                btn.innerHTML = '<i class="fas fa-check mr-2"></i>表示済み';
+                btn.disabled = true;
+                btn.classList.remove('bg-indigo-600', 'hover:bg-indigo-700');
+                btn.classList.add('bg-green-600', 'hover:bg-green-600', 'cursor-default');
                   }
-                } catch (e) {
-                  alert('マップの表示に失敗しました: ' + e.message);
-                }
-              });
-            }
-          }, 50);
+              } catch (e) {
+                alert('マップの表示に失敗しました: ' + e.message);
+              }
+            });
+          }
+        }, 50);
         } else {
           // places または geocode の場合、自動的にマップに表示し、その後検索結果を表示
           if (this.options.onGoogleMapsQuery) {
@@ -267,6 +267,29 @@ export default class ChatbotUI {
           }
         }
       }
+      // 避難シミュレーション案内（将来はAI判定と連動）
+      try {
+        const simHtml = this.buildSimulationActionHtml();
+        const simDiv = this.addMessage(simHtml, false);
+        setTimeout(() => {
+          const btn = simDiv.querySelector('#run-evac-sim-btn');
+          if (btn) {
+            btn.addEventListener('click', async () => {
+              btn.disabled = true;
+              btn.innerHTML = '<i class="fas fa-circle-notch fa-spin mr-2"></i>実行中...';
+              try {
+                await this.runEvacuationSimulation({ hazard: 'tsunami' });
+                btn.innerHTML = '<i class="fas fa-check mr-2"></i>表示済み';
+              } catch (e) {
+                alert('シミュレーションに失敗しました: ' + e.message);
+                btn.disabled = false;
+                btn.innerHTML = '<i class="fas fa-person-running mr-2"></i>避難シミュレーションを実行';
+              }
+            });
+          }
+        }, 50);
+      } catch (_) {}
+
       this.updateTypingIndicator('✨ AI回答を生成しています...');
       const aiResponse = await this.generateResponse(this.chatHistory, selectedData, googleMapsQuery);
       this.chatHistory.push({ role: 'assistant', content: aiResponse });
@@ -408,6 +431,30 @@ export default class ChatbotUI {
         roll: 0
       }
     });
+  }
+
+  buildSimulationActionHtml() {
+    return `
+      <div class="my-2">
+        <p class="mb-2">🚨 避難シミュレーションを実行できます。</p>
+        <button class="inline-flex items-center rounded-md bg-red-600 px-4 py-2 text-sm font-medium text-white shadow hover:bg-red-700" id="run-evac-sim-btn">
+          <i class="fas fa-person-running mr-2"></i>避難シミュレーションを実行
+        </button>
+      </div>
+    `;
+  }
+
+  async runEvacuationSimulation(params = {}) {
+    try {
+      if (!window.cesiumViewer) throw new Error('Viewer not initialized');
+      const { SimulationManager } = await import('plateau/simulation/manager');
+      const mgr = new SimulationManager(window.cesiumViewer);
+      const result = await mgr.runEvacuation(params);
+      return result;
+    } catch (e) {
+      console.error('run evacuation error:', e);
+      throw e;
+    }
   }
 
   bindEvents() {

@@ -40,6 +40,9 @@ Rails.application.routes.draw do
     post "chatbot/select_data", to: "chatbot#select_data"
     post "chatbot/generate_response", to: "chatbot#generate_response"
 
+    # Simulation routes
+    post "simulation/run", to: "simulation#run"
+
     # ODPT routes
     get "odpt/passenger_survey", to: "odpt#passenger_survey"
     get "odpt/passenger_heatmap", to: "odpt#passenger_heatmap"
