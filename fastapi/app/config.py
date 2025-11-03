@@ -1,7 +1,6 @@
 from pydantic_settings import BaseSettings
 from pydantic import field_validator, computed_field,Field, ConfigDict
 from typing import List
-import os
 
 
 class Settings(BaseSettings):

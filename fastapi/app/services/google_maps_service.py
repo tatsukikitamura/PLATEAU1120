@@ -1,6 +1,6 @@
 """Google Maps APIサービス"""
 import httpx
-from typing import Optional, Dict, Any, List, Tuple
+from typing import Optional, Dict, Any, List
 from app.config import settings
 
 
