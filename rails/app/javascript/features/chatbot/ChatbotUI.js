@@ -184,7 +184,11 @@ export default class ChatbotUI {
       const shouldDisplayOnMap = selectionResult?.should_display_on_map || false;
       const shouldUseGoogleMaps = selectionResult?.should_use_google_maps || false;
       const googleMapsQuery = selectionResult?.google_maps_query || null;
-      if (selectedData && selectedData.length > 0) {
+      
+      // directionsの場合、関連データの選択メッセージを表示しない
+      const isDirections = googleMapsQuery?.type === 'directions';
+      
+      if (selectedData && selectedData.length > 0 && !isDirections) {
         const html = this.buildDataSelectionHtml(selectedData, shouldDisplayOnMap);
         const msgDiv = this.addMessage(html, false);
         if (shouldDisplayOnMap) {
@@ -208,27 +212,60 @@ export default class ChatbotUI {
         }
       }
       if (shouldUseGoogleMaps && googleMapsQuery) {
-        const html = this.buildGoogleMapsActionHtml(googleMapsQuery);
-        const gDiv = this.addMessage(html, false);
-        setTimeout(() => {
-          const btn = gDiv.querySelector('.message-text button[data-google-maps-query]');
-          if (btn) {
-            btn.addEventListener('click', async () => {
-              try {
-                const query = JSON.parse(btn.getAttribute('data-google-maps-query'));
-                if (this.options.onGoogleMapsQuery) {
-                  await this.options.onGoogleMapsQuery(query);
+        const isDirections = googleMapsQuery.type === 'directions';
+        
+        // directionsの場合のみボタンを表示
+        if (isDirections) {
+          const html = this.buildGoogleMapsActionHtml(googleMapsQuery);
+          const gDiv = this.addMessage(html, false);
+          
+          setTimeout(() => {
+            const btn = gDiv.querySelector('.message-text button[data-google-maps-query]');
+            if (btn) {
+              btn.addEventListener('click', async () => {
+                try {
+                  const query = JSON.parse(btn.getAttribute('data-google-maps-query'));
+                  if (this.options.onGoogleMapsQuery) {
+                    await this.options.onGoogleMapsQuery(query);
+                    btn.innerHTML = '<i class="fas fa-check mr-2"></i>表示済み';
+                    btn.disabled = true;
+                    btn.classList.remove('bg-indigo-600', 'hover:bg-indigo-700');
+                    btn.classList.add('bg-green-600', 'hover:bg-green-600', 'cursor-default');
+                  }
+                } catch (e) {
+                  alert('マップの表示に失敗しました: ' + e.message);
                 }
-                btn.innerHTML = '<i class="fas fa-check mr-2"></i>表示済み';
-                btn.disabled = true;
-                btn.classList.remove('bg-indigo-600', 'hover:bg-indigo-700');
-                btn.classList.add('bg-green-600', 'hover:bg-green-600', 'cursor-default');
-              } catch (e) {
-                alert('マップの表示に失敗しました: ' + e.message);
+              });
+            }
+          }, 50);
+        } else {
+          // places または geocode の場合、自動的にマップに表示し、その後検索結果を表示
+          if (this.options.onGoogleMapsQuery) {
+            try {
+              const result = await this.options.onGoogleMapsQuery(googleMapsQuery);
+              
+              // 検索結果を表示
+              if (result && (googleMapsQuery.type === 'places' || googleMapsQuery.type === 'geocode')) {
+                const resultHtml = this.buildGoogleMapsResultsHtml(result.geojson);
+                const resultDiv = this.addMessage(resultHtml, false);
+                
+                // 詳細を見るボタンのイベントリスナーを設定
+                setTimeout(() => {
+                  const detailBtns = resultDiv.querySelectorAll('.message-text button[data-location]');
+                  detailBtns.forEach(detailBtn => {
+                    detailBtn.addEventListener('click', () => {
+                      const location = JSON.parse(detailBtn.getAttribute('data-location'));
+                      this.flyToLocation(location);
+                    });
+                  });
+                }, 50);
               }
-            });
+            } catch (e) {
+              console.error('Google Maps表示エラー:', e);
+              const errorMsg = this.addMessage('マップの表示に失敗しました: ' + e.message, false);
+            }
           }
-        }, 50);
+        }
       }
       this.updateTypingIndicator('✨ AI回答を生成しています...');
       const aiResponse = await this.generateResponse(this.chatHistory, selectedData, googleMapsQuery);
@@ -296,14 +333,81 @@ export default class ChatbotUI {
   }
 
   buildGoogleMapsActionHtml(googleMapsQuery) {
+    const isDirections = googleMapsQuery.type === 'directions';
+    const buttonText = isDirections ? 'ナビを表示' : 'マップに表示';
+    const icon = isDirections ? 'fa-route' : 'fa-map-marker-alt';
+    const message = isDirections 
+      ? '📍 経路情報を見つけました。' 
+      : '🗺️ Google Mapsデータを見つけました。';
+    
     return `
       <div class="my-2">
-        <p class="mb-2">🗺️ Google Mapsデータを見つけました。</p>
+        <p class="mb-2">${message}</p>
         <button class="inline-flex items-center rounded-md bg-indigo-600 px-4 py-2 text-sm font-medium text-white shadow hover:bg-indigo-700" data-google-maps-query='${JSON.stringify(googleMapsQuery)}'>
-          <i class="fas fa-map-marker-alt mr-2"></i>マップに表示
+          <i class="fas ${icon} mr-2"></i>${buttonText}
         </button>
       </div>
     `;
+  }
+
+  buildGoogleMapsResultsHtml(geojson) {
+    if (!geojson || !geojson.features || geojson.features.length === 0) {
+      return '<div class="text-gray-600">検索結果が見つかりませんでした。</div>';
+    }
+
+    let html = '<div class="p-4 bg-blue-50 rounded-lg border-l-4 border-indigo-500">';
+    html += '<div class="font-bold mb-3 text-indigo-600">🔍 検索結果</div>';
+    
+    geojson.features.forEach((feature, index) => {
+      const coordinates = feature.geometry.coordinates; // [lng, lat]
+      const properties = feature.properties || {};
+      const name = properties.name || properties.formatted_address || `地点 ${index + 1}`;
+      const address = properties.formatted_address || properties.vicinity || '';
+      const rating = properties.rating ? `⭐ ${properties.rating}` : '';
+      
+      html += '<div class="mb-3 p-3 bg-white rounded border border-gray-200">';
+      html += `<div class="font-semibold text-gray-800 mb-1">${index + 1}. ${name}</div>`;
+      if (address) {
+        html += `<div class="text-sm text-gray-600 mb-1">${address}</div>`;
+      }
+      if (rating) {
+        html += `<div class="text-sm text-gray-500 mb-2">${rating}</div>`;
+      }
+      html += `<button class="inline-flex items-center rounded-md bg-indigo-600 px-3 py-1.5 text-xs font-medium text-white shadow hover:bg-indigo-700" data-location='${JSON.stringify({ lng: coordinates[0], lat: coordinates[1] })}'>`;
+      html += '<i class="fas fa-search-location mr-1"></i>詳細を見る';
+      html += '</button>';
+      html += '</div>';
+    });
+    
+    html += '</div>';
+    return html;
+  }
+
+  flyToLocation(location) {
+    if (!window.cesiumViewer || !location || !location.lng || !location.lat) {
+      console.error('Cesium viewerまたは位置情報が不正です');
+      return;
+    }
+
+    const viewer = window.cesiumViewer;
+    const Cesium = window.Cesium;
+    
+    if (!Cesium) {
+      console.error('Cesiumライブラリが読み込まれていません');
+      return;
+    }
+
+    const longitude = location.lng;
+    const latitude = location.lat;
+
+    viewer.camera.flyTo({
+      destination: Cesium.Cartesian3.fromDegrees(longitude, latitude, 500),
+      orientation: {
+        heading: Cesium.Math.toRadians(0),
+        pitch: Cesium.Math.toRadians(-90),
+        roll: 0
+      }
+    });
   }
 
   bindEvents() {

@@ -84,7 +84,9 @@ class GoogleMapsService:
             return self._create_empty_geojson()
         
         features = []
-        for place in places_response["results"]:
+        # 最大5個の結果に制限
+        max_results = 5
+        for place in places_response["results"][:max_results]:
             location = place.get("geometry", {}).get("location")
             if not location:
                 continue
@@ -155,7 +157,9 @@ class GoogleMapsService:
             return self._create_empty_geojson()
         
         features = []
-        for result in geocoding_response["results"]:
+        # 最大5個の結果に制限
+        max_results = 5
+        for result in geocoding_response["results"][:max_results]:
             location = result.get("geometry", {}).get("location")
             if not location:
                 continue

@@ -76,6 +76,9 @@ document.addEventListener("DOMContentLoaded", async function () {
   // モジュールのインポート
   const { loadGeoJSON } = await import("plateau/cesium/geojson_loader");
   const { loadGoogleMapsPlaces, loadGoogleMapsGeocode, loadGoogleMapsDirections } = await import("plateau/cesium/google_maps_loader");
+  const { load3DTiles, TILESET_URLS } = await import("plateau/cesium/tiles_loader");
+  const { loadOsmBuildings } = await import("plateau/cesium/osm_buildings");
+  
   window.loadGeoJSONToMap = loadGeoJSON;
   window.loadGoogleMapsPlaces = loadGoogleMapsPlaces;
   window.loadGoogleMapsGeocode = loadGoogleMapsGeocode;
@@ -83,6 +86,16 @@ document.addEventListener("DOMContentLoaded", async function () {
 
   // Cesiumビューアーの初期化完了
   console.log("Cesium viewer initialized successfully");
+  
+  // デフォルトでOSM buildingと3DTilesをロード
+  try {
+    console.log("OSM Buildingsと3D Tilesをロードしています...");
+    await loadOsmBuildings(viewer);
+    await load3DTiles(viewer, TILESET_URLS);
+    console.log("OSM Buildingsと3D Tilesのロードが完了しました");
+  } catch (error) {
+    console.error("OSM Buildingsまたは3D Tilesのロードエラー:", error);
+  }
   
   // ChatbotUIの初期化（UI制御をクラスに委譲）
   const chatbot = new ChatbotUI({
@@ -106,11 +119,12 @@ document.addEventListener("DOMContentLoaded", async function () {
       }
     },
     onGoogleMapsQuery: async (query) => {
-      if (!query || !query.type) return;
+      if (!query || !query.type) return null;
       try {
+        let result = null;
         switch (query.type) {
           case 'places':
-            await window.loadGoogleMapsPlaces(viewer, {
+            result = await window.loadGoogleMapsPlaces(viewer, {
               query: query.query,
               location: query.params?.location,
               radius: query.params?.radius || 5000,
@@ -118,7 +132,7 @@ document.addEventListener("DOMContentLoaded", async function () {
             });
             break;
           case 'geocode':
-            await window.loadGoogleMapsGeocode(viewer, query.query);
+            result = await window.loadGoogleMapsGeocode(viewer, query.query);
             break;
           case 'directions':
             await window.loadGoogleMapsDirections(viewer, {
@@ -128,6 +142,7 @@ document.addEventListener("DOMContentLoaded", async function () {
             });
             break;
         }
+        return result;
       } catch (e) {
         console.error('google maps call error:', e);
         throw e;

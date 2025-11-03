@@ -53,7 +53,13 @@ export async function loadGoogleMapsPlaces(viewer, searchParams, options = {}) {
     }
 
     console.log(`Google Maps Places読み込み成功: ${data.metadata.feature_count}件の結果`);
-    return dataSource;
+    
+    // GeoJSONデータとデータソースの両方を返す
+    return { 
+      dataSource, 
+      geojson: data.geojson,
+      metadata: data.metadata 
+    };
 
   } catch (error) {
     console.error('Google Maps Places読み込みエラー:', error);
@@ -179,7 +185,13 @@ export async function loadGoogleMapsGeocode(viewer, address, options = {}) {
     }
 
     console.log(`Google Maps Geocoding読み込み成功: ${data.metadata.result_count}件の結果`);
-    return dataSource;
+    
+    // GeoJSONデータとデータソースの両方を返す
+    return { 
+      dataSource, 
+      geojson: data.geojson,
+      metadata: data.metadata 
+    };
 
   } catch (error) {
     console.error('Google Maps Geocoding読み込みエラー:', error);
