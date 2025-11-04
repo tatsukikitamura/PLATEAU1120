@@ -1,8 +1,7 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from app.config import settings
-from app.routers import chat, data_selector, determiner, google_maps, odpt
-from app.routers import simulation
+from app.routers import chat, data_selector, determiner, google_maps, simulation
 
 # FastAPIアプリケーションを作成
 app = FastAPI(
